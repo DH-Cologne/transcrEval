@@ -1,0 +1,369 @@
+<title>transcrEval — Diagramm-Kandidaten</title>
+<style>
+  :root {
+    --bg: #f4f1ea; --surface: #fcfbf8; --surface-2: #f0ece3;
+    --ink: #23201a; --muted: #6c665b; --faint: #b7b0a3; --line: #ddd6c8;
+    --new: #1367a0; --old: #c2751a; --plum: #8250b8; --green: #1f8a5b;
+    --grid: #e7e1d5;
+    --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: "SFMono-Regular", ui-monospace, "Menlo", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17150f; --surface: #201d16; --surface-2: #292520;
+      --ink: #ece7db; --muted: #9d9587; --faint: #625b4d; --line: #34302700;
+      --new: #3a8ec4; --old: #c07f2c; --plum: #9c72cf; --green: #2e9d70;
+      --grid: #322e26; --line: #34302a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17150f; --surface: #201d16; --surface-2: #292520;
+    --ink: #ece7db; --muted: #9d9587; --faint: #625b4d;
+    --new: #3a8ec4; --old: #c07f2c; --plum: #9c72cf; --green: #2e9d70;
+    --grid: #322e26; --line: #34302a;
+  }
+  :root[data-theme="light"] {
+    --bg: #f4f1ea; --surface: #fcfbf8; --surface-2: #f0ece3;
+    --ink: #23201a; --muted: #6c665b; --faint: #b7b0a3;
+    --new: #1367a0; --old: #c2751a; --plum: #8250b8; --green: #1f8a5b;
+    --grid: #e7e1d5; --line: #ddd6c8;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--sans); line-height: 1.55;
+    -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 40px 24px 72px; }
+
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 8px; }
+  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--old); margin: 0 0 10px; }
+  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(26px, 4vw, 40px);
+    line-height: 1.1; margin: 0; text-wrap: balance; }
+  .sub { color: var(--muted); font-size: 15px; margin: 12px 0 0; max-width: 62ch; }
+
+  .banner { display: flex; gap: 14px; align-items: flex-start;
+    background: var(--surface-2); border-left: 3px solid var(--old);
+    padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 22px 0 34px;
+    font-size: 13.5px; color: var(--muted); }
+  .banner b { color: var(--ink); font-weight: 600; }
+
+  .card { background: var(--surface); border: 1px solid var(--line);
+    border-radius: 10px; padding: 24px 24px 20px; margin: 0 0 26px; }
+  .card > h2 { font-family: var(--serif); font-weight: 600; font-size: 20px;
+    margin: 0 0 3px; }
+  .tag { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--faint); }
+  .story { font-size: 14px; color: var(--muted); margin: 8px 0 20px; max-width: 68ch; }
+  .story b { color: var(--ink); font-weight: 600; }
+  .limit { font-size: 12.5px; color: var(--muted); margin: 16px 0 0;
+    padding-top: 12px; border-top: 1px dashed var(--line); }
+  .limit::before { content: "Einschränkung  "; font-family: var(--mono);
+    font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--old); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 16px; margin: 0 0 14px; font-size: 13px; }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); }
+  .swatch { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  .swatch.line { height: 3px; border-radius: 2px; width: 16px; }
+
+  .chartbox { position: relative; overflow-x: auto; }
+  svg { display: block; max-width: 100%; height: auto; }
+  svg text { font-family: var(--sans); }
+  .axislabel { fill: var(--muted); font-size: 12px; }
+  .tick { fill: var(--faint); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .gridline { stroke: var(--grid); stroke-width: 1; }
+  .axis { stroke: var(--line); stroke-width: 1.5; }
+  .dlabel { fill: var(--ink); font-size: 11px; font-variant-numeric: tabular-nums; font-weight: 600; }
+  .ptlabel { fill: var(--muted); font-size: 11px; }
+
+  .tip { position: absolute; pointer-events: none; opacity: 0; transition: opacity .12s;
+    background: var(--ink); color: var(--bg); font-size: 12px; line-height: 1.4;
+    padding: 8px 10px; border-radius: 6px; white-space: nowrap; z-index: 5;
+    font-variant-numeric: tabular-nums; box-shadow: 0 4px 14px rgba(0,0,0,.22); }
+  .tip b { font-weight: 700; }
+
+  .toggle { position: fixed; top: 16px; right: 16px; z-index: 10;
+    background: var(--surface); border: 1px solid var(--line); color: var(--muted);
+    border-radius: 20px; padding: 6px 14px; font-size: 12px; cursor: pointer;
+    font-family: var(--mono); letter-spacing: .05em; }
+  .toggle:hover { color: var(--ink); }
+
+  footer { color: var(--muted); font-size: 12.5px; margin-top: 8px; text-align: center;
+    font-family: var(--mono); letter-spacing: .04em; }
+  .hl-new { color: var(--new); font-weight: 600; }
+  .hl-old { color: var(--old); font-weight: 600; }
+</style>
+
+<button class="toggle" id="themeBtn">◐ Theme</button>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">transcrEval · OCR-Evaluation · DHd-Poster (Entwurf)</p>
+    <h1>Zeichen gegen Struktur: altes OCR und Transkribus im Vergleich</h1>
+    <p class="sub">Diagramm-Kandidaten für das Poster. Jede Grafik erzählt eine andere
+      Geschichte derselben Metriken — CER, WER, RLER, BLER — gegen den handerstellten
+      Goldstandard. Fahrt mit der Maus über die Marken.</p>
+  </header>
+
+  <div class="banner">
+    <span>⚠</span>
+    <div><b>Datenstand · Prototyp.</b> Erst <b>4 Seiten</b> mit Goldstandard, davon
+      <b>2 Seiten</b> mit altem <i>und</i> neuem OCR gepaart (10.01.1921, 11.11.1928).
+      Direktvergleiche alt/neu beruhen daher auf diesen zwei Seiten. Geplant sind
+      <b>10 Seiten</b> aus verschiedenen Jahrgängen; Zahlen und Streuung ändern sich noch.</div>
+  </div>
+
+  <!-- 1 — Trade-off -->
+  <section class="card">
+    <span class="tag">Kandidat A · Kernbotschaft</span>
+    <h2>Der Trade-off auf einen Blick</h2>
+    <p class="story">Eine Achse Zeichenqualität, eine Achse Struktur. <b>Altes OCR</b>
+      liegt weit rechts (viele Zeichenfehler); die Verbindungslinie zeigt, wie
+      <b>Transkribus</b> dieselbe Seite nach links zieht — deutlich bessere Zeichen.
+      Vertikal ist das Bild <b>nicht</b> einheitlich: mal ordnet das neue OCR sauberer,
+      mal schlechter. Genau diese Differenzierung ist die interessante Aussage.</p>
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--new)"></i>neues OCR (Transkribus)</span>
+      <span><i class="swatch" style="background:var(--old)"></i>altes OCR</span>
+      <span><i class="swatch line" style="background:var(--faint)"></i>dieselbe Seite</span>
+      <span style="color:var(--faint)">○ heller = noch ohne altes OCR</span>
+    </div>
+    <div class="chartbox"><svg id="c1"></svg><div class="tip" id="tip1"></div></div>
+    <p class="limit">Nur 2 Seiten haben beide Systeme; die 2 blassen Punkte sind neues
+      OCR ohne Gegenstück. Mit 10 Seiten werden hieraus zwei erkennbare Punktwolken.</p>
+  </section>
+
+  <!-- 2 — grouped bars -->
+  <section class="card">
+    <span class="tag">Kandidat B · Direktvergleich</span>
+    <h2>Vier Metriken, alt gegen neu</h2>
+    <p class="story">Klassisch und für Zahlen-Publikum am direktesten: gruppierte Balken
+      je Metrik, für die zwei gepaarten Seiten. Zeigt, dass der Vorsprung des neuen OCR
+      bei <b>Zeichen</b> (CER/WER) riesig ist, bei der <b>Struktur</b> (RLER/BLER)
+      dagegen gemischt ausfällt.</p>
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--old)"></i>altes OCR</span>
+      <span><i class="swatch" style="background:var(--new)"></i>neues OCR</span>
+    </div>
+    <div class="chartbox"><svg id="c2"></svg><div class="tip" id="tip2"></div></div>
+    <p class="limit">Alle Fehlerraten normalisiert (ſ→s, Ligaturen, Trennstriche
+      angeglichen). CER/WER sind hier auf gemeinsamer Prozent-Achse — bei 10 Seiten
+      ggf. WER wegen Größenordnung trennen.</p>
+  </section>
+
+  <!-- 3 — normalization dumbbell -->
+  <section class="card">
+    <span class="tag">Kandidat C · Methodenbeitrag</span>
+    <h2>Was die Normalisierung sichtbar macht</h2>
+    <p class="story">Jede Linie verbindet die <b>rohe</b> mit der <b>normalisierten</b>
+      Zeichenfehlerrate. Beim neuen OCR schrumpft der Wert dramatisch — die rohe CER
+      maß überwiegend Transkriptionskonventionen (langes ſ, ⸗/¬/=), nicht echte
+      Erkennungsfehler. Beim alten OCR bleibt die Linie kurz: dort sind es echte Fehler.</p>
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--faint)"></i>roh</span>
+      <span><i class="swatch" style="background:var(--plum)"></i>normalisiert</span>
+    </div>
+    <div class="chartbox"><svg id="c3"></svg><div class="tip" id="tip3"></div></div>
+    <p class="limit">Nur CER dargestellt; WER-Effekt ist noch stärker (bis 24 → 3 %).
+      Für das Poster evtl. ein kleines Vielfaches CER neben WER.</p>
+  </section>
+
+  <!-- 4 — localisation decomposition -->
+  <section class="card">
+    <span class="tag">Kandidat D · Warum zwei Struktur-Metriken</span>
+    <h2>Zeilen- gegen Blockverschiebung</h2>
+    <p class="story">Fehlplatzierte Zeilen, aufgeteilt: <b>einzeln</b> verrutscht (RLER)
+      gegenüber <b>mit ganzem Block</b> umgezogen (BLER). Auf dem 29.12.1929 sind alle
+      20 Verschiebungen ein einziger Block — das Gedicht „Der schwarze Kellner", das
+      Transkribus geschlossen ans Seitenende sortiert hat. Ohne die Trennung würde das
+      als 20 Einzelfehler zählen.</p>
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--green)"></i>einzeln verrutscht (RLER)</span>
+      <span><i class="swatch" style="background:var(--plum)"></i>als Block verschoben (BLER)</span>
+    </div>
+    <div class="chartbox"><svg id="c4"></svg><div class="tip" id="tip4"></div></div>
+    <p class="limit">Blockgranularität hängt am Gold: jede Strophe ist ein eigener Block.
+      aze15.01.1919 fehlen noch Leerzeilen → keine Blockstruktur, hier ausgeblendet.</p>
+  </section>
+
+  <footer>transcrEval · Werte aus results/metrics_*.csv · Stand 20.07.2026</footer>
+</div>
+
+<script>
+const DOCS = {
+  "aze19190115-2": { label: "15.01.1919", jahr: 1919 },
+  "aze19210110-2": { label: "10.01.1921", jahr: 1921 },
+  "aze19281111-9": { label: "11.11.1928", jahr: 1928 },
+  "aze19291229-13": { label: "29.12.1929", jahr: 1929 },
+};
+// gold_lines used to turn line counts into rates
+const NEW = {
+  "aze19190115-2": {gl:304, cer_raw:.0467, cer:.013, wer_raw:.2323, wer:.0399, rler:.0526, bler:0,   di:16, db:0,  blocks:false},
+  "aze19210110-2": {gl:314, cer_raw:.0475, cer:.0041, wer_raw:.2429, wer:.0261, rler:.035, bler:0,   di:11, db:0,  blocks:true},
+  "aze19281111-9": {gl:394, cer_raw:.0349, cer:.0186, wer_raw:.1427, wer:.051,  rler:.0152, bler:.2, di:6,  db:42, blocks:true},
+  "aze19291229-13":{gl:398, cer_raw:.0513, cer:.0181, wer_raw:.2275, wer:.0393, rler:0,    bler:.2941, di:0, db:20, blocks:true},
+};
+const OLD = {
+  "aze19210110-2": {gl:314, cer_raw:.2437, cer:.2063, wer_raw:.6742, wer:.5614, rler:.0064, bler:0,    di:2,  db:0,  blocks:true},
+  "aze19281111-9": {gl:394, cer_raw:.0864, cer:.0587, wer_raw:.2988, wer:.1577, rler:.0254, bler:.2667, di:10, db:61, blocks:true},
+};
+const PAIRED = ["aze19210110-2","aze19281111-9"];
+const cssv = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const pct = x => (x*100).toFixed(x<0.1?2:1).replace(".",",")+" %";
+const SVGNS = "http://www.w3.org/2000/svg";
+function el(tag, attrs, parent){ const e=document.createElementNS(SVGNS,tag);
+  for(const k in attrs) e.setAttribute(k, attrs[k]); if(parent) parent.appendChild(e); return e; }
+
+function tip(box, tipEl){
+  return {
+    show(e, html){ tipEl.innerHTML=html; tipEl.style.opacity=1;
+      const r=box.getBoundingClientRect();
+      let x=e.clientX-r.left+12, y=e.clientY-r.top+12;
+      if(x+180>r.width) x=e.clientX-r.left-tipEl.offsetWidth-12;
+      tipEl.style.left=x+"px"; tipEl.style.top=y+"px"; },
+    hide(){ tipEl.style.opacity=0; }
+  };
+}
+
+/* ---------- Chart 1: trade-off scatter ---------- */
+function chart1(){
+  const svg=document.getElementById("c1"), box=svg.parentElement, T=tip(box, document.getElementById("tip1"));
+  const W=1000,H=440,m={t:24,r:30,b:56,l:64};
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  const iw=W-m.l-m.r, ih=H-m.t-m.b;
+  const xMax=0.26, yMax=0.20;
+  const X=v=>m.l+(v/xMax)*iw, Y=v=>m.t+ih-(v/yMax)*ih;
+  // grid + ticks
+  for(let i=0;i<=xMax*100;i+=5){const v=i/100; const gx=X(v);
+    el("line",{class:"gridline",x1:gx,y1:m.t,x2:gx,y2:m.t+ih},svg);
+    el("text",{class:"tick","text-anchor":"middle",x:gx,y:m.t+ih+18},svg).textContent=i+"%";}
+  for(let i=0;i<=yMax*100;i+=5){const v=i/100; const gy=Y(v);
+    el("line",{class:"gridline",x1:m.l,y1:gy,x2:m.l+iw,y2:gy},svg);
+    el("text",{class:"tick","text-anchor":"end",x:m.l-8,y:gy+4},svg).textContent=i+"%";}
+  el("line",{class:"axis",x1:m.l,y1:m.t,x2:m.l,y2:m.t+ih},svg);
+  el("line",{class:"axis",x1:m.l,y1:m.t+ih,x2:m.l+iw,y2:m.t+ih},svg);
+  el("text",{class:"axislabel","text-anchor":"middle",x:m.l+iw/2,y:H-8},svg)
+    .textContent="Zeichenfehlerrate CER (normalisiert) →  schlechter";
+  const yl=el("text",{class:"axislabel","text-anchor":"middle",transform:`rotate(-90 16 ${m.t+ih/2})`,x:16,y:m.t+ih/2},svg);
+  yl.textContent="fehlplatzierte Zeilen  →  schlechter";
+  const struct = d => (d.di+d.db)/d.gl;
+  // connectors for paired docs
+  PAIRED.forEach(k=>{const o=OLD[k],n=NEW[k];
+    el("line",{x1:X(o.cer),y1:Y(struct(o)),x2:X(n.cer),y2:Y(struct(n)),
+      stroke:cssv("--faint"),"stroke-width":1.5,"stroke-dasharray":"4 3"},svg);});
+  function dot(k,d,sys,faint){
+    const cx=X(d.cer),cy=Y(struct(d)), col=cssv(sys==="new"?"--new":"--old");
+    const c=el("circle",{cx,cy,r:8,fill:faint?"none":col,stroke:col,"stroke-width":faint?2:0,
+      "fill-opacity":faint?0:1,style:"cursor:pointer"},svg);
+    c.addEventListener("mousemove",e=>T.show(e,
+      `<b>${DOCS[k].label}</b> · ${sys==="new"?"neu":"alt"}<br>CER ${pct(d.cer)} · Struktur ${pct(struct(d))}<br>${d.di} einzeln · ${d.db} als Block`));
+    c.addEventListener("mouseleave",()=>T.hide());
+    if(!faint||sys==="new"){el("text",{class:"ptlabel",x:cx+11,y:cy+4},svg).textContent=DOCS[k].label;}
+  }
+  Object.keys(OLD).forEach(k=>dot(k,OLD[k],"old",false));
+  Object.keys(NEW).forEach(k=>dot(k,NEW[k],"new",!PAIRED.includes(k)));
+}
+
+/* ---------- Chart 2: grouped bars per metric ---------- */
+function chart2(){
+  const svg=document.getElementById("c2"), box=svg.parentElement, T=tip(box, document.getElementById("tip2"));
+  const metrics=[["cer","CER"],["wer","WER"],["rler","RLER"],["bler","BLER"]];
+  const W=1000,H=420,m={t:20,r:20,b:64,l:56};
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  const iw=W-m.l-m.r, ih=H-m.t-m.b, yMax=0.6;
+  const Y=v=>m.t+ih-(v/yMax)*ih;
+  for(let i=0;i<=60;i+=10){const gy=Y(i/100);
+    el("line",{class:"gridline",x1:m.l,y1:gy,x2:m.l+iw,y2:gy},svg);
+    el("text",{class:"tick","text-anchor":"end",x:m.l-8,y:gy+4},svg).textContent=i+"%";}
+  el("line",{class:"axis",x1:m.l,y1:m.t+ih,x2:m.l+iw,y2:m.t+ih},svg);
+  // 4 metric-groups, each with old/new for 2 docs => cluster of 4 bars? keep readable: mean-free, show both docs stacked side.
+  const docs=PAIRED, groupW=iw/metrics.length;
+  metrics.forEach((mt,gi)=>{
+    const gx=m.l+gi*groupW; const inner=groupW*0.7, x0=gx+(groupW-inner)/2;
+    const bars=[]; docs.forEach(k=>{bars.push([k,"old",OLD[k][mt[0]]]); bars.push([k,"new",NEW[k][mt[0]]]);});
+    const bw=inner/bars.length;
+    bars.forEach((b,bi)=>{const[k,sys,val]=b; const bx=x0+bi*bw+1, bh=(val/yMax)*ih;
+      const col=cssv(sys==="new"?"--new":"--old");
+      const r=el("rect",{x:bx,y:Y(val),width:bw-2,height:Math.max(bh,1),rx:2,fill:col,style:"cursor:pointer"},svg);
+      r.addEventListener("mousemove",e=>T.show(e,`<b>${mt[1]}</b> · ${DOCS[k].label}<br>${sys==="new"?"neues":"altes"} OCR: <b>${pct(val)}</b>`));
+      r.addEventListener("mouseleave",()=>T.hide());
+    });
+    el("text",{class:"axislabel","text-anchor":"middle",x:gx+groupW/2,y:m.t+ih+22},svg).textContent=mt[1];
+  });
+  el("text",{class:"tick","text-anchor":"middle",x:m.l+iw/2,y:H-6},svg)
+    .textContent="je Metrik: 10.01.1921 (alt·neu)   ▏   11.11.1928 (alt·neu)";
+}
+
+/* ---------- Chart 3: normalization dumbbell ---------- */
+function chart3(){
+  const svg=document.getElementById("c3"), box=svg.parentElement, T=tip(box, document.getElementById("tip3"));
+  const rows=[]; Object.keys(OLD).forEach(k=>rows.push([k,"alt",OLD[k]]));
+  Object.keys(NEW).forEach(k=>rows.push([k,"neu",NEW[k]]));
+  rows.sort((a,b)=>b[2].cer_raw-a[2].cer_raw);
+  const W=1000,rowH=44,m={t:16,r:120,b:44,l:150},H=m.t+rows.length*rowH+m.b;
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  const iw=W-m.l-m.r, xMax=0.26, X=v=>m.l+(v/xMax)*iw;
+  for(let i=0;i<=26;i+=5){const gx=X(i/100);
+    el("line",{class:"gridline",x1:gx,y1:m.t,x2:gx,y2:m.t+rows.length*rowH},svg);
+    el("text",{class:"tick","text-anchor":"middle",x:gx,y:m.t+rows.length*rowH+18},svg).textContent=i+"%";}
+  rows.forEach((r,i)=>{const[k,sys,d]=r; const cy=m.t+i*rowH+rowH/2;
+    el("text",{class:"axislabel","text-anchor":"end",x:m.l-12,y:cy+4},svg)
+      .textContent=`${DOCS[k].label} · ${sys}`;
+    el("line",{x1:X(d.cer),y1:cy,x2:X(d.cer_raw),y2:cy,stroke:cssv("--line"),"stroke-width":3},svg);
+    const raw=el("circle",{cx:X(d.cer_raw),cy,r:6,fill:cssv("--faint"),style:"cursor:pointer"},svg);
+    const nrm=el("circle",{cx:X(d.cer),cy,r:6,fill:cssv("--plum"),style:"cursor:pointer"},svg);
+    const drop=(1-d.cer/d.cer_raw);
+    [raw,nrm].forEach(c=>{c.addEventListener("mousemove",e=>T.show(e,
+      `<b>${DOCS[k].label}</b> · ${sys}es OCR<br>roh ${pct(d.cer_raw)} → norm. ${pct(d.cer)}<br>−${(drop*100).toFixed(0)} % Fehler durch Normalisierung`));
+      c.addEventListener("mouseleave",()=>T.hide());});
+    el("text",{class:"dlabel","text-anchor":"start",x:X(d.cer_raw)+12,y:cy+4},svg)
+      .textContent=`−${(drop*100).toFixed(0)}%`;
+  });
+  el("text",{class:"axislabel","text-anchor":"middle",x:m.l+iw/2,y:H-6},svg).textContent="CER  roh ● → normalisiert ●";
+}
+
+/* ---------- Chart 4: localisation decomposition ---------- */
+function chart4(){
+  const svg=document.getElementById("c4"), box=svg.parentElement, T=tip(box, document.getElementById("tip4"));
+  const rows=[]; // only docs with block structure
+  Object.keys(NEW).forEach(k=>{if(NEW[k].blocks) rows.push([k,"neu",NEW[k]]);});
+  Object.keys(OLD).forEach(k=>{if(OLD[k].blocks) rows.push([k,"alt",OLD[k]]);});
+  const W=1000,rowH=48,m={t:16,r:150,b:44,l:150},H=m.t+rows.length*rowH+m.b;
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  const iw=W-m.l-m.r, xMax=75, X=v=>m.l+(v/xMax)*iw;
+  for(let i=0;i<=75;i+=15){const gx=X(i);
+    el("line",{class:"gridline",x1:gx,y1:m.t,x2:gx,y2:m.t+rows.length*rowH},svg);
+    el("text",{class:"tick","text-anchor":"middle",x:gx,y:m.t+rows.length*rowH+18},svg).textContent=i;}
+  el("line",{class:"axis",x1:m.l,y1:m.t,x2:m.l,y2:m.t+rows.length*rowH},svg);
+  rows.forEach((r,i)=>{const[k,sys,d]=r; const cy=m.t+i*rowH+6, bh=rowH-20;
+    el("text",{class:"axislabel","text-anchor":"end",x:m.l-12,y:cy+bh/2+4},svg)
+      .textContent=`${DOCS[k].label} · ${sys}`;
+    const segs=[["einzeln (RLER)",d.di,cssv("--green")],["als Block (BLER)",d.db,cssv("--plum")]];
+    let x=m.l;
+    segs.forEach(s=>{const[nm,val,col]=s; if(val<=0)return; const w=(val/xMax)*iw;
+      const rc=el("rect",{x:x+1,y:cy,width:Math.max(w-2,2),height:bh,rx:2,fill:col,style:"cursor:pointer"},svg);
+      rc.addEventListener("mousemove",e=>T.show(e,`<b>${DOCS[k].label}</b> · ${sys}<br>${nm}: <b>${val}</b> Zeilen`));
+      rc.addEventListener("mouseleave",()=>T.hide());
+      if(w>34) el("text",{class:"dlabel","text-anchor":"middle",x:x+w/2,y:cy+bh/2+4,fill:cssv("--surface")},svg).textContent=val;
+      x+=w;});
+    el("text",{class:"ptlabel","text-anchor":"start",x:x+10,y:cy+bh/2+4},svg)
+      .textContent=`${d.di+d.db} Z. · BLER ${pct(d.bler)}`;
+  });
+  el("text",{class:"axislabel","text-anchor":"middle",x:m.l+iw/2,y:H-6},svg).textContent="Anzahl fehlplatzierter Zeilen";
+}
+
+function draw(){ ["c1","c2","c3","c4"].forEach(id=>document.getElementById(id).innerHTML="");
+  chart1(); chart2(); chart3(); chart4(); }
+draw();
+
+// theme toggle
+const root=document.documentElement, btn=document.getElementById("themeBtn");
+btn.addEventListener("click",()=>{
+  const cur=root.getAttribute("data-theme")
+    || (matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+  root.setAttribute("data-theme", cur==="dark"?"light":"dark");
+  draw();
+});
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",draw);
+</script>
