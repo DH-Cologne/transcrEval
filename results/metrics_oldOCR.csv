@@ -1,3 +1,0 @@
-doc,gold_lines,ocr_lines,min_block,matched,split,merge,cer_raw,cer_norm,wer_raw,wer_norm,rler,loc_events,lines_disloc_total,lines_disloc_indiv,lines_disloc_block,largest_block,gold_blocks_hint,gold_missed,ocr_spurious
-aze19210110-2,314,310,2,290,4,3,0.2437,0.2063,0.6742,0.5614,0.0064,0,2,2,0,0,25,12,7
-aze19281111-9,394,388,2,309,2,1,0.0864,0.0587,0.2988,0.1577,0.0,1,71,0,71,71,15,10,3

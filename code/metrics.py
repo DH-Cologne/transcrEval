@@ -20,6 +20,11 @@ Lokalisierung ist VERSCHIEBUNGSBASIERT und unabhängig von Leerzeilen:
 
 Die Leerzeilen-Blöcke im Gold werden nur noch als Zusatzinfo (gold_blocks_hint)
 mitgeführt, nicht mehr zur Metrik-Berechnung genutzt.
+
+Aufruf:  python code/metrics.py [--min-block N]
+Wertet jede Goldseite gegen alle vorhandenen OCR-Systeme (newOCR, oldOCR) aus und
+schreibt eine results/metrics.csv im Wide-Format: EINE Zeile pro Dokument, je
+Metrik die Spalten <metrik>_alt und <metrik>_neu nebeneinander.
 """
 
 from __future__ import annotations
@@ -175,37 +180,66 @@ def evaluate(gold_path: Path, ocr_path: Path, min_block: int = MIN_BLOCK_LINES) 
     }
 
 
+# OCR-Systeme, die je Goldseite ausgewertet werden: (Spaltenwert, Ordnername)
+SYSTEMS = [("new", "newOCR"), ("old", "oldOCR")]
+
+
+def find_ocr(ocr_dir: Path, doc: str) -> Path | None:
+    cand = sorted(ocr_dir.glob(f"{doc}_*.txt")) or sorted(ocr_dir.glob(f"{doc}*.txt"))
+    return cand[0] if cand else None
+
+
 def main() -> None:
-    args = [a for a in sys.argv[1:]]
+    args = list(sys.argv[1:])
     min_block = MIN_BLOCK_LINES
     if "--min-block" in args:
         k = args.index("--min-block")
         min_block = int(args[k + 1])
         del args[k:k + 2]
-    ocr_dir = DATA / (args[0] if args else "newOCR")
-    rows = []
+
+    # je Metrik alt/neu nebeneinander; Reihenfolge der Suffixe: erst alt, dann neu
+    METRICS = ["cer_raw", "cer_norm", "wer_raw", "wer_norm", "rler", "loc_events",
+               "lines_disloc_block", "lines_disloc_indiv", "largest_block",
+               "gold_missed", "ocr_spurious"]
+    SUFFIX = [("old", "alt"), ("new", "neu")]
+
+    per_doc: dict[str, dict] = {}
+    order: list[str] = []
     for gold_path in sorted((DATA / "goldstandard").glob("*.txt")):
         doc = gold_path.name.split("_")[0]
-        candidates = sorted(ocr_dir.glob(f"{doc}_*.txt")) or sorted(ocr_dir.glob(f"{doc}*.txt"))
-        if not candidates:
-            print(f"{doc}: keine Datei in {ocr_dir.name}/ gefunden", file=sys.stderr)
-            continue
-        rows.append(evaluate(gold_path, candidates[0], min_block=min_block))
+        for sysname, dirname in SYSTEMS:
+            ocr_path = find_ocr(DATA / dirname, doc)
+            if ocr_path is None:
+                continue
+            res = evaluate(gold_path, ocr_path, min_block=min_block)
+            per_doc.setdefault(doc, {})[sysname] = res
+            if doc not in order:
+                order.append(doc)
 
-    if not rows:
+    if not order:
         sys.exit("keine auswertbaren Paare gefunden")
 
+    rows = []
+    for doc in order:
+        systems = per_doc[doc]
+        any_res = next(iter(systems.values()))
+        row = {"doc": doc, "gold_lines": any_res["gold_lines"], "min_block": min_block}
+        for metric in METRICS:
+            for sysname, suf in SUFFIX:
+                row[f"{metric}_{suf}"] = systems[sysname][metric] if sysname in systems else ""
+        rows.append(row)
+
     RESULTS.mkdir(exist_ok=True)
-    out = RESULTS / f"metrics_{ocr_dir.name}.csv"
+    out = RESULTS / "metrics.csv"
     with out.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=rows[0].keys())
         writer.writeheader()
         writer.writerows(rows)
 
-    cols = ["doc", "cer_norm", "wer_norm", "rler", "loc_events",
-            "lines_disloc_block", "lines_disloc_indiv", "largest_block"]
-    widths = [max(len(c), 10) for c in cols]
-    print(f"min_block = {min_block} Zeilen\n")
+    cols = ["doc", "cer_norm_alt", "cer_norm_neu", "wer_norm_alt", "wer_norm_neu",
+            "rler_alt", "rler_neu", "loc_events_alt", "loc_events_neu"]
+    widths = [max(len(c), 8) for c in cols]
+    print(f"min_block = {min_block} Zeilen · {len(rows)} Dokumente\n")
     print("  ".join(c.ljust(w) for c, w in zip(cols, widths)))
     for r in rows:
         print("  ".join(str(r[c]).ljust(w) for c, w in zip(cols, widths)))

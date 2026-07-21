@@ -40,7 +40,7 @@ data/
   goldstandard/  hand-made reference (blank lines optional; not used for scoring)
 code/
   align_prototype.py   two-stage line alignment + calibration diagnostics
-  metrics.py           computes all metrics, writes results/metrics_<dir>.csv
+  metrics.py           computes all metrics for all pages, writes results/metrics.csv
   build_review.py      builds viz/review.html, a scrollable error-review viewer
 results/         per-page metric tables (CSV)
 viz/             metrics_preview.html (chart drafts); review.html (generated, gitignored)
@@ -53,12 +53,13 @@ annotator (JH, AD, NR).
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install rapidfuzz
-.venv/bin/python code/metrics.py newOCR                 # score data/newOCR against gold
-.venv/bin/python code/metrics.py oldOCR                 # score data/oldOCR against gold
-.venv/bin/python code/metrics.py newOCR --min-block 3   # e.g. require 3+ lines per block
+.venv/bin/python code/metrics.py                 # score every gold page vs. new AND old OCR
+.venv/bin/python code/metrics.py --min-block 3   # e.g. require 3+ lines per relocated block
 ```
 
-Results are printed and written to `results/metrics_<dir>.csv`.
+One run evaluates each gold page against every available OCR system and writes a
+single `results/metrics.csv` in wide format: one row per document, with each
+metric's `_alt` (old OCR) and `_neu` (new OCR) columns side by side.
 
 For hands-on error analysis, build the side-by-side viewer (Gold | old OCR | new
 OCR, deviations colour-coded) and open it locally in a browser:
