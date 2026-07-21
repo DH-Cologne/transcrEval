@@ -41,8 +41,9 @@ data/
 code/
   align_prototype.py   two-stage line alignment + calibration diagnostics
   metrics.py           computes all metrics, writes results/metrics_<dir>.csv
+  build_review.py      builds viz/review.html, a scrollable error-review viewer
 results/         per-page metric tables (CSV)
-viz/             interactive HTML preview of candidate charts (draft, for a poster)
+viz/             metrics_preview.html (chart drafts); review.html (generated, gitignored)
 ```
 
 File naming: `aze<YYYYMMDD>-<page>[_gold]_<initials>.txt`, where initials mark the
@@ -58,6 +59,13 @@ python3 -m venv .venv && .venv/bin/pip install rapidfuzz
 ```
 
 Results are printed and written to `results/metrics_<dir>.csv`.
+
+For hands-on error analysis, build the side-by-side viewer (Gold | old OCR | new
+OCR, deviations colour-coded) and open it locally in a browser:
+
+```bash
+.venv/bin/python code/build_review.py           # writes viz/review.html
+```
 
 ## Status
 
