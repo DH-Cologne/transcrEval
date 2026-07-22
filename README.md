@@ -3,7 +3,7 @@
 Evaluating OCR of historical newspaper pages. The project compares a **new OCR**
 run (produced with [Transkribus](https://www.transkribus.org/)) against an
 **older OCR** of the same pages, both measured against a hand-made **gold
-standard**. Source material is the Viennese *Arbeiter-Zeitung* (`aze`), 1919–1929.
+standard**. Source material is the Viennese *Arbeiter-Zeitung* (`aze`), 1919–1932.
 
 ## What it measures
 
@@ -33,36 +33,56 @@ between transcription conventions and genuine recognition errors stays visible.
 ## Repository layout
 
 ```
+config.json      project configuration — all project-specific settings live here
 data/
   ALTO XML/      Transkribus ALTO v4 output (coordinates; not used for scoring yet)
   newOCR/        new OCR, one line per recognised text line
-  oldOCR/        older OCR of the same pages (leading metadata header is ignored)
+  oldOCR/        older OCR of the same pages (leading metadata header is stripped)
   goldstandard/  hand-made reference (blank lines optional; not used for scoring)
 code/
-  align_prototype.py   two-stage line alignment + calibration diagnostics
-  metrics.py           computes all metrics for all pages, writes results/metrics.csv
-  build_review.py      builds viz/review.html, a scrollable error-review viewer
-results/         per-page metric tables (CSV)
+  config.py        loads config.json (paths, systems, normalization, thresholds)
+  align.py         two-stage line alignment, rescue, block-run detection + diagnostics
+  metrics.py       computes all metrics for all pages, writes <results>/metrics.csv
+  build_review.py  builds <viz>/review.html, a scrollable error-review viewer
+results/         metric table (CSV)
 viz/             metrics_preview.html (chart drafts); review.html (generated, gitignored)
 ```
 
-File naming: `aze<YYYYMMDD>-<page>[_gold]_<initials>.txt`, where initials mark the
-annotator (JH, AD, NR).
+The `code/` modules are generic; everything specific to this study is in
+`config.json`. A different OCR-evaluation project = a new `config.json` (+ data),
+selected with `--config <path>`.
+
+## Configuration (`config.json`)
+
+JSON (so R via `jsonlite` can read it too; the `_about` field replaces comments).
+Paths are relative to the config file. Key sections:
+
+| Key | Purpose |
+|---|---|
+| `data_dir`, `results_dir`, `viz_dir` | folders (relative to config) |
+| `gold.dir`, `gold.glob`, `gold.doc_key` | gold folder, file glob, and a regex whose group 1 is the document key |
+| `systems[]` | one entry per OCR system: `name` (→ CSV suffix), `label` (viewer header), `dir`, `glob` (`{doc}` is substituted), optional `strip_header` regex for lines to drop |
+| `normalize` | `unicode` form, `collapse_whitespace`, and a `replace` table of character substitutions applied before alignment |
+| `align` | `gap`, `split_penalty`, `match_cutoff`, `rescue_cutoff`, `min_block` |
+| `labels` | optional map document key → human-readable label |
+
+Add or remove `systems` freely — metrics and viewer adapt to any number of them.
 
 ## Usage
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install rapidfuzz
-.venv/bin/python code/metrics.py                 # score every gold page vs. new AND old OCR
-.venv/bin/python code/metrics.py --min-block 3   # e.g. require 3+ lines per relocated block
+.venv/bin/python code/metrics.py                       # score every gold page vs. all OCR systems
+.venv/bin/python code/metrics.py --min-block 3         # require 3+ lines per relocated block
+.venv/bin/python code/metrics.py --config other.json   # run a different project
 ```
 
-One run evaluates each gold page against every available OCR system and writes a
+One run evaluates each gold page against every configured OCR system and writes a
 single `results/metrics.csv` in wide format: one row per document, with each
-metric's `_alt` (old OCR) and `_neu` (new OCR) columns side by side.
+metric's per-system columns (e.g. `cer_norm_alt`, `cer_norm_neu`) side by side.
 
-For hands-on error analysis, build the side-by-side viewer (Gold | old OCR | new
-OCR, deviations colour-coded) and open it locally in a browser:
+For hands-on error analysis, build the side-by-side viewer (Gold plus one column
+per OCR system, deviations colour-coded, columns collapsible) and open it locally:
 
 ```bash
 .venv/bin/python code/build_review.py           # writes viz/review.html
@@ -70,10 +90,10 @@ OCR, deviations colour-coded) and open it locally in a browser:
 
 ## Status
 
-Work in progress. Currently 4 gold pages exist, 2 of them paired with both OCR
-systems; the study targets 10 pages from several volumes. Block localisation is
-derived from the alignment and needs no markup in the gold files; blank lines, if
-present, are carried through only as an informational `gold_blocks_hint` column.
+Work in progress. Currently 6 gold pages exist, all paired with both OCR systems;
+the study targets 10 pages from several volumes. Block localisation is derived from
+the alignment and needs no markup in the gold files; blank lines, if present, are
+carried through only as an informational `gold_blocks_hint` column.
 
 ## License
 

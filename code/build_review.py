@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-"""Erzeugt einen scrollbaren Fehler-Review: Gold | altes OCR | neues OCR nebeneinander.
+"""Erzeugt einen scrollbaren Fehler-Review: Gold neben jedem OCR-System.
 
 Abweichungen werden farbig unterlegt:
   - Wortfehler       orange (heller)
   - Zeichenfehler    hellrot (innerhalb des Wortes)
-  - verschobene Zeile/Block  hellgelb (Zelle), mit Ereignis-Tag
+  - verschobene Zeile/Block  hellgelb (Zelle), mit Ereignis-Tag + Verschiebedistanz
   - fehlende Goldzeile / OCR-Zeile ohne Goldentsprechung: eigene Markierung
 
-Hervorhebung wird gegen den NORMALISIERTEN Text berechnet (sonst dominiert ſ/s);
-ein Umschalter im Viewer zeigt wahlweise Roh- oder Normtext. Das Layout ist auf
-eine spätere vierte Spalte (PDF) vorbereitet.
+Die Spalten (ein OCR-System je Spalte) werden aus der Config abgeleitet -- der
+Viewer ist damit für beliebig viele Systeme nutzbar. Hervorhebung wird gegen den
+NORMALISIERTEN Text berechnet (sonst dominiert die Schreibweise); ein Umschalter
+zeigt wahlweise Roh- oder Normtext.
 
-Aufruf:  python code/build_review.py [--min-block N]
-Ausgabe: viz/review.html  (eigenständig, offline im Browser öffenbar)
+Aufruf:  python code/build_review.py [--config PFAD] [--min-block N]
+Ausgabe: <viz>/review.html  (eigenständig, offline im Browser öffenbar)
 """
 
 from __future__ import annotations
@@ -21,25 +22,9 @@ import bisect
 import html
 import json
 import sys
-from difflib import SequenceMatcher
-from pathlib import Path
 
-from align_prototype import RESCUE_CUTOFF, align, dist
-from metrics import MIN_BLOCK_LINES, load
-
-DATA = Path(__file__).resolve().parent.parent / "data"
-VIZ = Path(__file__).resolve().parent.parent / "viz"
-
-DOC_LABELS = {
-    "aze19190115-2": "15.01.1919 · S. 2",
-    "aze19210110-2": "10.01.1921 · S. 2",
-    "aze19260523-12": "23.05.1926 · S. 12",
-    "aze19280101-1": "01.01.1928 · S. 1",
-    "aze19281009-6": "09.10.1928 · S. 6",
-    "aze19281111-9": "11.11.1928 · S. 9",
-    "aze19291229-13": "29.12.1929 · S. 13",
-    "aze19321217-5": "17.12.1932 · S. 5",
-}
+from align import align, block_runs, rescue
+from config import load_config
 
 
 def esc(s: str) -> str:
@@ -48,6 +33,7 @@ def esc(s: str) -> str:
 
 def char_hl(gold: str, ocr: str) -> str:
     """OCR-Seite mit hellrot markierten Zeichenabweichungen ggü. gold."""
+    from difflib import SequenceMatcher
     out = []
     for tag, i1, i2, j1, j2 in SequenceMatcher(None, gold, ocr, autojunk=False).get_opcodes():
         seg = esc(ocr[j1:j2])
@@ -62,6 +48,7 @@ def char_hl(gold: str, ocr: str) -> str:
 
 def word_hl(gold: str, ocr: str) -> str:
     """OCR-Text: abweichende Wörter orange, darin Zeichen hellrot. gold==ocr -> plain."""
+    from difflib import SequenceMatcher
     gw, ow = gold.split(), ocr.split()
     parts = []
     for tag, i1, i2, j1, j2 in SequenceMatcher(None, gw, ow, autojunk=False).get_opcodes():
@@ -75,56 +62,13 @@ def word_hl(gold: str, ocr: str) -> str:
     return " ".join(p for p in parts if p)
 
 
-def align_pair(gnorm, onorm, min_block):
-    """Alignment + Positionsbestimmung + Verschiebungs-Läufe (wie metrics.py)."""
-    ops = align(gnorm, onorm)
-    pos = [None] * len(gnorm)
-    for o in ops:
-        if o.kind in ("match", "split"):
-            pos[o.gold[0]] = o.ocr[0]
-        elif o.kind == "merge":
-            pos[o.gold[0]] = o.ocr[0]
-            pos[o.gold[1]] = o.ocr[0]
-    ug = [k for o in ops if o.kind == "gap_gold" for k in o.gold]
-    uo = [k for o in ops if o.kind == "gap_ocr" for k in o.ocr]
-    rescued = []
-    if ug and uo:
-        cand = sorted(((dist(gnorm[gi], onorm[oi]), gi, oi) for gi in ug for oi in uo),
-                      key=lambda t: t[0])
-        usg, uso = set(), set()
-        for d, gi, oi in cand:
-            if d >= RESCUE_CUTOFF:
-                break
-            if gi in usg or oi in uso:
-                continue
-            usg.add(gi)
-            uso.add(oi)
-            rescued.append((gi, oi))
-    for gi, oi in rescued:
-        pos[gi] = oi
-    resc_g = {gi for gi, _ in rescued}
-    resc_o = {oi for _, oi in rescued}
-    resc_map = dict(rescued)
-    # Verschiebungs-Läufe -> Ereignis-Index je Goldzeile
-    rl = sorted(resc_g)
-    event_of = {}
-    ev = 0
-    i = 0
-    while i < len(rl):
-        j = i
-        while (j + 1 < len(rl) and rl[j + 1] == rl[j] + 1 and pos[rl[j + 1]] >= pos[rl[j]]):
-            j += 1
-        if j - i + 1 >= min_block:
-            ev += 1
-            for k in range(i, j + 1):
-                event_of[rl[k]] = ev
-        i = j + 1
-    return ops, resc_g, resc_o, resc_map, event_of, pos
-
-
-def build_column(graw, gnorm, oraw, onorm, min_block):
+def build_column(cfg, graw, gnorm, oraw, onorm, min_block):
     """Liefert cells[gi] und spurious[anchor_gi] für eine OCR-Spalte."""
-    ops, resc_g, resc_o, resc_map, event_of, pos = align_pair(gnorm, onorm, min_block)
+    ops = align(gnorm, onorm, cfg.align)
+    pos, rescued = rescue(ops, gnorm, onorm, cfg.align)
+    resc_map = dict(rescued)
+    resc_o = {oi for _, oi in rescued}
+    _, blocks, event_of = block_runs([gi for gi, _ in rescued], pos, min_block)
 
     def cell(st, tag, graw_s, gnorm_s, oraw_s, onorm_s):
         return {"st": st, "tag": tag,
@@ -137,8 +81,7 @@ def build_column(graw, gnorm, oraw, onorm, min_block):
             cells[gi] = cell("match", "", graw[gi], gnorm[gi], oraw[oi], onorm[oi])
         elif o.kind == "split":
             gi = o.gold[0]
-            cells[gi] = cell("split", "getrennt",
-                             graw[gi], gnorm[gi],
+            cells[gi] = cell("split", "getrennt", graw[gi], gnorm[gi],
                              " ".join(oraw[k] for k in o.ocr), " ".join(onorm[k] for k in o.ocr))
         elif o.kind == "merge":
             g0, g1 = o.gold
@@ -150,7 +93,6 @@ def build_column(graw, gnorm, oraw, onorm, min_block):
                          "norm": "⟵ mit voriger Zeile zusammengezogen"}
 
     # Verschiebedistanz: erwartete OCR-Position aus benachbarten in-Ordnung-Zeilen
-    # interpolieren; Offset = tatsächliche minus erwartete Position (in Zeilen).
     anchors = sorted((gi, pos[gi]) for gi, c in cells.items()
                      if c["st"] in ("match", "split", "merge") and pos[gi] is not None)
     ag = [a[0] for a in anchors]
@@ -174,7 +116,6 @@ def build_column(graw, gnorm, oraw, onorm, min_block):
         o = round(pos[gi] - exp)
         return f"{o}↓" if o > 0 else (f"{-o}↑" if o < 0 else "±0")
 
-    # dislozierte Zeilen (waren gap_gold) überschreiben / ergänzen
     for gi, oi in resc_map.items():
         ol = off_label(gi)
         if gi in event_of:
@@ -182,90 +123,92 @@ def build_column(graw, gnorm, oraw, onorm, min_block):
         else:
             st, tag = "disloc_row", f"verschoben {ol}"
         cells[gi] = cell(st, tag, graw[gi], gnorm[gi], oraw[oi], onorm[oi])
-    # fehlende Goldzeilen (gap_gold, nicht gerettet)
-    for o in ops:
-        if o.kind == "gap_gold":
-            gi = o.gold[0]
-            if gi not in cells:
-                cells[gi] = {"st": "missing", "tag": "im OCR nicht gefunden",
-                             "raw": "—", "norm": "—"}
-    # OCR-Zeilen ohne Goldentsprechung (spurious), an letzte Goldzeile verankert
-    spurious = {}
+
+    for o in ops:  # fehlende Goldzeilen
+        if o.kind == "gap_gold" and o.gold[0] not in cells:
+            cells[o.gold[0]] = {"st": "missing", "tag": "im OCR nicht gefunden",
+                                "raw": "—", "norm": "—"}
+
+    spurious = {}  # OCR-Zeilen ohne Goldentsprechung, an letzte Goldzeile verankert
     last_gi = -1
     for o in ops:
         if o.kind in ("match", "split", "merge", "gap_gold"):
             last_gi = max(o.gold)
-        elif o.kind == "gap_ocr":
+        elif o.kind == "gap_ocr" and o.ocr[0] not in resc_o:
             oi = o.ocr[0]
-            if oi in resc_o:
-                continue
             spurious.setdefault(last_gi, []).append(
                 {"st": "spurious", "tag": "ohne Goldentsprechung",
                  "raw": esc(oraw[oi]), "norm": esc(onorm[oi])})
     return cells, spurious
 
 
-def build_doc(doc, gold_path, min_block):
-    graw, gnorm, _ = load(gold_path)
-    new_c = old_c = None
-    new_s = old_s = {}
-    npath = sorted((DATA / "newOCR").glob(f"{doc}_*.txt")) or sorted((DATA / "newOCR").glob(f"{doc}*.txt"))
-    opath = sorted((DATA / "oldOCR").glob(f"{doc}_*.txt")) or sorted((DATA / "oldOCR").glob(f"{doc}*.txt"))
-    if npath:
-        nraw, nnorm, _ = load(npath[0])
-        new_c, new_s = build_column(graw, gnorm, nraw, nnorm, min_block)
-    if opath:
-        oraw2, onorm2, _ = load(opath[0])
-        old_c, old_s = build_column(graw, gnorm, oraw2, onorm2, min_block)
+NA = {"st": "na", "tag": "", "raw": "", "norm": ""}
+EMPTY = {"st": "empty", "tag": "", "raw": "", "norm": ""}
 
-    def occ(cells, gi):
-        if cells is None:
-            return {"st": "na", "tag": "", "raw": "", "norm": ""}
-        return cells.get(gi, {"st": "na", "tag": "", "raw": "", "norm": ""})
 
-    def empty():
-        return {"st": "empty", "tag": "", "raw": "", "norm": ""}
+def build_doc(cfg, doc, gold_path, min_block, sysnames):
+    graw, gnorm, _ = cfg.load_lines(gold_path)
+    columns = {}  # name -> (cells, spurious)
+    for system in cfg.systems:
+        ocr_path = cfg.find_ocr(system, doc)
+        if ocr_path is None:
+            continue
+        oraw, onorm, _ = cfg.load_lines(ocr_path, system.strip_header)
+        columns[system.name] = build_column(cfg, graw, gnorm, oraw, onorm, min_block)
+
+    def sysrow(gi):
+        out = {}
+        for name in sysnames:
+            out[name] = columns[name][0].get(gi, NA) if name in columns else NA
+        return out
+
+    def spurious_row(name, cell):
+        return {"n": None, "g": None,
+                "sys": {n: (cell if n == name else EMPTY) for n in sysnames}}
 
     rows = []
-    for anch in old_s.get(-1, []):  # spurious ganz am Anfang
-        rows.append({"n": None, "g": None, "new": empty(), "old": anch})
-    for anch in new_s.get(-1, []):
-        rows.append({"n": None, "g": None, "new": anch, "old": empty()})
+    for name in sysnames:  # spurious ganz am Anfang (Anker -1)
+        for anch in (columns.get(name, ({}, {}))[1]).get(-1, []):
+            rows.append(spurious_row(name, anch))
     for gi in range(len(graw)):
         rows.append({"n": gi + 1,
                      "g": {"raw": esc(graw[gi]), "norm": esc(gnorm[gi])},
-                     "new": occ(new_c, gi), "old": occ(old_c, gi)})
-        for anch in new_s.get(gi, []):
-            rows.append({"n": None, "g": None, "new": anch, "old": empty()})
-        for anch in old_s.get(gi, []):
-            rows.append({"n": None, "g": None, "new": empty(), "old": anch})
+                     "sys": sysrow(gi)})
+        for name in sysnames:
+            for anch in (columns.get(name, ({}, {}))[1]).get(gi, []):
+                rows.append(spurious_row(name, anch))
 
-    return {"doc": doc, "label": DOC_LABELS.get(doc, doc),
-            "hasOld": old_c is not None, "hasNew": new_c is not None, "rows": rows}
+    return {"doc": doc, "label": cfg.labels.get(doc, doc),
+            "present": list(columns.keys()), "rows": rows}
 
 
 def main():
-    args = sys.argv[1:]
-    min_block = MIN_BLOCK_LINES
+    args = list(sys.argv[1:])
+    cfg_path = None
+    if "--config" in args:
+        k = args.index("--config")
+        cfg_path = args[k + 1]
+        del args[k:k + 2]
+    cfg = load_config(cfg_path)
+    min_block = cfg.align.min_block
     if "--min-block" in args:
         k = args.index("--min-block")
         min_block = int(args[k + 1])
-    docs = []
-    for gold_path in sorted((DATA / "goldstandard").glob("*.txt")):
-        doc = gold_path.name.split("_")[0]
-        docs.append(build_doc(doc, gold_path, min_block))
 
-    VIZ.mkdir(exist_ok=True)
-    out = VIZ / "review.html"
-    payload = json.dumps({"min_block": min_block, "docs": docs}, ensure_ascii=False)
+    sysnames = [s.name for s in cfg.systems]
+    syscols = [{"k": s.name, "t": s.label} for s in cfg.systems]
+    docs = [build_doc(cfg, doc, gold_path, min_block, sysnames)
+            for doc, gold_path in cfg.gold_files()]
+
+    cfg.viz_dir.mkdir(exist_ok=True)
+    out = cfg.viz_dir / "review.html"
+    payload = json.dumps({"project": cfg.project, "min_block": min_block,
+                          "systems": syscols, "docs": docs}, ensure_ascii=False)
     out.write_text(TEMPLATE.replace("/*DATA*/", payload), encoding="utf-8")
 
-    n_err = sum(1 for d in docs for r in d["rows"]
-                if r["new"]["st"] not in ("match", "na", "empty")
-                or r["old"]["st"] not in ("match", "na", "empty"))
-    print(f"geschrieben: {out.relative_to(Path.cwd()) if out.is_relative_to(Path.cwd()) else out}")
-    print(f"{len(docs)} Dokumente, min_block={min_block}, "
-          f"{sum(len(d['rows']) for d in docs)} Zeilen, ~{n_err} mit Auffälligkeit")
+    n_rows = sum(len(d["rows"]) for d in docs)
+    print(f"geschrieben: {out}")
+    print(f"{len(docs)} Dokumente, {len(sysnames)} Systeme, min_block={min_block}, {n_rows} Zeilen")
     print("Im Browser öffnen (lokal per Doppelklick / file://).")
 
 
@@ -341,7 +284,8 @@ TEMPLATE = r"""<!doctype html>
   .cerr{background:var(--c-char);border-radius:2px;
     -webkit-box-decoration-break:clone;box-decoration-break:clone}
   .omit{color:#c0392b;font-weight:700;cursor:help}
-  :root[data-theme=dark] .omit,@media (prefers-color-scheme:dark){.omit{color:#ff8a80}}
+  :root[data-theme=dark] .omit{color:#ff8a80}
+  @media (prefers-color-scheme:dark){.omit{color:#ff8a80}}
   .st-disloc_row,.st-disloc_block{background:var(--c-disloc)}
   .st-missing{background:var(--c-missing);color:var(--muted);font-style:italic}
   .st-spurious{background:var(--c-spur);font-style:italic}
@@ -351,7 +295,6 @@ TEMPLATE = r"""<!doctype html>
     letter-spacing:.04em;text-transform:uppercase;color:var(--muted);
     border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-right:6px;
     vertical-align:1px;background:var(--panel)}
-  .hidden{display:none}
   .toggle-theme{position:fixed;bottom:12px;right:14px;z-index:5;font-family:var(--mono);
     font-size:11px;border:1px solid var(--line);background:var(--panel);color:var(--muted);
     border-radius:16px;padding:5px 11px;cursor:pointer}
@@ -361,7 +304,7 @@ TEMPLATE = r"""<!doctype html>
 <header>
   <div class="titlerow">
     <h1>Fehler-Review</h1>
-    <span class="sub">Gold gegen OCR · Hervorhebung gegen normalisierten Text</span>
+    <span class="sub" id="sub">Gold gegen OCR · Hervorhebung gegen normalisierten Text</span>
   </div>
   <div class="controls">
     <div class="docs" id="docs"></div>
@@ -375,7 +318,7 @@ TEMPLATE = r"""<!doctype html>
     <span><i class="sw" style="background:var(--c-disloc)"></i>Zeile/Block verschoben</span>
     <span><i class="sw" style="background:var(--c-missing)"></i>im OCR fehlt</span>
     <span><i class="sw" style="background:var(--c-spur)"></i>ohne Goldentsprechung</span>
-    <span>‸ = ausgelassener Text (Tooltip)</span>
+    <span>‸ = ausgelassener Text (Tooltip) · Spaltenkopf klicken = ein-/ausklappen</span>
   </div>
 </header>
 <div class="scroll"><div class="grid" id="grid"></div></div>
@@ -383,31 +326,35 @@ TEMPLATE = r"""<!doctype html>
 
 <script>
 const PAYLOAD = /*DATA*/;
+const SYSCOLS = PAYLOAD.systems;                       // [{k,t}] je OCR-System
+const COLS = [{k:"gold",t:"Goldstandard"}].concat(SYSCOLS);
 let curDoc = 0, mode = "norm", onlyErr = false;
-const collapsed = {gold:false, old:false, new:false};
-const COLS = [{k:"gold",t:"Goldstandard"},{k:"old",t:"Altes OCR"},{k:"new",t:"Neues OCR"}];
+const collapsed = {}; COLS.forEach(c => collapsed[c.k] = false);
 const ERRST = new Set(["disloc_row","disloc_block","missing","spurious"]);
 const grid = document.getElementById("grid");
-
 const bodyOf = c => (mode==="raw"? c.raw : c.norm) || "";
+
 function template(){
   return "52px " + COLS.map(c => collapsed[c.k] ? "34px" : "max-content").join(" ");
 }
-function ocrCell(c, k){
-  if(collapsed[k]) return `<div class="cell clp col-${k}"></div>`;
-  if(!c) return `<div class="cell col-${k}"></div>`;
-  const tag = c.tag ? `<span class="tag">${c.tag}</span>` : "";
-  return `<div class="cell col-${k} st-${c.st}">${tag}${bodyOf(c)}</div>`;
-}
-function goldCell(r){
-  if(collapsed.gold) return `<div class="cell clp col-gold"></div>`;
-  return `<div class="cell col-gold">${r.g? bodyOf(r.g):""}</div>`;
+function colCell(r, c){
+  if(collapsed[c.k]) return `<div class="cell clp col-${c.k}"></div>`;
+  if(c.k==="gold") return `<div class="cell col-gold">${r.g? bodyOf(r.g):""}</div>`;
+  const cell = r.sys[c.k];
+  if(!cell) return `<div class="cell col-${c.k}"></div>`;
+  const tag = cell.tag ? `<span class="tag">${cell.tag}</span>` : "";
+  return `<div class="cell col-${c.k} st-${cell.st}">${tag}${bodyOf(cell)}</div>`;
 }
 function rowHasErr(r){
-  if(r.g===null) return true; // spurious-Zeile
-  if(ERRST.has(r.new.st)||ERRST.has(r.old.st)) return true;
-  const h = bodyOf(r.new)+bodyOf(r.old);
-  return h.includes("werr")||h.includes("cerr")||h.includes("omit");
+  if(r.g===null) return true;
+  for(const c of SYSCOLS){
+    const cell = r.sys[c.k];
+    if(!cell) continue;
+    if(ERRST.has(cell.st)) return true;
+    const h = bodyOf(cell);
+    if(h.includes("werr")||h.includes("cerr")||h.includes("omit")) return true;
+  }
+  return false;
 }
 function headHtml(){
   let h = `<div class="ghead guth">#</div>`;
@@ -420,12 +367,11 @@ function headHtml(){
 function render(){
   const d = PAYLOAD.docs[curDoc];
   grid.style.gridTemplateColumns = template();
-  let html = headHtml(), shown=0;
+  let html = headHtml(), shown = 0;
   for(const r of d.rows){
     if(onlyErr && !rowHasErr(r)) continue;
     shown++;
-    html += `<div class="gut">${r.n??""}</div>` + goldCell(r)
-      + ocrCell(r.old,"old") + ocrCell(r.new,"new");
+    html += `<div class="gut">${r.n??""}</div>` + COLS.map(c => colCell(r, c)).join("");
   }
   grid.innerHTML = html;
   if(shown===0) grid.innerHTML += `<div class="empty-note" style="grid-column:1/-1">Keine Abweichungen in dieser Ansicht.</div>`;
@@ -455,6 +401,8 @@ document.getElementById("btnTheme").onclick = ()=>{
   const cur=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");
   root.setAttribute("data-theme", cur==="dark"?"light":"dark");
 };
+document.getElementById("sub").textContent =
+  PAYLOAD.project + " · Hervorhebung gegen normalisierten Text";
 renderDocs(); render();
 </script>
 </body></html>

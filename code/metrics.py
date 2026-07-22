@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Metriken auf Basis des zweistufigen Zeilen-Alignments (siehe align_prototype).
+"""Metriken auf Basis des zweistufigen Zeilen-Alignments (siehe align.py).
 
 CER  = Zeichen-Editierdistanz / Goldzeichen   (kontrastiv: roh und normalisiert)
 WER  = Wort-Editierdistanz   / Goldwörter     (kontrastiv: roh und normalisiert)
@@ -10,98 +10,43 @@ Dislozierte Zeilen zählen in CER/WER nur mit ihren Inhaltsfehlern, nicht als
 Totalausfall. Goldzeilen ohne Partner zählen als komplett ausgelassen,
 OCR-Zeilen ohne Partner als komplett eingefügt.
 
-Lokalisierung ist VERSCHIEBUNGSBASIERT und unabhängig von Leerzeilen:
-- Ein Block ist ein maximaler Lauf konsekutiver Goldzeilen, die gemeinsam und in
-  gleicher Reihenfolge ins OCR gewandert sind (benachbarte Gold-Indizes, monoton
-  steigende OCR-Position). Läufe ab MIN_BLOCK_LINES Zeilen sind je EIN
-  Verschiebungs-Ereignis (loc_event) -> ein Gedicht, das geschlossen umzieht,
-  ist ein Fehler, nicht N.
-- Kürzere Läufe / einzeln verrutschte Zeilen bleiben RLER.
+Lokalisierung ist VERSCHIEBUNGSBASIERT (unabhängig von Leerzeilen): ein Block ist
+ein maximaler Lauf konsekutiver Goldzeilen, die gemeinsam+in Reihenfolge ins OCR
+gewandert sind. Läufe ab min_block Zeilen sind je EIN Verschiebungs-Ereignis
+(loc_event); kürzere Läufe / Einzelzeilen bleiben RLER.
 
-Die Leerzeilen-Blöcke im Gold werden nur noch als Zusatzinfo (gold_blocks_hint)
-mitgeführt, nicht mehr zur Metrik-Berechnung genutzt.
-
-Aufruf:  python code/metrics.py [--min-block N]
-Wertet jede Goldseite gegen alle vorhandenen OCR-Systeme (newOCR, oldOCR) aus und
-schreibt eine results/metrics.csv im Wide-Format: EINE Zeile pro Dokument, je
-Metrik die Spalten <metrik>_alt und <metrik>_neu nebeneinander.
+Aufruf:  python code/metrics.py [--config PFAD] [--min-block N]
+Wertet jede Goldseite gegen alle konfigurierten OCR-Systeme aus und schreibt eine
+<results>/metrics.csv im Wide-Format: EINE Zeile pro Dokument, je Metrik die
+Spalten <metrik>_<system> nebeneinander (Systemnamen aus der Config).
 """
 
 from __future__ import annotations
 
 import csv
 import sys
-from pathlib import Path
 
 from rapidfuzz.distance import Levenshtein
 
-from align_prototype import RESCUE_CUTOFF, align, dist, is_content, normalize
-
-DATA = Path(__file__).resolve().parent.parent / "data"
-RESULTS = Path(__file__).resolve().parent.parent / "results"
-
-# Mindestlänge (Zeilen) eines gemeinsam verschobenen Laufs, damit er als
-# Blockverschiebung (loc_event) zählt statt als einzelne Zeilenfehler (RLER).
-# Konfigurierbar per CLI: python code/metrics.py <ocrdir> --min-block N
-MIN_BLOCK_LINES = 2
+from align import align, block_runs, rescue
+from config import Config, SystemCfg, load_config
 
 
-def load(path: Path) -> tuple[list[str], list[str], list[int]]:
-    """Nicht-leere Zeilen als (roh, normalisiert, block_id), Reihenfolge erhalten.
+def evaluate(cfg: Config, gold_path, ocr_path, system: SystemCfg, min_block: int) -> dict:
+    graw, gnorm, gblocks = cfg.load_lines(gold_path)
+    oraw, onorm, _ = cfg.load_lines(ocr_path, system.strip_header)
+    ops = align(gnorm, onorm, cfg.align)
 
-    block_id inkrementiert an jeder echten Leerzeile (Blockgrenze im Gold).
-    OCR-Dateien haben keine Leerzeilen -> alle Zeilen in Block 0.
-    """
-    raw: list[str] = []
-    blocks: list[int] = []
-    blk = 0
-    prev_blank = False
-    for line in path.read_text(encoding="utf-8").splitlines():
-        if is_content(line):
-            if prev_blank and raw:
-                blk += 1
-            raw.append(line)
-            blocks.append(blk)
-            prev_blank = False
-        elif not line.strip():
-            prev_blank = True
-        # Metadaten-Header (nur altes OCR) sind weder Inhalt noch Blockgrenze
-    return raw, [normalize(l) for l in raw], blocks
-
-
-def evaluate(gold_path: Path, ocr_path: Path, min_block: int = MIN_BLOCK_LINES) -> dict:
-    graw, gnorm, gblocks = load(gold_path)
-    oraw, onorm, _ = load(ocr_path)
-    ops = align(gnorm, onorm)
-
-    # (gold_indices, ocr_indices) aller inhaltlich gematchten Paare
     pairs = [(o.gold, o.ocr) for o in ops if o.kind in ("match", "split", "merge")]
-    unmatched_g = [k for o in ops if o.kind == "gap_gold" for k in o.gold]
-    unmatched_o = [k for o in ops if o.kind == "gap_ocr" for k in o.ocr]
-
-    # Stufe 2: dislozierte Zeilen unter den Lücken suchen
-    rescued: list[tuple[int, int]] = []
-    if unmatched_g and unmatched_o:
-        cand = sorted(
-            ((dist(gnorm[gi], onorm[oi]), gi, oi)
-             for gi in unmatched_g for oi in unmatched_o),
-            key=lambda t: t[0],
-        )
-        used_g, used_o = set(), set()
-        for d, gi, oi in cand:
-            if d >= RESCUE_CUTOFF:
-                break
-            if gi in used_g or oi in used_o:
-                continue
-            used_g.add(gi)
-            used_o.add(oi)
-            rescued.append((gi, oi))
-    unmatched_g = [k for k in unmatched_g if k not in {g for g, _ in rescued}]
-    unmatched_o = [k for k in unmatched_o if k not in {o for _, o in rescued}]
+    pos, rescued = rescue(ops, gnorm, onorm, cfg.align)
+    rescued_g = {gi for gi, _ in rescued}
+    rescued_o = {oi for _, oi in rescued}
+    unmatched_g = [k for o in ops if o.kind == "gap_gold" for k in o.gold if k not in rescued_g]
+    unmatched_o = [k for o in ops if o.kind == "gap_ocr" for k in o.ocr if k not in rescued_o]
 
     all_pairs = pairs + [([g], [o]) for g, o in rescued]
 
-    def error_rates(glines: list[str], olines: list[str]) -> tuple[float, float]:
+    def error_rates(glines, olines):
         cer_num = cer_den = wer_num = wer_den = 0
         for gidx, oidx in all_pairs:
             g = " ".join(glines[k] for k in gidx)
@@ -123,127 +68,93 @@ def evaluate(gold_path: Path, ocr_path: Path, min_block: int = MIN_BLOCK_LINES) 
     cer_raw, wer_raw = error_rates(graw, oraw)
     cer_norm, wer_norm = error_rates(gnorm, onorm)
 
-    # --- Lokalisierung: OCR-Position je Goldzeile bestimmen ---------------
-    pos: list[int | None] = [None] * len(gnorm)
-    for o in ops:
-        if o.kind in ("match", "split"):
-            pos[o.gold[0]] = o.ocr[0]
-        elif o.kind == "merge":
-            pos[o.gold[0]] = o.ocr[0]
-            pos[o.gold[1]] = o.ocr[0]
-    for gi, oi in rescued:
-        pos[gi] = oi
-    rescued_lines = sorted(gi for gi, _ in rescued)  # dislozierte Goldzeilen, aufsteigend
-
-    # --- Verschiebungsbasierte Blöcke ------------------------------------
-    # Ein "Block" ist ein maximaler Lauf KONSEKUTIVER Goldzeilen, die gemeinsam
-    # umgezogen sind: benachbarte Gold-Indizes UND monoton steigende OCR-Position
-    # (Reihenfolge erhalten). Unabhängig von Leerzeilen. Läufe ab min_block Zeilen
-    # sind ein Verschiebungs-Ereignis (loc_event); kürzere Läufe / Einzelzeilen
-    # bleiben individuelle Zeilenverschiebungen (RLER).
-    runs: list[list[int]] = []
-    i = 0
-    while i < len(rescued_lines):
-        j = i
-        while (j + 1 < len(rescued_lines)
-               and rescued_lines[j + 1] == rescued_lines[j] + 1
-               and pos[rescued_lines[j + 1]] >= pos[rescued_lines[j]]):
-            j += 1
-        runs.append(rescued_lines[i:j + 1])
-        i = j + 1
-    block_runs = [r for r in runs if len(r) >= min_block]
-    loc_events = len(block_runs)
-    block_lines = {gi for r in block_runs for gi in r}
+    # Lokalisierung: verschiebungsbasierte Blöcke
+    rescued_lines = sorted(rescued_g)
+    _, blocks, _ = block_runs(rescued_lines, pos, min_block)
+    block_lines = {gi for r in blocks for gi in r}
     indiv_disloc = [gi for gi in rescued_lines if gi not in block_lines]
 
     return {
-        "doc": gold_path.name.split("_")[0],
+        "doc": cfg.doc_of(gold_path.name),
         "gold_lines": len(graw),
         "ocr_lines": len(oraw),
-        "min_block": min_block,
-        "matched": sum(1 for o in ops if o.kind == "match"),
-        "split": sum(1 for o in ops if o.kind == "split"),
-        "merge": sum(1 for o in ops if o.kind == "merge"),
         "cer_raw": round(cer_raw, 4),
         "cer_norm": round(cer_norm, 4),
         "wer_raw": round(wer_raw, 4),
         "wer_norm": round(wer_norm, 4),
         "rler": round(len(indiv_disloc) / len(graw), 4),
-        "loc_events": loc_events,
+        "loc_events": len(blocks),
         "lines_disloc_total": len(rescued_lines),
         "lines_disloc_indiv": len(indiv_disloc),
         "lines_disloc_block": len(block_lines),
-        "largest_block": max((len(r) for r in block_runs), default=0),
+        "largest_block": max((len(r) for r in blocks), default=0),
         "gold_blocks_hint": len(set(gblocks)),  # Leerzeilen-Blöcke, nur Zusatzinfo
         "gold_missed": len(unmatched_g),
         "ocr_spurious": len(unmatched_o),
     }
 
 
-# OCR-Systeme, die je Goldseite ausgewertet werden: (Spaltenwert, Ordnername)
-SYSTEMS = [("new", "newOCR"), ("old", "oldOCR")]
-
-
-def find_ocr(ocr_dir: Path, doc: str) -> Path | None:
-    cand = sorted(ocr_dir.glob(f"{doc}_*.txt")) or sorted(ocr_dir.glob(f"{doc}*.txt"))
-    return cand[0] if cand else None
+# Metriken, die im Wide-Format je System nebeneinander erscheinen
+WIDE_METRICS = ["cer_raw", "cer_norm", "wer_raw", "wer_norm", "rler", "loc_events",
+                "lines_disloc_block", "lines_disloc_indiv", "largest_block",
+                "gold_missed", "ocr_spurious"]
 
 
 def main() -> None:
     args = list(sys.argv[1:])
-    min_block = MIN_BLOCK_LINES
+    cfg_path = None
+    if "--config" in args:
+        k = args.index("--config")
+        cfg_path = args[k + 1]
+        del args[k:k + 2]
+    cfg = load_config(cfg_path)
+    min_block = cfg.align.min_block
     if "--min-block" in args:
         k = args.index("--min-block")
         min_block = int(args[k + 1])
         del args[k:k + 2]
 
-    # je Metrik alt/neu nebeneinander; Reihenfolge der Suffixe: erst alt, dann neu
-    METRICS = ["cer_raw", "cer_norm", "wer_raw", "wer_norm", "rler", "loc_events",
-               "lines_disloc_block", "lines_disloc_indiv", "largest_block",
-               "gold_missed", "ocr_spurious"]
-    SUFFIX = [("old", "alt"), ("new", "neu")]
-
     per_doc: dict[str, dict] = {}
     order: list[str] = []
-    for gold_path in sorted((DATA / "goldstandard").glob("*.txt")):
-        doc = gold_path.name.split("_")[0]
-        for sysname, dirname in SYSTEMS:
-            ocr_path = find_ocr(DATA / dirname, doc)
+    for doc, gold_path in cfg.gold_files():
+        for system in cfg.systems:
+            ocr_path = cfg.find_ocr(system, doc)
             if ocr_path is None:
                 continue
-            res = evaluate(gold_path, ocr_path, min_block=min_block)
-            per_doc.setdefault(doc, {})[sysname] = res
+            per_doc.setdefault(doc, {})[system.name] = evaluate(
+                cfg, gold_path, ocr_path, system, min_block)
             if doc not in order:
                 order.append(doc)
 
     if not order:
         sys.exit("keine auswertbaren Paare gefunden")
 
+    sysnames = [s.name for s in cfg.systems]
     rows = []
     for doc in order:
         systems = per_doc[doc]
         any_res = next(iter(systems.values()))
         row = {"doc": doc, "gold_lines": any_res["gold_lines"], "min_block": min_block}
-        for metric in METRICS:
-            for sysname, suf in SUFFIX:
-                row[f"{metric}_{suf}"] = systems[sysname][metric] if sysname in systems else ""
+        for metric in WIDE_METRICS:
+            for name in sysnames:
+                row[f"{metric}_{name}"] = systems[name][metric] if name in systems else ""
         rows.append(row)
 
-    RESULTS.mkdir(exist_ok=True)
-    out = RESULTS / "metrics.csv"
+    cfg.results_dir.mkdir(exist_ok=True)
+    out = cfg.results_dir / "metrics.csv"
     with out.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=rows[0].keys())
         writer.writeheader()
         writer.writerows(rows)
 
-    cols = ["doc", "cer_norm_alt", "cer_norm_neu", "wer_norm_alt", "wer_norm_neu",
-            "rler_alt", "rler_neu", "loc_events_alt", "loc_events_neu"]
+    cols = ["doc"] + [f"cer_norm_{n}" for n in sysnames] \
+        + [f"wer_norm_{n}" for n in sysnames] + [f"loc_events_{n}" for n in sysnames]
     widths = [max(len(c), 8) for c in cols]
-    print(f"min_block = {min_block} Zeilen · {len(rows)} Dokumente\n")
+    print(f"{cfg.project} · min_block={min_block} · {len(rows)} Dokumente\n")
     print("  ".join(c.ljust(w) for c, w in zip(cols, widths)))
     for r in rows:
         print("  ".join(str(r[c]).ljust(w) for c, w in zip(cols, widths)))
-    print(f"\nCSV: {out.relative_to(Path.cwd()) if out.is_relative_to(Path.cwd()) else out}")
+    print(f"\nCSV: {out}")
 
 
 if __name__ == "__main__":
