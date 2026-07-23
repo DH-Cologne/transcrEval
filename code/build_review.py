@@ -146,11 +146,11 @@ NA = {"st": "na", "tag": "", "raw": "", "norm": ""}
 EMPTY = {"st": "empty", "tag": "", "raw": "", "norm": ""}
 
 
-def build_doc(cfg, doc, gold_path, min_block, sysnames):
+def build_doc(cfg, doc, folder, gold_path, min_block, sysnames):
     graw, gnorm, _ = cfg.load_lines(gold_path)
     columns = {}  # name -> (cells, spurious)
     for system in cfg.systems:
-        ocr_path = cfg.find_ocr(system, doc)
+        ocr_path = cfg.find_ocr(system, folder, doc)
         if ocr_path is None:
             continue
         oraw, onorm, _ = cfg.load_lines(ocr_path, system.strip_header)
@@ -178,7 +178,9 @@ def build_doc(cfg, doc, gold_path, min_block, sysnames):
             for anch in (columns.get(name, ({}, {}))[1]).get(gi, []):
                 rows.append(spurious_row(name, anch))
 
-    return {"doc": doc, "label": cfg.labels.get(doc, doc),
+    parts = gold_path.name.split("_gold_")
+    initials = parts[1].rsplit(".txt", 1)[0] if len(parts) > 1 else ""
+    return {"doc": doc, "label": cfg.labels.get(doc, doc), "gold": initials,
             "present": list(columns.keys()), "rows": rows}
 
 
@@ -197,8 +199,8 @@ def main():
 
     sysnames = [s.name for s in cfg.systems]
     syscols = [{"k": s.name, "t": s.label} for s in cfg.systems]
-    docs = [build_doc(cfg, doc, gold_path, min_block, sysnames)
-            for doc, gold_path in cfg.gold_files()]
+    docs = [build_doc(cfg, doc, folder, gold_path, min_block, sysnames)
+            for doc, folder, gold_path in cfg.gold_files()]
 
     cfg.viz_dir.mkdir(exist_ok=True)
     out = cfg.viz_dir / "review.html"
@@ -356,18 +358,19 @@ function rowHasErr(r){
   }
   return false;
 }
-function headHtml(){
+function headHtml(gold){
   let h = `<div class="ghead guth">#</div>`;
   for(const c of COLS){
     const cls = collapsed[c.k] ? "ghead clp" : "ghead";
-    h += `<div class="${cls}" data-col="${c.k}"><span class="caret">${collapsed[c.k]?"▸":"▾"}</span> ${c.t}</div>`;
+    const title = (c.k==="gold" && gold) ? `${c.t} (${gold})` : c.t;
+    h += `<div class="${cls}" data-col="${c.k}"><span class="caret">${collapsed[c.k]?"▸":"▾"}</span> ${title}</div>`;
   }
   return h;
 }
 function render(){
   const d = PAYLOAD.docs[curDoc];
   grid.style.gridTemplateColumns = template();
-  let html = headHtml(), shown = 0;
+  let html = headHtml(d.gold), shown = 0;
   for(const r of d.rows){
     if(onlyErr && !rowHasErr(r)) continue;
     shown++;

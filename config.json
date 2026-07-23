@@ -1,21 +1,20 @@
 {
-  "_about": "transcrEval-Projektkonfiguration. Alle projektspezifischen Einstellungen stehen hier; der Code in code/ ist generisch. Schema-Doku: README.md, Abschnitt 'Configuration'. Pfade sind relativ zu dieser Datei.",
+  "_about": "transcrEval-Projektkonfiguration. Alle projektspezifischen Einstellungen stehen hier; der Code in code/ ist generisch. Schema-Doku: README.md, Abschnitt 'Configuration'. Pfade relativ zu dieser Datei. Struktur: ein Unterordner je Zeitungsseite (page_glob), darin alle Dateien der Seite.",
 
   "project": "Arbeiter-Zeitung OCR-Evaluation",
   "data_dir": "data",
   "results_dir": "results",
   "viz_dir": "viz",
 
-  "gold": {
-    "dir": "goldstandard",
-    "glob": "*.txt",
-    "doc_key": "^(aze\\d{8}-?\\d+)"
-  },
+  "page_glob": "ANNO_aze*",
+  "doc_key": "(aze\\d{8}-\\d+)",
+
+  "gold": { "file": "{doc}_gold_*.txt" },
 
   "systems": [
-    { "name": "alt", "label": "Altes OCR", "dir": "oldOCR", "glob": "{doc}*.txt",
+    { "name": "alt", "label": "Altes OCR", "file": "{doc}_ocr_alt.txt",
       "strip_header": "^\\[\\s*\\d{4}-\\d{2}-\\d{2}\\s.*\\]\\s*$" },
-    { "name": "neu", "label": "Neues OCR (Transkribus)", "dir": "newOCR", "glob": "{doc}*.txt" }
+    { "name": "neu", "label": "Neues OCR (Transkribus)", "file": "{doc}_ocr_neu.txt" }
   ],
 
   "normalize": {
@@ -36,10 +35,12 @@
     "aze19190115-2": "15.01.1919 · S. 2",
     "aze19210110-2": "10.01.1921 · S. 2",
     "aze19260523-12": "23.05.1926 · S. 12",
+    "aze19271213-2": "13.12.1927 · S. 2",
     "aze19280101-1": "01.01.1928 · S. 1",
     "aze19281009-6": "09.10.1928 · S. 6",
     "aze19281111-9": "11.11.1928 · S. 9",
     "aze19291229-13": "29.12.1929 · S. 13",
-    "aze19321217-5": "17.12.1932 · S. 5"
+    "aze19321217-5": "17.12.1932 · S. 5",
+    "aze19341202-5": "02.12.1934 · S. 5"
   }
 }

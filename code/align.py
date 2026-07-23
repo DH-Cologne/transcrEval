@@ -161,8 +161,8 @@ def report(doc: str, gold, ocr, cfg: AlignCfg) -> None:
 def main() -> None:
     cfg = load_config(sys.argv[1] if len(sys.argv) > 1 else None)
     system = cfg.systems[0]  # Diagnose gegen das erste konfigurierte OCR-System
-    for doc, gold_path in cfg.gold_files():
-        ocr_path = cfg.find_ocr(system, doc)
+    for doc, folder, gold_path in cfg.gold_files():
+        ocr_path = cfg.find_ocr(system, folder, doc)
         if not ocr_path:
             print(f"{doc}: kein {system.name}-Gegenstück gefunden", file=sys.stderr)
             continue

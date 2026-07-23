@@ -116,9 +116,9 @@ def main() -> None:
 
     per_doc: dict[str, dict] = {}
     order: list[str] = []
-    for doc, gold_path in cfg.gold_files():
+    for doc, folder, gold_path in cfg.gold_files():
         for system in cfg.systems:
-            ocr_path = cfg.find_ocr(system, doc)
+            ocr_path = cfg.find_ocr(system, folder, doc)
             if ocr_path is None:
                 continue
             per_doc.setdefault(doc, {})[system.name] = evaluate(

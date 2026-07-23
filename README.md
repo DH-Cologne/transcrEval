@@ -35,38 +35,44 @@ between transcription conventions and genuine recognition errors stays visible.
 ```
 config.json      project configuration — all project-specific settings live here
 data/
-  ALTO XML/      Transkribus ALTO v4 output (coordinates; not used for scoring yet)
-  newOCR/        new OCR, one line per recognised text line
-  oldOCR/        older OCR of the same pages (leading metadata header is stripped)
-  goldstandard/  hand-made reference (blank lines optional; not used for scoring)
+  ANNO_aze<date>-<page>/   one folder per newspaper page, containing:
+    <doc>_ocr_alt.txt        older OCR, one page cut from the issue (metadata header stripped)
+    <doc>_ocr_neu.txt        new OCR, extracted from the page's ALTO
+    <doc>.xml                the page's Transkribus ALTO v4
+    <doc>.jpg                the page scan
+    <doc>_gold_<initials>.txt  hand-made reference (present for annotated pages)
 code/
-  config.py        loads config.json (paths, systems, normalization, thresholds)
+  config.py        loads config.json (paths, page/systems discovery, normalization, thresholds)
   align.py         two-stage line alignment, rescue, block-run detection + diagnostics
   metrics.py       computes all metrics for all pages, writes <results>/metrics.csv
   build_review.py  builds <viz>/review.html, a scrollable error-review viewer
+  build_split.py   builds <viz>/review_split.html, text next to the page scan (ALTO blocks)
 results/         metric table (CSV)
-viz/             metrics_preview.html (chart drafts); review.html (generated, gitignored)
+viz/             metrics_preview.html (chart drafts); review*.html (generated, gitignored)
 ```
 
-The `code/` modules are generic; everything specific to this study is in
-`config.json`. A different OCR-evaluation project = a new `config.json` (+ data),
-selected with `--config <path>`.
+`<doc>` is the document key, e.g. `aze19291229-13`. The `code/` modules are generic;
+everything specific to this study is in `config.json`. A different OCR-evaluation
+project = a new `config.json` (+ data), selected with `--config <path>`.
 
 ## Configuration (`config.json`)
 
 JSON (so R via `jsonlite` can read it too; the `_about` field replaces comments).
-Paths are relative to the config file. Key sections:
+Paths are relative to the config file. Data is organized as one folder per page.
 
 | Key | Purpose |
 |---|---|
 | `data_dir`, `results_dir`, `viz_dir` | folders (relative to config) |
-| `gold.dir`, `gold.glob`, `gold.doc_key` | gold folder, file glob, and a regex whose group 1 is the document key |
-| `systems[]` | one entry per OCR system: `name` (→ CSV suffix), `label` (viewer header), `dir`, `glob` (`{doc}` is substituted), optional `strip_header` regex for lines to drop |
+| `page_glob` | glob for the per-page folders under `data_dir` (e.g. `ANNO_aze*`) |
+| `doc_key` | regex whose group 1 is the document key, taken from the folder name |
+| `gold.file` | filename pattern of the gold file inside a page folder (`{doc}` substituted) |
+| `systems[]` | one per OCR system: `name` (→ CSV suffix), `label` (viewer header), `file` (filename pattern, `{doc}`/`{name}` substituted), optional `strip_header` regex |
 | `normalize` | `unicode` form, `collapse_whitespace`, and a `replace` table of character substitutions applied before alignment |
 | `align` | `gap`, `split_penalty`, `match_cutoff`, `rescue_cutoff`, `min_block` |
 | `labels` | optional map document key → human-readable label |
 
-Add or remove `systems` freely — metrics and viewer adapt to any number of them.
+Pages without a gold file are skipped. Add or remove `systems` freely — metrics and
+viewer adapt to any number of them.
 
 ## Usage
 
@@ -87,6 +93,17 @@ per OCR system, deviations colour-coded, columns collapsible) and open it locall
 ```bash
 .venv/bin/python code/build_review.py           # writes viz/review.html
 ```
+
+A second, split-screen viewer shows the new OCR next to the page scan, with the
+ALTO text blocks overlaid, numbered in reading order and highlighting relocated
+blocks (text line ⇄ image block are linked both ways):
+
+```bash
+.venv/bin/python code/build_split.py            # writes viz/review_split.html
+```
+
+`review_split.html` references the page JPGs by relative path, so keep it in `viz/`
+alongside `data/`.
 
 ## Status
 

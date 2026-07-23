@@ -40,9 +40,8 @@ class AlignCfg:
 @dataclass
 class SystemCfg:
     name: str                       # Kurzname -> CSV-Suffix
-    dir: Path
+    file: str = "{doc}_ocr_{name}.txt"  # Dateimuster im Seitenordner; {doc} wird ersetzt
     label: str = ""                 # Anzeigename im Review (Default: name)
-    glob: str = "{doc}*.txt"
     strip_header: re.Pattern | None = None  # Zeilen, die als Header verworfen werden
 
     def __post_init__(self):
@@ -57,9 +56,9 @@ class Config:
     data_dir: Path
     results_dir: Path
     viz_dir: Path
-    gold_dir: Path
-    gold_glob: str
-    doc_key: re.Pattern
+    page_glob: str          # Glob für die Seitenordner unter data_dir
+    doc_key: re.Pattern     # Regex, Gruppe 1 = Dokumentschlüssel (aus Ordnername)
+    gold_file: str          # Dateimuster des Goldstandards im Seitenordner
     systems: list[SystemCfg]
     norm: NormalizeCfg
     align: AlignCfg
@@ -94,24 +93,40 @@ class Config:
                 prev_blank = True
         return raw, [self.normalize(l) for l in raw], blocks
 
-    # --- Dateierkennung ------------------------------------------------
-    def doc_of(self, filename: str) -> str | None:
-        m = self.doc_key.search(filename)
+    # --- Dateierkennung (ein Ordner je Seite) --------------------------
+    def doc_of(self, name: str) -> str | None:
+        m = self.doc_key.search(name)
         return m.group(1) if m else None
 
-    def gold_files(self) -> list[tuple[str, Path]]:
+    def pages(self) -> list[tuple[str, Path]]:
+        """(doc, Seitenordner) für alle Ordner, die zum page_glob passen."""
         out = []
-        for p in sorted(self.gold_dir.glob(self.gold_glob)):
-            doc = self.doc_of(p.name)
+        for folder in sorted(self.data_dir.glob(self.page_glob)):
+            if not folder.is_dir():
+                continue
+            doc = self.doc_of(folder.name)
             if doc:
-                out.append((doc, p))
+                out.append((doc, folder))
+        return out
+
+    def gold_of(self, folder: Path, doc: str) -> Path | None:
+        cand = sorted(folder.glob(self.gold_file.format(doc=doc)))
+        return cand[0] if cand else None
+
+    def gold_files(self) -> list[tuple[str, Path, Path]]:
+        """(doc, Seitenordner, Gold-Pfad) für Seiten MIT Goldstandard."""
+        out = []
+        for doc, folder in self.pages():
+            gold = self.gold_of(folder, doc)
+            if gold:
+                out.append((doc, folder, gold))
         return out
 
     def system(self, name: str) -> SystemCfg:
         return next(s for s in self.systems if s.name == name)
 
-    def find_ocr(self, system: SystemCfg, doc: str) -> Path | None:
-        cand = sorted(system.dir.glob(system.glob.format(doc=doc)))
+    def find_ocr(self, system: SystemCfg, folder: Path, doc: str) -> Path | None:
+        cand = sorted(folder.glob(system.file.format(doc=doc, name=system.name)))
         return cand[0] if cand else None
 
 
@@ -134,9 +149,8 @@ def load_config(path: str | Path | None = None) -> Config:
     for s in data.get("systems", []):
         systems.append(SystemCfg(
             name=s["name"],
-            dir=data_dir / s["dir"],
+            file=s.get("file", "{doc}_ocr_{name}.txt"),
             label=s.get("label", ""),
-            glob=s.get("glob", "{doc}*.txt"),
             strip_header=re.compile(s["strip_header"]) if s.get("strip_header") else None,
         ))
 
@@ -146,9 +160,9 @@ def load_config(path: str | Path | None = None) -> Config:
         data_dir=data_dir,
         results_dir=rel("results_dir", "results"),
         viz_dir=rel("viz_dir", "viz"),
-        gold_dir=data_dir / gold.get("dir", "goldstandard"),
-        gold_glob=gold.get("glob", "*.txt"),
-        doc_key=re.compile(gold.get("doc_key", r"^([^_.]+)")),
+        page_glob=data.get("page_glob", "*"),
+        doc_key=re.compile(data.get("doc_key", r"(.+)")),
+        gold_file=gold.get("file", "{doc}_gold_*.txt"),
         systems=systems,
         norm=NormalizeCfg(
             unicode=norm.get("unicode", "NFC"),
