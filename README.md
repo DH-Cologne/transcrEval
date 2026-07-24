@@ -5,6 +5,13 @@ run (produced with [Transkribus](https://www.transkribus.org/)) against an
 **older OCR** of the same pages, both measured against a hand-made **gold
 standard**. Source material is the Viennese *Arbeiter-Zeitung* (`aze`), 1919–1932.
 
+**OCR provenance.** Old OCR: ABBYY Recognition Server 4.0 (2015) — the text files
+carry no software metadata; the bracket header is only an export timestamp. New
+OCR: Transkribus / READ COOP, engine `TrHtr` — recorded per page in each ALTO's
+`Processing` block, but the exact HTR model is **not** stored there. The engine
+version is not uniform: 8 pages `2.44.0`, 2 pages (17.12.1932, 02.12.1934) `2.48.0`.
+The split viewer shows the precise engine + date for each page.
+
 ## What it measures
 
 Each OCR text is scored per page against the gold standard on four metrics:
@@ -48,7 +55,7 @@ code/
   build_review.py  builds <viz>/review.html, a scrollable error-review viewer
   build_split.py   builds <viz>/review_split.html, text next to the page scan (ALTO blocks)
 results/         metric table (CSV)
-viz/             metrics_preview.html (chart drafts); review*.html (generated, gitignored)
+viz/             metrics_preview.html (chart drafts); review*.html (generated, committed)
 ```
 
 `<doc>` is the document key, e.g. `aze19291229-13`. The `code/` modules are generic;
@@ -66,7 +73,7 @@ Paths are relative to the config file. Data is organized as one folder per page.
 | `page_glob` | glob for the per-page folders under `data_dir` (e.g. `ANNO_aze*`) |
 | `doc_key` | regex whose group 1 is the document key, taken from the folder name |
 | `gold.file` | filename pattern of the gold file inside a page folder (`{doc}` substituted) |
-| `systems[]` | one per OCR system: `name` (→ CSV suffix), `label` (viewer header), `file` (filename pattern, `{doc}`/`{name}` substituted), optional `strip_header` regex |
+| `systems[]` | one per OCR system: `name` (→ CSV suffix), `label` (viewer header), `file` (filename pattern, `{doc}`/`{name}` substituted), optional `source` (provenance shown in viewers) and `strip_header` regex |
 | `normalize` | `unicode` form, `collapse_whitespace`, and a `replace` table of character substitutions applied before alignment |
 | `align` | `gap`, `split_penalty`, `match_cutoff`, `rescue_cutoff`, `min_block` |
 | `labels` | optional map document key → human-readable label |
@@ -104,6 +111,13 @@ blocks (text line ⇄ image block are linked both ways):
 
 `review_split.html` references the page JPGs by relative path, so keep it in `viz/`
 alongside `data/`.
+
+For the statistical evaluation, an R scaffold in `analysis/` reads `metrics.csv`
+and produces comparative boxplots (old vs. new OCR); see `analysis/README.md`:
+
+```bash
+Rscript analysis/analyze.R       # needs ggplot2 (+ scales)
+```
 
 ## Status
 

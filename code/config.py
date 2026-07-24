@@ -42,6 +42,7 @@ class SystemCfg:
     name: str                       # Kurzname -> CSV-Suffix
     file: str = "{doc}_ocr_{name}.txt"  # Dateimuster im Seitenordner; {doc} wird ersetzt
     label: str = ""                 # Anzeigename im Review (Default: name)
+    source: str = ""                # Provenienz (OCR-Engine/Modell/Jahr), frei
     strip_header: re.Pattern | None = None  # Zeilen, die als Header verworfen werden
 
     def __post_init__(self):
@@ -151,6 +152,7 @@ def load_config(path: str | Path | None = None) -> Config:
             name=s["name"],
             file=s.get("file", "{doc}_ocr_{name}.txt"),
             label=s.get("label", ""),
+            source=s.get("source", ""),
             strip_header=re.compile(s["strip_header"]) if s.get("strip_header") else None,
         ))
 

@@ -13,8 +13,10 @@
 
   "systems": [
     { "name": "alt", "label": "Altes OCR", "file": "{doc}_ocr_alt.txt",
+      "source": "ABBYY Recognition Server 4.0 (2015)",
       "strip_header": "^\\[\\s*\\d{4}-\\d{2}-\\d{2}\\s.*\\]\\s*$" },
-    { "name": "neu", "label": "Neues OCR (Transkribus)", "file": "{doc}_ocr_neu.txt" }
+    { "name": "neu", "label": "Neues OCR (Transkribus)", "file": "{doc}_ocr_neu.txt",
+      "source": "Transkribus / READ COOP, TrHtr 2.44–2.48 (2026); genaues HTR-Modell nicht in den Dateien" }
   ],
 
   "normalize": {

@@ -2,5 +2,3 @@ CLAUDE.md
 .DS_Store
 .venv/
 __pycache__/
-viz/review.html
-viz/review_split.html

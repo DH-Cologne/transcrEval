@@ -198,7 +198,7 @@ def main():
         min_block = int(args[k + 1])
 
     sysnames = [s.name for s in cfg.systems]
-    syscols = [{"k": s.name, "t": s.label} for s in cfg.systems]
+    syscols = [{"k": s.name, "t": s.label, "src": s.source} for s in cfg.systems]
     docs = [build_doc(cfg, doc, folder, gold_path, min_block, sysnames)
             for doc, folder, gold_path in cfg.gold_files()]
 
@@ -272,6 +272,7 @@ TEMPLATE = r"""<!doctype html>
     font-weight:600;padding:9px 12px;border-bottom:1px solid var(--line);
     border-left:1px solid var(--line);cursor:pointer;white-space:nowrap}
   .ghead .caret{color:var(--accent);font-weight:700}
+  .ghead .prov{color:var(--accent);cursor:help;font-weight:400}
   .ghead.guth{position:sticky;left:0;z-index:4;cursor:default}
   .ghead.clp{writing-mode:vertical-rl;text-orientation:mixed;padding:9px 6px;overflow:hidden}
   .cell{padding:5px 12px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);
@@ -363,7 +364,9 @@ function headHtml(gold){
   for(const c of COLS){
     const cls = collapsed[c.k] ? "ghead clp" : "ghead";
     const title = (c.k==="gold" && gold) ? `${c.t} (${gold})` : c.t;
-    h += `<div class="${cls}" data-col="${c.k}"><span class="caret">${collapsed[c.k]?"▸":"▾"}</span> ${title}</div>`;
+    const tip = c.src ? ` title="${c.src}"` : "";
+    const info = c.src ? ` <span class="prov" title="${c.src}">ⓘ</span>` : "";
+    h += `<div class="${cls}" data-col="${c.k}"${tip}><span class="caret">${collapsed[c.k]?"▸":"▾"}</span> ${title}${info}</div>`;
   }
   return h;
 }

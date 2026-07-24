@@ -24,10 +24,21 @@ NS = "{http://www.loc.gov/standards/alto/ns-v4#}"
 
 
 def parse_alto(path):
-    """(W, H, blocks, lines) — blocks in Lesereihenfolge, lines[i] = (text, block_index)."""
+    """(W, H, blocks, lines, engine) — blocks in Lesereihenfolge, lines[i]=(text, block_index).
+
+    engine = "<Software Version> · <Datum>" aus dem Processing-Block (Provenienz je Seite).
+    """
     root = ET.parse(path).getroot()
     page = root.find(f".//{NS}Page")
     W, H = int(page.get("WIDTH")), int(page.get("HEIGHT"))
+
+    def txt(tag):
+        el = root.find(f".//{NS}{tag}")
+        return el.text.strip() if el is not None and el.text else ""
+    soft = f"{txt('softwareName')} {txt('softwareVersion')}".strip()
+    date = txt("processingDateTime")[:10]
+    engine = " · ".join(x for x in (soft, date) if x)
+
     blocks, lines = [], []
     for tb in root.iter(NS + "TextBlock"):
         bidx = len(blocks)
@@ -35,17 +46,17 @@ def parse_alto(path):
                        "x": int(tb.get("HPOS")), "y": int(tb.get("VPOS")),
                        "w": int(tb.get("WIDTH")), "h": int(tb.get("HEIGHT"))})
         for tl in tb.findall(NS + "TextLine"):
-            txt = " ".join(s.get("CONTENT") for s in tl.findall(NS + "String")
-                           if s.get("CONTENT"))
-            if txt.strip():
-                lines.append((txt, bidx))
-    return W, H, blocks, lines
+            line = " ".join(s.get("CONTENT") for s in tl.findall(NS + "String")
+                            if s.get("CONTENT"))
+            if line.strip():
+                lines.append((line, bidx))
+    return W, H, blocks, lines, engine
 
 
 def build_doc(cfg, doc, folder, gold_path, min_block):
     alto = folder / f"{doc}.xml"
     jpg = folder / f"{doc}.jpg"
-    W, H, blocks, alto_lines = parse_alto(alto)
+    W, H, blocks, alto_lines, engine = parse_alto(alto)
 
     graw, gnorm, _ = cfg.load_lines(gold_path)
     oraw = [t for t, _ in alto_lines]
@@ -90,7 +101,8 @@ def build_doc(cfg, doc, folder, gold_path, min_block):
     parts = gold_path.name.split("_gold_")
     initials = parts[1].rsplit(".txt", 1)[0] if len(parts) > 1 else ""
     return {"doc": doc, "label": cfg.labels.get(doc, doc), "gold": initials,
-            "img": rel_img, "W": W, "H": H, "blocks": blocks, "lines": lines}
+            "engine": engine, "img": rel_img, "W": W, "H": H,
+            "blocks": blocks, "lines": lines}
 
 
 def main():
@@ -277,7 +289,8 @@ function renderDocs(){
 function subText(){
   const d = PAYLOAD.docs[curDoc];
   const dis = d.blocks.filter(b=>b.ev).length;
-  return `${d.label} · Gold (${d.gold}) · ${d.blocks.length} Blöcke, ${dis} verschoben`;
+  const eng = d.engine ? ` · ${d.engine}` : "";
+  return `${d.label} · Gold (${d.gold})${eng} · ${d.blocks.length} Blöcke, ${dis} verschoben`;
 }
 document.getElementById("btnMode").onclick = e=>{
   mode = mode==="norm"?"raw":"norm";
