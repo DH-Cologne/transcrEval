@@ -114,5 +114,66 @@ f3b <- long[long$metric == "loc_events", ]
 save_fig(box(f3b, "Blockverschiebungen je Seite (loc_events)",
              "Ereignisse je Seite", as_pct = FALSE, facet = FALSE), "03b_loc_events")
 
+# ---- Statistische Kennwerte (posterfähig) ---------------------------------
+# Gepaarter Wilcoxon-Vorzeichen-Rang-Test: bei n=10 und schiefen Verteilungen
+# angemessener als ein t-Test. Jede Seite liefert ein Paar (alt vs. neu).
+wide <- read.csv(csv, check.names = FALSE, stringsAsFactors = FALSE)
+ref_sys <- "alt"; new_sys <- "neu"     # Vergleichsrichtung: alt -> neu
+test_metrics <- c(cer_norm = "CER (normalisiert)", wer_norm = "WER (normalisiert)",
+                  cer_raw  = "CER (roh)",          wer_raw  = "WER (roh)")
+
+stats <- do.call(rbind, lapply(names(test_metrics), function(m) {
+  a <- wide[[paste0(m, "_", ref_sys)]]
+  b <- wide[[paste0(m, "_", new_sys)]]
+  if (is.null(a) || is.null(b)) return(NULL)
+  ok <- !is.na(a) & !is.na(b); a <- a[ok]; b <- b[ok]
+  w <- suppressWarnings(wilcox.test(a, b, paired = TRUE))
+  red <- 1 - b / a                     # relative Fehlerreduktion je Seite
+  data.frame(
+    metrik        = test_metrics[[m]],
+    n             = length(a),
+    median_alt    = median(a),
+    median_neu    = median(b),
+    faktor        = median(a) / median(b),
+    reduktion_med = median(red),
+    reduktion_min = min(red),
+    reduktion_max = max(red),
+    spanne_alt    = sprintf("%.1f–%.1f%%", min(a) * 100, max(a) * 100),
+    spanne_neu    = sprintf("%.1f–%.1f%%", min(b) * 100, max(b) * 100),
+    V             = unname(w$statistic),
+    p             = w$p.value,
+    stringsAsFactors = FALSE
+  )
+}))
+
+write.csv(stats, file.path(script_dir, "stats.csv"), row.names = FALSE)
+
+cat("\n\n=== Kennwerte für Abstract/Poster ===\n")
+for (i in seq_len(nrow(stats))) {
+  s <- stats[i, ]
+  cat(sprintf(
+    "%s: Median %.2f%% (alt) vs. %.2f%% (neu), Faktor %.1f; Reduktion Median %.1f%% (%.1f–%.1f%%); Wilcoxon V=%g, p=%.4f, n=%d\n",
+    s$metrik, s$median_alt * 100, s$median_neu * 100, s$faktor,
+    s$reduktion_med * 100, s$reduktion_min * 100, s$reduktion_max * 100,
+    s$V, s$p, s$n))
+}
+
+# Deskriptiv: Lokalisierung. Bewusst KEIN Test -- zu viele Nullen (Seiten ohne
+# jede Blockverschiebung), das trägt bei n=10 keinen Signifikanztest.
+loc <- data.frame(
+  system = c(ref_sys, new_sys),
+  loc_events_summe = c(sum(wide[[paste0("loc_events_", ref_sys)]], na.rm = TRUE),
+                       sum(wide[[paste0("loc_events_", new_sys)]], na.rm = TRUE)),
+  seiten_ohne = c(sum(wide[[paste0("loc_events_", ref_sys)]] == 0, na.rm = TRUE),
+                  sum(wide[[paste0("loc_events_", new_sys)]] == 0, na.rm = TRUE)),
+  anteil_versch_zeilen_med = c(
+    median(wide[[paste0("lines_disloc_block_", ref_sys)]] / wide$gold_lines, na.rm = TRUE),
+    median(wide[[paste0("lines_disloc_block_", new_sys)]] / wide$gold_lines, na.rm = TRUE))
+)
+write.csv(loc, file.path(script_dir, "stats_localisation.csv"), row.names = FALSE)
+cat("\nLokalisierung (deskriptiv, kein Test):\n")
+print(loc, row.names = FALSE)
+
 cat("\nFiguren geschrieben nach:", fig_dir, "\n")
 cat("Long-Tabelle:", file.path(script_dir, "metrics_long.csv"), "\n")
+cat("Kennwerte:   ", file.path(script_dir, "stats.csv"), "/ stats_localisation.csv\n")

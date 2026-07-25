@@ -54,6 +54,8 @@ code/
   metrics.py       computes all metrics for all pages, writes <results>/metrics.csv
   build_review.py  builds <viz>/review.html, a scrollable error-review viewer
   build_split.py   builds <viz>/review_split.html, text next to the page scan (ALTO blocks)
+  gold_audit.py    lists candidate errors *in the gold standard* (never edits)
+  error_analysis.py  character-level error typology → <results>/errors.csv
 results/         metric table (CSV)
 viz/             metrics_preview.html (chart drafts); review*.html (generated, committed)
 ```
@@ -111,6 +113,27 @@ blocks (text line ⇄ image block are linked both ways):
 
 `review_split.html` references the page JPGs by relative path, so keep it in `viz/`
 alongside `data/`.
+
+To characterise *what kind* of errors a system makes (operation, character class,
+position in line / word / page, confusion pairs), run the error typology. It writes
+one row per character error to `results/errors.csv` for further analysis in R:
+
+```bash
+.venv/bin/python code/error_analysis.py               # all systems
+.venv/bin/python code/error_analysis.py --system neu  # one system only
+```
+
+To sanity-check the gold standard itself, `gold_audit.py` reports places where all
+OCR systems agree on a word but the gold differs — a strong hint that the gold is
+the outlier. It only reports, never edits:
+
+```bash
+.venv/bin/python code/gold_audit.py                            # to the console
+.venv/bin/python code/gold_audit.py --md analysis/gold_candidates.md
+```
+
+Caveat: where both engines make the *same* mistake (classically reading long ſ as
+"f"), the gold is right and the hit is a false alarm.
 
 For the statistical evaluation, an R scaffold in `analysis/` reads `metrics.csv`
 and produces comparative boxplots (old vs. new OCR); see `analysis/README.md`:

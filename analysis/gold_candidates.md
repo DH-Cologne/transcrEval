@@ -1,43 +1,25 @@
 # Goldstandard — Fehlerkandidaten zum Durchgehen
 
-Methode: Stellen, an denen **ABBYY (2015) und Transkribus (2026) dasselbe Wort
-lesen, das Gold aber ein anderes** hat. Zwei unabhängige Engines als Konsens →
-das Gold ist der Ausreißer. Vergleich auf normalisiertem Text (Ligaturen, langes
-ſ, Anführungszeichen, reine Satzzeichen herausgerechnet). **Kandidaten, keine
-Gewissheiten** — bitte am Scan prüfen. Zeilennummer = Spalte „#" im Review-Viewer.
+Automatisch erzeugt mit `code/gold_audit.py` (Arbeiter-Zeitung OCR-Evaluation).
 
-Stand nach Ligatur-Auflösung (17 f-Ligaturen in aze19190115-2 aufgelöst).
+Methode: Stellen, an denen **Altes OCR und Neues OCR (Transkribus) dasselbe Wort lesen, das Gold aber
+ein anderes** hat. Zwei unabhängige Engines als Konsens → das Gold ist der
+Ausreißer. Vergleich auf normalisiertem Text; Ligaturen, typografische
+Anführungszeichen und reine Satzzeichen sind weggefaltet.
 
-## A — Wahrscheinliche Gold-Tippfehler (Nicht-Wörter im Kontext)
+**Kandidaten, keine Gewissheiten** — bitte am Scan prüfen. Achtung: Irren beide
+OCR gleich (z. B. langes ſ als „f“), ist das Gold richtig und der Treffer ein
+Fehlalarm. Zeilennummer = Spalte „#“ im Review-Viewer.
 
-| ☐ | Seite | Zeile | Gold | wohl richtig | Kontext |
+Stand: 4 Kandidaten auf 3 Seiten.
+
+| ☐ | Seite | Zeile | Gold | OCR-Konsens | Kontext |
 |---|---|---|---|---|---|
-| ☐ | aze19210110-2 | 166 | `Saaletunde` | Stunde | „Etwa eine _Saaletunde_ später erschienen ungefähr 15.000" |
-| ☐ | aze19281111-9 | 53 | `stard` | starb | „als Vertreter der Kammer. — Mittwoch _stard_" |
-
-## B — Zu prüfen (beides mögliche Wörter / Grammatik)
-
-| ☐ | Seite | Zeile | Gold | Alternative | Kontext |
-|---|---|---|---|---|---|
-| ☐ | aze19291229-13 | 115 | `Kuppe` | Kuppel | „sieht etwa wie eine zusammengepreßte _Kuppe_" |
-| ☐ | aze19291229-13 | 303 | `ihrer` | ihren | „Vergnügungslokale mit _ihrer_ …" (Kasus, Folgezeile prüfen) |
-| ☐ | aze19281111-9 | 316 | `der` | den | „nicht einmal so sehr aus _der_ …" (Kasus, Folgezeile prüfen) |
-| ☐ | aze19281111-9 | 125 | `luß` | fluß | „_luß_ auf die Gestaltung" — evtl. Zeilenumbruch („Einfluß") |
-| ☐ | aze19291229-13 | 132 | `…` | nach… | „nach … Meist ist ja" — Auslassungspunkte/Abstand, wohl Artefakt |
-
-## C — Vermutlich KEIN Gold-Fehler (Gold richtig, beide OCR irren gleich)
-
-Nur zur Kontrolle gelistet — hier machten beide OCR denselben Fehler:
-
-| Seite | Zeile | Gold (richtig) | beide OCR lasen | OCR-Fehlertyp |
-|---|---|---|---|---|
-| aze19271213-2 | 266 | `seine` | feine | langes ſ als „f" gelesen |
-| aze19280101-1 | 317 | `Kleinrentnerantrag` | Kleinrentuerantrag | „n" als „u" |
-| aze19190115-2 | 99 | `besonderen` | besonderrn | OCR verstümmelt |
-| aze19190115-2 | 299 | `Günther-Schoeller` | Günther-Schveller | Eigenname, OCR verstümmelt |
+| ☐ | aze19190115-2 | 99 | `besonderen` | `besonderrn` | Kinder in einem Entwicklungsalter, wo ſich die beſonderen |
+| ☐ | aze19190115-2 | 299 | `Günther-Schoeller` | `Günther-Schveller` | fonds Günther⸗Schoeller Geld genommen hat, zerſtreut |
+| ☐ | aze19271213-2 | 266 | `seine` | `feine` | Abfertigung und erſt wenn ſeine Arbeitsfähigkeit zu |
+| ☐ | aze19280101-1 | 317 | `Kleinrentnerantrag` | `Kleinrentuerantrag` | unſeren Kleinrentnerantrag |
 
 ---
 
-Erledigt separat: 17 f-Ligaturen (ﬀ/ﬁ) in aze19190115-2 wurden aufgelöst
-(langes ſ blieb erhalten). Anführungszeichen („ ") sind bewusst typografisch und
-kein Fehler; sie werden für den Vergleich normalisiert.
+Erzeugen mit: `python code/gold_audit.py --md analysis/gold_candidates.md`
