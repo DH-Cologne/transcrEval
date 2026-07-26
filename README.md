@@ -77,6 +77,7 @@ Paths are relative to the config file. Data is organized as one folder per page.
 | `gold.file` | filename pattern of the gold file inside a page folder (`{doc}` substituted) |
 | `systems[]` | one per OCR system: `name` (→ CSV suffix), `label` (viewer header), `file` (filename pattern, `{doc}`/`{name}` substituted), optional `source` (provenance shown in viewers) and `strip_header` regex |
 | `normalize` | `unicode` form, `collapse_whitespace`, and a `replace` table of character substitutions applied before alignment |
+| `word_tokenizer` | how the WER counts words: `punct_separate` (default, punctuation is its own token — OCR-D practice), `whitespace` (punctuation glued to the word, strictest), `punct_ignore` (punctuation excluded — ISRI practice). The viewers highlight with the same tokenization, so a stray comma marks only the comma. |
 | `align` | `gap`, `split_penalty`, `match_cutoff`, `rescue_cutoff`, `min_block` |
 | `labels` | optional map document key → human-readable label |
 

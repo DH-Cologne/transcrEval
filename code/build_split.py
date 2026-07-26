@@ -84,8 +84,8 @@ def build_doc(cfg, doc, folder, gold_path, min_block):
         gi = o2g.get(oi)
         ev = event_of.get(gi, 0) if gi is not None else 0
         if gi is not None:
-            html_n = word_hl(gnorm[gi], onorm[oi])
-            html_r = word_hl(graw[gi], oraw[oi])
+            html_n = word_hl(cfg, gnorm[gi], onorm[oi])
+            html_r = word_hl(cfg, graw[gi], oraw[oi])
             st = "disloc" if ev else "match"
         else:
             html_n, html_r = esc(onorm[oi]), esc(oraw[oi])

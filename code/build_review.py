@@ -46,20 +46,35 @@ def char_hl(gold: str, ocr: str) -> str:
     return "".join(out)
 
 
-def word_hl(gold: str, ocr: str) -> str:
-    """OCR-Text: abweichende Wörter orange, darin Zeichen hellrot. gold==ocr -> plain."""
+def word_hl(cfg, gold: str, ocr: str) -> str:
+    """OCR-Text: abweichende Token orange, darin Zeichen hellrot.
+
+    Tokenisiert exakt wie die WER-Berechnung (cfg.word_tokenizer). Bei
+    'punct_separate' ist ein Satzzeichen ein eigenes Token und wird auch einzeln
+    markiert -- ein falscher Punkt faerbt also nicht mehr das ganze Wort ein.
+    Die Originalschreibung inklusive Abstaende bleibt erhalten, weil ueber
+    Zeichenpositionen statt ueber zusammengefuegte Token gerendert wird.
+    """
     from difflib import SequenceMatcher
-    gw, ow = gold.split(), ocr.split()
-    parts = []
+    gt, ot = cfg.tokenize_spans(gold), cfg.tokenize_spans(ocr)
+    if not ot:
+        return esc(ocr)
+    gw, ow = [t[0] for t in gt], [t[0] for t in ot]
+    out, pos = [], 0
     for tag, i1, i2, j1, j2 in SequenceMatcher(None, gw, ow, autojunk=False).get_opcodes():
+        if tag == "delete":  # Goldtoken fehlt im OCR
+            out.append(f'<span class="omit" title="fehlt: {esc(" ".join(gw[i1:i2]))}">‸</span>')
+            continue
+        start, end = ot[j1][1], ot[j2 - 1][2]
+        out.append(esc(ocr[pos:start]))       # Zwischenraum unveraendert
+        seg = ocr[start:end]
         if tag == "equal":
-            parts.append(esc(" ".join(ow[j1:j2])))
-        elif tag == "delete":  # ganze Goldwörter fehlen im OCR
-            parts.append(f'<span class="omit" title="fehlt: {esc(" ".join(gw[i1:i2]))}">‸</span>')
-        else:  # replace / insert
-            inner = char_hl(" ".join(gw[i1:i2]), " ".join(ow[j1:j2]))
-            parts.append(f'<span class="werr">{inner}</span>')
-    return " ".join(p for p in parts if p)
+            out.append(esc(seg))
+        else:                                  # replace / insert
+            out.append(f'<span class="werr">{char_hl(" ".join(gw[i1:i2]), seg)}</span>')
+        pos = end
+    out.append(esc(ocr[pos:]))
+    return "".join(out)
 
 
 def build_column(cfg, graw, gnorm, oraw, onorm, min_block):
@@ -72,7 +87,8 @@ def build_column(cfg, graw, gnorm, oraw, onorm, min_block):
 
     def cell(st, tag, graw_s, gnorm_s, oraw_s, onorm_s):
         return {"st": st, "tag": tag,
-                "raw": word_hl(graw_s, oraw_s), "norm": word_hl(gnorm_s, onorm_s)}
+                "raw": word_hl(cfg, graw_s, oraw_s),
+                "norm": word_hl(cfg, gnorm_s, onorm_s)}
 
     cells = {}
     for o in ops:
@@ -316,7 +332,7 @@ TEMPLATE = r"""<!doctype html>
     <button class="ui" id="btnOnlyErr">nur Abweichungen</button>
   </div>
   <div class="legend">
-    <span><i class="sw" style="background:var(--c-word)"></i>Wortfehler</span>
+    <span><i class="sw" style="background:var(--c-word)"></i>Tokenfehler (Satzzeichen = eigenes Token)</span>
     <span><i class="sw" style="background:var(--c-char)"></i>Zeichenfehler</span>
     <span><i class="sw" style="background:var(--c-disloc)"></i>Zeile/Block verschoben</span>
     <span><i class="sw" style="background:var(--c-missing)"></i>im OCR fehlt</span>

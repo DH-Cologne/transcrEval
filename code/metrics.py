@@ -46,6 +46,8 @@ def evaluate(cfg: Config, gold_path, ocr_path, system: SystemCfg, min_block: int
 
     all_pairs = pairs + [([g], [o]) for g, o in rescued]
 
+    tok = cfg.tokenize      # Wort-Tokenisierung laut Config (word_tokenizer)
+
     def error_rates(glines, olines):
         cer_num = cer_den = wer_num = wer_den = 0
         for gidx, oidx in all_pairs:
@@ -53,16 +55,16 @@ def evaluate(cfg: Config, gold_path, ocr_path, system: SystemCfg, min_block: int
             o = " ".join(olines[k] for k in oidx)
             cer_num += Levenshtein.distance(g, o)
             cer_den += len(g)
-            wer_num += Levenshtein.distance(g.split(), o.split())
-            wer_den += len(g.split())
+            wer_num += Levenshtein.distance(tok(g), tok(o))
+            wer_den += len(tok(g))
         for k in unmatched_g:  # ausgelassen: alles falsch
             cer_num += len(glines[k])
             cer_den += len(glines[k])
-            wer_num += len(glines[k].split())
-            wer_den += len(glines[k].split())
+            wer_num += len(tok(glines[k]))
+            wer_den += len(tok(glines[k]))
         for k in unmatched_o:  # eingefügt: Einfügefehler, kein Goldanteil
             cer_num += len(olines[k])
-            wer_num += len(olines[k].split())
+            wer_num += len(tok(olines[k]))
         return cer_num / cer_den, wer_num / wer_den
 
     cer_raw, wer_raw = error_rates(graw, oraw)

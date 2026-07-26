@@ -64,6 +64,7 @@ class Config:
     norm: NormalizeCfg
     align: AlignCfg
     labels: dict[str, str]
+    word_tokenizer: str = "punct_separate"   # siehe tokenize()
 
     # --- Normalisierung ------------------------------------------------
     def normalize(self, line: str) -> str:
@@ -74,6 +75,29 @@ class Config:
         if self.norm.collapse_whitespace:
             line = " ".join(line.split())
         return line
+
+    _TOKEN_PATTERNS = {
+        "whitespace": r"\S+",       # Interpunktion klebt am Wort (strengste Variante)
+        "punct_ignore": r"\w+",     # Satzzeichen bleiben unberücksichtigt (ISRI-Praxis)
+        "punct_separate": r"\w+|[^\w\s]",   # Satzzeichen als eigene Token (OCR-D-Praxis)
+    }
+
+    def token_pattern(self) -> str:
+        return self._TOKEN_PATTERNS.get(self.word_tokenizer,
+                                        self._TOKEN_PATTERNS["punct_separate"])
+
+    def tokenize(self, line: str) -> list[str]:
+        """Wörter für die WER; Konvention konfigurierbar über word_tokenizer."""
+        return re.findall(self.token_pattern(), line, re.UNICODE)
+
+    def tokenize_spans(self, line: str) -> list[tuple[str, int, int]]:
+        """Wie tokenize(), zusätzlich mit (Token, Start, Ende).
+
+        Erlaubt es der Visualisierung, exakt dieselbe Tokenisierung wie die Metrik
+        zu verwenden und trotzdem die Originalschreibung inkl. Abstände zu zeigen.
+        """
+        return [(m.group(0), m.start(), m.end())
+                for m in re.finditer(self.token_pattern(), line, re.UNICODE)]
 
     def is_content(self, line: str, header: re.Pattern | None) -> bool:
         return bool(line.strip()) and not (header and header.match(line))
@@ -179,4 +203,5 @@ def load_config(path: str | Path | None = None) -> Config:
             min_block=aln.get("min_block", 2),
         ),
         labels=data.get("labels", {}),
+        word_tokenizer=data.get("word_tokenizer", "punct_separate"),
     )

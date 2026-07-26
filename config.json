@@ -25,6 +25,8 @@
     "replace": { "ſ": "s", "ﬅ": "st", "⸗": "-", "¬": "-", "=": "-" }
   },
 
+  "word_tokenizer": "punct_separate",
+
   "align": {
     "gap": 0.35,
     "split_penalty": 0.10,

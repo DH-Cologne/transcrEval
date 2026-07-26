@@ -177,3 +177,39 @@ print(loc, row.names = FALSE)
 cat("\nFiguren geschrieben nach:", fig_dir, "\n")
 cat("Long-Tabelle:", file.path(script_dir, "metrics_long.csv"), "\n")
 cat("Kennwerte:   ", file.path(script_dir, "stats.csv"), "/ stats_localisation.csv\n")
+
+# ---- Figur 4: vier Boxplots nebeneinander (CER-Paar | WER-Paar) -----------
+# Layout nach Vorgabe: CER alt/neu, Abstand, WER alt/neu. Zwei Varianten, weil
+# CER (max 24 %) und WER (max 92 %) sehr unterschiedliche Wertebereiche haben.
+f4 <- long[long$metric %in% c("cer_norm", "wer_norm"), ]
+f4$grp <- ifelse(f4$metric == "cer_norm", "CER (normalisiert)", "WER (normalisiert)")
+f4$xpos <- ifelse(f4$metric == "cer_norm",
+                  ifelse(f4$system == "alt", 1, 2),
+                  ifelse(f4$system == "alt", 3.5, 4.5))
+f4$key <- paste(f4$metric, f4$system)
+
+four_box <- function(df, free_scales) {
+  p <- ggplot(df, aes(x = xpos, y = value, group = key, fill = system_lab)) +
+    geom_boxplot(width = 0.7, alpha = 0.65, outlier.shape = NA) +
+    geom_jitter(width = 0.13, height = 0, size = 1.7, alpha = 0.75) +
+    scale_fill_manual(values = sys_fill) +
+    scale_y_continuous(labels = pct, expand = expansion(mult = c(0.02, 0.10))) +
+    labs(x = NULL, y = "Fehlerrate", fill = NULL) + base_theme
+  if (free_scales) {
+    p <- p + facet_wrap(~grp, scales = "free", strip.position = "bottom") +
+      scale_x_continuous(breaks = c(1, 2, 3.5, 4.5),
+                         labels = c("altes\nOCR", "neues\nOCR", "altes\nOCR", "neues\nOCR")) +
+      theme(strip.placement = "outside", panel.spacing = unit(1.4, "lines"))
+  } else {
+    p <- p + scale_x_continuous(
+      breaks = c(1, 2, 3.5, 4.5),
+      labels = c("altes\nOCR", "neues\nOCR", "altes\nOCR", "neues\nOCR"),
+      sec.axis = sec_axis(~., breaks = c(1.5, 4.0),
+                          labels = c("CER (normalisiert)", "WER (normalisiert)")))
+  }
+  p
+}
+
+save_fig(four_box(f4, FALSE), "04a_vier_boxplots_gemeinsame_achse", w = 7.5, h = 5)
+save_fig(four_box(f4, TRUE),  "04b_vier_boxplots_getrennte_achsen", w = 7.5, h = 5)
+cat("\nFigur 4 (zwei Varianten) geschrieben.\n")
