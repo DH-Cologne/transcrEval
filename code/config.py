@@ -18,6 +18,8 @@ import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from uniseg.graphemecluster import grapheme_clusters
+
 DEFAULT_CONFIG = Path(__file__).resolve().parent.parent / "config.json"
 
 
@@ -64,7 +66,11 @@ class Config:
     norm: NormalizeCfg
     align: AlignCfg
     labels: dict[str, str]
-    word_tokenizer: str = "punct_separate"   # siehe tokenize()
+    # Metrik-Tokenisierung (WER). "punct_ignore" = dinglehopper/OCR-D-Konvention.
+    word_tokenizer: str = "punct_ignore"
+    # Darstellungs-Tokenisierung im Viewer. Bewusst NICHT identisch: Satzzeichen
+    # sollen sichtbar markiert werden, auch wenn sie nicht in die WER eingehen.
+    display_tokenizer: str = "punct_separate"
 
     # --- Normalisierung ------------------------------------------------
     def normalize(self, line: str) -> str:
@@ -82,22 +88,31 @@ class Config:
         "punct_separate": r"\w+|[^\w\s]",   # Satzzeichen als eigene Token (OCR-D-Praxis)
     }
 
-    def token_pattern(self) -> str:
-        return self._TOKEN_PATTERNS.get(self.word_tokenizer,
+    def token_pattern(self, mode: str | None = None) -> str:
+        return self._TOKEN_PATTERNS.get(mode or self.word_tokenizer,
                                         self._TOKEN_PATTERNS["punct_separate"])
 
-    def tokenize(self, line: str) -> list[str]:
+    def tokenize(self, line: str, mode: str | None = None) -> list[str]:
         """Wörter für die WER; Konvention konfigurierbar über word_tokenizer."""
-        return re.findall(self.token_pattern(), line, re.UNICODE)
+        return re.findall(self.token_pattern(mode), line, re.UNICODE)
 
-    def tokenize_spans(self, line: str) -> list[tuple[str, int, int]]:
+    def tokenize_spans(self, line: str, mode: str | None = None):
         """Wie tokenize(), zusätzlich mit (Token, Start, Ende).
 
-        Erlaubt es der Visualisierung, exakt dieselbe Tokenisierung wie die Metrik
-        zu verwenden und trotzdem die Originalschreibung inkl. Abstände zu zeigen.
+        Erlaubt der Visualisierung, Abweichungen exakt auf Tokengrenzen zu markieren
+        und trotzdem die Originalschreibung inkl. Abstände zu zeigen.
         """
         return [(m.group(0), m.start(), m.end())
-                for m in re.finditer(self.token_pattern(), line, re.UNICODE)]
+                for m in re.finditer(self.token_pattern(mode), line, re.UNICODE)]
+
+    def graphemes(self, text: str) -> list[str]:
+        """Zeichen für die CER als Graphemcluster (wie dinglehopper/OCR-D).
+
+        Ein Graphemcluster ist, was Leser als EIN Zeichen wahrnehmen -- auch wenn es
+        aus mehreren Codepoints besteht (z.B. historisches uͤ = u + kombinierendes e,
+        für das es keinen vorkomponierten Codepoint gibt).
+        """
+        return list(grapheme_clusters(unicodedata.normalize("NFC", text)))
 
     def is_content(self, line: str, header: re.Pattern | None) -> bool:
         return bool(line.strip()) and not (header and header.match(line))
@@ -203,5 +218,6 @@ def load_config(path: str | Path | None = None) -> Config:
             min_block=aln.get("min_block", 2),
         ),
         labels=data.get("labels", {}),
-        word_tokenizer=data.get("word_tokenizer", "punct_separate"),
+        word_tokenizer=data.get("word_tokenizer", "punct_ignore"),
+        display_tokenizer=data.get("display_tokenizer", "punct_separate"),
     )

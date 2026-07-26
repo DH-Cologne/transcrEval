@@ -33,9 +33,17 @@ order — independent of any layout markup. A run of at least `MIN_BLOCK_LINES`
 a poem that moves as a whole is one error, not one per stanza. Shorter runs and
 isolated single-line shifts stay in the RLER.
 
-Normalization (long ſ → s, ligatures, hyphen variants ⸗/¬/=) is applied before
-alignment; CER/WER are then reported both raw and normalized, so the contrast
+Normalization (long ſ → s, ligatures, hyphen variants ⸗/¬/=/soft hyphen) is applied
+before alignment; CER/WER are then reported both raw and normalized, so the contrast
 between transcription conventions and genuine recognition errors stays visible.
+
+CER and WER follow the definitions used by
+[dinglehopper](https://github.com/qurator-spk/dinglehopper) (OCR-D): characters are
+counted as Unicode grapheme clusters, words via UAX #29 segmentation with
+punctuation excluded. Values were cross-checked against dinglehopper itself — on a
+page without reading-order deviations they agree to 0.06 pp (CER), the remainder
+being dinglehopper counting line breaks as reference characters. The line-level
+alignment is what this project adds on top.
 
 ## Repository layout
 
@@ -77,7 +85,8 @@ Paths are relative to the config file. Data is organized as one folder per page.
 | `gold.file` | filename pattern of the gold file inside a page folder (`{doc}` substituted) |
 | `systems[]` | one per OCR system: `name` (→ CSV suffix), `label` (viewer header), `file` (filename pattern, `{doc}`/`{name}` substituted), optional `source` (provenance shown in viewers) and `strip_header` regex |
 | `normalize` | `unicode` form, `collapse_whitespace`, and a `replace` table of character substitutions applied before alignment |
-| `word_tokenizer` | how the WER counts words: `punct_separate` (default, punctuation is its own token — OCR-D practice), `whitespace` (punctuation glued to the word, strictest), `punct_ignore` (punctuation excluded — ISRI practice). The viewers highlight with the same tokenization, so a stray comma marks only the comma. |
+| `word_tokenizer` | how the WER counts words: `punct_ignore` (default — punctuation excluded, matching dinglehopper/OCR-D), `punct_separate` (punctuation as its own token), `whitespace` (punctuation glued to the word, strictest) |
+| `display_tokenizer` | tokenization used for *highlighting* in the viewers, deliberately separate from the metric (default `punct_separate`): punctuation errors stay visible for error analysis even though they do not count towards the WER |
 | `align` | `gap`, `split_penalty`, `match_cutoff`, `rescue_cutoff`, `min_block` |
 | `labels` | optional map document key → human-readable label |
 
@@ -87,7 +96,7 @@ viewer adapt to any number of them.
 ## Usage
 
 ```bash
-python3 -m venv .venv && .venv/bin/pip install rapidfuzz
+python3 -m venv .venv && .venv/bin/pip install rapidfuzz uniseg
 .venv/bin/python code/metrics.py                       # score every gold page vs. all OCR systems
 .venv/bin/python code/metrics.py --min-block 3         # require 3+ lines per relocated block
 .venv/bin/python code/metrics.py --config other.json   # run a different project

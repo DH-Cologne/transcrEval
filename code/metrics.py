@@ -46,24 +46,26 @@ def evaluate(cfg: Config, gold_path, ocr_path, system: SystemCfg, min_block: int
 
     all_pairs = pairs + [([g], [o]) for g, o in rescued]
 
-    tok = cfg.tokenize      # Wort-Tokenisierung laut Config (word_tokenizer)
+    # Zeichen als Graphemcluster, Wörter laut word_tokenizer -- beides wie in
+    # dinglehopper/OCR-D, damit die Werte dort vergleichbar sind.
+    tok, gra = cfg.tokenize, cfg.graphemes
 
     def error_rates(glines, olines):
         cer_num = cer_den = wer_num = wer_den = 0
         for gidx, oidx in all_pairs:
             g = " ".join(glines[k] for k in gidx)
             o = " ".join(olines[k] for k in oidx)
-            cer_num += Levenshtein.distance(g, o)
-            cer_den += len(g)
+            cer_num += Levenshtein.distance(gra(g), gra(o))
+            cer_den += len(gra(g))
             wer_num += Levenshtein.distance(tok(g), tok(o))
             wer_den += len(tok(g))
         for k in unmatched_g:  # ausgelassen: alles falsch
-            cer_num += len(glines[k])
-            cer_den += len(glines[k])
+            cer_num += len(gra(glines[k]))
+            cer_den += len(gra(glines[k]))
             wer_num += len(tok(glines[k]))
             wer_den += len(tok(glines[k]))
         for k in unmatched_o:  # eingefügt: Einfügefehler, kein Goldanteil
-            cer_num += len(olines[k])
+            cer_num += len(gra(olines[k]))
             wer_num += len(tok(olines[k]))
         return cer_num / cer_den, wer_num / wer_den
 

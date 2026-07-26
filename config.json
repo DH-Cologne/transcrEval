@@ -22,10 +22,11 @@
   "normalize": {
     "unicode": "NFC",
     "collapse_whitespace": true,
-    "replace": { "ſ": "s", "ﬅ": "st", "⸗": "-", "¬": "-", "=": "-" }
+    "replace": { "ſ": "s", "ﬅ": "st", "⸗": "-", "¬": "-", "=": "-", "­": "-" }
   },
 
-  "word_tokenizer": "punct_separate",
+  "word_tokenizer": "punct_ignore",
+  "display_tokenizer": "punct_separate",
 
   "align": {
     "gap": 0.35,

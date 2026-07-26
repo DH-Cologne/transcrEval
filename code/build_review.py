@@ -49,21 +49,28 @@ def char_hl(gold: str, ocr: str) -> str:
 def word_hl(cfg, gold: str, ocr: str) -> str:
     """OCR-Text: abweichende Token orange, darin Zeichen hellrot.
 
-    Tokenisiert exakt wie die WER-Berechnung (cfg.word_tokenizer). Bei
-    'punct_separate' ist ein Satzzeichen ein eigenes Token und wird auch einzeln
-    markiert -- ein falscher Punkt faerbt also nicht mehr das ganze Wort ein.
+    Nutzt cfg.display_tokenizer (Default 'punct_separate'), NICHT den Metrik-
+    Tokenizer: Satzzeichen sollen im Review sichtbar und einzeln markiert sein,
+    auch wenn sie (dinglehopper-konform) nicht in die WER eingehen. Ein falscher
+    Punkt faerbt also weder das ganze Wort ein noch verschwindet er.
     Die Originalschreibung inklusive Abstaende bleibt erhalten, weil ueber
     Zeichenpositionen statt ueber zusammengefuegte Token gerendert wird.
     """
     from difflib import SequenceMatcher
-    gt, ot = cfg.tokenize_spans(gold), cfg.tokenize_spans(ocr)
+    mode = cfg.display_tokenizer
+    gt, ot = cfg.tokenize_spans(gold, mode), cfg.tokenize_spans(ocr, mode)
     if not ot:
         return esc(ocr)
     gw, ow = [t[0] for t in gt], [t[0] for t in ot]
     out, pos = [], 0
     for tag, i1, i2, j1, j2 in SequenceMatcher(None, gw, ow, autojunk=False).get_opcodes():
         if tag == "delete":  # Goldtoken fehlt im OCR
-            out.append(f'<span class="omit" title="fehlt: {esc(" ".join(gw[i1:i2]))}">‸</span>')
+            missing = " ".join(gw[i1:i2])
+            mark = f'<span class="omit" title="fehlt: {esc(missing)}">‸</span>'
+            # Fehlendes Wort ist ein WER-Fehler, fehlendes Satzzeichen nicht
+            if cfg.tokenize(missing):
+                mark = f'<span class="werr">{mark}</span>'
+            out.append(mark)
             continue
         start, end = ot[j1][1], ot[j2 - 1][2]
         out.append(esc(ocr[pos:start]))       # Zwischenraum unveraendert
@@ -71,7 +78,14 @@ def word_hl(cfg, gold: str, ocr: str) -> str:
         if tag == "equal":
             out.append(esc(seg))
         else:                                  # replace / insert
-            out.append(f'<span class="werr">{char_hl(" ".join(gw[i1:i2]), seg)}</span>')
+            gold_part = " ".join(gw[i1:i2])
+            inner = char_hl(gold_part, seg)
+            # Zaehlt diese Abweichung in die WER? Reine Satzzeichen tun das bei
+            # punct_ignore nicht -- dann nur die rote Zeichenmarkierung zeigen,
+            # ohne orangefarbenes Token-Highlight. So entsprechen die Farben
+            # exakt den Metriken: rot = CER, orange = WER.
+            counts_for_wer = bool(cfg.tokenize(seg)) or bool(cfg.tokenize(gold_part))
+            out.append(f'<span class="werr">{inner}</span>' if counts_for_wer else inner)
         pos = end
     out.append(esc(ocr[pos:]))
     return "".join(out)
@@ -332,8 +346,8 @@ TEMPLATE = r"""<!doctype html>
     <button class="ui" id="btnOnlyErr">nur Abweichungen</button>
   </div>
   <div class="legend">
-    <span><i class="sw" style="background:var(--c-word)"></i>Tokenfehler (Satzzeichen = eigenes Token)</span>
-    <span><i class="sw" style="background:var(--c-char)"></i>Zeichenfehler</span>
+    <span><i class="sw" style="background:var(--c-word)"></i>Wortfehler (zählt in WER)</span>
+    <span><i class="sw" style="background:var(--c-char)"></i>Zeichenfehler (zählt in CER)</span>
     <span><i class="sw" style="background:var(--c-disloc)"></i>Zeile/Block verschoben</span>
     <span><i class="sw" style="background:var(--c-missing)"></i>im OCR fehlt</span>
     <span><i class="sw" style="background:var(--c-spur)"></i>ohne Goldentsprechung</span>
