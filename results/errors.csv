@@ -1180,6 +1180,109 @@ aze19190115-2,neu,287,Ersetzung,f,s,Kleinbuchstabe,24,56,0.436,5,0,0,wortintern,
 aze19190115-2,neu,294,Ersetzung,“,"""",Interpunktion,23,55,0.426,5,0,0,wortintern,0.967,unten,0.836,0.67
 aze19190115-2,neu,296,Auslassung,.,,Interpunktion,53,54,1.0,10,0,1,wortfinal,0.974,unten,0.852,0.67
 aze19190115-2,neu,299,Ersetzung,o,v,Kleinbuchstabe,17,52,0.333,4,0,0,wortintern,0.983,unten,0.878,0.662
+aze19190115-2,neusort,7,Auslassung, ,,Leerzeichen,41,45,0.932,10,0,0,Wortgrenze,0.02,oben,0.049,0.025
+aze19190115-2,neusort,7,Auslassung,g,,Kleinbuchstabe,42,45,0.955,10,0,0,wortinitial,0.02,oben,0.049,0.025
+aze19190115-2,neusort,7,Auslassung,e,,Kleinbuchstabe,43,45,0.977,10,0,1,wortintern,0.02,oben,0.049,0.025
+aze19190115-2,neusort,7,Auslassung,-,,Trennstrich,44,45,1.0,10,0,1,wortfinal,0.02,oben,0.049,0.025
+aze19190115-2,neusort,8,Auslassung, ,,Leerzeichen,9,42,0.22,3,0,0,Wortgrenze,0.023,oben,0.057,0.024
+aze19190115-2,neusort,8,Auslassung,u,,Kleinbuchstabe,10,42,0.244,3,0,0,wortinitial,0.023,oben,0.057,0.024
+aze19190115-2,neusort,8,Auslassung,n,,Kleinbuchstabe,11,42,0.268,3,0,0,wortintern,0.023,oben,0.057,0.024
+aze19190115-2,neusort,8,Auslassung,d,,Kleinbuchstabe,12,42,0.293,3,0,0,wortfinal,0.023,oben,0.057,0.024
+aze19190115-2,neusort,8,Auslassung, ,,Leerzeichen,38,42,0.927,10,0,0,Wortgrenze,0.023,oben,0.057,0.024
+aze19190115-2,neusort,8,Auslassung,d,,Kleinbuchstabe,39,42,0.951,10,0,0,wortinitial,0.023,oben,0.057,0.024
+aze19190115-2,neusort,8,Auslassung,i,,Kleinbuchstabe,40,42,0.976,10,0,1,wortintern,0.023,oben,0.057,0.024
+aze19190115-2,neusort,8,Auslassung,e,,Kleinbuchstabe,41,42,1.0,10,0,1,wortfinal,0.023,oben,0.057,0.024
+aze19190115-2,neusort,12,Auslassung, ,,Leerzeichen,39,45,0.886,9,0,0,Wortgrenze,0.036,oben,0.089,0.024
+aze19190115-2,neusort,12,Auslassung,e,,Kleinbuchstabe,40,45,0.909,10,0,0,wortinitial,0.036,oben,0.089,0.024
+aze19190115-2,neusort,12,Auslassung,r,,Kleinbuchstabe,41,45,0.932,10,0,0,wortfinal,0.036,oben,0.089,0.024
+aze19190115-2,neusort,12,Auslassung, ,,Leerzeichen,42,45,0.955,10,0,0,Wortgrenze,0.036,oben,0.089,0.024
+aze19190115-2,neusort,12,Auslassung,e,,Kleinbuchstabe,43,45,0.977,10,0,1,wortinitial,0.036,oben,0.089,0.024
+aze19190115-2,neusort,12,Auslassung,s,,Kleinbuchstabe,44,45,1.0,10,0,1,wortfinal,0.036,oben,0.089,0.024
+aze19190115-2,neusort,32,Einfügung,,.,Interpunktion,49,49,1.021,10,0,1,Einfügung,0.102,oben,0.263,0.022
+aze19190115-2,neusort,33,Ersetzung,o,ö,Kleinbuchstabe,29,50,0.592,6,0,0,wortintern,0.106,oben,0.272,0.025
+aze19190115-2,neusort,43,Auslassung, ,,Leerzeichen,39,43,0.929,10,0,0,Wortgrenze,0.139,oben,0.354,0.025
+aze19190115-2,neusort,43,Auslassung,i,,Kleinbuchstabe,40,43,0.952,10,0,0,wortinitial,0.139,oben,0.354,0.025
+aze19190115-2,neusort,43,Auslassung,h,,Kleinbuchstabe,41,43,0.976,10,0,1,wortintern,0.139,oben,0.354,0.025
+aze19190115-2,neusort,43,Auslassung,n,,Kleinbuchstabe,42,43,1.0,10,0,1,wortfinal,0.139,oben,0.354,0.025
+aze19190115-2,neusort,45,Ersetzung,a,g,Kleinbuchstabe,11,18,0.647,7,0,0,wortinitial,0.145,oben,0.364,0.024
+aze19190115-2,neusort,45,Ersetzung,n,l,Kleinbuchstabe,12,18,0.706,8,0,0,wortintern,0.145,oben,0.364,0.024
+aze19190115-2,neusort,45,Ersetzung,",",,Interpunktion,13,18,0.765,8,0,0,wortfinal,0.145,oben,0.364,0.024
+aze19190115-2,neusort,45,Ersetzung, ,,Leerzeichen,14,18,0.824,9,0,0,Wortgrenze,0.145,oben,0.364,0.024
+aze19190115-2,neusort,45,Ersetzung,d,,Kleinbuchstabe,15,18,0.882,9,0,0,wortinitial,0.145,oben,0.364,0.024
+aze19190115-2,neusort,45,Einfügung,,d,Kleinbuchstabe,18,18,1.059,10,0,1,Einfügung,0.145,oben,0.364,0.024
+aze19190115-2,neusort,45,Einfügung,,e,Kleinbuchstabe,18,18,1.059,10,0,1,Einfügung,0.145,oben,0.364,0.024
+aze19190115-2,neusort,45,Einfügung,,r,Kleinbuchstabe,18,18,1.059,10,0,1,Einfügung,0.145,oben,0.364,0.024
+aze19190115-2,neusort,45,Einfügung,,t,Kleinbuchstabe,18,18,1.059,10,0,1,Einfügung,0.145,oben,0.364,0.024
+aze19190115-2,neusort,51,Ersetzung,n,u,Kleinbuchstabe,24,43,0.571,6,0,0,wortintern,0.165,oben,0.415,0.024
+aze19190115-2,neusort,53,Ersetzung,s,f,Kleinbuchstabe,33,53,0.635,7,0,0,wortintern,0.172,oben,0.432,0.023
+aze19190115-2,neusort,53,Ersetzung,",",.,Interpunktion,44,53,0.846,9,0,0,wortfinal,0.172,oben,0.432,0.023
+aze19190115-2,neusort,66,Auslassung,.,,Interpunktion,36,37,1.0,10,0,1,wortfinal,0.215,oben,0.54,0.024
+aze19190115-2,neusort,81,Auslassung,.,,Interpunktion,26,27,1.0,10,0,1,wortfinal,0.264,oben,0.668,0.023
+aze19190115-2,neusort,91,Ersetzung,n,r,Kleinbuchstabe,51,52,1.0,10,0,1,wortfinal,0.297,oben,0.754,0.023
+aze19190115-2,neusort,96,Auslassung, ,,Leerzeichen,40,48,0.851,9,0,0,Wortgrenze,0.314,oben,0.795,0.022
+aze19190115-2,neusort,96,Auslassung,d,,Kleinbuchstabe,41,48,0.872,9,0,0,wortinitial,0.314,oben,0.795,0.022
+aze19190115-2,neusort,96,Auslassung,i,,Kleinbuchstabe,42,48,0.894,9,0,0,wortintern,0.314,oben,0.795,0.022
+aze19190115-2,neusort,96,Auslassung,e,,Kleinbuchstabe,43,48,0.915,10,0,0,wortfinal,0.314,oben,0.795,0.022
+aze19190115-2,neusort,96,Auslassung, ,,Leerzeichen,44,48,0.936,10,0,0,Wortgrenze,0.314,oben,0.795,0.022
+aze19190115-2,neusort,96,Auslassung,s,,Kleinbuchstabe,45,48,0.957,10,0,0,wortinitial,0.314,oben,0.795,0.022
+aze19190115-2,neusort,96,Auslassung,i,,Kleinbuchstabe,46,48,0.979,10,0,1,wortintern,0.314,oben,0.795,0.022
+aze19190115-2,neusort,96,Auslassung,e,,Kleinbuchstabe,47,48,1.0,10,0,1,wortfinal,0.314,oben,0.795,0.022
+aze19190115-2,neusort,99,Ersetzung,e,r,Kleinbuchstabe,55,57,0.982,10,0,1,wortintern,0.323,oben,0.822,0.021
+aze19190115-2,neusort,112,Auslassung,H,,Großbuchstabe,0,16,0.0,1,1,0,wortinitial,0.366,mitte,0.049,0.549
+aze19190115-2,neusort,112,Auslassung,!,,Interpunktion,15,16,1.0,10,0,1,wortfinal,0.366,mitte,0.049,0.549
+aze19190115-2,neusort,113,Ersetzung,g,q,Kleinbuchstabe,68,74,0.932,10,0,0,wortfinal,0.37,mitte,0.076,0.35
+aze19190115-2,neusort,122,Ersetzung,f,s,Kleinbuchstabe,28,63,0.452,5,0,0,wortintern,0.399,mitte,0.166,0.343
+aze19190115-2,neusort,129,Ersetzung,u,n,Kleinbuchstabe,34,51,0.68,7,0,0,wortintern,0.422,mitte,0.225,0.343
+aze19190115-2,neusort,130,Ersetzung,“,"""",Interpunktion,47,48,1.0,10,0,1,wortfinal,0.426,mitte,0.234,0.343
+aze19190115-2,neusort,139,Auslassung,“,,Interpunktion,52,53,1.0,10,0,1,wortfinal,0.455,mitte,0.308,0.342
+aze19190115-2,neusort,144,Auslassung,“,,Interpunktion,50,51,1.0,10,0,1,wortfinal,0.472,mitte,0.35,0.342
+aze19190115-2,neusort,145,Ersetzung,u,n,Kleinbuchstabe,33,47,0.717,8,0,0,wortintern,0.475,mitte,0.359,0.373
+aze19190115-2,neusort,151,Ersetzung,s,i,Kleinbuchstabe,43,52,0.843,9,0,0,wortintern,0.495,mitte,0.41,0.341
+aze19190115-2,neusort,154,Auslassung,“,,Interpunktion,32,33,1.0,10,0,1,wortfinal,0.505,mitte,0.436,0.341
+aze19190115-2,neusort,156,Auslassung,",",,Interpunktion,50,51,1.0,10,0,1,wortfinal,0.512,mitte,0.444,0.346
+aze19190115-2,neusort,157,Einfügung,,e,Kleinbuchstabe,31,51,0.62,7,0,0,Einfügung,0.515,mitte,0.462,0.341
+aze19190115-2,neusort,162,Ersetzung,n,u,Kleinbuchstabe,25,48,0.532,6,0,0,wortintern,0.531,mitte,0.502,0.341
+aze19190115-2,neusort,163,Auslassung,.,,Interpunktion,12,16,0.8,9,0,0,wortintern,0.535,mitte,0.512,0.341
+aze19190115-2,neusort,163,Auslassung,.,,Interpunktion,13,16,0.867,9,0,0,wortintern,0.535,mitte,0.512,0.341
+aze19190115-2,neusort,163,Auslassung,.,,Interpunktion,14,16,0.933,10,0,1,wortintern,0.535,mitte,0.512,0.341
+aze19190115-2,neusort,163,Auslassung,“,,Interpunktion,15,16,1.0,10,0,1,wortfinal,0.535,mitte,0.512,0.341
+aze19190115-2,neusort,176,Auslassung,.,,Interpunktion,6,8,0.857,9,0,1,wortintern,0.578,mitte,0.62,0.342
+aze19190115-2,neusort,178,Ersetzung,e,o,Kleinbuchstabe,5,49,0.104,2,0,0,wortintern,0.584,mitte,0.624,0.373
+aze19190115-2,neusort,180,Ersetzung,s,b,Kleinbuchstabe,7,51,0.14,2,0,0,wortintern,0.591,mitte,0.655,0.34
+aze19190115-2,neusort,180,Ersetzung,p,,Kleinbuchstabe,8,51,0.16,2,0,0,wortintern,0.591,mitte,0.655,0.34
+aze19190115-2,neusort,190,Auslassung,“,,Interpunktion,21,22,1.0,10,0,1,wortfinal,0.624,mitte,0.107,0.664
+aze19190115-2,neusort,195,Ersetzung,s,f,Kleinbuchstabe,46,56,0.836,9,0,0,wortintern,0.64,mitte,0.151,0.662
+aze19190115-2,neusort,196,Ersetzung,t,i,Kleinbuchstabe,23,63,0.371,4,0,0,wortintern,0.644,mitte,0.16,0.663
+aze19190115-2,neusort,204,Ersetzung,s,f,Kleinbuchstabe,53,55,0.981,10,0,1,wortintern,0.67,unten,0.228,0.695
+aze19190115-2,neusort,209,Auslassung,!,,Interpunktion,46,47,1.0,10,0,1,wortfinal,0.686,unten,0.262,0.663
+aze19190115-2,neusort,219,Ersetzung,",",.,Interpunktion,51,62,0.836,9,0,0,wortfinal,0.719,unten,0.356,0.662
+aze19190115-2,neusort,224,Auslassung,-,,Trennstrich,52,53,1.0,10,0,1,wortfinal,0.736,unten,0.398,0.662
+aze19190115-2,neusort,227,Auslassung,“,,Interpunktion,19,20,1.0,10,0,1,wortfinal,0.746,unten,0.423,0.661
+aze19190115-2,neusort,228,Ersetzung,f,s,Kleinbuchstabe,37,54,0.698,7,0,0,wortintern,0.749,unten,0.433,0.692
+aze19190115-2,neusort,228,Ersetzung,f,s,Kleinbuchstabe,38,54,0.717,8,0,0,wortintern,0.749,unten,0.433,0.692
+aze19190115-2,neusort,229,Ersetzung,k,s,Kleinbuchstabe,28,60,0.475,5,0,0,wortintern,0.752,unten,0.439,0.662
+aze19190115-2,neusort,235,Auslassung,“,,Interpunktion,47,48,1.0,10,0,1,wortfinal,0.772,unten,0.494,0.662
+aze19190115-2,neusort,241,Ersetzung,o,u,Kleinbuchstabe,12,58,0.211,3,0,0,wortintern,0.792,unten,0.543,0.662
+aze19190115-2,neusort,241,Auslassung,“,,Interpunktion,57,58,1.0,10,0,1,wortfinal,0.792,unten,0.543,0.662
+aze19190115-2,neusort,252,Einfügung,,d,Kleinbuchstabe,43,61,0.717,8,0,0,Einfügung,0.828,unten,0.628,0.661
+aze19190115-2,neusort,252,Einfügung,,e,Kleinbuchstabe,43,61,0.717,8,0,0,Einfügung,0.828,unten,0.628,0.661
+aze19190115-2,neusort,252,Einfügung,,n,Kleinbuchstabe,43,61,0.717,8,0,0,Einfügung,0.828,unten,0.628,0.661
+aze19190115-2,neusort,257,Einfügung,, ,Leerzeichen,22,43,0.524,6,0,0,Einfügung,0.845,unten,0.677,0.661
+aze19190115-2,neusort,257,Einfügung,, ,Leerzeichen,23,43,0.548,6,0,0,Einfügung,0.845,unten,0.677,0.661
+aze19190115-2,neusort,259,Ersetzung,f,s,Kleinbuchstabe,40,55,0.741,8,0,0,wortintern,0.851,unten,0.694,0.661
+aze19190115-2,neusort,260,Auslassung,“,,Interpunktion,47,48,1.0,10,0,1,wortfinal,0.855,unten,0.704,0.661
+aze19190115-2,neusort,269,Auslassung,“,,Interpunktion,43,44,1.0,10,0,1,wortfinal,0.884,unten,0.806,0.34
+aze19190115-2,neusort,270,Ersetzung,:,.,Interpunktion,15,16,1.0,10,0,1,wortfinal,0.888,unten,0.814,0.34
+aze19190115-2,neusort,278,Ersetzung,f,s,Kleinbuchstabe,0,14,0.0,1,1,0,wortinitial,0.914,unten,0.877,0.354
+aze19190115-2,neusort,278,Auslassung,.,,Interpunktion,13,14,1.0,10,0,1,wortfinal,0.914,unten,0.877,0.354
+aze19190115-2,neusort,279,Ersetzung,J,I,Großbuchstabe,5,41,0.125,2,0,0,wortintern,0.917,unten,0.891,0.354
+aze19190115-2,neusort,279,Ersetzung,u,n,Kleinbuchstabe,6,41,0.15,2,0,0,wortintern,0.917,unten,0.891,0.354
+aze19190115-2,neusort,279,Ersetzung,“,"""",Interpunktion,14,41,0.35,4,0,0,wortfinal,0.917,unten,0.891,0.354
+aze19190115-2,neusort,284,Auslassung,-,,Trennstrich,52,53,1.0,10,0,1,wortfinal,0.934,unten,0.752,0.662
+aze19190115-2,neusort,287,Ersetzung,f,s,Kleinbuchstabe,24,56,0.436,5,0,0,wortintern,0.944,unten,0.776,0.67
+aze19190115-2,neusort,294,Ersetzung,“,"""",Interpunktion,23,55,0.426,5,0,0,wortintern,0.967,unten,0.836,0.67
+aze19190115-2,neusort,296,Auslassung,.,,Interpunktion,53,54,1.0,10,0,1,wortfinal,0.974,unten,0.852,0.67
+aze19190115-2,neusort,299,Ersetzung,o,v,Kleinbuchstabe,17,52,0.333,4,0,0,wortintern,0.983,unten,0.878,0.662
 aze19210110-2,alt,1,Einfügung,,W,Großbuchstabe,0,7,0.0,1,1,0,Einfügung,0.0,oben,0.038,0.097
 aze19210110-2,alt,1,Einfügung,,e,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.0,oben,0.038,0.097
 aze19210110-2,alt,1,Einfügung,,t,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.0,oben,0.038,0.097
@@ -3754,6 +3857,50 @@ aze19210110-2,neu,304,Einfügung,,i,Kleinbuchstabe,47,49,0.979,10,0,1,Einfügung
 aze19210110-2,neu,304,Auslassung,e,,Kleinbuchstabe,48,49,1.0,10,0,1,wortfinal,0.968,unten,0.894,0.67
 aze19210110-2,neu,310,Auslassung,.,,Interpunktion,25,26,1.0,10,0,1,wortfinal,0.987,unten,0.936,0.67
 aze19210110-2,neu,311,Ersetzung,a,u,Kleinbuchstabe,30,42,0.732,8,0,0,wortintern,0.99,unten,0.942,0.699
+aze19210110-2,neusort,5,Ersetzung,k,t,Kleinbuchstabe,4,27,0.154,2,0,0,wortintern,0.013,oben,0.059,0.106
+aze19210110-2,neusort,7,Ersetzung,s,f,Kleinbuchstabe,9,57,0.161,2,0,0,wortintern,0.019,oben,0.084,0.084
+aze19210110-2,neusort,9,Ersetzung,o,e,Kleinbuchstabe,3,63,0.048,1,0,0,wortintern,0.026,oben,0.101,0.086
+aze19210110-2,neusort,10,Ersetzung,J,Z,Großbuchstabe,17,56,0.309,4,0,0,wortinitial,0.029,oben,0.11,0.086
+aze19210110-2,neusort,20,Ersetzung,o,b,Kleinbuchstabe,54,61,0.9,10,0,0,wortintern,0.061,oben,0.192,0.084
+aze19210110-2,neusort,36,Ersetzung,s,i,Kleinbuchstabe,31,54,0.585,6,0,0,wortintern,0.112,oben,0.327,0.082
+aze19210110-2,neusort,49,Ersetzung,f,s,Kleinbuchstabe,29,60,0.492,5,0,0,wortintern,0.153,oben,0.436,0.084
+aze19210110-2,neusort,62,Ersetzung,u,ü,Kleinbuchstabe,4,37,0.111,2,0,0,wortintern,0.195,oben,0.528,0.092
+aze19210110-2,neusort,74,Ersetzung,D,d,Großbuchstabe,0,32,0.0,1,1,0,wortinitial,0.233,oben,0.627,0.084
+aze19210110-2,neusort,76,Ersetzung, ,-,Leerzeichen,42,58,0.737,8,0,0,Wortgrenze,0.24,oben,0.652,0.082
+aze19210110-2,neusort,78,Ersetzung,t,w,Kleinbuchstabe,32,58,0.561,6,0,0,wortintern,0.246,oben,0.669,0.083
+aze19210110-2,neusort,78,Ersetzung,r,,Kleinbuchstabe,33,58,0.579,6,0,0,wortintern,0.246,oben,0.669,0.083
+aze19210110-2,neusort,81,Ersetzung,d,b,Kleinbuchstabe,0,43,0.0,1,1,0,wortinitial,0.256,oben,0.693,0.082
+aze19210110-2,neusort,93,Ersetzung,i,t,Kleinbuchstabe,7,53,0.135,2,0,0,wortintern,0.294,oben,0.793,0.084
+aze19210110-2,neusort,113,Ersetzung,N,R,Großbuchstabe,0,26,0.0,1,1,0,wortinitial,0.358,mitte,0.06,0.404
+aze19210110-2,neusort,113,Auslassung,g,,Kleinbuchstabe,25,26,1.0,10,0,1,wortfinal,0.358,mitte,0.06,0.404
+aze19210110-2,neusort,129,Auslassung,.,,Interpunktion,10,11,1.0,10,0,1,wortfinal,0.409,mitte,0.209,0.377
+aze19210110-2,neusort,139,Einfügung,, ,Leerzeichen,53,58,0.93,10,0,0,Einfügung,0.441,mitte,0.296,0.377
+aze19210110-2,neusort,149,Ersetzung,t,l,Kleinbuchstabe,10,59,0.172,2,0,0,wortintern,0.473,mitte,0.379,0.377
+aze19210110-2,neusort,153,Ersetzung,n,u,Kleinbuchstabe,45,51,0.9,10,0,0,wortintern,0.486,mitte,0.431,0.406
+aze19210110-2,neusort,207,Ersetzung,B,V,Großbuchstabe,4,53,0.077,1,0,0,wortinitial,0.658,mitte,0.934,0.376
+aze19210110-2,neusort,212,Ersetzung,d,b,Kleinbuchstabe,25,44,0.581,6,0,0,wortintern,0.674,unten,0.961,0.369
+aze19210110-2,neusort,214,Ersetzung,ä,a,Umlaut/ß,30,53,0.577,6,0,0,wortintern,0.681,unten,0.072,0.699
+aze19210110-2,neusort,214,Ersetzung,t,i,Kleinbuchstabe,31,53,0.596,6,0,0,wortintern,0.681,unten,0.072,0.699
+aze19210110-2,neusort,224,Ersetzung,B,V,Großbuchstabe,0,53,0.0,1,1,0,wortinitial,0.712,unten,0.154,0.669
+aze19210110-2,neusort,227,Auslassung,.,,Interpunktion,50,51,1.0,10,0,1,wortfinal,0.722,unten,0.18,0.669
+aze19210110-2,neusort,229,Ersetzung,i,l,Kleinbuchstabe,49,53,0.942,10,0,0,wortintern,0.728,unten,0.207,0.7
+aze19210110-2,neusort,237,Ersetzung,u,a,Kleinbuchstabe,1,51,0.02,1,1,0,wortintern,0.754,unten,0.282,0.699
+aze19210110-2,neusort,237,Ersetzung,a,i,Kleinbuchstabe,3,51,0.06,1,0,0,wortintern,0.754,unten,0.282,0.699
+aze19210110-2,neusort,244,Ersetzung,t,i,Kleinbuchstabe,6,60,0.102,2,0,0,wortfinal,0.776,unten,0.351,0.671
+aze19210110-2,neusort,258,Auslassung,-,,Trennstrich,57,58,1.0,10,0,1,wortfinal,0.821,unten,0.483,0.672
+aze19210110-2,neusort,262,Ersetzung,s,f,Kleinbuchstabe,3,33,0.094,1,0,0,wortintern,0.834,unten,0.521,0.701
+aze19210110-2,neusort,266,Einfügung,,s,Kleinbuchstabe,36,61,0.6,7,0,0,Einfügung,0.847,unten,0.56,0.671
+aze19210110-2,neusort,270,Ersetzung,k,l,Kleinbuchstabe,23,40,0.59,6,0,0,wortintern,0.859,unten,0.594,0.671
+aze19210110-2,neusort,276,Ersetzung,t,ß,Kleinbuchstabe,39,54,0.736,8,0,0,wortintern,0.879,unten,0.651,0.671
+aze19210110-2,neusort,276,Ersetzung,z,,Kleinbuchstabe,40,54,0.755,8,0,0,wortintern,0.879,unten,0.651,0.671
+aze19210110-2,neusort,299,Ersetzung,t,i,Kleinbuchstabe,8,49,0.167,2,0,0,wortinitial,0.952,unten,0.849,0.67
+aze19210110-2,neusort,304,Ersetzung,a,ä,Kleinbuchstabe,41,49,0.854,9,0,0,wortintern,0.968,unten,0.875,0.7
+aze19210110-2,neusort,304,Ersetzung,n,t,Kleinbuchstabe,43,49,0.896,9,0,0,wortintern,0.968,unten,0.875,0.7
+aze19210110-2,neusort,304,Ersetzung,a,t,Kleinbuchstabe,44,49,0.917,10,0,0,wortintern,0.968,unten,0.875,0.7
+aze19210110-2,neusort,304,Einfügung,,i,Kleinbuchstabe,47,49,0.979,10,0,1,Einfügung,0.968,unten,0.875,0.7
+aze19210110-2,neusort,304,Auslassung,e,,Kleinbuchstabe,48,49,1.0,10,0,1,wortfinal,0.968,unten,0.875,0.7
+aze19210110-2,neusort,310,Auslassung,.,,Interpunktion,25,26,1.0,10,0,1,wortfinal,0.987,unten,0.928,0.67
+aze19210110-2,neusort,311,Ersetzung,a,u,Kleinbuchstabe,30,42,0.732,8,0,0,wortintern,0.99,unten,0.942,0.699
 aze19260523-12,alt,1,Ersetzung,S,M,Großbuchstabe,0,8,0.0,1,1,0,wortinitial,0.0,oben,0.034,0.072
 aze19260523-12,alt,1,Ersetzung,e,,Kleinbuchstabe,1,8,0.143,2,1,0,wortintern,0.0,oben,0.034,0.072
 aze19260523-12,alt,1,Ersetzung,i,,Kleinbuchstabe,2,8,0.286,3,0,0,wortintern,0.0,oben,0.034,0.072
@@ -4120,6 +4267,100 @@ aze19260523-12,neu,156,Auslassung,e,,Kleinbuchstabe,47,49,0.979,10,0,1,wortinter
 aze19260523-12,neu,156,Auslassung,r,,Kleinbuchstabe,48,49,1.0,10,0,1,wortfinal,0.787,unten,0.583,0.68
 aze19260523-12,neu,162,Ersetzung, ,.,Leerzeichen,44,46,0.978,10,0,1,Wortgrenze,0.817,unten,0.636,0.649
 aze19260523-12,neu,162,Ersetzung,-,,Trennstrich,45,46,1.0,10,0,1,Einzelzeichen,0.817,unten,0.636,0.649
+aze19260523-12,neusort,5,Einfügung,,.,Interpunktion,7,7,1.167,10,0,1,Einfügung,0.02,oben,0.039,0.878
+aze19260523-12,neusort,7,Einfügung,,U,Großbuchstabe,0,68,0.0,1,1,0,Einfügung,0.03,oben,0.073,0.654
+aze19260523-12,neusort,7,Einfügung,,m,Kleinbuchstabe,0,68,0.0,1,1,0,Einfügung,0.03,oben,0.073,0.654
+aze19260523-12,neusort,7,Einfügung,,s,Kleinbuchstabe,0,68,0.0,1,1,0,Einfügung,0.03,oben,0.073,0.654
+aze19260523-12,neusort,7,Einfügung,,c,Kleinbuchstabe,0,68,0.0,1,1,0,Einfügung,0.03,oben,0.073,0.654
+aze19260523-12,neusort,7,Einfügung,,h,Kleinbuchstabe,0,68,0.0,1,1,0,Einfügung,0.03,oben,0.073,0.654
+aze19260523-12,neusort,7,Einfügung,,l,Kleinbuchstabe,0,68,0.0,1,1,0,Einfügung,0.03,oben,0.073,0.654
+aze19260523-12,neusort,7,Einfügung,,a,Kleinbuchstabe,0,68,0.0,1,1,0,Einfügung,0.03,oben,0.073,0.654
+aze19260523-12,neusort,7,Einfügung,,g,Kleinbuchstabe,0,68,0.0,1,1,0,Einfügung,0.03,oben,0.073,0.654
+aze19260523-12,neusort,7,Einfügung,, ,Leerzeichen,0,68,0.0,1,1,0,Einfügung,0.03,oben,0.073,0.654
+aze19260523-12,neusort,8,Auslassung,“,,Interpunktion,42,43,1.0,10,0,1,wortfinal,0.036,oben,0.101,0.177
+aze19260523-12,neusort,19,Einfügung,,J,Großbuchstabe,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,19,Einfügung,,a,Kleinbuchstabe,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,19,Einfügung,,h,Kleinbuchstabe,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,19,Einfügung,,r,Kleinbuchstabe,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,19,Einfügung,,e,Kleinbuchstabe,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,19,Einfügung,, ,Leerzeichen,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,19,Einfügung,,1,Ziffer,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,19,Einfügung,,8,Ziffer,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,19,Einfügung,,2,Ziffer,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,19,Einfügung,,5,Ziffer,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,19,Einfügung,,.,Interpunktion,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,19,Einfügung,, ,Leerzeichen,0,48,0.0,1,1,0,Einfügung,0.091,oben,0.249,0.654
+aze19260523-12,neusort,50,Auslassung, ,,Leerzeichen,43,54,0.811,9,0,0,Wortgrenze,0.249,oben,0.133,0.355
+aze19260523-12,neusort,50,Auslassung,—,,Trennstrich,44,54,0.83,9,0,0,Einzelzeichen,0.249,oben,0.133,0.355
+aze19260523-12,neusort,50,Auslassung, ,,Leerzeichen,45,54,0.849,9,0,0,Wortgrenze,0.249,oben,0.133,0.355
+aze19260523-12,neusort,50,Auslassung,s,,Kleinbuchstabe,46,54,0.868,9,0,0,wortinitial,0.249,oben,0.133,0.355
+aze19260523-12,neusort,50,Auslassung,i,,Kleinbuchstabe,47,54,0.887,9,0,0,wortintern,0.249,oben,0.133,0.355
+aze19260523-12,neusort,50,Auslassung,e,,Kleinbuchstabe,48,54,0.906,10,0,0,wortfinal,0.249,oben,0.133,0.355
+aze19260523-12,neusort,50,Auslassung, ,,Leerzeichen,49,54,0.925,10,0,0,Wortgrenze,0.249,oben,0.133,0.355
+aze19260523-12,neusort,50,Auslassung,a,,Kleinbuchstabe,50,54,0.943,10,0,0,wortinitial,0.249,oben,0.133,0.355
+aze19260523-12,neusort,50,Auslassung,l,,Kleinbuchstabe,51,54,0.962,10,0,0,wortintern,0.249,oben,0.133,0.355
+aze19260523-12,neusort,50,Auslassung,l,,Kleinbuchstabe,52,54,0.981,10,0,1,wortintern,0.249,oben,0.133,0.355
+aze19260523-12,neusort,50,Auslassung,e,,Kleinbuchstabe,53,54,1.0,10,0,1,wortfinal,0.249,oben,0.133,0.355
+aze19260523-12,neusort,56,Einfügung,, ,Leerzeichen,22,36,0.629,7,0,0,Einfügung,0.279,oben,0.178,0.355
+aze19260523-12,neusort,56,Einfügung,, ,Leerzeichen,23,36,0.657,7,0,0,Einfügung,0.279,oben,0.178,0.355
+aze19260523-12,neusort,57,Ersetzung,u,n,Kleinbuchstabe,27,45,0.614,7,0,0,wortintern,0.284,oben,0.185,0.354
+aze19260523-12,neusort,65,Ersetzung,“,"""",Interpunktion,6,47,0.13,2,0,0,wortintern,0.325,oben,0.649,0.348
+aze19260523-12,neusort,70,Ersetzung,l,d,Kleinbuchstabe,0,52,0.0,1,1,0,wortinitial,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Ersetzung,e,,Kleinbuchstabe,1,52,0.02,1,1,0,wortintern,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Ersetzung,b,,Kleinbuchstabe,2,52,0.039,1,0,0,wortintern,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Ersetzung,d, ,Kleinbuchstabe,5,52,0.098,1,0,0,wortintern,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Einfügung,,e,Kleinbuchstabe,8,52,0.157,2,0,0,Einfügung,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Einfügung,,n,Kleinbuchstabe,8,52,0.157,2,0,0,Einfügung,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Ersetzung,w,V,Kleinbuchstabe,9,52,0.176,2,0,0,wortinitial,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Ersetzung,ü,o,Umlaut/ß,10,52,0.196,2,0,0,wortintern,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Ersetzung,d,a,Kleinbuchstabe,12,52,0.235,3,0,0,wortintern,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Ersetzung,d,a,Kleinbuchstabe,17,52,0.333,4,0,0,wortinitial,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Ersetzung,i,u,Kleinbuchstabe,18,52,0.353,4,0,0,wortintern,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Ersetzung,e,s,Kleinbuchstabe,19,52,0.373,4,0,0,wortfinal,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Auslassung,i,,Kleinbuchstabe,22,52,0.431,5,0,0,wortintern,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Einfügung,,n,Kleinbuchstabe,24,52,0.471,5,0,0,Einfügung,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Einfügung,,e,Kleinbuchstabe,24,52,0.471,5,0,0,Einfügung,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Einfügung,,n,Kleinbuchstabe,24,52,0.471,5,0,0,Einfügung,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Einfügung,, ,Leerzeichen,24,52,0.471,5,0,0,Einfügung,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Einfügung,,d,Kleinbuchstabe,24,52,0.471,5,0,0,Einfügung,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Einfügung,,a,Kleinbuchstabe,24,52,0.471,5,0,0,Einfügung,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Auslassung,e,,Kleinbuchstabe,25,52,0.49,5,0,0,wortfinal,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Ersetzung,ü,u,Umlaut/ß,28,52,0.549,6,0,0,wortintern,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,70,Einfügung,, ,Leerzeichen,31,52,0.608,7,0,0,Einfügung,0.35,mitte,0.961,0.042
+aze19260523-12,neusort,73,Ersetzung,k,f,Kleinbuchstabe,51,57,0.911,10,0,0,wortintern,0.365,mitte,0.863,0.344
+aze19260523-12,neusort,78,Auslassung,.,,Interpunktion,14,15,1.0,10,0,1,wortfinal,0.391,mitte,0.901,0.344
+aze19260523-12,neusort,91,Ersetzung,r,n,Kleinbuchstabe,46,47,1.0,10,0,1,wortfinal,0.457,mitte,0.09,0.655
+aze19260523-12,neusort,96,Auslassung,!,,Interpunktion,33,35,0.971,10,0,1,wortintern,0.482,mitte,0.128,0.655
+aze19260523-12,neusort,96,Auslassung,“,,Interpunktion,34,35,1.0,10,0,1,wortfinal,0.482,mitte,0.128,0.655
+aze19260523-12,neusort,98,Auslassung,·,,Sonstiges,45,46,1.0,10,0,1,wortfinal,0.492,mitte,0.143,0.654
+aze19260523-12,neusort,99,Auslassung,-,,Trennstrich,46,47,1.0,10,0,1,wortfinal,0.497,mitte,0.15,0.654
+aze19260523-12,neusort,103,Ersetzung,“,"""",Interpunktion,3,53,0.058,1,0,0,wortfinal,0.518,mitte,0.182,0.654
+aze19260523-12,neusort,104,Auslassung,",",,Interpunktion,50,51,1.0,10,0,1,wortfinal,0.523,mitte,0.19,0.654
+aze19260523-12,neusort,112,Ersetzung,J,N,Großbuchstabe,0,11,0.0,1,1,0,wortinitial,0.563,mitte,0.253,0.682
+aze19260523-12,neusort,112,Ersetzung,a,e,Kleinbuchstabe,1,11,0.1,2,1,0,wortintern,0.563,mitte,0.253,0.682
+aze19260523-12,neusort,112,Einfügung,,i,Kleinbuchstabe,4,11,0.4,5,0,0,Einfügung,0.563,mitte,0.253,0.682
+aze19260523-12,neusort,112,Einfügung,,f,Kleinbuchstabe,4,11,0.4,5,0,0,Einfügung,0.563,mitte,0.253,0.682
+aze19260523-12,neusort,112,Einfügung,,t,Kleinbuchstabe,4,11,0.4,5,0,0,Einfügung,0.563,mitte,0.253,0.682
+aze19260523-12,neusort,112,Einfügung,,n,Kleinbuchstabe,5,11,0.5,6,0,0,Einfügung,0.563,mitte,0.253,0.682
+aze19260523-12,neusort,112,Ersetzung,1,W,Ziffer,6,11,0.6,7,0,0,wortinitial,0.563,mitte,0.253,0.682
+aze19260523-12,neusort,112,Ersetzung,8,e,Ziffer,7,11,0.7,8,0,0,wortintern,0.563,mitte,0.253,0.682
+aze19260523-12,neusort,112,Ersetzung,2,i,Ziffer,8,11,0.8,9,0,0,wortintern,0.563,mitte,0.253,0.682
+aze19260523-12,neusort,112,Ersetzung,5,t,Ziffer,9,11,0.9,10,0,1,wortintern,0.563,mitte,0.253,0.682
+aze19260523-12,neusort,112,Ersetzung,.,l,Interpunktion,10,11,1.0,10,0,1,wortfinal,0.563,mitte,0.253,0.682
+aze19260523-12,neusort,134,Ersetzung,“,"""",Interpunktion,21,58,0.368,4,0,0,wortfinal,0.675,unten,0.418,0.652
+aze19260523-12,neusort,138,Auslassung,.,,Interpunktion,33,34,1.0,10,0,1,wortfinal,0.695,unten,0.448,0.654
+aze19260523-12,neusort,144,Auslassung,.,,Interpunktion,35,37,0.972,10,0,1,wortintern,0.726,unten,0.494,0.653
+aze19260523-12,neusort,144,Auslassung,“,,Interpunktion,36,37,1.0,10,0,1,wortfinal,0.726,unten,0.494,0.653
+aze19260523-12,neusort,149,Auslassung,e,,Kleinbuchstabe,50,51,1.0,10,0,1,wortfinal,0.751,unten,0.531,0.654
+aze19260523-12,neusort,151,Auslassung,.,,Interpunktion,11,12,1.0,10,0,1,wortfinal,0.761,unten,0.545,0.652
+aze19260523-12,neusort,154,Ersetzung,m,n,Kleinbuchstabe,41,42,1.0,10,0,1,wortfinal,0.777,unten,0.57,0.652
+aze19260523-12,neusort,155,Auslassung,.,,Interpunktion,13,14,1.0,10,0,1,wortfinal,0.782,unten,0.576,0.653
+aze19260523-12,neusort,156,Auslassung, ,,Leerzeichen,45,49,0.938,10,0,0,Wortgrenze,0.787,unten,0.583,0.68
+aze19260523-12,neusort,156,Auslassung,d,,Kleinbuchstabe,46,49,0.958,10,0,0,wortinitial,0.787,unten,0.583,0.68
+aze19260523-12,neusort,156,Auslassung,e,,Kleinbuchstabe,47,49,0.979,10,0,1,wortintern,0.787,unten,0.583,0.68
+aze19260523-12,neusort,156,Auslassung,r,,Kleinbuchstabe,48,49,1.0,10,0,1,wortfinal,0.787,unten,0.583,0.68
+aze19260523-12,neusort,162,Ersetzung, ,.,Leerzeichen,44,46,0.978,10,0,1,Wortgrenze,0.817,unten,0.636,0.649
+aze19260523-12,neusort,162,Ersetzung,-,,Trennstrich,45,46,1.0,10,0,1,Einzelzeichen,0.817,unten,0.636,0.649
 aze19271213-2,alt,1,Ersetzung,S,G,Großbuchstabe,0,7,0.0,1,1,0,wortinitial,0.0,oben,0.032,0.068
 aze19271213-2,alt,1,Ersetzung,i,l,Kleinbuchstabe,2,7,0.333,4,0,0,wortintern,0.0,oben,0.032,0.068
 aze19271213-2,alt,2,Ersetzung,",",.,Interpunktion,4,14,0.308,4,0,0,wortfinal,0.003,oben,0.032,0.221
@@ -4609,6 +4850,84 @@ aze19271213-2,neu,312,Einfügung,,e,Kleinbuchstabe,53,53,1.019,10,0,1,Einfügung
 aze19271213-2,neu,314,Ersetzung,c,e,Kleinbuchstabe,37,53,0.712,8,0,0,wortintern,0.981,unten,0.897,0.672
 aze19271213-2,neu,319,Auslassung,d,,Kleinbuchstabe,14,54,0.264,3,0,0,wortfinal,0.997,unten,0.939,0.672
 aze19271213-2,neu,320,Ersetzung,.,",",Interpunktion,13,14,1.0,10,0,1,wortfinal,1.0,unten,0.948,0.672
+aze19271213-2,neusort,6,Auslassung, ,,Leerzeichen,44,48,0.936,10,0,0,Wortgrenze,0.016,oben,0.054,0.053
+aze19271213-2,neusort,6,Auslassung,d,,Kleinbuchstabe,45,48,0.957,10,0,0,wortinitial,0.016,oben,0.054,0.053
+aze19271213-2,neusort,6,Auslassung,i,,Kleinbuchstabe,46,48,0.979,10,0,1,wortintern,0.016,oben,0.054,0.053
+aze19271213-2,neusort,6,Auslassung,e,,Kleinbuchstabe,47,48,1.0,10,0,1,wortfinal,0.016,oben,0.054,0.053
+aze19271213-2,neusort,8,Ersetzung,s,f,Kleinbuchstabe,13,45,0.295,3,0,0,wortintern,0.022,oben,0.07,0.084
+aze19271213-2,neusort,23,Ersetzung,ü,u,Umlaut/ß,19,55,0.352,4,0,0,wortintern,0.069,oben,0.198,0.051
+aze19271213-2,neusort,31,Ersetzung,ü,u,Umlaut/ß,1,49,0.021,1,1,0,wortintern,0.094,oben,0.263,0.051
+aze19271213-2,neusort,33,Auslassung,ö,,Umlaut/ß,0,56,0.0,1,1,0,wortinitial,0.1,oben,0.282,0.07
+aze19271213-2,neusort,33,Auslassung,s,,Kleinbuchstabe,1,56,0.018,1,1,0,wortintern,0.1,oben,0.282,0.07
+aze19271213-2,neusort,33,Auslassung,t,,Kleinbuchstabe,2,56,0.036,1,0,0,wortintern,0.1,oben,0.282,0.07
+aze19271213-2,neusort,33,Auslassung,e,,Kleinbuchstabe,3,56,0.055,1,0,0,wortintern,0.1,oben,0.282,0.07
+aze19271213-2,neusort,53,Auslassung,w,,Kleinbuchstabe,0,40,0.0,1,1,0,wortinitial,0.163,oben,0.448,0.086
+aze19271213-2,neusort,53,Auslassung,e,,Kleinbuchstabe,1,40,0.026,1,1,0,wortintern,0.163,oben,0.448,0.086
+aze19271213-2,neusort,53,Auslassung,r,,Kleinbuchstabe,2,40,0.051,1,0,0,wortintern,0.163,oben,0.448,0.086
+aze19271213-2,neusort,53,Auslassung,b,,Kleinbuchstabe,3,40,0.077,1,0,0,wortintern,0.163,oben,0.448,0.086
+aze19271213-2,neusort,53,Auslassung,e,,Kleinbuchstabe,4,40,0.103,2,0,0,wortfinal,0.163,oben,0.448,0.086
+aze19271213-2,neusort,53,Auslassung, ,,Leerzeichen,5,40,0.128,2,0,0,Wortgrenze,0.163,oben,0.448,0.086
+aze19271213-2,neusort,74,Ersetzung,ü,u,Umlaut/ß,47,54,0.887,9,0,0,wortintern,0.229,oben,0.623,0.053
+aze19271213-2,neusort,82,Ersetzung,-,⸸,Trennstrich,49,50,1.0,10,0,1,wortfinal,0.254,oben,0.712,0.053
+aze19271213-2,neusort,83,Auslassung, ,,Leerzeichen,29,36,0.829,9,0,0,Wortgrenze,0.257,oben,0.718,0.054
+aze19271213-2,neusort,83,Auslassung,s,,Kleinbuchstabe,30,36,0.857,9,0,0,wortinitial,0.257,oben,0.718,0.054
+aze19271213-2,neusort,83,Auslassung,t,,Kleinbuchstabe,31,36,0.886,9,0,0,wortintern,0.257,oben,0.718,0.054
+aze19271213-2,neusort,83,Auslassung,a,,Kleinbuchstabe,32,36,0.914,10,0,0,wortintern,0.257,oben,0.718,0.054
+aze19271213-2,neusort,83,Auslassung,t,,Kleinbuchstabe,33,36,0.943,10,0,0,wortintern,0.257,oben,0.718,0.054
+aze19271213-2,neusort,83,Auslassung,t,,Kleinbuchstabe,34,36,0.971,10,0,1,wortintern,0.257,oben,0.718,0.054
+aze19271213-2,neusort,83,Auslassung,.,,Interpunktion,35,36,1.0,10,0,1,wortfinal,0.257,oben,0.718,0.054
+aze19271213-2,neusort,93,Auslassung,),,Interpunktion,33,41,0.825,9,0,0,wortfinal,0.288,oben,0.804,0.082
+aze19271213-2,neusort,93,Auslassung, ,,Leerzeichen,34,41,0.85,9,0,0,Wortgrenze,0.288,oben,0.804,0.082
+aze19271213-2,neusort,93,Auslassung,I,,Großbuchstabe,35,41,0.875,9,0,0,wortinitial,0.288,oben,0.804,0.082
+aze19271213-2,neusort,93,Auslassung,n,,Kleinbuchstabe,36,41,0.9,10,0,0,wortfinal,0.288,oben,0.804,0.082
+aze19271213-2,neusort,93,Auslassung, ,,Leerzeichen,37,41,0.925,10,0,0,Wortgrenze,0.288,oben,0.804,0.082
+aze19271213-2,neusort,93,Auslassung,d,,Kleinbuchstabe,38,41,0.95,10,0,0,wortinitial,0.288,oben,0.804,0.082
+aze19271213-2,neusort,93,Auslassung,e,,Kleinbuchstabe,39,41,0.975,10,0,1,wortintern,0.288,oben,0.804,0.082
+aze19271213-2,neusort,93,Auslassung,r,,Kleinbuchstabe,40,41,1.0,10,0,1,wortfinal,0.288,oben,0.804,0.082
+aze19271213-2,neusort,107,Auslassung, ,,Leerzeichen,29,35,0.853,9,0,0,Wortgrenze,0.332,oben,0.923,0.087
+aze19271213-2,neusort,107,Auslassung,H,,Großbuchstabe,30,35,0.882,9,0,0,wortinitial,0.332,oben,0.923,0.087
+aze19271213-2,neusort,107,Auslassung,e,,Kleinbuchstabe,31,35,0.912,10,0,0,wortintern,0.332,oben,0.923,0.087
+aze19271213-2,neusort,107,Auslassung,u,,Kleinbuchstabe,32,35,0.941,10,0,0,wortintern,0.332,oben,0.923,0.087
+aze19271213-2,neusort,107,Auslassung,t,,Kleinbuchstabe,33,35,0.971,10,0,1,wortintern,0.332,oben,0.923,0.087
+aze19271213-2,neusort,107,Auslassung,e,,Kleinbuchstabe,34,35,1.0,10,0,1,wortfinal,0.332,oben,0.923,0.087
+aze19271213-2,neusort,123,Ersetzung,t,s,Kleinbuchstabe,52,53,1.0,10,0,1,wortfinal,0.382,mitte,0.19,0.36
+aze19271213-2,neusort,136,Ersetzung,-,⸉,Trennstrich,52,53,1.0,10,0,1,wortfinal,0.423,mitte,0.299,0.36
+aze19271213-2,neusort,185,Ersetzung,ä,a,Umlaut/ß,21,51,0.42,5,0,0,wortintern,0.577,mitte,0.707,0.359
+aze19271213-2,neusort,189,Auslassung,.,,Interpunktion,43,44,1.0,10,0,1,wortfinal,0.589,mitte,0.742,0.359
+aze19271213-2,neusort,201,Ersetzung,˙,°,Sonstiges,21,54,0.396,4,0,0,wortintern,0.627,mitte,0.841,0.363
+aze19271213-2,neusort,203,Ersetzung,˙,°,Sonstiges,20,54,0.377,4,0,0,wortintern,0.633,mitte,0.857,0.363
+aze19271213-2,neusort,213,Auslassung,s,,Kleinbuchstabe,0,40,0.0,1,1,0,wortinitial,0.665,mitte,0.94,0.37
+aze19271213-2,neusort,216,Auslassung,.,,Interpunktion,11,12,1.0,10,0,1,wortfinal,0.674,unten,0.062,0.669
+aze19271213-2,neusort,221,Auslassung,f,,Kleinbuchstabe,0,49,0.0,1,1,0,wortinitial,0.69,unten,0.105,0.674
+aze19271213-2,neusort,228,Einfügung,,r,Kleinbuchstabe,52,52,1.02,10,0,1,Einfügung,0.712,unten,0.163,0.669
+aze19271213-2,neusort,233,Einfügung,,.,Interpunktion,27,48,0.574,6,0,0,Einfügung,0.727,unten,0.205,0.669
+aze19271213-2,neusort,237,Auslassung, ,,Leerzeichen,42,44,0.977,10,0,1,Wortgrenze,0.74,unten,0.236,0.669
+aze19271213-2,neusort,237,Auslassung,—,,Trennstrich,43,44,1.0,10,0,1,Einzelzeichen,0.74,unten,0.236,0.669
+aze19271213-2,neusort,238,Auslassung,",",,Interpunktion,51,52,1.0,10,0,1,wortfinal,0.743,unten,0.245,0.669
+aze19271213-2,neusort,266,Ersetzung,s,f,Kleinbuchstabe,26,51,0.52,6,0,0,wortinitial,0.831,unten,0.48,0.669
+aze19271213-2,neusort,281,Ersetzung,-,⸉,Trennstrich,48,49,1.0,10,0,1,wortfinal,0.878,unten,0.608,0.67
+aze19271213-2,neusort,284,Ersetzung,-,⸉,Trennstrich,42,43,1.0,10,0,1,wortfinal,0.887,unten,0.632,0.67
+aze19271213-2,neusort,297,Auslassung,",",,Interpunktion,23,39,0.605,7,0,0,wortfinal,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung, ,,Leerzeichen,24,39,0.632,7,0,0,Wortgrenze,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,d,,Kleinbuchstabe,25,39,0.658,7,0,0,wortinitial,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,a,,Kleinbuchstabe,26,39,0.684,7,0,0,wortintern,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,ß,,Umlaut/ß,27,39,0.711,8,0,0,wortfinal,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung, ,,Leerzeichen,28,39,0.737,8,0,0,Wortgrenze,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,d,,Kleinbuchstabe,29,39,0.763,8,0,0,wortinitial,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,i,,Kleinbuchstabe,30,39,0.789,8,0,0,wortintern,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,e,,Kleinbuchstabe,31,39,0.816,9,0,0,wortfinal,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung, ,,Leerzeichen,32,39,0.842,9,0,0,Wortgrenze,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,f,,Kleinbuchstabe,33,39,0.868,9,0,0,wortinitial,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,e,,Kleinbuchstabe,34,39,0.895,9,0,0,wortintern,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,i,,Kleinbuchstabe,35,39,0.921,10,0,0,wortintern,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,n,,Kleinbuchstabe,36,39,0.947,10,0,0,wortintern,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,d,,Kleinbuchstabe,37,39,0.974,10,0,1,wortintern,0.928,unten,0.74,0.671
+aze19271213-2,neusort,297,Auslassung,-,,Trennstrich,38,39,1.0,10,0,1,wortfinal,0.928,unten,0.74,0.671
+aze19271213-2,neusort,310,Ersetzung,y,h,Kleinbuchstabe,24,35,0.706,8,0,0,wortfinal,0.969,unten,0.863,0.672
+aze19271213-2,neusort,312,Einfügung,,e,Kleinbuchstabe,53,53,1.019,10,0,1,Einfügung,0.975,unten,0.881,0.672
+aze19271213-2,neusort,314,Ersetzung,c,e,Kleinbuchstabe,37,53,0.712,8,0,0,wortintern,0.981,unten,0.897,0.672
+aze19271213-2,neusort,319,Auslassung,d,,Kleinbuchstabe,14,54,0.264,3,0,0,wortfinal,0.997,unten,0.939,0.672
+aze19271213-2,neusort,320,Ersetzung,.,",",Interpunktion,13,14,1.0,10,0,1,wortfinal,1.0,unten,0.948,0.672
 aze19280101-1,alt,2,Ersetzung,i,k,Kleinbuchstabe,1,14,0.077,1,1,0,wortintern,0.003,oben,0.071,0.068
 aze19280101-1,alt,2,Ersetzung,n,»,Kleinbuchstabe,2,14,0.154,2,0,0,wortintern,0.003,oben,0.071,0.068
 aze19280101-1,alt,2,Ersetzung,u,«,Kleinbuchstabe,11,14,0.846,9,0,0,wortintern,0.003,oben,0.071,0.068
@@ -5622,6 +5941,241 @@ aze19280101-1,neu,357,Auslassung,d,,Kleinbuchstabe,0,36,0.0,1,1,0,wortinitial,0.
 aze19280101-1,neu,357,Auslassung,i,,Kleinbuchstabe,1,36,0.029,1,1,0,wortintern,0.96,unten,0.828,0.748
 aze19280101-1,neu,357,Auslassung,e,,Kleinbuchstabe,2,36,0.057,1,0,0,wortfinal,0.96,unten,0.828,0.748
 aze19280101-1,neu,357,Auslassung, ,,Leerzeichen,3,36,0.086,1,0,0,Wortgrenze,0.96,unten,0.828,0.748
+aze19280101-1,neusort,19,Ersetzung,A,S,Großbuchstabe,0,16,0.0,1,1,0,wortinitial,0.049,oben,0.157,0.235
+aze19280101-1,neusort,19,Ersetzung,b,a,Kleinbuchstabe,2,16,0.133,2,0,0,wortintern,0.049,oben,0.157,0.235
+aze19280101-1,neusort,19,Ersetzung,i, ,Kleinbuchstabe,4,16,0.267,3,0,0,wortintern,0.049,oben,0.157,0.235
+aze19280101-1,neusort,19,Ersetzung,-,r,Trennstrich,8,16,0.533,6,0,0,wortintern,0.049,oben,0.157,0.235
+aze19280101-1,neusort,19,Ersetzung,Z,,Großbuchstabe,9,16,0.6,7,0,0,wortintern,0.049,oben,0.157,0.235
+aze19280101-1,neusort,19,Ersetzung,t,c,Kleinbuchstabe,12,16,0.8,9,0,0,wortintern,0.049,oben,0.157,0.235
+aze19280101-1,neusort,19,Ersetzung,u,h,Kleinbuchstabe,13,16,0.867,9,0,0,wortintern,0.049,oben,0.157,0.235
+aze19280101-1,neusort,19,Ersetzung,n,s,Kleinbuchstabe,14,16,0.933,10,0,1,wortintern,0.049,oben,0.157,0.235
+aze19280101-1,neusort,19,Ersetzung,g,,Kleinbuchstabe,15,16,1.0,10,0,1,wortfinal,0.049,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,Z,,Großbuchstabe,0,52,0.0,1,1,0,wortinitial,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,e,,Kleinbuchstabe,1,52,0.02,1,1,0,wortintern,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,n,,Kleinbuchstabe,2,52,0.039,1,0,0,wortintern,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,t,,Kleinbuchstabe,3,52,0.059,1,0,0,wortintern,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,r,,Kleinbuchstabe,4,52,0.078,1,0,0,wortintern,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,a,,Kleinbuchstabe,5,52,0.098,1,0,0,wortintern,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,l,,Kleinbuchstabe,6,52,0.118,2,0,0,wortintern,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,o,,Kleinbuchstabe,7,52,0.137,2,0,0,wortintern,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,r,,Kleinbuchstabe,8,52,0.157,2,0,0,wortintern,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,g,,Kleinbuchstabe,9,52,0.176,2,0,0,wortintern,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,a,,Kleinbuchstabe,10,52,0.196,2,0,0,wortintern,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,n,,Kleinbuchstabe,11,52,0.216,3,0,0,wortfinal,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung, ,,Leerzeichen,12,52,0.235,3,0,0,Wortgrenze,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,d,,Kleinbuchstabe,13,52,0.255,3,0,0,wortinitial,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,e,,Kleinbuchstabe,14,52,0.275,3,0,0,wortintern,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung,r,,Kleinbuchstabe,15,52,0.294,3,0,0,wortfinal,0.051,oben,0.157,0.235
+aze19280101-1,neusort,20,Auslassung, ,,Leerzeichen,16,52,0.314,4,0,0,Wortgrenze,0.051,oben,0.157,0.235
+aze19280101-1,neusort,21,Einfügung,,S,Großbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,,e,Kleinbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,,n,Kleinbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,,t,Kleinbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,,r,Kleinbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,,u,Kleinbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,,l,Kleinbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,,o,Kleinbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,,r,Kleinbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,,g,Kleinbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,,a,Kleinbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,,n,Kleinbuchstabe,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,21,Einfügung,, ,Leerzeichen,0,58,0.0,1,1,0,Einfügung,0.054,oben,0.147,0.424
+aze19280101-1,neusort,24,Auslassung,4,,Ziffer,0,12,0.0,1,1,0,wortinitial,0.062,oben,0.219,0.865
+aze19280101-1,neusort,24,Auslassung,1,,Ziffer,1,12,0.091,1,1,0,wortintern,0.062,oben,0.219,0.865
+aze19280101-1,neusort,24,Auslassung,.,,Interpunktion,2,12,0.182,2,0,0,wortfinal,0.062,oben,0.219,0.865
+aze19280101-1,neusort,24,Auslassung, ,,Leerzeichen,3,12,0.273,3,0,0,Wortgrenze,0.062,oben,0.219,0.865
+aze19280101-1,neusort,24,Einfügung,,.,Interpunktion,12,12,1.091,10,0,1,Einfügung,0.062,oben,0.219,0.865
+aze19280101-1,neusort,35,Ersetzung,e,-,Kleinbuchstabe,6,7,1.0,10,0,1,wortfinal,0.092,oben,0.145,0.895
+aze19280101-1,neusort,42,Auslassung,.,,Interpunktion,12,22,0.571,6,0,0,Einzelzeichen,0.111,oben,0.196,0.86
+aze19280101-1,neusort,42,Auslassung, ,,Leerzeichen,13,22,0.619,7,0,0,Wortgrenze,0.111,oben,0.196,0.86
+aze19280101-1,neusort,42,Auslassung,.,,Interpunktion,14,22,0.667,7,0,0,Einzelzeichen,0.111,oben,0.196,0.86
+aze19280101-1,neusort,42,Auslassung, ,,Leerzeichen,15,22,0.714,8,0,0,Wortgrenze,0.111,oben,0.196,0.86
+aze19280101-1,neusort,43,Auslassung, ,,Leerzeichen,18,25,0.75,8,0,0,Wortgrenze,0.113,oben,0.202,0.86
+aze19280101-1,neusort,45,Auslassung,i,,Kleinbuchstabe,6,25,0.25,3,0,0,wortintern,0.119,oben,0.314,0.323
+aze19280101-1,neusort,45,Auslassung,n,,Kleinbuchstabe,7,25,0.292,3,0,0,wortintern,0.119,oben,0.314,0.323
+aze19280101-1,neusort,45,Auslassung,n,,Kleinbuchstabe,8,25,0.333,4,0,0,wortintern,0.119,oben,0.314,0.323
+aze19280101-1,neusort,45,Einfügung,,i,Kleinbuchstabe,22,25,0.917,10,0,0,Einfügung,0.119,oben,0.314,0.323
+aze19280101-1,neusort,45,Einfügung,,m,Kleinbuchstabe,22,25,0.917,10,0,0,Einfügung,0.119,oben,0.314,0.323
+aze19280101-1,neusort,45,Einfügung,,i,Kleinbuchstabe,22,25,0.917,10,0,0,Einfügung,0.119,oben,0.314,0.323
+aze19280101-1,neusort,45,Ersetzung,!,.,Interpunktion,24,25,1.0,10,0,1,wortfinal,0.119,oben,0.314,0.323
+aze19280101-1,neusort,46,Einfügung,,e,Kleinbuchstabe,0,32,0.0,1,1,0,Einfügung,0.121,oben,0.286,0.682
+aze19280101-1,neusort,46,Einfügung,, ,Leerzeichen,0,32,0.0,1,1,0,Einfügung,0.121,oben,0.286,0.682
+aze19280101-1,neusort,46,Einfügung,,e,Kleinbuchstabe,0,32,0.0,1,1,0,Einfügung,0.121,oben,0.286,0.682
+aze19280101-1,neusort,46,Einfügung,, ,Leerzeichen,0,32,0.0,1,1,0,Einfügung,0.121,oben,0.286,0.682
+aze19280101-1,neusort,53,Auslassung,",",,Interpunktion,7,8,1.0,10,0,1,wortfinal,0.14,oben,0.385,0.053
+aze19280101-1,neusort,55,Auslassung,i,,Kleinbuchstabe,0,40,0.0,1,1,0,wortinitial,0.146,oben,0.4,0.066
+aze19280101-1,neusort,55,Auslassung,s,,Kleinbuchstabe,1,40,0.026,1,1,0,wortintern,0.146,oben,0.4,0.066
+aze19280101-1,neusort,55,Auslassung,t,,Kleinbuchstabe,2,40,0.051,1,0,0,wortfinal,0.146,oben,0.4,0.066
+aze19280101-1,neusort,55,Auslassung, ,,Leerzeichen,3,40,0.077,1,0,0,Wortgrenze,0.146,oben,0.4,0.066
+aze19280101-1,neusort,59,Auslassung,!,,Interpunktion,22,23,1.0,10,0,1,wortfinal,0.156,oben,0.43,0.052
+aze19280101-1,neusort,74,Ersetzung,w,K,Kleinbuchstabe,0,6,0.0,1,1,0,wortinitial,0.197,oben,0.536,0.052
+aze19280101-1,neusort,74,Ersetzung,i,o,Kleinbuchstabe,1,6,0.2,3,1,0,wortintern,0.197,oben,0.536,0.052
+aze19280101-1,neusort,74,Ersetzung,f, ,Kleinbuchstabe,3,6,0.6,7,0,0,wortintern,0.197,oben,0.536,0.052
+aze19280101-1,neusort,74,Ersetzung,.,e,Interpunktion,5,6,1.0,10,0,1,wortfinal,0.197,oben,0.536,0.052
+aze19280101-1,neusort,114,Auslassung,d,,Kleinbuchstabe,33,36,0.943,10,0,0,wortinitial,0.305,oben,0.847,0.052
+aze19280101-1,neusort,114,Ersetzung,r,h,Kleinbuchstabe,35,36,1.0,10,0,1,wortfinal,0.305,oben,0.847,0.052
+aze19280101-1,neusort,119,Auslassung,-,,Trennstrich,40,41,1.0,10,0,1,wortfinal,0.318,oben,0.878,0.053
+aze19280101-1,neusort,135,Auslassung,G,,Großbuchstabe,0,26,0.0,1,1,0,wortinitial,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,135,Auslassung,e,,Kleinbuchstabe,1,26,0.04,1,1,0,wortintern,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,135,Auslassung,l,,Kleinbuchstabe,2,26,0.08,1,0,0,wortintern,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,135,Auslassung,t,,Kleinbuchstabe,3,26,0.12,2,0,0,wortintern,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,135,Auslassung,u,,Kleinbuchstabe,4,26,0.16,2,0,0,wortintern,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,135,Auslassung,n,,Kleinbuchstabe,5,26,0.2,3,0,0,wortintern,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,135,Auslassung,g,,Kleinbuchstabe,6,26,0.24,3,0,0,wortfinal,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,135,Auslassung, ,,Leerzeichen,7,26,0.28,3,0,0,Wortgrenze,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,135,Auslassung,d,,Kleinbuchstabe,8,26,0.32,4,0,0,wortinitial,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,135,Auslassung,e,,Kleinbuchstabe,9,26,0.36,4,0,0,wortintern,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,135,Auslassung,r,,Kleinbuchstabe,10,26,0.4,5,0,0,wortfinal,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,135,Auslassung, ,,Leerzeichen,11,26,0.44,5,0,0,Wortgrenze,0.361,mitte,0.376,0.391
+aze19280101-1,neusort,136,Einfügung,,G,Großbuchstabe,0,39,0.0,1,1,0,Einfügung,0.364,mitte,0.378,0.284
+aze19280101-1,neusort,136,Einfügung,,e,Kleinbuchstabe,0,39,0.0,1,1,0,Einfügung,0.364,mitte,0.378,0.284
+aze19280101-1,neusort,136,Einfügung,,l,Kleinbuchstabe,0,39,0.0,1,1,0,Einfügung,0.364,mitte,0.378,0.284
+aze19280101-1,neusort,136,Einfügung,,t,Kleinbuchstabe,0,39,0.0,1,1,0,Einfügung,0.364,mitte,0.378,0.284
+aze19280101-1,neusort,136,Einfügung,,u,Kleinbuchstabe,0,39,0.0,1,1,0,Einfügung,0.364,mitte,0.378,0.284
+aze19280101-1,neusort,136,Einfügung,,n,Kleinbuchstabe,0,39,0.0,1,1,0,Einfügung,0.364,mitte,0.378,0.284
+aze19280101-1,neusort,136,Einfügung,,g,Kleinbuchstabe,0,39,0.0,1,1,0,Einfügung,0.364,mitte,0.378,0.284
+aze19280101-1,neusort,136,Einfügung,, ,Leerzeichen,0,39,0.0,1,1,0,Einfügung,0.364,mitte,0.378,0.284
+aze19280101-1,neusort,150,Auslassung,k,,Kleinbuchstabe,33,34,1.0,10,0,1,wortfinal,0.402,mitte,0.5,0.284
+aze19280101-1,neusort,163,Auslassung,!,,Interpunktion,7,8,1.0,10,0,1,wortfinal,0.437,mitte,0.595,0.284
+aze19280101-1,neusort,169,Ersetzung,s,f,Kleinbuchstabe,17,38,0.459,5,0,0,wortintern,0.453,mitte,0.64,0.284
+aze19280101-1,neusort,178,Auslassung,.,,Interpunktion,26,35,0.765,8,0,0,wortfinal,0.477,mitte,0.705,0.284
+aze19280101-1,neusort,178,Auslassung, ,,Leerzeichen,27,35,0.794,8,0,0,Wortgrenze,0.477,mitte,0.705,0.284
+aze19280101-1,neusort,178,Auslassung,E,,Großbuchstabe,28,35,0.824,9,0,0,wortinitial,0.477,mitte,0.705,0.284
+aze19280101-1,neusort,178,Auslassung,r,,Kleinbuchstabe,29,35,0.853,9,0,0,wortfinal,0.477,mitte,0.705,0.284
+aze19280101-1,neusort,178,Auslassung, ,,Leerzeichen,30,35,0.882,9,0,0,Wortgrenze,0.477,mitte,0.705,0.284
+aze19280101-1,neusort,178,Auslassung,h,,Kleinbuchstabe,31,35,0.912,10,0,0,wortinitial,0.477,mitte,0.705,0.284
+aze19280101-1,neusort,178,Auslassung,ä,,Umlaut/ß,32,35,0.941,10,0,0,wortintern,0.477,mitte,0.705,0.284
+aze19280101-1,neusort,178,Auslassung,l,,Kleinbuchstabe,33,35,0.971,10,0,1,wortintern,0.477,mitte,0.705,0.284
+aze19280101-1,neusort,178,Auslassung,t,,Kleinbuchstabe,34,35,1.0,10,0,1,wortfinal,0.477,mitte,0.705,0.284
+aze19280101-1,neusort,218,Auslassung,j,,Kleinbuchstabe,0,42,0.0,1,1,0,wortinitial,0.585,mitte,0.393,0.519
+aze19280101-1,neusort,220,Auslassung,f,,Kleinbuchstabe,0,27,0.0,1,1,0,wortinitial,0.59,mitte,0.414,0.515
+aze19280101-1,neusort,220,Einfügung,,.,Interpunktion,19,27,0.731,8,0,0,Einfügung,0.59,mitte,0.414,0.515
+aze19280101-1,neusort,232,Auslassung,.,,Interpunktion,12,34,0.364,4,0,0,wortfinal,0.623,mitte,0.494,0.515
+aze19280101-1,neusort,232,Auslassung, ,,Leerzeichen,13,34,0.394,4,0,0,Wortgrenze,0.623,mitte,0.494,0.515
+aze19280101-1,neusort,232,Auslassung,D,,Großbuchstabe,14,34,0.424,5,0,0,wortinitial,0.623,mitte,0.494,0.515
+aze19280101-1,neusort,232,Auslassung,i,,Kleinbuchstabe,15,34,0.455,5,0,0,wortintern,0.623,mitte,0.494,0.515
+aze19280101-1,neusort,232,Auslassung,e,,Kleinbuchstabe,16,34,0.485,5,0,0,wortfinal,0.623,mitte,0.494,0.515
+aze19280101-1,neusort,233,Ersetzung,-,.,Trennstrich,28,29,1.0,10,0,1,wortfinal,0.625,mitte,0.498,0.515
+aze19280101-1,neusort,234,Ersetzung,o,a,Kleinbuchstabe,1,29,0.036,1,1,0,wortintern,0.628,mitte,0.509,0.515
+aze19280101-1,neusort,234,Ersetzung,t,k,Kleinbuchstabe,16,29,0.571,6,0,0,wortintern,0.628,mitte,0.509,0.515
+aze19280101-1,neusort,234,Ersetzung,u,n,Kleinbuchstabe,19,29,0.679,7,0,0,wortintern,0.628,mitte,0.509,0.515
+aze19280101-1,neusort,235,Auslassung, ,,Leerzeichen,22,29,0.786,8,0,0,Wortgrenze,0.631,mitte,0.516,0.517
+aze19280101-1,neusort,235,Auslassung,-,,Trennstrich,28,29,1.0,10,0,1,wortfinal,0.631,mitte,0.516,0.517
+aze19280101-1,neusort,236,Auslassung, ,,Leerzeichen,9,39,0.237,3,0,0,Wortgrenze,0.633,mitte,0.522,0.515
+aze19280101-1,neusort,236,Auslassung,–,,Trennstrich,10,39,0.263,3,0,0,Einzelzeichen,0.633,mitte,0.522,0.515
+aze19280101-1,neusort,236,Auslassung,-,,Trennstrich,38,39,1.0,10,0,1,wortfinal,0.633,mitte,0.522,0.515
+aze19280101-1,neusort,242,Auslassung, ,,Leerzeichen,27,34,0.818,9,0,0,Wortgrenze,0.65,mitte,0.566,0.517
+aze19280101-1,neusort,242,Auslassung,a,,Kleinbuchstabe,28,34,0.848,9,0,0,wortinitial,0.65,mitte,0.566,0.517
+aze19280101-1,neusort,242,Auslassung,n,,Kleinbuchstabe,29,34,0.879,9,0,0,wortintern,0.65,mitte,0.566,0.517
+aze19280101-1,neusort,242,Auslassung,d,,Kleinbuchstabe,30,34,0.909,10,0,0,wortintern,0.65,mitte,0.566,0.517
+aze19280101-1,neusort,242,Auslassung,r,,Kleinbuchstabe,31,34,0.939,10,0,0,wortintern,0.65,mitte,0.566,0.517
+aze19280101-1,neusort,242,Auslassung,e,,Kleinbuchstabe,32,34,0.97,10,0,1,wortintern,0.65,mitte,0.566,0.517
+aze19280101-1,neusort,242,Auslassung,r,,Kleinbuchstabe,33,34,1.0,10,0,1,wortfinal,0.65,mitte,0.566,0.517
+aze19280101-1,neusort,248,Ersetzung,s,f,Kleinbuchstabe,17,29,0.607,7,0,0,wortintern,0.666,mitte,0.616,0.516
+aze19280101-1,neusort,261,Einfügung,,B,Großbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,,u,Kleinbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,,n,Kleinbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,,d,Kleinbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,,e,Kleinbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,,s,Kleinbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,,b,Kleinbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,,a,Kleinbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,,h,Kleinbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,,n,Kleinbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,,e,Kleinbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,,r,Kleinbuchstabe,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,261,Einfügung,, ,Leerzeichen,20,28,0.741,8,0,0,Einfügung,0.701,unten,0.708,0.667
+aze19280101-1,neusort,263,Einfügung,,f,Kleinbuchstabe,0,36,0.0,1,1,0,Einfügung,0.706,unten,0.717,0.517
+aze19280101-1,neusort,263,Einfügung,,i,Kleinbuchstabe,0,36,0.0,1,1,0,Einfügung,0.706,unten,0.717,0.517
+aze19280101-1,neusort,263,Einfügung,,z,Kleinbuchstabe,0,36,0.0,1,1,0,Einfügung,0.706,unten,0.717,0.517
+aze19280101-1,neusort,263,Einfügung,,i,Kleinbuchstabe,0,36,0.0,1,1,0,Einfügung,0.706,unten,0.717,0.517
+aze19280101-1,neusort,263,Einfügung,,e,Kleinbuchstabe,0,36,0.0,1,1,0,Einfügung,0.706,unten,0.717,0.517
+aze19280101-1,neusort,263,Einfügung,,r,Kleinbuchstabe,0,36,0.0,1,1,0,Einfügung,0.706,unten,0.717,0.517
+aze19280101-1,neusort,263,Einfügung,,u,Kleinbuchstabe,0,36,0.0,1,1,0,Einfügung,0.706,unten,0.717,0.517
+aze19280101-1,neusort,263,Einfügung,,n,Kleinbuchstabe,0,36,0.0,1,1,0,Einfügung,0.706,unten,0.717,0.517
+aze19280101-1,neusort,263,Einfügung,,g,Kleinbuchstabe,0,36,0.0,1,1,0,Einfügung,0.706,unten,0.717,0.517
+aze19280101-1,neusort,263,Einfügung,, ,Leerzeichen,0,36,0.0,1,1,0,Einfügung,0.706,unten,0.717,0.517
+aze19280101-1,neusort,265,Einfügung,,d,Kleinbuchstabe,0,37,0.0,1,1,0,Einfügung,0.712,unten,0.736,0.517
+aze19280101-1,neusort,265,Einfügung,,e,Kleinbuchstabe,0,37,0.0,1,1,0,Einfügung,0.712,unten,0.736,0.517
+aze19280101-1,neusort,265,Einfügung,,n,Kleinbuchstabe,0,37,0.0,1,1,0,Einfügung,0.712,unten,0.736,0.517
+aze19280101-1,neusort,265,Einfügung,, ,Leerzeichen,0,37,0.0,1,1,0,Einfügung,0.712,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,, ,Leerzeichen,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,D,Großbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,i,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,e,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,, ,Leerzeichen,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,n,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,i,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,e,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,d,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,r,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,i,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,g,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,e,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,n,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,, ,Leerzeichen,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,P,Großbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,e,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,n,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,s,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,i,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,o,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,n,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,e,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,n,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,",",Interpunktion,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,, ,Leerzeichen,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,d,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,i,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,e,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,, ,Leerzeichen,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,d,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,e,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,r,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,, ,Leerzeichen,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,B,Großbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,u,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,n,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,266,Einfügung,,d,Kleinbuchstabe,3,3,1.5,10,0,1,Einfügung,0.714,unten,0.736,0.517
+aze19280101-1,neusort,288,Ersetzung,",",.,Interpunktion,32,37,0.889,9,0,0,wortfinal,0.774,unten,0.913,0.516
+aze19280101-1,neusort,288,Ersetzung, ,,Leerzeichen,33,37,0.917,10,0,0,Wortgrenze,0.774,unten,0.913,0.516
+aze19280101-1,neusort,288,Ersetzung,d,,Kleinbuchstabe,34,37,0.944,10,0,0,wortinitial,0.774,unten,0.913,0.516
+aze19280101-1,neusort,288,Ersetzung,i,,Kleinbuchstabe,35,37,0.972,10,0,1,wortintern,0.774,unten,0.913,0.516
+aze19280101-1,neusort,288,Ersetzung,e,,Kleinbuchstabe,36,37,1.0,10,0,1,wortfinal,0.774,unten,0.913,0.516
+aze19280101-1,neusort,289,Auslassung,",",,Interpunktion,45,46,1.0,10,0,1,wortfinal,0.776,unten,0.92,0.516
+aze19280101-1,neusort,313,Auslassung,A,,Großbuchstabe,0,34,0.0,1,1,0,wortinitial,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung,n,,Kleinbuchstabe,1,34,0.03,1,1,0,wortintern,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung,t,,Kleinbuchstabe,2,34,0.061,1,0,0,wortintern,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung,r,,Kleinbuchstabe,3,34,0.091,1,0,0,wortintern,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung,ä,,Umlaut/ß,4,34,0.121,2,0,0,wortintern,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung,g,,Kleinbuchstabe,5,34,0.152,2,0,0,wortintern,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung,e,,Kleinbuchstabe,6,34,0.182,2,0,0,wortfinal,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung, ,,Leerzeichen,7,34,0.212,3,0,0,Wortgrenze,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung,i,,Kleinbuchstabe,8,34,0.242,3,0,0,wortinitial,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung,h,,Kleinbuchstabe,9,34,0.273,3,0,0,wortintern,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung,r,,Kleinbuchstabe,10,34,0.303,4,0,0,wortintern,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung,e,,Kleinbuchstabe,11,34,0.333,4,0,0,wortintern,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung,r,,Kleinbuchstabe,12,34,0.364,4,0,0,wortfinal,0.841,unten,0.494,0.748
+aze19280101-1,neusort,313,Auslassung, ,,Leerzeichen,13,34,0.394,4,0,0,Wortgrenze,0.841,unten,0.494,0.748
+aze19280101-1,neusort,314,Einfügung,,A,Großbuchstabe,0,42,0.0,1,1,0,Einfügung,0.844,unten,0.493,0.843
+aze19280101-1,neusort,314,Einfügung,,n,Kleinbuchstabe,0,42,0.0,1,1,0,Einfügung,0.844,unten,0.493,0.843
+aze19280101-1,neusort,314,Einfügung,,t,Kleinbuchstabe,0,42,0.0,1,1,0,Einfügung,0.844,unten,0.493,0.843
+aze19280101-1,neusort,314,Einfügung,,r,Kleinbuchstabe,0,42,0.0,1,1,0,Einfügung,0.844,unten,0.493,0.843
+aze19280101-1,neusort,314,Einfügung,,ä,Umlaut/ß,0,42,0.0,1,1,0,Einfügung,0.844,unten,0.493,0.843
+aze19280101-1,neusort,314,Einfügung,,g,Kleinbuchstabe,0,42,0.0,1,1,0,Einfügung,0.844,unten,0.493,0.843
+aze19280101-1,neusort,314,Einfügung,,e,Kleinbuchstabe,0,42,0.0,1,1,0,Einfügung,0.844,unten,0.493,0.843
+aze19280101-1,neusort,314,Einfügung,, ,Leerzeichen,0,42,0.0,1,1,0,Einfügung,0.844,unten,0.493,0.843
+aze19280101-1,neusort,317,Ersetzung,n,u,Kleinbuchstabe,17,26,0.68,7,0,0,wortintern,0.852,unten,0.524,0.787
+aze19280101-1,neusort,329,Auslassung,i,,Kleinbuchstabe,0,35,0.0,1,1,0,wortinitial,0.884,unten,0.627,0.749
+aze19280101-1,neusort,329,Auslassung,h,,Kleinbuchstabe,1,35,0.029,1,1,0,wortintern,0.884,unten,0.627,0.749
+aze19280101-1,neusort,329,Auslassung,r,,Kleinbuchstabe,2,35,0.059,1,0,0,wortintern,0.884,unten,0.627,0.749
+aze19280101-1,neusort,329,Auslassung,e,,Kleinbuchstabe,3,35,0.088,1,0,0,wortfinal,0.884,unten,0.627,0.749
+aze19280101-1,neusort,329,Auslassung, ,,Leerzeichen,4,35,0.118,2,0,0,Wortgrenze,0.884,unten,0.627,0.749
+aze19280101-1,neusort,341,Auslassung,!,,Interpunktion,6,7,1.0,10,0,1,wortfinal,0.916,unten,0.712,0.749
+aze19280101-1,neusort,357,Auslassung,d,,Kleinbuchstabe,0,36,0.0,1,1,0,wortinitial,0.96,unten,0.826,0.748
+aze19280101-1,neusort,357,Auslassung,i,,Kleinbuchstabe,1,36,0.029,1,1,0,wortintern,0.96,unten,0.826,0.748
+aze19280101-1,neusort,357,Auslassung,e,,Kleinbuchstabe,2,36,0.057,1,0,0,wortfinal,0.96,unten,0.826,0.748
+aze19280101-1,neusort,357,Auslassung, ,,Leerzeichen,3,36,0.086,1,0,0,Wortgrenze,0.96,unten,0.826,0.748
 aze19281009-6,alt,2,Ersetzung,s,M,Kleinbuchstabe,10,14,0.769,8,0,0,wortintern,0.004,oben,0.036,0.183
 aze19281009-6,alt,2,Ersetzung,t,,Kleinbuchstabe,11,14,0.846,9,0,0,wortintern,0.004,oben,0.036,0.183
 aze19281009-6,alt,6,Einfügung,,S,Großbuchstabe,0,44,0.0,1,1,0,Einfügung,0.019,oben,0.036,0.874
@@ -5941,6 +6495,86 @@ aze19281009-6,neu,245,Auslassung,.,,Interpunktion,15,16,1.0,10,0,1,wortfinal,0.9
 aze19281009-6,neu,246,Auslassung,t,,Kleinbuchstabe,36,37,1.0,10,0,1,wortfinal,0.925,unten,0.806,0.736
 aze19281009-6,neu,258,Ersetzung,f,t,Kleinbuchstabe,27,41,0.675,7,0,0,wortintern,0.97,unten,0.896,0.721
 aze19281009-6,neu,266,Ersetzung,., ,Interpunktion,14,15,1.0,10,0,1,wortfinal,1.0,unten,0.955,0.72
+aze19281009-6,neusort,6,Ersetzung,B,O,Großbuchstabe,0,44,0.0,1,1,0,wortinitial,0.019,oben,0.069,0.209
+aze19281009-6,neusort,6,Ersetzung,i,n,Kleinbuchstabe,1,44,0.023,1,1,0,wortintern,0.019,oben,0.069,0.209
+aze19281009-6,neusort,6,Ersetzung,l,,Kleinbuchstabe,2,44,0.047,1,0,0,wortintern,0.019,oben,0.069,0.209
+aze19281009-6,neusort,6,Ersetzung,N,R,Großbuchstabe,35,44,0.814,9,0,0,wortintern,0.019,oben,0.069,0.209
+aze19281009-6,neusort,8,Auslassung,.,,Interpunktion,37,38,1.0,10,0,1,wortfinal,0.026,oben,0.324,0.616
+aze19281009-6,neusort,26,Auslassung,.,,Interpunktion,20,21,1.0,10,0,1,wortfinal,0.094,oben,0.477,0.069
+aze19281009-6,neusort,41,Auslassung, ,,Leerzeichen,25,31,0.833,9,0,0,Wortgrenze,0.151,oben,0.592,0.02
+aze19281009-6,neusort,41,Auslassung,m,,Kleinbuchstabe,26,31,0.867,9,0,0,wortinitial,0.151,oben,0.592,0.02
+aze19281009-6,neusort,41,Auslassung,u,,Kleinbuchstabe,27,31,0.9,10,0,0,wortintern,0.151,oben,0.592,0.02
+aze19281009-6,neusort,41,Auslassung,ß,,Umlaut/ß,28,31,0.933,10,0,0,wortintern,0.151,oben,0.592,0.02
+aze19281009-6,neusort,41,Auslassung,t,,Kleinbuchstabe,29,31,0.967,10,0,1,wortintern,0.151,oben,0.592,0.02
+aze19281009-6,neusort,41,Auslassung,e,,Kleinbuchstabe,30,31,1.0,10,0,1,wortfinal,0.151,oben,0.592,0.02
+aze19281009-6,neusort,54,Einfügung,,.,Interpunktion,35,35,1.029,10,0,1,Einfügung,0.2,oben,0.683,0.021
+aze19281009-6,neusort,58,Auslassung,-,,Trennstrich,42,43,1.0,10,0,1,wortfinal,0.215,oben,0.72,0.021
+aze19281009-6,neusort,59,Auslassung,b,,Kleinbuchstabe,39,40,1.0,10,0,1,wortfinal,0.219,oben,0.725,0.021
+aze19281009-6,neusort,69,Auslassung,-,,Trennstrich,37,38,1.0,10,0,1,wortfinal,0.257,oben,0.802,0.023
+aze19281009-6,neusort,77,Auslassung,.,,Interpunktion,24,25,1.0,10,0,1,wortfinal,0.287,oben,0.859,0.022
+aze19281009-6,neusort,81,Auslassung,-,,Trennstrich,36,37,1.0,10,0,1,wortfinal,0.302,oben,0.888,0.025
+aze19281009-6,neusort,84,Auslassung,f,,Kleinbuchstabe,36,38,0.973,10,0,1,wortintern,0.313,oben,0.912,0.025
+aze19281009-6,neusort,84,Auslassung,-,,Trennstrich,37,38,1.0,10,0,1,wortfinal,0.313,oben,0.912,0.025
+aze19281009-6,neusort,86,Auslassung,-,,Trennstrich,40,41,1.0,10,0,1,wortfinal,0.321,oben,0.927,0.025
+aze19281009-6,neusort,88,Auslassung,-,,Trennstrich,39,40,1.0,10,0,1,wortfinal,0.328,oben,0.942,0.025
+aze19281009-6,neusort,89,Auslassung,.,,Interpunktion,19,20,1.0,10,0,1,wortfinal,0.332,oben,0.948,0.025
+aze19281009-6,neusort,95,Auslassung,.,,Interpunktion,40,41,1.0,10,0,1,wortfinal,0.355,mitte,0.369,0.253
+aze19281009-6,neusort,111,Auslassung, ,,Leerzeichen,28,32,0.903,10,0,0,Wortgrenze,0.415,mitte,0.502,0.253
+aze19281009-6,neusort,111,Auslassung,d,,Kleinbuchstabe,29,32,0.935,10,0,0,wortinitial,0.415,mitte,0.502,0.253
+aze19281009-6,neusort,111,Auslassung,e,,Kleinbuchstabe,30,32,0.968,10,0,1,wortintern,0.415,mitte,0.502,0.253
+aze19281009-6,neusort,111,Auslassung,s,,Kleinbuchstabe,31,32,1.0,10,0,1,wortfinal,0.415,mitte,0.502,0.253
+aze19281009-6,neusort,113,Auslassung,s,,Kleinbuchstabe,0,41,0.0,1,1,0,wortinitial,0.423,mitte,0.518,0.253
+aze19281009-6,neusort,121,Auslassung,-,,Trennstrich,38,39,1.0,10,0,1,wortfinal,0.453,mitte,0.577,0.253
+aze19281009-6,neusort,134,Auslassung,.,,Interpunktion,11,12,1.0,10,0,1,wortfinal,0.502,mitte,0.673,0.253
+aze19281009-6,neusort,143,Ersetzung,s,f,Kleinbuchstabe,28,30,0.966,10,0,1,wortintern,0.536,mitte,0.383,0.485
+aze19281009-6,neusort,143,Ersetzung,t,,Kleinbuchstabe,29,30,1.0,10,0,1,wortfinal,0.536,mitte,0.383,0.485
+aze19281009-6,neusort,158,Auslassung,.,,Interpunktion,20,21,1.0,10,0,1,wortfinal,0.592,mitte,0.492,0.485
+aze19281009-6,neusort,159,Auslassung,D,,Großbuchstabe,0,26,0.0,1,1,0,wortinitial,0.596,mitte,0.498,0.537
+aze19281009-6,neusort,159,Auslassung,e,,Kleinbuchstabe,1,26,0.04,1,1,0,wortintern,0.596,mitte,0.498,0.537
+aze19281009-6,neusort,159,Auslassung,r,,Kleinbuchstabe,2,26,0.08,1,0,0,wortfinal,0.596,mitte,0.498,0.537
+aze19281009-6,neusort,159,Auslassung, ,,Leerzeichen,3,26,0.12,2,0,0,Wortgrenze,0.596,mitte,0.498,0.537
+aze19281009-6,neusort,163,Auslassung,",",,Interpunktion,34,35,1.0,10,0,1,wortfinal,0.611,mitte,0.529,0.487
+aze19281009-6,neusort,174,Auslassung, ,,Leerzeichen,37,45,0.841,9,0,0,Wortgrenze,0.653,mitte,0.623,0.489
+aze19281009-6,neusort,174,Auslassung,S,,Großbuchstabe,38,45,0.864,9,0,0,wortinitial,0.653,mitte,0.623,0.489
+aze19281009-6,neusort,174,Auslassung,t,,Kleinbuchstabe,39,45,0.886,9,0,0,wortintern,0.653,mitte,0.623,0.489
+aze19281009-6,neusort,174,Auslassung,u,,Kleinbuchstabe,40,45,0.909,10,0,0,wortintern,0.653,mitte,0.623,0.489
+aze19281009-6,neusort,174,Auslassung,k,,Kleinbuchstabe,41,45,0.932,10,0,0,wortintern,0.653,mitte,0.623,0.489
+aze19281009-6,neusort,174,Auslassung,k,,Kleinbuchstabe,42,45,0.955,10,0,0,wortintern,0.653,mitte,0.623,0.489
+aze19281009-6,neusort,174,Auslassung,a,,Kleinbuchstabe,43,45,0.977,10,0,1,wortintern,0.653,mitte,0.623,0.489
+aze19281009-6,neusort,174,Auslassung,-,,Trennstrich,44,45,1.0,10,0,1,wortfinal,0.653,mitte,0.623,0.489
+aze19281009-6,neusort,179,Auslassung,-,,Trennstrich,46,47,1.0,10,0,1,wortfinal,0.672,unten,0.655,0.489
+aze19281009-6,neusort,183,Auslassung,-,,Trennstrich,43,44,1.0,10,0,1,wortfinal,0.687,unten,0.682,0.488
+aze19281009-6,neusort,185,Auslassung,.,,Interpunktion,27,28,1.0,10,0,1,wortfinal,0.694,unten,0.695,0.488
+aze19281009-6,neusort,188,Ersetzung,ü,u,Umlaut/ß,9,14,0.692,7,0,0,wortintern,0.706,unten,0.363,0.779
+aze19281009-6,neusort,190,Auslassung,.,,Interpunktion,14,15,1.0,10,0,1,wortfinal,0.713,unten,0.384,0.792
+aze19281009-6,neusort,194,Auslassung,-,,Trennstrich,30,31,1.0,10,0,1,wortfinal,0.728,unten,0.418,0.718
+aze19281009-6,neusort,196,Auslassung,-,,Trennstrich,42,43,1.0,10,0,1,wortfinal,0.736,unten,0.432,0.718
+aze19281009-6,neusort,203,Auslassung,.,,Interpunktion,28,33,0.875,9,0,0,wortfinal,0.762,unten,0.484,0.718
+aze19281009-6,neusort,203,Auslassung, ,,Leerzeichen,29,33,0.906,10,0,0,Wortgrenze,0.762,unten,0.484,0.718
+aze19281009-6,neusort,203,Auslassung,D,,Großbuchstabe,30,33,0.938,10,0,0,wortinitial,0.762,unten,0.484,0.718
+aze19281009-6,neusort,203,Auslassung,e,,Kleinbuchstabe,31,33,0.969,10,0,1,wortintern,0.762,unten,0.484,0.718
+aze19281009-6,neusort,203,Auslassung,r,,Kleinbuchstabe,32,33,1.0,10,0,1,wortfinal,0.762,unten,0.484,0.718
+aze19281009-6,neusort,208,Auslassung, ,,Leerzeichen,10,35,0.294,3,0,0,Wortgrenze,0.781,unten,0.513,0.718
+aze19281009-6,neusort,208,Auslassung,D,,Großbuchstabe,11,35,0.324,4,0,0,wortinitial,0.781,unten,0.513,0.718
+aze19281009-6,neusort,208,Auslassung,i,,Kleinbuchstabe,12,35,0.353,4,0,0,wortintern,0.781,unten,0.513,0.718
+aze19281009-6,neusort,208,Auslassung,e,,Kleinbuchstabe,13,35,0.382,4,0,0,wortfinal,0.781,unten,0.513,0.718
+aze19281009-6,neusort,219,Auslassung,-,,Trennstrich,41,42,1.0,10,0,1,wortfinal,0.823,unten,0.6,0.718
+aze19281009-6,neusort,223,Auslassung, ,,Leerzeichen,34,38,0.919,10,0,0,Wortgrenze,0.838,unten,0.629,0.718
+aze19281009-6,neusort,223,Auslassung,d,,Kleinbuchstabe,35,38,0.946,10,0,0,wortinitial,0.838,unten,0.629,0.718
+aze19281009-6,neusort,223,Auslassung,e,,Kleinbuchstabe,36,38,0.973,10,0,1,wortintern,0.838,unten,0.629,0.718
+aze19281009-6,neusort,223,Auslassung,r,,Kleinbuchstabe,37,38,1.0,10,0,1,wortfinal,0.838,unten,0.629,0.718
+aze19281009-6,neusort,225,Auslassung, ,,Leerzeichen,29,34,0.879,9,0,0,Wortgrenze,0.845,unten,0.643,0.718
+aze19281009-6,neusort,225,Auslassung,v,,Kleinbuchstabe,30,34,0.909,10,0,0,wortinitial,0.845,unten,0.643,0.718
+aze19281009-6,neusort,225,Auslassung,e,,Kleinbuchstabe,31,34,0.939,10,0,0,wortintern,0.845,unten,0.643,0.718
+aze19281009-6,neusort,225,Auslassung,r,,Kleinbuchstabe,32,34,0.97,10,0,1,wortintern,0.845,unten,0.643,0.718
+aze19281009-6,neusort,225,Auslassung,-,,Trennstrich,33,34,1.0,10,0,1,wortfinal,0.845,unten,0.643,0.718
+aze19281009-6,neusort,228,Auslassung,.,,Interpunktion,8,9,1.0,10,0,1,wortfinal,0.857,unten,0.658,0.718
+aze19281009-6,neusort,234,Ersetzung,a,e,Kleinbuchstabe,35,36,1.0,10,0,1,wortfinal,0.879,unten,0.714,0.72
+aze19281009-6,neusort,240,Auslassung,.,,Interpunktion,33,34,1.0,10,0,1,wortfinal,0.902,unten,0.759,0.72
+aze19281009-6,neusort,245,Auslassung,.,,Interpunktion,15,16,1.0,10,0,1,wortfinal,0.921,unten,0.794,0.72
+aze19281009-6,neusort,246,Auslassung,t,,Kleinbuchstabe,36,37,1.0,10,0,1,wortfinal,0.925,unten,0.806,0.736
+aze19281009-6,neusort,258,Ersetzung,f,t,Kleinbuchstabe,27,41,0.675,7,0,0,wortintern,0.97,unten,0.896,0.721
+aze19281009-6,neusort,266,Ersetzung,., ,Interpunktion,14,15,1.0,10,0,1,wortfinal,1.0,unten,0.955,0.72
 aze19281111-9,alt,2,Ersetzung,i,!,Kleinbuchstabe,1,13,0.083,1,1,0,wortintern,0.003,oben,0.034,0.2
 aze19281111-9,alt,3,Ersetzung,b,-,Kleinbuchstabe,2,16,0.133,2,0,0,wortintern,0.005,oben,0.034,0.441
 aze19281111-9,alt,3,Auslassung,i,,Kleinbuchstabe,4,16,0.267,3,0,0,wortintern,0.005,oben,0.034,0.441
@@ -6772,6 +7406,311 @@ aze19281111-9,neu,380,Ersetzung,i,u,Kleinbuchstabe,1,7,0.167,2,1,0,wortintern,0.
 aze19281111-9,neu,380,Ersetzung,., ,Interpunktion,6,7,1.0,10,0,1,wortfinal,0.964,unten,0.826,0.506
 aze19281111-9,neu,382,Ersetzung,g,R,Kleinbuchstabe,0,42,0.0,1,1,0,wortinitial,0.969,unten,0.849,0.508
 aze19281111-9,neu,382,Ersetzung,r,,Kleinbuchstabe,1,42,0.024,1,1,0,wortintern,0.969,unten,0.849,0.508
+aze19281111-9,neusort,4,Auslassung,.,,Interpunktion,17,18,1.0,10,0,1,wortfinal,0.008,oben,0.033,0.664
+aze19281111-9,neusort,7,Auslassung,.,,Interpunktion,9,10,1.0,10,0,1,wortfinal,0.015,oben,0.062,0.059
+aze19281111-9,neusort,22,Auslassung,t,,Kleinbuchstabe,35,36,1.0,10,0,1,wortfinal,0.053,oben,0.184,0.04
+aze19281111-9,neusort,34,Einfügung,,-,Trennstrich,38,38,1.027,10,0,1,Einfügung,0.084,oben,0.271,0.039
+aze19281111-9,neusort,35,Einfügung,,-,Trennstrich,42,42,1.024,10,0,1,Einfügung,0.087,oben,0.279,0.04
+aze19281111-9,neusort,52,Auslassung,P,,Großbuchstabe,0,36,0.0,1,1,0,wortinitial,0.13,oben,0.418,0.111
+aze19281111-9,neusort,52,Auslassung,a,,Kleinbuchstabe,1,36,0.029,1,1,0,wortintern,0.13,oben,0.418,0.111
+aze19281111-9,neusort,52,Auslassung,r,,Kleinbuchstabe,2,36,0.057,1,0,0,wortintern,0.13,oben,0.418,0.111
+aze19281111-9,neusort,52,Auslassung,t,,Kleinbuchstabe,3,36,0.086,1,0,0,wortintern,0.13,oben,0.418,0.111
+aze19281111-9,neusort,52,Auslassung,e,,Kleinbuchstabe,4,36,0.114,2,0,0,wortintern,0.13,oben,0.418,0.111
+aze19281111-9,neusort,52,Auslassung,i,,Kleinbuchstabe,5,36,0.143,2,0,0,wortintern,0.13,oben,0.418,0.111
+aze19281111-9,neusort,52,Auslassung,.,,Interpunktion,6,36,0.171,2,0,0,wortfinal,0.13,oben,0.418,0.111
+aze19281111-9,neusort,52,Auslassung, ,,Leerzeichen,7,36,0.2,3,0,0,Wortgrenze,0.13,oben,0.418,0.111
+aze19281111-9,neusort,52,Auslassung,—,,Trennstrich,8,36,0.229,3,0,0,Einzelzeichen,0.13,oben,0.418,0.111
+aze19281111-9,neusort,52,Auslassung, ,,Leerzeichen,9,36,0.257,3,0,0,Wortgrenze,0.13,oben,0.418,0.111
+aze19281111-9,neusort,59,Ersetzung,U,u,Großbuchstabe,30,40,0.769,8,0,0,wortinitial,0.148,oben,0.479,0.039
+aze19281111-9,neusort,64,Ersetzung,z,v,Kleinbuchstabe,0,7,0.0,1,1,0,wortinitial,0.16,oben,0.512,0.039
+aze19281111-9,neusort,64,Ersetzung,g,n,Kleinbuchstabe,3,7,0.5,6,0,0,wortintern,0.16,oben,0.512,0.039
+aze19281111-9,neusort,64,Ersetzung,n, ,Kleinbuchstabe,5,7,0.833,9,0,1,wortintern,0.16,oben,0.512,0.039
+aze19281111-9,neusort,64,Ersetzung,.,W,Interpunktion,6,7,1.0,10,0,1,wortfinal,0.16,oben,0.512,0.039
+aze19281111-9,neusort,67,Auslassung,e,,Kleinbuchstabe,36,43,0.857,9,0,0,wortfinal,0.168,oben,0.546,0.042
+aze19281111-9,neusort,75,Ersetzung,r,i,Kleinbuchstabe,33,42,0.805,9,0,0,wortintern,0.188,oben,0.608,0.042
+aze19281111-9,neusort,86,Auslassung, ,,Leerzeichen,35,40,0.897,9,0,0,Wortgrenze,0.216,oben,0.106,0.271
+aze19281111-9,neusort,86,Auslassung,s,,Kleinbuchstabe,36,40,0.923,10,0,0,wortinitial,0.216,oben,0.106,0.271
+aze19281111-9,neusort,86,Auslassung,i,,Kleinbuchstabe,37,40,0.949,10,0,0,wortintern,0.216,oben,0.106,0.271
+aze19281111-9,neusort,86,Auslassung,c,,Kleinbuchstabe,38,40,0.974,10,0,1,wortintern,0.216,oben,0.106,0.271
+aze19281111-9,neusort,86,Auslassung,h,,Kleinbuchstabe,39,40,1.0,10,0,1,wortfinal,0.216,oben,0.106,0.271
+aze19281111-9,neusort,87,Auslassung, ,,Leerzeichen,34,38,0.919,10,0,0,Wortgrenze,0.219,oben,0.114,0.271
+aze19281111-9,neusort,87,Auslassung,d,,Kleinbuchstabe,35,38,0.946,10,0,0,wortinitial,0.219,oben,0.114,0.271
+aze19281111-9,neusort,87,Auslassung,e,,Kleinbuchstabe,36,38,0.973,10,0,1,wortintern,0.219,oben,0.114,0.271
+aze19281111-9,neusort,87,Auslassung,r,,Kleinbuchstabe,37,38,1.0,10,0,1,wortfinal,0.219,oben,0.114,0.271
+aze19281111-9,neusort,88,Auslassung, ,,Leerzeichen,35,39,0.921,10,0,0,Wortgrenze,0.221,oben,0.12,0.271
+aze19281111-9,neusort,88,Auslassung,d,,Kleinbuchstabe,36,39,0.947,10,0,0,wortinitial,0.221,oben,0.12,0.271
+aze19281111-9,neusort,88,Auslassung,i,,Kleinbuchstabe,37,39,0.974,10,0,1,wortintern,0.221,oben,0.12,0.271
+aze19281111-9,neusort,88,Auslassung,e,,Kleinbuchstabe,38,39,1.0,10,0,1,wortfinal,0.221,oben,0.12,0.271
+aze19281111-9,neusort,89,Auslassung, ,,Leerzeichen,32,36,0.914,10,0,0,Wortgrenze,0.224,oben,0.129,0.271
+aze19281111-9,neusort,89,Auslassung,d,,Kleinbuchstabe,33,36,0.943,10,0,0,wortinitial,0.224,oben,0.129,0.271
+aze19281111-9,neusort,89,Auslassung,e,,Kleinbuchstabe,34,36,0.971,10,0,1,wortintern,0.224,oben,0.129,0.271
+aze19281111-9,neusort,89,Auslassung,s,,Kleinbuchstabe,35,36,1.0,10,0,1,wortfinal,0.224,oben,0.129,0.271
+aze19281111-9,neusort,96,Auslassung,.,,Interpunktion,25,26,1.0,10,0,1,wortfinal,0.242,oben,0.181,0.271
+aze19281111-9,neusort,101,Ersetzung,.,",",Interpunktion,12,39,0.316,4,0,0,wortfinal,0.254,oben,0.215,0.272
+aze19281111-9,neusort,102,Auslassung,",",,Interpunktion,38,39,1.0,10,0,1,wortfinal,0.257,oben,0.222,0.272
+aze19281111-9,neusort,104,Auslassung,f,,Kleinbuchstabe,39,40,1.0,10,0,1,wortfinal,0.262,oben,0.237,0.272
+aze19281111-9,neusort,105,Auslassung, ,,Leerzeichen,27,34,0.818,9,0,0,Wortgrenze,0.265,oben,0.244,0.272
+aze19281111-9,neusort,105,Auslassung,d,,Kleinbuchstabe,28,34,0.848,9,0,0,wortinitial,0.265,oben,0.244,0.272
+aze19281111-9,neusort,105,Auslassung,u,,Kleinbuchstabe,29,34,0.879,9,0,0,wortintern,0.265,oben,0.244,0.272
+aze19281111-9,neusort,105,Auslassung,r,,Kleinbuchstabe,30,34,0.909,10,0,0,wortintern,0.265,oben,0.244,0.272
+aze19281111-9,neusort,105,Auslassung,c,,Kleinbuchstabe,31,34,0.939,10,0,0,wortintern,0.265,oben,0.244,0.272
+aze19281111-9,neusort,105,Auslassung,h,,Kleinbuchstabe,32,34,0.97,10,0,1,wortintern,0.265,oben,0.244,0.272
+aze19281111-9,neusort,105,Auslassung,-,,Trennstrich,33,34,1.0,10,0,1,wortfinal,0.265,oben,0.244,0.272
+aze19281111-9,neusort,108,Auslassung,",",,Interpunktion,38,39,1.0,10,0,1,wortfinal,0.272,oben,0.265,0.272
+aze19281111-9,neusort,110,Auslassung,.,,Interpunktion,9,10,1.0,10,0,1,wortfinal,0.277,oben,0.28,0.272
+aze19281111-9,neusort,124,Auslassung,-,,Trennstrich,40,41,1.0,10,0,1,wortfinal,0.313,oben,0.381,0.272
+aze19281111-9,neusort,125,Auslassung, ,,Leerzeichen,35,37,0.972,10,0,1,Wortgrenze,0.316,oben,0.388,0.272
+aze19281111-9,neusort,125,Auslassung,–,,Trennstrich,36,37,1.0,10,0,1,Einzelzeichen,0.316,oben,0.388,0.272
+aze19281111-9,neusort,129,Auslassung,.,,Interpunktion,16,17,1.0,10,0,1,wortfinal,0.326,oben,0.417,0.272
+aze19281111-9,neusort,134,Ersetzung,:,;,Interpunktion,44,45,1.0,10,0,1,wortfinal,0.338,mitte,0.459,0.273
+aze19281111-9,neusort,143,Einfügung,,.,Interpunktion,46,46,1.022,10,0,1,Einfügung,0.361,mitte,0.529,0.273
+aze19281111-9,neusort,147,Einfügung,,",",Interpunktion,45,45,1.023,10,0,1,Einfügung,0.372,mitte,0.562,0.274
+aze19281111-9,neusort,150,Einfügung,,s,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,c,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,h,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,e,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,n,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,, ,Leerzeichen,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,u,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,n,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,d,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,, ,Leerzeichen,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,P,Großbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,o,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,l,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,i,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,t,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,i,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Ersetzung,ö,e,Umlaut/ß,1,7,0.167,2,1,0,wortintern,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,m,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,i,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,t,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,t,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,e,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,l,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,b,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,a,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,r,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,",",Interpunktion,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,, ,Leerzeichen,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,l,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,e,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Einfügung,,r,Kleinbuchstabe,3,7,0.5,6,0,0,Einfügung,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,150,Ersetzung,., ,Interpunktion,6,7,1.0,10,0,1,wortfinal,0.379,mitte,0.579,0.273
+aze19281111-9,neusort,157,Ersetzung,b,d,Kleinbuchstabe,0,12,0.0,1,1,0,wortinitial,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,c,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,h,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,s,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,t,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,e,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,, ,Leerzeichen,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,D,Großbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,a,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,n,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,k,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,, ,Leerzeichen,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,g,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,e,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,s,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,a,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,g,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,t,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,, ,Leerzeichen,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,w,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,e,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,r,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,d,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,e,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,n,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,, ,Leerzeichen,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,s,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Einfügung,,o,Kleinbuchstabe,2,12,0.182,2,0,0,Einfügung,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Ersetzung,i,.,Kleinbuchstabe,4,12,0.364,4,0,0,wortintern,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Ersetzung,g,,Kleinbuchstabe,5,12,0.455,5,0,0,wortintern,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Ersetzung,s,,Kleinbuchstabe,6,12,0.545,6,0,0,wortintern,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Ersetzung,t,,Kleinbuchstabe,7,12,0.636,7,0,0,wortfinal,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Ersetzung, ,,Leerzeichen,8,12,0.727,8,0,0,Wortgrenze,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Ersetzung,u,,Kleinbuchstabe,9,12,0.818,9,0,0,wortinitial,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Ersetzung,n,,Kleinbuchstabe,10,12,0.909,10,0,1,wortintern,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,157,Ersetzung,d,,Kleinbuchstabe,11,12,1.0,10,0,1,wortfinal,0.397,mitte,0.631,0.273
+aze19281111-9,neusort,159,Einfügung,,",",Interpunktion,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,, ,Leerzeichen,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,,b,Kleinbuchstabe,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,,i,Kleinbuchstabe,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,,l,Kleinbuchstabe,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,,l,Kleinbuchstabe,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,,i,Kleinbuchstabe,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,,g,Kleinbuchstabe,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,,s,Kleinbuchstabe,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,,t,Kleinbuchstabe,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,, ,Leerzeichen,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,,u,Kleinbuchstabe,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,,n,Kleinbuchstabe,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,159,Einfügung,,d,Kleinbuchstabe,24,24,1.043,10,0,1,Einfügung,0.402,mitte,0.08,0.527
+aze19281111-9,neusort,160,Ersetzung,s,.,Kleinbuchstabe,0,18,0.0,1,1,0,wortinitial,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Ersetzung,c,.,Kleinbuchstabe,1,18,0.059,1,1,0,wortintern,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Ersetzung,h,.,Kleinbuchstabe,2,18,0.118,2,0,0,wortintern,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Ersetzung,o, ,Kleinbuchstabe,3,18,0.176,2,0,0,wortintern,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Auslassung,n,,Kleinbuchstabe,6,18,0.353,4,0,0,wortintern,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Auslassung,d,,Kleinbuchstabe,7,18,0.412,5,0,0,wortfinal,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Ersetzung,g,W,Kleinbuchstabe,9,18,0.529,6,0,0,wortinitial,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Ersetzung,e,ä,Kleinbuchstabe,10,18,0.588,6,0,0,wortintern,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Ersetzung,w,,Kleinbuchstabe,11,18,0.647,7,0,0,wortintern,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Ersetzung,a,,Kleinbuchstabe,12,18,0.706,8,0,0,wortintern,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,, ,Leerzeichen,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,l,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,e,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,i,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,c,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,h,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,t,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,",",Interpunktion,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,, ,Leerzeichen,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,b,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,i,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,l,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,l,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,i,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,g,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,s,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,t,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,, ,Leerzeichen,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,u,Kleinbuchstabe,17,18,1.0,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,160,Einfügung,,d,Kleinbuchstabe,18,18,1.059,10,0,1,Einfügung,0.405,mitte,0.08,0.527
+aze19281111-9,neusort,161,Auslassung,.,,Interpunktion,0,27,0.0,1,1,0,wortinitial,0.407,mitte,0.147,0.791
+aze19281111-9,neusort,161,Auslassung,.,,Interpunktion,1,27,0.038,1,1,0,wortintern,0.407,mitte,0.147,0.791
+aze19281111-9,neusort,161,Auslassung,.,,Interpunktion,2,27,0.077,1,0,0,wortfinal,0.407,mitte,0.147,0.791
+aze19281111-9,neusort,161,Auslassung, ,,Leerzeichen,3,27,0.115,2,0,0,Wortgrenze,0.407,mitte,0.147,0.791
+aze19281111-9,neusort,165,Ersetzung,g,e,Kleinbuchstabe,20,27,0.769,8,0,0,wortintern,0.417,mitte,0.174,0.787
+aze19281111-9,neusort,169,Auslassung,",",,Interpunktion,28,29,1.0,10,0,1,wortfinal,0.427,mitte,0.2,0.789
+aze19281111-9,neusort,170,Auslassung,-,,Trennstrich,27,28,1.0,10,0,1,wortfinal,0.43,mitte,0.207,0.789
+aze19281111-9,neusort,171,Auslassung,.,,Interpunktion,14,15,1.0,10,0,1,wortfinal,0.433,mitte,0.213,0.789
+aze19281111-9,neusort,176,Ersetzung,s,f,Kleinbuchstabe,10,38,0.27,3,0,0,wortintern,0.445,mitte,0.291,0.565
+aze19281111-9,neusort,177,Ersetzung,s,t,Kleinbuchstabe,29,38,0.784,8,0,0,wortintern,0.448,mitte,0.304,0.572
+aze19281111-9,neusort,177,Ersetzung,í,t,Kleinbuchstabe,32,38,0.865,9,0,0,wortfinal,0.448,mitte,0.304,0.572
+aze19281111-9,neusort,178,Auslassung,i,,Kleinbuchstabe,1,42,0.024,1,1,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung, ,,Leerzeichen,3,42,0.073,1,0,0,Wortgrenze,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,n,,Kleinbuchstabe,4,42,0.098,1,0,0,wortinitial,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,e,,Kleinbuchstabe,5,42,0.122,2,0,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,u,,Kleinbuchstabe,6,42,0.146,2,0,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,a,,Kleinbuchstabe,7,42,0.171,2,0,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,r,,Kleinbuchstabe,8,42,0.195,2,0,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,t,,Kleinbuchstabe,9,42,0.22,3,0,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,i,,Kleinbuchstabe,10,42,0.244,3,0,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,g,,Kleinbuchstabe,11,42,0.268,3,0,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,e,,Kleinbuchstabe,12,42,0.293,3,0,0,wortfinal,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung, ,,Leerzeichen,13,42,0.317,4,0,0,Wortgrenze,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,R,,Großbuchstabe,14,42,0.341,4,0,0,wortinitial,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,i,,Kleinbuchstabe,15,42,0.366,4,0,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,n,,Kleinbuchstabe,16,42,0.39,4,0,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,s,,Kleinbuchstabe,17,42,0.415,5,0,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,o,,Kleinbuchstabe,18,42,0.439,5,0,0,wortfinal,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung, ,,Leerzeichen,19,42,0.463,5,0,0,Wortgrenze,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,f,,Kleinbuchstabe,20,42,0.488,5,0,0,wortinitial,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,ü,,Umlaut/ß,21,42,0.512,6,0,0,wortintern,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,178,Auslassung,r,,Kleinbuchstabe,22,42,0.537,6,0,0,wortfinal,0.45,mitte,0.331,0.707
+aze19281111-9,neusort,180,Ersetzung,U,A,Großbuchstabe,4,20,0.211,3,0,0,wortinitial,0.455,mitte,0.419,0.531
+aze19281111-9,neusort,182,Auslassung,s,,Kleinbuchstabe,0,38,0.0,1,1,0,wortinitial,0.461,mitte,0.434,0.519
+aze19281111-9,neusort,188,Auslassung,-,,Trennstrich,37,38,1.0,10,0,1,wortfinal,0.476,mitte,0.485,0.504
+aze19281111-9,neusort,190,Auslassung,t,,Kleinbuchstabe,37,38,1.0,10,0,1,wortfinal,0.481,mitte,0.499,0.504
+aze19281111-9,neusort,191,Einfügung,,-,Trennstrich,43,43,1.024,10,0,1,Einfügung,0.483,mitte,0.507,0.504
+aze19281111-9,neusort,192,Auslassung,-,,Trennstrich,39,40,1.0,10,0,1,wortfinal,0.486,mitte,0.516,0.504
+aze19281111-9,neusort,198,Einfügung,,",",Interpunktion,42,42,1.024,10,0,1,Einfügung,0.501,mitte,0.558,0.506
+aze19281111-9,neusort,199,Einfügung,,",",Interpunktion,42,42,1.024,10,0,1,Einfügung,0.504,mitte,0.566,0.504
+aze19281111-9,neusort,204,Einfügung,,.,Interpunktion,40,40,1.026,10,0,1,Einfügung,0.517,mitte,0.6,0.504
+aze19281111-9,neusort,214,Auslassung,.,,Interpunktion,39,40,1.0,10,0,1,wortfinal,0.542,mitte,0.433,0.737
+aze19281111-9,neusort,217,Ersetzung,ä,i,Umlaut/ß,29,35,0.853,9,0,0,wortintern,0.55,mitte,0.447,0.738
+aze19281111-9,neusort,217,Ersetzung,r,o,Kleinbuchstabe,30,35,0.882,9,0,0,wortfinal,0.55,mitte,0.447,0.738
+aze19281111-9,neusort,228,Auslassung,.,,Interpunktion,35,36,1.0,10,0,1,wortfinal,0.578,mitte,0.563,0.737
+aze19281111-9,neusort,233,Auslassung,-,,Trennstrich,32,33,1.0,10,0,1,wortfinal,0.59,mitte,0.598,0.737
+aze19281111-9,neusort,234,Einfügung,, ,Leerzeichen,3,38,0.081,1,0,0,Einfügung,0.593,mitte,0.606,0.737
+aze19281111-9,neusort,237,Auslassung,.,,Interpunktion,20,21,1.0,10,0,1,wortfinal,0.601,mitte,0.626,0.737
+aze19281111-9,neusort,239,Auslassung,.,,Interpunktion,16,17,1.0,10,0,1,wortfinal,0.606,mitte,0.646,0.798
+aze19281111-9,neusort,240,Auslassung,),,Interpunktion,34,35,1.0,10,0,1,wortfinal,0.608,mitte,0.664,0.739
+aze19281111-9,neusort,245,Auslassung,m,,Kleinbuchstabe,0,34,0.0,1,1,0,wortinitial,0.621,mitte,0.692,0.813
+aze19281111-9,neusort,245,Auslassung,i,,Kleinbuchstabe,1,34,0.03,1,1,0,wortintern,0.621,mitte,0.692,0.813
+aze19281111-9,neusort,245,Auslassung,t,,Kleinbuchstabe,2,34,0.061,1,0,0,wortfinal,0.621,mitte,0.692,0.813
+aze19281111-9,neusort,245,Auslassung, ,,Leerzeichen,3,34,0.091,1,0,0,Wortgrenze,0.621,mitte,0.692,0.813
+aze19281111-9,neusort,245,Auslassung,v,,Kleinbuchstabe,4,34,0.121,2,0,0,wortinitial,0.621,mitte,0.692,0.813
+aze19281111-9,neusort,245,Auslassung,i,,Kleinbuchstabe,5,34,0.152,2,0,0,wortintern,0.621,mitte,0.692,0.813
+aze19281111-9,neusort,245,Auslassung,e,,Kleinbuchstabe,6,34,0.182,2,0,0,wortintern,0.621,mitte,0.692,0.813
+aze19281111-9,neusort,245,Auslassung,r,,Kleinbuchstabe,7,34,0.212,3,0,0,wortfinal,0.621,mitte,0.692,0.813
+aze19281111-9,neusort,245,Auslassung, ,,Leerzeichen,8,34,0.242,3,0,0,Wortgrenze,0.621,mitte,0.692,0.813
+aze19281111-9,neusort,252,Auslassung, ,,Leerzeichen,32,36,0.914,10,0,0,Wortgrenze,0.639,mitte,0.733,0.753
+aze19281111-9,neusort,252,Auslassung,d,,Kleinbuchstabe,33,36,0.943,10,0,0,wortinitial,0.639,mitte,0.733,0.753
+aze19281111-9,neusort,252,Auslassung,e,,Kleinbuchstabe,34,36,0.971,10,0,1,wortintern,0.639,mitte,0.733,0.753
+aze19281111-9,neusort,252,Auslassung,s,,Kleinbuchstabe,35,36,1.0,10,0,1,wortfinal,0.639,mitte,0.733,0.753
+aze19281111-9,neusort,253,Ersetzung,c,d,Kleinbuchstabe,31,33,0.969,10,0,1,wortintern,0.641,mitte,0.757,0.739
+aze19281111-9,neusort,253,Ersetzung,h,,Kleinbuchstabe,32,33,1.0,10,0,1,wortfinal,0.641,mitte,0.757,0.739
+aze19281111-9,neusort,255,Auslassung, ,,Leerzeichen,36,40,0.923,10,0,0,Wortgrenze,0.646,mitte,0.771,0.739
+aze19281111-9,neusort,255,Auslassung,E,,Großbuchstabe,37,40,0.949,10,0,0,wortinitial,0.646,mitte,0.771,0.739
+aze19281111-9,neusort,255,Auslassung,i,,Kleinbuchstabe,38,40,0.974,10,0,1,wortintern,0.646,mitte,0.771,0.739
+aze19281111-9,neusort,255,Auslassung,n,,Kleinbuchstabe,39,40,1.0,10,0,1,wortfinal,0.646,mitte,0.771,0.739
+aze19281111-9,neusort,258,Einfügung,,2,Ziffer,0,39,0.0,1,1,0,Einfügung,0.654,mitte,0.799,0.739
+aze19281111-9,neusort,258,Einfügung,,),Interpunktion,0,39,0.0,1,1,0,Einfügung,0.654,mitte,0.799,0.739
+aze19281111-9,neusort,258,Einfügung,, ,Leerzeichen,0,39,0.0,1,1,0,Einfügung,0.654,mitte,0.799,0.739
+aze19281111-9,neusort,259,Auslassung,.,,Interpunktion,18,19,1.0,10,0,1,wortfinal,0.656,mitte,0.792,0.742
+aze19281111-9,neusort,263,Ersetzung,k,l,Kleinbuchstabe,19,41,0.475,5,0,0,wortintern,0.667,unten,0.851,0.739
+aze19281111-9,neusort,265,Auslassung,-,,Trennstrich,43,44,1.0,10,0,1,wortfinal,0.672,unten,0.846,0.739
+aze19281111-9,neusort,274,Ersetzung,.,",",Interpunktion,40,43,0.952,10,0,0,wortintern,0.695,unten,0.911,0.741
+aze19281111-9,neusort,274,Auslassung,5,,Ziffer,42,43,1.0,10,0,1,wortfinal,0.695,unten,0.911,0.741
+aze19281111-9,neusort,276,Ersetzung,r,n,Kleinbuchstabe,47,48,1.0,10,0,1,wortfinal,0.7,unten,0.924,0.74
+aze19281111-9,neusort,279,Ersetzung,ś,s,Kleinbuchstabe,38,48,0.809,9,0,0,wortintern,0.707,unten,0.941,0.741
+aze19281111-9,neusort,280,Einfügung,,l,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,u,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,t,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,i,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,o,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,n,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,",",Interpunktion,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,, ,Leerzeichen,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,a,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,u,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,f,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,, ,Leerzeichen,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,d,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,i,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,e,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,, ,Leerzeichen,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,w,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,i,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,r,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,, ,Leerzeichen,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,h,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,i,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,n,Kleinbuchstabe,0,8,0.0,1,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,t,Kleinbuchstabe,1,8,0.143,2,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,r,Kleinbuchstabe,1,8,0.143,2,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,e,Kleinbuchstabe,1,8,0.143,2,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,b,Kleinbuchstabe,1,8,0.143,2,1,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,,",",Interpunktion,3,8,0.429,5,0,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Einfügung,, ,Leerzeichen,3,8,0.429,5,0,0,Einfügung,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Ersetzung,u,e,Kleinbuchstabe,4,8,0.571,6,0,0,wortintern,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Ersetzung,g, ,Kleinbuchstabe,6,8,0.857,9,0,1,wortintern,0.71,unten,0.649,0.041
+aze19281111-9,neusort,280,Ersetzung,.,C,Interpunktion,7,8,1.0,10,0,1,wortfinal,0.71,unten,0.649,0.041
+aze19281111-9,neusort,291,Einfügung,,-,Trennstrich,45,45,1.023,10,0,1,Einfügung,0.738,unten,0.731,0.042
+aze19281111-9,neusort,307,Einfügung,,-,Trennstrich,44,44,1.023,10,0,1,Einfügung,0.779,unten,0.861,0.045
+aze19281111-9,neusort,312,Einfügung,,-,Trennstrich,45,45,1.023,10,0,1,Einfügung,0.791,unten,0.903,0.043
+aze19281111-9,neusort,320,Auslassung,.,,Interpunktion,14,15,1.0,10,0,1,wortfinal,0.812,unten,0.655,0.274
+aze19281111-9,neusort,322,Ersetzung,b,h,Kleinbuchstabe,29,45,0.659,7,0,0,wortintern,0.817,unten,0.671,0.274
+aze19281111-9,neusort,322,Ersetzung,g,z,Kleinbuchstabe,32,45,0.727,8,0,0,wortintern,0.817,unten,0.671,0.274
+aze19281111-9,neusort,322,Ersetzung,n,u,Kleinbuchstabe,34,45,0.773,8,0,0,wortintern,0.817,unten,0.671,0.274
+aze19281111-9,neusort,328,Einfügung,,",",Interpunktion,40,40,1.026,10,0,1,Einfügung,0.832,unten,0.721,0.276
+aze19281111-9,neusort,338,Ersetzung,h,H,Kleinbuchstabe,0,44,0.0,1,1,0,wortinitial,0.858,unten,0.817,0.274
+aze19281111-9,neusort,346,Auslassung,!,,Interpunktion,18,19,1.0,10,0,1,wortfinal,0.878,unten,0.867,0.274
+aze19281111-9,neusort,353,Einfügung,,.,Interpunktion,42,42,1.024,10,0,1,Einfügung,0.896,unten,0.924,0.276
+aze19281111-9,neusort,356,Ersetzung,“,"""",Interpunktion,43,44,1.0,10,0,1,wortfinal,0.903,unten,0.948,0.276
+aze19281111-9,neusort,357,Ersetzung,“,"""",Interpunktion,28,44,0.651,7,0,0,wortfinal,0.906,unten,0.646,0.506
+aze19281111-9,neusort,357,Einfügung,,",",Interpunktion,44,44,1.023,10,0,1,Einfügung,0.906,unten,0.646,0.506
+aze19281111-9,neusort,362,Auslassung,.,,Interpunktion,47,48,1.0,10,0,1,wortfinal,0.919,unten,0.686,0.506
+aze19281111-9,neusort,371,Einfügung,,",",Interpunktion,43,43,1.024,10,0,1,Einfügung,0.941,unten,0.759,0.506
+aze19281111-9,neusort,380,Einfügung,,e,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.964,unten,0.826,0.506
+aze19281111-9,neusort,380,Einfügung,,m,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.964,unten,0.826,0.506
+aze19281111-9,neusort,380,Einfügung,,p,Kleinbuchstabe,0,7,0.0,1,1,0,Einfügung,0.964,unten,0.826,0.506
+aze19281111-9,neusort,380,Ersetzung,i,u,Kleinbuchstabe,1,7,0.167,2,1,0,wortintern,0.964,unten,0.826,0.506
+aze19281111-9,neusort,380,Ersetzung,., ,Interpunktion,6,7,1.0,10,0,1,wortfinal,0.964,unten,0.826,0.506
+aze19281111-9,neusort,382,Ersetzung,g,R,Kleinbuchstabe,0,42,0.0,1,1,0,wortinitial,0.969,unten,0.842,0.521
+aze19281111-9,neusort,382,Ersetzung,r,,Kleinbuchstabe,1,42,0.024,1,1,0,wortintern,0.969,unten,0.842,0.521
 aze19291229-13,alt,1,Ersetzung,N,s,Großbuchstabe,0,7,0.0,1,1,0,wortinitial,0.0,oben,0.032,0.064
 aze19291229-13,alt,1,Ersetzung,5,S,Ziffer,5,7,0.833,9,0,1,wortintern,0.0,oben,0.032,0.064
 aze19291229-13,alt,3,Ersetzung,b,k,Kleinbuchstabe,2,16,0.133,2,0,0,wortintern,0.005,oben,0.031,0.442
@@ -7249,6 +8188,95 @@ aze19291229-13,neu,387,Auslassung,„,,Interpunktion,8,42,0.195,2,0,0,wortinitia
 aze19291229-13,neu,387,Ersetzung,u,-,Kleinbuchstabe,35,42,0.854,9,0,0,wortintern,0.972,unten,0.852,0.727
 aze19291229-13,neu,387,Auslassung,“,,Interpunktion,41,42,1.0,10,0,1,wortfinal,0.972,unten,0.852,0.727
 aze19291229-13,neu,398,Auslassung,",",,Interpunktion,44,45,1.0,10,0,1,wortfinal,1.0,unten,0.941,0.727
+aze19291229-13,neusort,1,Einfügung,,.,Interpunktion,7,7,1.167,10,0,1,Einfügung,0.0,oben,0.032,0.064
+aze19291229-13,neusort,7,Einfügung,,2,Ziffer,0,18,0.0,1,1,0,Einfügung,0.015,oben,0.094,0.663
+aze19291229-13,neusort,7,Einfügung,, ,Leerzeichen,0,18,0.0,1,1,0,Einfügung,0.015,oben,0.094,0.663
+aze19291229-13,neusort,10,Auslassung,",",,Interpunktion,33,34,1.0,10,0,1,wortfinal,0.023,oben,0.154,0.046
+aze19291229-13,neusort,12,Auslassung,.,,Interpunktion,6,7,1.0,10,0,1,wortfinal,0.028,oben,0.17,0.143
+aze19291229-13,neusort,20,Auslassung,:,,Interpunktion,14,15,1.0,10,0,1,wortfinal,0.048,oben,0.255,0.046
+aze19291229-13,neusort,25,Einfügung,,c,Kleinbuchstabe,0,43,0.0,1,1,0,Einfügung,0.06,oben,0.293,0.131
+aze19291229-13,neusort,25,Einfügung,,h,Kleinbuchstabe,0,43,0.0,1,1,0,Einfügung,0.06,oben,0.293,0.131
+aze19291229-13,neusort,25,Einfügung,, ,Leerzeichen,0,43,0.0,1,1,0,Einfügung,0.06,oben,0.293,0.131
+aze19291229-13,neusort,26,Auslassung,",",,Interpunktion,8,9,1.0,10,0,1,wortfinal,0.063,oben,0.308,0.142
+aze19291229-13,neusort,28,Auslassung,:,,Interpunktion,17,18,1.0,10,0,1,wortfinal,0.068,oben,0.328,0.048
+aze19291229-13,neusort,31,Ersetzung,A,S,Großbuchstabe,0,7,0.0,1,1,0,wortinitial,0.076,oben,0.345,0.045
+aze19291229-13,neusort,31,Ersetzung,r,e,Kleinbuchstabe,2,7,0.333,4,0,0,wortintern,0.076,oben,0.345,0.045
+aze19291229-13,neusort,31,Ersetzung,k,n,Kleinbuchstabe,4,7,0.667,7,0,0,wortintern,0.076,oben,0.345,0.045
+aze19291229-13,neusort,31,Ersetzung,a, ,Kleinbuchstabe,5,7,0.833,9,0,1,wortintern,0.076,oben,0.345,0.045
+aze19291229-13,neusort,31,Ersetzung,.,m,Interpunktion,6,7,1.0,10,0,1,wortfinal,0.076,oben,0.345,0.045
+aze19291229-13,neusort,40,Auslassung,.,,Interpunktion,20,21,1.0,10,0,1,wortfinal,0.098,oben,0.17,0.754
+aze19291229-13,neusort,41,Ersetzung,",",.,Interpunktion,30,31,1.0,10,0,1,wortfinal,0.101,oben,0.183,0.752
+aze19291229-13,neusort,45,Auslassung,",",,Interpunktion,36,37,1.0,10,0,1,wortfinal,0.111,oben,0.22,0.753
+aze19291229-13,neusort,46,Auslassung,.,,Interpunktion,14,15,1.0,10,0,1,wortfinal,0.113,oben,0.229,0.753
+aze19291229-13,neusort,47,Ersetzung,.,",",Interpunktion,34,35,1.0,10,0,1,wortfinal,0.116,oben,0.236,0.753
+aze19291229-13,neusort,52,Ersetzung,!,:,Interpunktion,23,24,1.0,10,0,1,wortfinal,0.128,oben,0.279,0.753
+aze19291229-13,neusort,55,Ersetzung,N,R,Großbuchstabe,4,28,0.148,2,0,0,wortinitial,0.136,oben,0.39,0.048
+aze19291229-13,neusort,60,Einfügung,,",",Interpunktion,50,50,1.02,10,0,1,Einfügung,0.149,oben,0.439,0.045
+aze19291229-13,neusort,62,Ersetzung,“,"""",Interpunktion,20,48,0.426,5,0,0,wortfinal,0.154,oben,0.456,0.044
+aze19291229-13,neusort,69,Einfügung,,",",Interpunktion,42,42,1.024,10,0,1,Einfügung,0.171,oben,0.51,0.044
+aze19291229-13,neusort,74,Einfügung,,-,Trennstrich,42,42,1.024,10,0,1,Einfügung,0.184,oben,0.55,0.057
+aze19291229-13,neusort,88,Auslassung,t,,Kleinbuchstabe,17,50,0.347,4,0,0,wortfinal,0.219,oben,0.662,0.043
+aze19291229-13,neusort,106,Auslassung,.,,Interpunktion,40,41,1.0,10,0,1,wortfinal,0.264,oben,0.805,0.041
+aze19291229-13,neusort,147,Einfügung,, ,Leerzeichen,38,41,0.95,10,0,0,Einfügung,0.368,mitte,0.304,0.274
+aze19291229-13,neusort,147,Einfügung,, ,Leerzeichen,39,41,0.975,10,0,1,Einfügung,0.368,mitte,0.304,0.274
+aze19291229-13,neusort,147,Einfügung,, ,Leerzeichen,40,41,1.0,10,0,1,Einfügung,0.368,mitte,0.304,0.274
+aze19291229-13,neusort,155,Ersetzung,.,",",Interpunktion,20,21,1.0,10,0,1,wortfinal,0.388,mitte,0.129,0.505
+aze19291229-13,neusort,162,Auslassung,-,,Trennstrich,47,48,1.0,10,0,1,wortfinal,0.406,mitte,0.183,0.504
+aze19291229-13,neusort,165,Auslassung,-,,Trennstrich,48,49,1.0,10,0,1,wortfinal,0.413,mitte,0.207,0.504
+aze19291229-13,neusort,171,Einfügung,,.,Interpunktion,20,20,1.053,10,0,1,Einfügung,0.428,mitte,0.255,0.504
+aze19291229-13,neusort,171,Einfügung,,.,Interpunktion,20,20,1.053,10,0,1,Einfügung,0.428,mitte,0.255,0.504
+aze19291229-13,neusort,177,Auslassung,-,,Trennstrich,41,42,1.0,10,0,1,wortfinal,0.443,mitte,0.302,0.503
+aze19291229-13,neusort,183,Auslassung,.,,Interpunktion,24,25,1.0,10,0,1,wortfinal,0.458,mitte,0.352,0.503
+aze19291229-13,neusort,184,Ersetzung,R,i,Großbuchstabe,0,7,0.0,1,1,0,wortinitial,0.461,mitte,0.365,0.336
+aze19291229-13,neusort,184,Ersetzung,.,n,Interpunktion,1,7,0.167,2,1,0,wortfinal,0.461,mitte,0.365,0.336
+aze19291229-13,neusort,184,Einfügung,,e,Kleinbuchstabe,4,7,0.667,7,0,0,Einfügung,0.461,mitte,0.365,0.336
+aze19291229-13,neusort,184,Einfügung,,n,Kleinbuchstabe,4,7,0.667,7,0,0,Einfügung,0.461,mitte,0.365,0.336
+aze19291229-13,neusort,184,Einfügung,,e,Kleinbuchstabe,4,7,0.667,7,0,0,Einfügung,0.461,mitte,0.365,0.336
+aze19291229-13,neusort,184,Einfügung,,g,Kleinbuchstabe,4,7,0.667,7,0,0,Einfügung,0.461,mitte,0.365,0.336
+aze19291229-13,neusort,184,Ersetzung,f,l,Kleinbuchstabe,5,7,0.833,9,0,1,wortintern,0.461,mitte,0.365,0.336
+aze19291229-13,neusort,185,Auslassung,E,,Großbuchstabe,0,31,0.0,1,1,0,wortinitial,0.463,mitte,0.365,0.336
+aze19291229-13,neusort,231,Einfügung,,-,Trennstrich,48,48,1.021,10,0,1,Einfügung,0.579,mitte,0.76,0.269
+aze19291229-13,neusort,235,Einfügung,,.,Interpunktion,48,48,1.021,10,0,1,Einfügung,0.589,mitte,0.794,0.269
+aze19291229-13,neusort,236,Auslassung,t,,Kleinbuchstabe,44,45,1.0,10,0,1,wortfinal,0.592,mitte,0.802,0.269
+aze19291229-13,neusort,250,Ersetzung,:,;,Interpunktion,48,49,1.0,10,0,1,wortfinal,0.627,mitte,0.915,0.269
+aze19291229-13,neusort,267,Einfügung,,.,Interpunktion,3,43,0.071,1,0,0,Einfügung,0.67,unten,0.497,0.501
+aze19291229-13,neusort,278,Auslassung, ,,Leerzeichen,36,44,0.837,9,0,0,Wortgrenze,0.698,unten,0.587,0.499
+aze19291229-13,neusort,278,Auslassung,d,,Kleinbuchstabe,37,44,0.86,9,0,0,wortinitial,0.698,unten,0.587,0.499
+aze19291229-13,neusort,278,Auslassung,i,,Kleinbuchstabe,38,44,0.884,9,0,0,wortintern,0.698,unten,0.587,0.499
+aze19291229-13,neusort,278,Auslassung,e,,Kleinbuchstabe,39,44,0.907,10,0,0,wortfinal,0.698,unten,0.587,0.499
+aze19291229-13,neusort,278,Auslassung, ,,Leerzeichen,40,44,0.93,10,0,0,Wortgrenze,0.698,unten,0.587,0.499
+aze19291229-13,neusort,278,Auslassung,u,,Kleinbuchstabe,41,44,0.953,10,0,0,wortinitial,0.698,unten,0.587,0.499
+aze19291229-13,neusort,278,Auslassung,n,,Kleinbuchstabe,42,44,0.977,10,0,1,wortintern,0.698,unten,0.587,0.499
+aze19291229-13,neusort,278,Auslassung,-,,Trennstrich,43,44,1.0,10,0,1,wortfinal,0.698,unten,0.587,0.499
+aze19291229-13,neusort,288,Ersetzung,;,:,Interpunktion,5,47,0.109,2,0,0,wortfinal,0.723,unten,0.67,0.499
+aze19291229-13,neusort,301,Auslassung,.,,Interpunktion,20,21,1.0,10,0,1,wortfinal,0.756,unten,0.774,0.499
+aze19291229-13,neusort,311,Ersetzung,r,n,Kleinbuchstabe,46,47,1.0,10,0,1,wortfinal,0.781,unten,0.859,0.497
+aze19291229-13,neusort,314,Ersetzung,n,r,Kleinbuchstabe,45,46,1.0,10,0,1,wortfinal,0.788,unten,0.883,0.497
+aze19291229-13,neusort,321,Einfügung,,-,Trennstrich,42,42,1.024,10,0,1,Einfügung,0.806,unten,0.939,0.497
+aze19291229-13,neusort,339,Ersetzung,‘,',Sonstiges,5,49,0.104,2,0,0,wortfinal,0.851,unten,0.453,0.731
+aze19291229-13,neusort,345,Einfügung,,h,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,a,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,t,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,",",Interpunktion,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,, ,Leerzeichen,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,a,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,b,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,e,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,r,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,, ,Leerzeichen,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,d,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,e,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,r,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,, ,Leerzeichen,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,F,Großbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,r,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Einfügung,,a,Kleinbuchstabe,0,6,0.0,1,1,0,Einfügung,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Ersetzung,i,z,Kleinbuchstabe,1,6,0.2,3,1,0,wortintern,0.866,unten,0.501,0.73
+aze19291229-13,neusort,345,Ersetzung,.,e,Interpunktion,5,6,1.0,10,0,1,wortfinal,0.866,unten,0.501,0.73
+aze19291229-13,neusort,387,Auslassung,„,,Interpunktion,8,42,0.195,2,0,0,wortinitial,0.972,unten,0.852,0.727
+aze19291229-13,neusort,387,Ersetzung,u,-,Kleinbuchstabe,35,42,0.854,9,0,0,wortintern,0.972,unten,0.852,0.727
+aze19291229-13,neusort,387,Auslassung,“,,Interpunktion,41,42,1.0,10,0,1,wortfinal,0.972,unten,0.852,0.727
+aze19291229-13,neusort,398,Auslassung,",",,Interpunktion,44,45,1.0,10,0,1,wortfinal,1.0,unten,0.941,0.727
 aze19321217-5,alt,2,Ersetzung,b,v,Kleinbuchstabe,2,16,0.133,2,0,0,wortintern,0.002,oben,0.05,0.441
 aze19321217-5,alt,2,Auslassung,i,,Kleinbuchstabe,4,16,0.267,3,0,0,wortintern,0.002,oben,0.05,0.441
 aze19321217-5,alt,2,Ersetzung,e,t,Kleinbuchstabe,6,16,0.4,5,0,0,wortintern,0.002,oben,0.05,0.441
@@ -7939,6 +8967,198 @@ aze19321217-5,neu,462,Auslassung, ,,Leerzeichen,39,42,0.951,10,0,0,Wortgrenze,0.
 aze19321217-5,neu,462,Auslassung,s,,Kleinbuchstabe,40,42,0.976,10,0,1,wortinitial,0.996,unten,0.964,0.742
 aze19321217-5,neu,462,Auslassung,o,,Kleinbuchstabe,41,42,1.0,10,0,1,wortfinal,0.996,unten,0.964,0.742
 aze19321217-5,neu,464,Auslassung,s,,Kleinbuchstabe,35,36,1.0,10,0,1,wortfinal,1.0,unten,0.98,0.728
+aze19321217-5,neusort,23,Auslassung,.,,Interpunktion,10,11,1.0,10,0,1,wortfinal,0.048,oben,0.229,0.05
+aze19321217-5,neusort,30,Auslassung, ,,Leerzeichen,21,28,0.778,8,0,0,Wortgrenze,0.063,oben,0.283,0.054
+aze19321217-5,neusort,30,Auslassung,l,,Kleinbuchstabe,22,28,0.815,9,0,0,wortinitial,0.063,oben,0.283,0.054
+aze19321217-5,neusort,30,Auslassung,i,,Kleinbuchstabe,23,28,0.852,9,0,0,wortintern,0.063,oben,0.283,0.054
+aze19321217-5,neusort,30,Auslassung,e,,Kleinbuchstabe,24,28,0.889,9,0,0,wortintern,0.063,oben,0.283,0.054
+aze19321217-5,neusort,30,Auslassung,ß,,Umlaut/ß,25,28,0.926,10,0,0,wortintern,0.063,oben,0.283,0.054
+aze19321217-5,neusort,30,Auslassung,e,,Kleinbuchstabe,26,28,0.963,10,0,1,wortintern,0.063,oben,0.283,0.054
+aze19321217-5,neusort,30,Auslassung,n,,Kleinbuchstabe,27,28,1.0,10,0,1,wortfinal,0.063,oben,0.283,0.054
+aze19321217-5,neusort,32,Auslassung,.,,Interpunktion,11,12,1.0,10,0,1,wortfinal,0.067,oben,0.297,0.04
+aze19321217-5,neusort,40,Ersetzung,n,m,Kleinbuchstabe,36,37,1.0,10,0,1,wortfinal,0.084,oben,0.369,0.049
+aze19321217-5,neusort,60,Einfügung,,",",Interpunktion,24,27,0.923,10,0,0,Einfügung,0.127,oben,0.545,0.038
+aze19321217-5,neusort,60,Einfügung,, ,Leerzeichen,24,27,0.923,10,0,0,Einfügung,0.127,oben,0.545,0.038
+aze19321217-5,neusort,95,Ersetzung,ä,a,Umlaut/ß,7,28,0.259,3,0,0,wortintern,0.203,oben,0.809,0.037
+aze19321217-5,neusort,95,Ersetzung,s,j,Kleinbuchstabe,19,28,0.704,8,0,0,wortintern,0.203,oben,0.809,0.037
+aze19321217-5,neusort,97,Ersetzung,o,p,Kleinbuchstabe,20,33,0.625,7,0,0,wortintern,0.207,oben,0.83,0.038
+aze19321217-5,neusort,102,Auslassung,G,,Großbuchstabe,0,31,0.0,1,1,0,wortinitial,0.218,oben,0.867,0.15
+aze19321217-5,neusort,102,Auslassung,e,,Kleinbuchstabe,1,31,0.033,1,1,0,wortintern,0.218,oben,0.867,0.15
+aze19321217-5,neusort,102,Auslassung,b,,Kleinbuchstabe,2,31,0.067,1,0,0,wortintern,0.218,oben,0.867,0.15
+aze19321217-5,neusort,102,Auslassung,a,,Kleinbuchstabe,3,31,0.1,2,0,0,wortintern,0.218,oben,0.867,0.15
+aze19321217-5,neusort,102,Auslassung,u,,Kleinbuchstabe,4,31,0.133,2,0,0,wortintern,0.218,oben,0.867,0.15
+aze19321217-5,neusort,102,Auslassung,e,,Kleinbuchstabe,5,31,0.167,2,0,0,wortintern,0.218,oben,0.867,0.15
+aze19321217-5,neusort,102,Auslassung,r,,Kleinbuchstabe,6,31,0.2,3,0,0,wortfinal,0.218,oben,0.867,0.15
+aze19321217-5,neusort,102,Auslassung, ,,Leerzeichen,7,31,0.233,3,0,0,Wortgrenze,0.218,oben,0.867,0.15
+aze19321217-5,neusort,102,Auslassung,a,,Kleinbuchstabe,8,31,0.267,3,0,0,wortinitial,0.218,oben,0.867,0.15
+aze19321217-5,neusort,102,Auslassung,u,,Kleinbuchstabe,9,31,0.3,4,0,0,wortintern,0.218,oben,0.867,0.15
+aze19321217-5,neusort,102,Auslassung,s,,Kleinbuchstabe,10,31,0.333,4,0,0,wortfinal,0.218,oben,0.867,0.15
+aze19321217-5,neusort,102,Auslassung, ,,Leerzeichen,11,31,0.367,4,0,0,Wortgrenze,0.218,oben,0.867,0.15
+aze19321217-5,neusort,103,Einfügung,,G,Großbuchstabe,0,35,0.0,1,1,0,Einfügung,0.22,oben,0.868,0.038
+aze19321217-5,neusort,103,Einfügung,,e,Kleinbuchstabe,0,35,0.0,1,1,0,Einfügung,0.22,oben,0.868,0.038
+aze19321217-5,neusort,103,Einfügung,,b,Kleinbuchstabe,0,35,0.0,1,1,0,Einfügung,0.22,oben,0.868,0.038
+aze19321217-5,neusort,103,Einfügung,,a,Kleinbuchstabe,0,35,0.0,1,1,0,Einfügung,0.22,oben,0.868,0.038
+aze19321217-5,neusort,103,Einfügung,,u,Kleinbuchstabe,0,35,0.0,1,1,0,Einfügung,0.22,oben,0.868,0.038
+aze19321217-5,neusort,103,Einfügung,,e,Kleinbuchstabe,0,35,0.0,1,1,0,Einfügung,0.22,oben,0.868,0.038
+aze19321217-5,neusort,103,Einfügung,,r,Kleinbuchstabe,0,35,0.0,1,1,0,Einfügung,0.22,oben,0.868,0.038
+aze19321217-5,neusort,103,Einfügung,, ,Leerzeichen,0,35,0.0,1,1,0,Einfügung,0.22,oben,0.868,0.038
+aze19321217-5,neusort,107,Ersetzung,½,1,Sonstiges,18,41,0.45,5,0,0,wortinitial,0.229,oben,0.904,0.038
+aze19321217-5,neusort,107,Ersetzung,9,,Ziffer,19,41,0.475,5,0,0,wortfinal,0.229,oben,0.904,0.038
+aze19321217-5,neusort,116,Auslassung,-,,Trennstrich,42,43,1.0,10,0,1,wortfinal,0.248,oben,0.97,0.041
+aze19321217-5,neusort,118,Ersetzung,l,s,Kleinbuchstabe,20,35,0.588,6,0,0,wortintern,0.253,oben,0.084,0.271
+aze19321217-5,neusort,118,Ersetzung,d,o,Kleinbuchstabe,32,35,0.941,10,0,0,wortintern,0.253,oben,0.084,0.271
+aze19321217-5,neusort,122,Ersetzung,r,x,Kleinbuchstabe,2,36,0.057,1,0,0,wortintern,0.261,oben,0.125,0.288
+aze19321217-5,neusort,135,Auslassung, ,,Leerzeichen,24,29,0.857,9,0,0,Wortgrenze,0.289,oben,0.228,0.271
+aze19321217-5,neusort,136,Auslassung, ,,Leerzeichen,21,25,0.875,9,0,0,Wortgrenze,0.292,oben,0.234,0.27
+aze19321217-5,neusort,136,Auslassung,d,,Kleinbuchstabe,22,25,0.917,10,0,0,wortinitial,0.292,oben,0.234,0.27
+aze19321217-5,neusort,136,Auslassung,a,,Kleinbuchstabe,23,25,0.958,10,0,1,wortintern,0.292,oben,0.234,0.27
+aze19321217-5,neusort,136,Auslassung,s,,Kleinbuchstabe,24,25,1.0,10,0,1,wortfinal,0.292,oben,0.234,0.27
+aze19321217-5,neusort,153,Ersetzung,n,r,Kleinbuchstabe,35,36,1.0,10,0,1,wortfinal,0.328,oben,0.382,0.27
+aze19321217-5,neusort,158,Auslassung, ,,Leerzeichen,24,37,0.667,7,0,0,Wortgrenze,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung,s,,Kleinbuchstabe,25,37,0.694,7,0,0,wortinitial,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung,o,,Kleinbuchstabe,26,37,0.722,8,0,0,wortfinal,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung, ,,Leerzeichen,27,37,0.75,8,0,0,Wortgrenze,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung,e,,Kleinbuchstabe,28,37,0.778,8,0,0,wortinitial,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung,r,,Kleinbuchstabe,29,37,0.806,9,0,0,wortintern,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung,z,,Kleinbuchstabe,30,37,0.833,9,0,0,wortintern,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung,ä,,Umlaut/ß,31,37,0.861,9,0,0,wortintern,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung,h,,Kleinbuchstabe,32,37,0.889,9,0,0,wortintern,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung,l,,Kleinbuchstabe,33,37,0.917,10,0,0,wortintern,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung,t,,Kleinbuchstabe,34,37,0.944,10,0,0,wortintern,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung,e,,Kleinbuchstabe,35,37,0.972,10,0,1,wortintern,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,158,Auslassung,",",,Interpunktion,36,37,1.0,10,0,1,wortfinal,0.339,mitte,0.42,0.288
+aze19321217-5,neusort,161,Ersetzung,",",-,Interpunktion,40,41,1.0,10,0,1,wortfinal,0.346,mitte,0.442,0.27
+aze19321217-5,neusort,164,Einfügung,,.,Interpunktion,43,43,1.024,10,0,1,Einfügung,0.352,mitte,0.463,0.272
+aze19321217-5,neusort,166,Einfügung,,:,Interpunktion,39,39,1.026,10,0,1,Einfügung,0.356,mitte,0.479,0.271
+aze19321217-5,neusort,169,Auslassung,",",,Interpunktion,36,37,1.0,10,0,1,wortfinal,0.363,mitte,0.5,0.27
+aze19321217-5,neusort,177,Auslassung,.,,Interpunktion,35,36,1.0,10,0,1,wortfinal,0.38,mitte,0.558,0.27
+aze19321217-5,neusort,185,Auslassung,.,,Interpunktion,19,20,1.0,10,0,1,wortfinal,0.397,mitte,0.615,0.27
+aze19321217-5,neusort,218,Auslassung,.,,Interpunktion,33,34,1.0,10,0,1,wortfinal,0.469,mitte,0.874,0.27
+aze19321217-5,neusort,219,Ersetzung,D,b,Großbuchstabe,0,40,0.0,1,1,0,wortinitial,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Ersetzung, ,e,Leerzeichen,3,40,0.077,1,0,0,Wortgrenze,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Ersetzung,V,,Großbuchstabe,4,40,0.103,2,0,0,wortinitial,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Ersetzung,o,,Kleinbuchstabe,5,40,0.128,2,0,0,wortintern,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Ersetzung,r,,Kleinbuchstabe,6,40,0.154,2,0,0,wortintern,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Ersetzung,s,,Kleinbuchstabe,7,40,0.179,2,0,0,wortintern,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Ersetzung,z,s,Kleinbuchstabe,10,40,0.256,3,0,0,wortintern,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Ersetzung,e,,Kleinbuchstabe,11,40,0.282,3,0,0,wortintern,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Ersetzung,n,,Kleinbuchstabe,12,40,0.308,4,0,0,wortintern,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Ersetzung,d,,Kleinbuchstabe,13,40,0.333,4,0,0,wortintern,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Ersetzung,e,,Kleinbuchstabe,14,40,0.359,4,0,0,wortfinal,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Ersetzung,k,„,Kleinbuchstabe,16,40,0.41,5,0,0,wortinitial,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Auslassung,a,,Kleinbuchstabe,21,40,0.538,6,0,0,wortintern,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Auslassung,t,,Kleinbuchstabe,22,40,0.564,6,0,0,wortintern,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Auslassung,i,,Kleinbuchstabe,23,40,0.59,6,0,0,wortintern,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,219,Auslassung,r,,Kleinbuchstabe,25,40,0.641,7,0,0,wortintern,0.471,mitte,0.881,0.27
+aze19321217-5,neusort,220,Auslassung,b,,Kleinbuchstabe,0,32,0.0,1,1,0,wortinitial,0.473,mitte,0.888,0.307
+aze19321217-5,neusort,220,Auslassung,e,,Kleinbuchstabe,1,32,0.032,1,1,0,wortintern,0.473,mitte,0.888,0.307
+aze19321217-5,neusort,220,Auslassung,r,,Kleinbuchstabe,2,32,0.065,1,0,0,wortintern,0.473,mitte,0.888,0.307
+aze19321217-5,neusort,220,Auslassung,e,,Kleinbuchstabe,3,32,0.097,1,0,0,wortintern,0.473,mitte,0.888,0.307
+aze19321217-5,neusort,220,Auslassung,i,,Kleinbuchstabe,4,32,0.129,2,0,0,wortintern,0.473,mitte,0.888,0.307
+aze19321217-5,neusort,220,Auslassung,t,,Kleinbuchstabe,5,32,0.161,2,0,0,wortintern,0.473,mitte,0.888,0.307
+aze19321217-5,neusort,220,Auslassung,s,,Kleinbuchstabe,6,32,0.194,2,0,0,wortfinal,0.473,mitte,0.888,0.307
+aze19321217-5,neusort,220,Auslassung, ,,Leerzeichen,7,32,0.226,3,0,0,Wortgrenze,0.473,mitte,0.888,0.307
+aze19321217-5,neusort,238,Auslassung,.,,Interpunktion,11,12,1.0,10,0,1,wortfinal,0.512,mitte,0.169,0.502
+aze19321217-5,neusort,246,Auslassung,.,,Interpunktion,11,12,1.0,10,0,1,wortfinal,0.529,mitte,0.227,0.503
+aze19321217-5,neusort,255,Auslassung,"""",,Interpunktion,19,29,0.679,7,0,0,wortfinal,0.549,mitte,0.294,0.502
+aze19321217-5,neusort,257,Auslassung,.,,Interpunktion,24,25,1.0,10,0,1,wortfinal,0.553,mitte,0.308,0.504
+aze19321217-5,neusort,261,Auslassung, ,,Leerzeichen,35,39,0.921,10,0,0,Wortgrenze,0.562,mitte,0.329,0.504
+aze19321217-5,neusort,261,Auslassung,u,,Kleinbuchstabe,36,39,0.947,10,0,0,wortinitial,0.562,mitte,0.329,0.504
+aze19321217-5,neusort,261,Auslassung,n,,Kleinbuchstabe,37,39,0.974,10,0,1,wortintern,0.562,mitte,0.329,0.504
+aze19321217-5,neusort,261,Auslassung,d,,Kleinbuchstabe,38,39,1.0,10,0,1,wortfinal,0.562,mitte,0.329,0.504
+aze19321217-5,neusort,265,Auslassung,.,,Interpunktion,33,34,1.0,10,0,1,wortfinal,0.57,mitte,0.367,0.502
+aze19321217-5,neusort,266,Einfügung,,3,Ziffer,0,37,0.0,1,1,0,Einfügung,0.572,mitte,0.374,0.503
+aze19321217-5,neusort,266,Einfügung,,.,Interpunktion,0,37,0.0,1,1,0,Einfügung,0.572,mitte,0.374,0.503
+aze19321217-5,neusort,266,Einfügung,, ,Leerzeichen,0,37,0.0,1,1,0,Einfügung,0.572,mitte,0.374,0.503
+aze19321217-5,neusort,267,Auslassung,?,,Interpunktion,26,27,1.0,10,0,1,wortfinal,0.575,mitte,0.38,0.502
+aze19321217-5,neusort,269,Ersetzung,b,h,Kleinbuchstabe,4,37,0.111,2,0,0,wortinitial,0.579,mitte,0.395,0.502
+aze19321217-5,neusort,285,Auslassung,.,,Interpunktion,27,29,0.964,10,0,1,wortintern,0.613,mitte,0.523,0.503
+aze19321217-5,neusort,285,Auslassung,"""",,Interpunktion,28,29,1.0,10,0,1,wortfinal,0.613,mitte,0.523,0.503
+aze19321217-5,neusort,289,Auslassung,.,,Interpunktion,25,26,1.0,10,0,1,wortfinal,0.622,mitte,0.553,0.502
+aze19321217-5,neusort,298,Einfügung,,e,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,n,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,n,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,, ,Leerzeichen,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,i,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,c,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,h,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,, ,Leerzeichen,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,w,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,e,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,g,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,e,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,n,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,, ,Leerzeichen,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,e,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,i,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,n,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,e,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,s,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,, ,Leerzeichen,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,R,Großbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,a,Kleinbuchstabe,1,6,0.2,3,1,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,b,Kleinbuchstabe,2,6,0.4,5,0,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,m,Kleinbuchstabe,2,6,0.4,5,0,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Einfügung,,o,Kleinbuchstabe,2,6,0.4,5,0,0,Einfügung,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,298,Ersetzung,.,s,Interpunktion,5,6,1.0,10,0,1,wortfinal,0.641,mitte,0.612,0.502
+aze19321217-5,neusort,301,Auslassung,"""",,Interpunktion,27,28,1.0,10,0,1,wortfinal,0.648,mitte,0.632,0.502
+aze19321217-5,neusort,303,Auslassung,-,,Trennstrich,41,42,1.0,10,0,1,wortfinal,0.652,mitte,0.653,0.503
+aze19321217-5,neusort,317,Auslassung, ,,Leerzeichen,28,34,0.848,9,0,0,Wortgrenze,0.683,unten,0.755,0.501
+aze19321217-5,neusort,317,Auslassung,e,,Kleinbuchstabe,29,34,0.879,9,0,0,wortinitial,0.683,unten,0.755,0.501
+aze19321217-5,neusort,317,Auslassung,s,,Kleinbuchstabe,30,34,0.909,10,0,0,wortfinal,0.683,unten,0.755,0.501
+aze19321217-5,neusort,317,Auslassung, ,,Leerzeichen,31,34,0.939,10,0,0,Wortgrenze,0.683,unten,0.755,0.501
+aze19321217-5,neusort,317,Auslassung,z,,Kleinbuchstabe,32,34,0.97,10,0,1,wortinitial,0.683,unten,0.755,0.501
+aze19321217-5,neusort,317,Auslassung,u,,Kleinbuchstabe,33,34,1.0,10,0,1,wortfinal,0.683,unten,0.755,0.501
+aze19321217-5,neusort,326,Auslassung,u,,Kleinbuchstabe,15,27,0.577,6,0,0,wortinitial,0.702,unten,0.823,0.501
+aze19321217-5,neusort,326,Auslassung,m,,Kleinbuchstabe,16,27,0.615,7,0,0,wortfinal,0.702,unten,0.823,0.501
+aze19321217-5,neusort,326,Auslassung, ,,Leerzeichen,17,27,0.654,7,0,0,Wortgrenze,0.702,unten,0.823,0.501
+aze19321217-5,neusort,326,Auslassung,i,,Kleinbuchstabe,18,27,0.692,7,0,0,wortinitial,0.702,unten,0.823,0.501
+aze19321217-5,neusort,326,Auslassung,h,,Kleinbuchstabe,19,27,0.731,8,0,0,wortintern,0.702,unten,0.823,0.501
+aze19321217-5,neusort,326,Auslassung,n,,Kleinbuchstabe,20,27,0.769,8,0,0,wortfinal,0.702,unten,0.823,0.501
+aze19321217-5,neusort,326,Auslassung, ,,Leerzeichen,21,27,0.808,9,0,0,Wortgrenze,0.702,unten,0.823,0.501
+aze19321217-5,neusort,329,Einfügung,,A,Großbuchstabe,0,34,0.0,1,1,0,Einfügung,0.708,unten,0.851,0.501
+aze19321217-5,neusort,329,Einfügung,,a,Kleinbuchstabe,0,34,0.0,1,1,0,Einfügung,0.708,unten,0.851,0.501
+aze19321217-5,neusort,329,Einfügung,,p,Kleinbuchstabe,0,34,0.0,1,1,0,Einfügung,0.708,unten,0.851,0.501
+aze19321217-5,neusort,329,Einfügung,,.,Interpunktion,0,34,0.0,1,1,0,Einfügung,0.708,unten,0.851,0.501
+aze19321217-5,neusort,329,Einfügung,, ,Leerzeichen,0,34,0.0,1,1,0,Einfügung,0.708,unten,0.851,0.501
+aze19321217-5,neusort,331,Auslassung,"""",,Interpunktion,35,36,1.0,10,0,1,wortfinal,0.713,unten,0.86,0.501
+aze19321217-5,neusort,332,Auslassung, ,,Leerzeichen,30,36,0.857,9,0,0,Wortgrenze,0.715,unten,0.867,0.517
+aze19321217-5,neusort,332,Auslassung,„,,Interpunktion,31,36,0.886,9,0,0,wortinitial,0.715,unten,0.867,0.517
+aze19321217-5,neusort,332,Auslassung,W,,Großbuchstabe,32,36,0.914,10,0,0,wortintern,0.715,unten,0.867,0.517
+aze19321217-5,neusort,332,Auslassung,a,,Kleinbuchstabe,33,36,0.943,10,0,0,wortintern,0.715,unten,0.867,0.517
+aze19321217-5,neusort,332,Auslassung,s,,Kleinbuchstabe,34,36,0.971,10,0,1,wortintern,0.715,unten,0.867,0.517
+aze19321217-5,neusort,332,Auslassung,",",,Interpunktion,35,36,1.0,10,0,1,wortfinal,0.715,unten,0.867,0.517
+aze19321217-5,neusort,338,Auslassung,!,,Interpunktion,7,8,1.0,10,0,1,wortfinal,0.728,unten,0.91,0.501
+aze19321217-5,neusort,343,Auslassung,-,,Trennstrich,29,30,1.0,10,0,1,wortfinal,0.739,unten,0.961,0.501
+aze19321217-5,neusort,344,Ersetzung,s,S,Kleinbuchstabe,0,27,0.0,1,1,0,wortinitial,0.741,unten,0.969,0.5
+aze19321217-5,neusort,353,Auslassung, ,,Leerzeichen,25,27,0.962,10,0,1,Wortgrenze,0.76,unten,0.138,0.732
+aze19321217-5,neusort,353,Auslassung,-,,Trennstrich,26,27,1.0,10,0,1,Einzelzeichen,0.76,unten,0.138,0.732
+aze19321217-5,neusort,355,Ersetzung,s,j,Kleinbuchstabe,9,13,0.75,8,0,0,wortintern,0.765,unten,0.152,0.732
+aze19321217-5,neusort,355,Auslassung,.,,Interpunktion,12,13,1.0,10,0,1,wortfinal,0.765,unten,0.152,0.732
+aze19321217-5,neusort,366,Auslassung,.,,Interpunktion,18,19,1.0,10,0,1,wortfinal,0.788,unten,0.231,0.734
+aze19321217-5,neusort,371,Ersetzung,a,e,Kleinbuchstabe,4,38,0.108,2,0,0,wortintern,0.799,unten,0.267,0.732
+aze19321217-5,neusort,371,Auslassung,f,,Kleinbuchstabe,34,38,0.919,10,0,0,wortfinal,0.799,unten,0.267,0.732
+aze19321217-5,neusort,371,Auslassung, ,,Leerzeichen,35,38,0.946,10,0,0,Wortgrenze,0.799,unten,0.267,0.732
+aze19321217-5,neusort,371,Auslassung,i,,Kleinbuchstabe,36,38,0.973,10,0,1,wortinitial,0.799,unten,0.267,0.732
+aze19321217-5,neusort,371,Auslassung,n,,Kleinbuchstabe,37,38,1.0,10,0,1,wortfinal,0.799,unten,0.267,0.732
+aze19321217-5,neusort,374,Auslassung,-,,Trennstrich,42,43,1.0,10,0,1,wortfinal,0.806,unten,0.289,0.732
+aze19321217-5,neusort,382,Auslassung,:,,Interpunktion,35,36,1.0,10,0,1,wortfinal,0.823,unten,0.353,0.733
+aze19321217-5,neusort,383,Auslassung,-,,Trennstrich,32,33,1.0,10,0,1,wortfinal,0.825,unten,0.388,0.732
+aze19321217-5,neusort,416,Ersetzung,',°,Interpunktion,14,45,0.318,4,0,0,wortintern,0.896,unten,0.612,0.732
+aze19321217-5,neusort,426,Ersetzung,', ,Interpunktion,2,40,0.051,1,0,0,wortintern,0.918,unten,0.683,0.733
+aze19321217-5,neusort,426,Ersetzung,t,d,Kleinbuchstabe,34,40,0.872,9,0,0,wortintern,0.918,unten,0.683,0.733
+aze19321217-5,neusort,429,Ersetzung,',°,Interpunktion,17,48,0.362,4,0,0,wortintern,0.924,unten,0.703,0.731
+aze19321217-5,neusort,430,Ersetzung,', ,Interpunktion,17,45,0.386,4,0,0,wortintern,0.927,unten,0.709,0.731
+aze19321217-5,neusort,431,Ersetzung,',·,Interpunktion,8,45,0.182,2,0,0,wortintern,0.929,unten,0.716,0.731
+aze19321217-5,neusort,431,Ersetzung,',-,Interpunktion,44,45,1.0,10,0,1,wortfinal,0.929,unten,0.716,0.731
+aze19321217-5,neusort,457,Auslassung,.,,Interpunktion,42,43,1.0,10,0,1,wortfinal,0.985,unten,0.921,0.73
+aze19321217-5,neusort,459,Auslassung,9,,Ziffer,0,34,0.0,1,1,0,wortinitial,0.989,unten,0.933,0.758
+aze19321217-5,neusort,459,Auslassung,0,,Ziffer,1,34,0.03,1,1,0,wortfinal,0.989,unten,0.933,0.758
+aze19321217-5,neusort,459,Auslassung, ,,Leerzeichen,2,34,0.061,1,0,0,Wortgrenze,0.989,unten,0.933,0.758
+aze19321217-5,neusort,462,Auslassung, ,,Leerzeichen,39,42,0.951,10,0,0,Wortgrenze,0.996,unten,0.965,0.728
+aze19321217-5,neusort,462,Auslassung,s,,Kleinbuchstabe,40,42,0.976,10,0,1,wortinitial,0.996,unten,0.965,0.728
+aze19321217-5,neusort,462,Auslassung,o,,Kleinbuchstabe,41,42,1.0,10,0,1,wortfinal,0.996,unten,0.965,0.728
+aze19321217-5,neusort,464,Auslassung,s,,Kleinbuchstabe,35,36,1.0,10,0,1,wortfinal,1.0,unten,0.964,0.742
 aze19341202-5,alt,1,Einfügung,,1,Ziffer,0,48,0.0,1,1,0,Einfügung,0.0,oben,0.085,0.117
 aze19341202-5,alt,1,Einfügung,, ,Leerzeichen,0,48,0.0,1,1,0,Einfügung,0.0,oben,0.085,0.117
 aze19341202-5,alt,1,Ersetzung,a,ä,Kleinbuchstabe,29,48,0.617,7,0,0,wortinitial,0.0,oben,0.085,0.117
@@ -9067,3 +10287,241 @@ aze19341202-5,neu,118,Ersetzung,Ö,O,Umlaut/ß,46,52,0.902,10,0,0,wortinitial,0.
 aze19341202-5,neu,119,Auslassung,!,,Interpunktion,44,45,1.0,10,0,1,wortfinal,0.944,unten,0.835,0.478
 aze19341202-5,neu,120,Ersetzung,Ü,U,Umlaut/ß,0,46,0.0,1,1,0,wortinitial,0.952,unten,0.847,0.476
 aze19341202-5,neu,124,Einfügung,,’,Sonstiges,0,49,0.0,1,1,0,Einfügung,0.984,unten,0.89,0.476
+aze19341202-5,neusort,7,Auslassung, ,,Leerzeichen,19,45,0.432,5,0,0,Wortgrenze,0.048,oben,0.086,0.497
+aze19341202-5,neusort,14,Auslassung,A,,Großbuchstabe,0,41,0.0,1,1,0,wortinitial,0.104,oben,0.215,0.137
+aze19341202-5,neusort,14,Auslassung,u,,Kleinbuchstabe,1,41,0.025,1,1,0,wortintern,0.104,oben,0.215,0.137
+aze19341202-5,neusort,15,Auslassung,g,,Kleinbuchstabe,14,41,0.35,4,0,0,wortfinal,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung, ,,Leerzeichen,15,41,0.375,4,0,0,Wortgrenze,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,d,,Kleinbuchstabe,16,41,0.4,5,0,0,wortinitial,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,e,,Kleinbuchstabe,17,41,0.425,5,0,0,wortintern,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,r,,Kleinbuchstabe,18,41,0.45,5,0,0,wortfinal,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung, ,,Leerzeichen,28,41,0.7,8,0,0,Wortgrenze,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,W,,Großbuchstabe,29,41,0.725,8,0,0,wortinitial,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,i,,Kleinbuchstabe,30,41,0.75,8,0,0,wortintern,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,e,,Kleinbuchstabe,31,41,0.775,8,0,0,wortintern,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,n,,Kleinbuchstabe,32,41,0.8,9,0,0,wortfinal,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung, ,,Leerzeichen,33,41,0.825,9,0,0,Wortgrenze,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,f,,Kleinbuchstabe,34,41,0.85,9,0,0,wortinitial,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,ü,,Umlaut/ß,35,41,0.875,9,0,0,wortintern,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,r,,Kleinbuchstabe,36,41,0.9,10,0,0,wortfinal,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung, ,,Leerzeichen,37,41,0.925,10,0,0,Wortgrenze,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,d,,Kleinbuchstabe,38,41,0.95,10,0,0,wortinitial,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,a,,Kleinbuchstabe,39,41,0.975,10,0,1,wortintern,0.112,oben,0.228,0.132
+aze19341202-5,neusort,15,Auslassung,s,,Kleinbuchstabe,40,41,1.0,10,0,1,wortfinal,0.112,oben,0.228,0.132
+aze19341202-5,neusort,16,Auslassung,ß,,Umlaut/ß,19,43,0.452,5,0,0,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,t,,Kleinbuchstabe,20,43,0.476,5,0,0,wortfinal,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung, ,,Leerzeichen,21,43,0.5,6,0,0,Wortgrenze,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,t,,Kleinbuchstabe,22,43,0.524,6,0,0,wortinitial,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,r,,Kleinbuchstabe,23,43,0.548,6,0,0,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,o,,Kleinbuchstabe,24,43,0.571,6,0,0,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,t,,Kleinbuchstabe,25,43,0.595,6,0,0,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,z,,Kleinbuchstabe,26,43,0.619,7,0,0,wortfinal,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,r,,Kleinbuchstabe,30,43,0.714,8,0,0,wortfinal,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung, ,,Leerzeichen,31,43,0.738,8,0,0,Wortgrenze,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,E,,Großbuchstabe,32,43,0.762,8,0,0,wortinitial,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,n,,Kleinbuchstabe,34,43,0.81,9,0,0,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,s,,Kleinbuchstabe,35,43,0.833,9,0,0,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,t,,Kleinbuchstabe,36,43,0.857,9,0,0,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,e,,Kleinbuchstabe,37,43,0.881,9,0,0,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,l,,Kleinbuchstabe,38,43,0.905,10,0,0,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,l,,Kleinbuchstabe,39,43,0.929,10,0,0,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,u,,Kleinbuchstabe,40,43,0.952,10,0,0,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,n,,Kleinbuchstabe,41,43,0.976,10,0,1,wortintern,0.12,oben,0.24,0.113
+aze19341202-5,neusort,16,Auslassung,g,,Kleinbuchstabe,42,43,1.0,10,0,1,wortfinal,0.12,oben,0.24,0.113
+aze19341202-5,neusort,17,Auslassung,t,,Kleinbuchstabe,13,38,0.351,4,0,0,wortintern,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,i,,Kleinbuchstabe,14,38,0.378,4,0,0,wortintern,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,g,,Kleinbuchstabe,15,38,0.405,5,0,0,wortintern,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,k,,Kleinbuchstabe,16,38,0.432,5,0,0,wortintern,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,e,,Kleinbuchstabe,17,38,0.459,5,0,0,wortintern,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,i,,Kleinbuchstabe,18,38,0.486,5,0,0,wortintern,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,t,,Kleinbuchstabe,19,38,0.514,6,0,0,wortfinal,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung, ,,Leerzeichen,30,38,0.811,9,0,0,Wortgrenze,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,D,,Großbuchstabe,31,38,0.838,9,0,0,wortinitial,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,e,,Kleinbuchstabe,32,38,0.865,9,0,0,wortintern,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,f,,Kleinbuchstabe,33,38,0.892,9,0,0,wortintern,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,i,,Kleinbuchstabe,34,38,0.919,10,0,0,wortintern,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,z,,Kleinbuchstabe,35,38,0.946,10,0,0,wortintern,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,i,,Kleinbuchstabe,36,38,0.973,10,0,1,wortintern,0.128,oben,0.254,0.114
+aze19341202-5,neusort,17,Auslassung,t,,Kleinbuchstabe,37,38,1.0,10,0,1,wortfinal,0.128,oben,0.254,0.114
+aze19341202-5,neusort,18,Auslassung,e,,Kleinbuchstabe,16,40,0.41,5,0,0,wortintern,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,n,,Kleinbuchstabe,17,40,0.436,5,0,0,wortfinal,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,S,,Großbuchstabe,19,40,0.487,5,0,0,wortinitial,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,c,,Kleinbuchstabe,20,40,0.513,6,0,0,wortintern,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,h,,Kleinbuchstabe,21,40,0.538,6,0,0,wortintern,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,i,,Kleinbuchstabe,22,40,0.564,6,0,0,wortintern,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,l,,Kleinbuchstabe,23,40,0.59,6,0,0,wortintern,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung, ,,Leerzeichen,32,40,0.821,9,0,0,Wortgrenze,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,D,,Großbuchstabe,33,40,0.846,9,0,0,wortinitial,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,e,,Kleinbuchstabe,34,40,0.872,9,0,0,wortintern,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,s,,Kleinbuchstabe,35,40,0.897,9,0,0,wortfinal,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung, ,,Leerzeichen,36,40,0.923,10,0,0,Wortgrenze,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,D,,Großbuchstabe,37,40,0.949,10,0,0,wortinitial,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,e,,Kleinbuchstabe,38,40,0.974,10,0,1,wortintern,0.136,oben,0.264,0.116
+aze19341202-5,neusort,18,Auslassung,-,,Trennstrich,39,40,1.0,10,0,1,wortfinal,0.136,oben,0.264,0.116
+aze19341202-5,neusort,21,Auslassung,.,,Interpunktion,46,47,1.0,10,0,1,wortfinal,0.16,oben,0.301,0.113
+aze19341202-5,neusort,22,Auslassung,g,,Kleinbuchstabe,35,43,0.833,9,0,0,wortintern,0.168,oben,0.311,0.114
+aze19341202-5,neusort,22,Auslassung,e,,Kleinbuchstabe,36,43,0.857,9,0,0,wortintern,0.168,oben,0.311,0.114
+aze19341202-5,neusort,22,Auslassung,s,,Kleinbuchstabe,37,43,0.881,9,0,0,wortintern,0.168,oben,0.311,0.114
+aze19341202-5,neusort,22,Auslassung,c,,Kleinbuchstabe,38,43,0.905,10,0,0,wortintern,0.168,oben,0.311,0.114
+aze19341202-5,neusort,22,Auslassung,h,,Kleinbuchstabe,39,43,0.929,10,0,0,wortintern,0.168,oben,0.311,0.114
+aze19341202-5,neusort,22,Auslassung,e,,Kleinbuchstabe,40,43,0.952,10,0,0,wortintern,0.168,oben,0.311,0.114
+aze19341202-5,neusort,22,Auslassung,n,,Kleinbuchstabe,41,43,0.976,10,0,1,wortintern,0.168,oben,0.311,0.114
+aze19341202-5,neusort,22,Auslassung,-,,Trennstrich,42,43,1.0,10,0,1,wortfinal,0.168,oben,0.311,0.114
+aze19341202-5,neusort,23,Auslassung,",",,Interpunktion,43,44,1.0,10,0,1,wortfinal,0.176,oben,0.32,0.112
+aze19341202-5,neusort,24,Ersetzung,-, ,Trennstrich,42,43,1.0,10,0,1,wortfinal,0.184,oben,0.335,0.112
+aze19341202-5,neusort,26,Auslassung,.,,Interpunktion,34,48,0.723,8,0,0,wortfinal,0.2,oben,0.356,0.113
+aze19341202-5,neusort,26,Auslassung, ,,Leerzeichen,35,48,0.745,8,0,0,Wortgrenze,0.2,oben,0.356,0.113
+aze19341202-5,neusort,26,Auslassung,J,,Großbuchstabe,36,48,0.766,8,0,0,wortinitial,0.2,oben,0.356,0.113
+aze19341202-5,neusort,26,Auslassung,e,,Kleinbuchstabe,37,48,0.787,8,0,0,wortintern,0.2,oben,0.356,0.113
+aze19341202-5,neusort,26,Auslassung,t,,Kleinbuchstabe,38,48,0.809,9,0,0,wortintern,0.2,oben,0.356,0.113
+aze19341202-5,neusort,26,Auslassung,z,,Kleinbuchstabe,39,48,0.83,9,0,0,wortintern,0.2,oben,0.356,0.113
+aze19341202-5,neusort,26,Auslassung,t,,Kleinbuchstabe,40,48,0.851,9,0,0,wortfinal,0.2,oben,0.356,0.113
+aze19341202-5,neusort,26,Ersetzung,t,y,Kleinbuchstabe,44,48,0.936,10,0,0,wortfinal,0.2,oben,0.356,0.113
+aze19341202-5,neusort,26,Ersetzung, ,,Leerzeichen,45,48,0.957,10,0,0,Wortgrenze,0.2,oben,0.356,0.113
+aze19341202-5,neusort,26,Ersetzung,e,,Kleinbuchstabe,46,48,0.979,10,0,1,wortinitial,0.2,oben,0.356,0.113
+aze19341202-5,neusort,26,Ersetzung,r,,Kleinbuchstabe,47,48,1.0,10,0,1,wortfinal,0.2,oben,0.356,0.113
+aze19341202-5,neusort,27,Ersetzung,z,c,Kleinbuchstabe,23,35,0.676,7,0,0,wortinitial,0.208,oben,0.367,0.112
+aze19341202-5,neusort,27,Ersetzung,u,,Kleinbuchstabe,24,35,0.706,8,0,0,wortintern,0.208,oben,0.367,0.112
+aze19341202-5,neusort,27,Ersetzung,r,,Kleinbuchstabe,25,35,0.735,8,0,0,wortfinal,0.208,oben,0.367,0.112
+aze19341202-5,neusort,27,Ersetzung, ,,Leerzeichen,26,35,0.765,8,0,0,Wortgrenze,0.208,oben,0.367,0.112
+aze19341202-5,neusort,27,Ersetzung,W,,Großbuchstabe,27,35,0.794,8,0,0,wortinitial,0.208,oben,0.367,0.112
+aze19341202-5,neusort,27,Ersetzung,o,,Kleinbuchstabe,28,35,0.824,9,0,0,wortintern,0.208,oben,0.367,0.112
+aze19341202-5,neusort,27,Auslassung,n,,Kleinbuchstabe,30,35,0.882,9,0,0,wortintern,0.208,oben,0.367,0.112
+aze19341202-5,neusort,27,Auslassung,b,,Kleinbuchstabe,31,35,0.912,10,0,0,wortintern,0.208,oben,0.367,0.112
+aze19341202-5,neusort,27,Auslassung,a,,Kleinbuchstabe,32,35,0.941,10,0,0,wortintern,0.208,oben,0.367,0.112
+aze19341202-5,neusort,27,Auslassung,u,,Kleinbuchstabe,33,35,0.971,10,0,1,wortintern,0.208,oben,0.367,0.112
+aze19341202-5,neusort,27,Auslassung,-,,Trennstrich,34,35,1.0,10,0,1,wortfinal,0.208,oben,0.367,0.112
+aze19341202-5,neusort,28,Auslassung,s,,Kleinbuchstabe,0,37,0.0,1,1,0,wortinitial,0.216,oben,0.379,0.441
+aze19341202-5,neusort,28,Auslassung,s,,Kleinbuchstabe,26,37,0.722,8,0,0,wortintern,0.216,oben,0.379,0.441
+aze19341202-5,neusort,28,Auslassung,c,,Kleinbuchstabe,27,37,0.75,8,0,0,wortintern,0.216,oben,0.379,0.441
+aze19341202-5,neusort,28,Auslassung,h,,Kleinbuchstabe,28,37,0.778,8,0,0,wortintern,0.216,oben,0.379,0.441
+aze19341202-5,neusort,28,Auslassung,l,,Kleinbuchstabe,29,37,0.806,9,0,0,wortintern,0.216,oben,0.379,0.441
+aze19341202-5,neusort,28,Auslassung,i,,Kleinbuchstabe,30,37,0.833,9,0,0,wortintern,0.216,oben,0.379,0.441
+aze19341202-5,neusort,28,Auslassung,e,,Kleinbuchstabe,31,37,0.861,9,0,0,wortintern,0.216,oben,0.379,0.441
+aze19341202-5,neusort,28,Auslassung,ß,,Umlaut/ß,32,37,0.889,9,0,0,wortintern,0.216,oben,0.379,0.441
+aze19341202-5,neusort,28,Auslassung,l,,Kleinbuchstabe,33,37,0.917,10,0,0,wortintern,0.216,oben,0.379,0.441
+aze19341202-5,neusort,28,Auslassung,i,,Kleinbuchstabe,34,37,0.944,10,0,0,wortintern,0.216,oben,0.379,0.441
+aze19341202-5,neusort,28,Auslassung,c,,Kleinbuchstabe,35,37,0.972,10,0,1,wortintern,0.216,oben,0.379,0.441
+aze19341202-5,neusort,28,Auslassung,h,,Kleinbuchstabe,36,37,1.0,10,0,1,wortfinal,0.216,oben,0.379,0.441
+aze19341202-5,neusort,29,Auslassung,d,,Kleinbuchstabe,0,26,0.0,1,1,0,wortinitial,0.224,oben,0.39,0.149
+aze19341202-5,neusort,29,Auslassung,i,,Kleinbuchstabe,1,26,0.04,1,1,0,wortintern,0.224,oben,0.39,0.149
+aze19341202-5,neusort,29,Auslassung,e,,Kleinbuchstabe,2,26,0.08,1,0,0,wortfinal,0.224,oben,0.39,0.149
+aze19341202-5,neusort,29,Auslassung, ,,Leerzeichen,3,26,0.12,2,0,0,Wortgrenze,0.224,oben,0.39,0.149
+aze19341202-5,neusort,29,Auslassung,.,,Interpunktion,25,26,1.0,10,0,1,wortfinal,0.224,oben,0.39,0.149
+aze19341202-5,neusort,30,Auslassung,D,,Großbuchstabe,0,43,0.0,1,1,0,wortinitial,0.232,oben,0.401,0.235
+aze19341202-5,neusort,30,Auslassung,i,,Kleinbuchstabe,1,43,0.024,1,1,0,wortintern,0.232,oben,0.401,0.235
+aze19341202-5,neusort,30,Auslassung,e,,Kleinbuchstabe,2,43,0.048,1,0,0,wortintern,0.232,oben,0.401,0.235
+aze19341202-5,neusort,31,Auslassung,k,,Kleinbuchstabe,0,48,0.0,1,1,0,wortinitial,0.24,oben,0.414,0.137
+aze19341202-5,neusort,32,Auslassung,v,,Kleinbuchstabe,0,42,0.0,1,1,0,wortinitial,0.248,oben,0.428,0.167
+aze19341202-5,neusort,32,Auslassung,o,,Kleinbuchstabe,1,42,0.024,1,1,0,wortintern,0.248,oben,0.428,0.167
+aze19341202-5,neusort,32,Auslassung,n,,Kleinbuchstabe,2,42,0.049,1,0,0,wortfinal,0.248,oben,0.428,0.167
+aze19341202-5,neusort,32,Auslassung, ,,Leerzeichen,3,42,0.073,1,0,0,Wortgrenze,0.248,oben,0.428,0.167
+aze19341202-5,neusort,33,Ersetzung,W,i,Großbuchstabe,0,44,0.0,1,1,0,wortinitial,0.256,oben,0.44,0.172
+aze19341202-5,neusort,33,Ersetzung,o,,Kleinbuchstabe,1,44,0.023,1,1,0,wortintern,0.256,oben,0.44,0.172
+aze19341202-5,neusort,33,Ersetzung,h,,Kleinbuchstabe,2,44,0.047,1,0,0,wortintern,0.256,oben,0.44,0.172
+aze19341202-5,neusort,33,Ersetzung,n,,Kleinbuchstabe,3,44,0.07,1,0,0,wortintern,0.256,oben,0.44,0.172
+aze19341202-5,neusort,33,Ersetzung,u,,Kleinbuchstabe,4,44,0.093,1,0,0,wortintern,0.256,oben,0.44,0.172
+aze19341202-5,neusort,33,Ersetzung,z,s,Kleinbuchstabe,24,44,0.558,6,0,0,wortfinal,0.256,oben,0.44,0.172
+aze19341202-5,neusort,34,Auslassung,K,,Großbuchstabe,0,44,0.0,1,1,0,wortinitial,0.264,oben,0.449,0.137
+aze19341202-5,neusort,35,Auslassung,v,,Kleinbuchstabe,0,48,0.0,1,1,0,wortinitial,0.272,oben,0.464,0.166
+aze19341202-5,neusort,35,Auslassung,o,,Kleinbuchstabe,1,48,0.021,1,1,0,wortintern,0.272,oben,0.464,0.166
+aze19341202-5,neusort,35,Auslassung,n,,Kleinbuchstabe,2,48,0.043,1,0,0,wortfinal,0.272,oben,0.464,0.166
+aze19341202-5,neusort,35,Auslassung, ,,Leerzeichen,3,48,0.064,1,0,0,Wortgrenze,0.272,oben,0.464,0.166
+aze19341202-5,neusort,35,Auslassung,d,,Kleinbuchstabe,4,48,0.085,1,0,0,wortinitial,0.272,oben,0.464,0.166
+aze19341202-5,neusort,36,Auslassung,S,,Großbuchstabe,0,47,0.0,1,1,0,wortinitial,0.28,oben,0.472,0.175
+aze19341202-5,neusort,36,Auslassung,t,,Kleinbuchstabe,1,47,0.022,1,1,0,wortintern,0.28,oben,0.472,0.175
+aze19341202-5,neusort,36,Auslassung,e,,Kleinbuchstabe,2,47,0.043,1,0,0,wortintern,0.28,oben,0.472,0.175
+aze19341202-5,neusort,36,Auslassung,u,,Kleinbuchstabe,3,47,0.065,1,0,0,wortintern,0.28,oben,0.472,0.175
+aze19341202-5,neusort,36,Auslassung,e,,Kleinbuchstabe,4,47,0.087,1,0,0,wortintern,0.28,oben,0.472,0.175
+aze19341202-5,neusort,36,Auslassung,r,,Kleinbuchstabe,5,47,0.109,2,0,0,wortfinal,0.28,oben,0.472,0.175
+aze19341202-5,neusort,36,Auslassung, ,,Leerzeichen,6,47,0.13,2,0,0,Wortgrenze,0.28,oben,0.472,0.175
+aze19341202-5,neusort,37,Auslassung,h,,Kleinbuchstabe,0,46,0.0,1,1,0,wortinitial,0.288,oben,0.48,0.17
+aze19341202-5,neusort,37,Auslassung,e,,Kleinbuchstabe,1,46,0.022,1,1,0,wortintern,0.288,oben,0.48,0.17
+aze19341202-5,neusort,37,Auslassung,r,,Kleinbuchstabe,2,46,0.044,1,0,0,wortfinal,0.288,oben,0.48,0.17
+aze19341202-5,neusort,37,Auslassung, ,,Leerzeichen,3,46,0.067,1,0,0,Wortgrenze,0.288,oben,0.48,0.17
+aze19341202-5,neusort,37,Auslassung,a,,Kleinbuchstabe,4,46,0.089,1,0,0,wortinitial,0.288,oben,0.48,0.17
+aze19341202-5,neusort,37,Auslassung,b,,Kleinbuchstabe,5,46,0.111,2,0,0,wortintern,0.288,oben,0.48,0.17
+aze19341202-5,neusort,38,Auslassung,E,,Großbuchstabe,0,46,0.0,1,1,0,wortinitial,0.296,oben,0.493,0.15
+aze19341202-5,neusort,38,Auslassung,i,,Kleinbuchstabe,1,46,0.022,1,1,0,wortintern,0.296,oben,0.493,0.15
+aze19341202-5,neusort,38,Auslassung,n,,Kleinbuchstabe,2,46,0.044,1,0,0,wortintern,0.296,oben,0.493,0.15
+aze19341202-5,neusort,38,Auslassung,-,,Trennstrich,45,46,1.0,10,0,1,wortfinal,0.296,oben,0.493,0.15
+aze19341202-5,neusort,39,Ersetzung,l,a,Kleinbuchstabe,0,5,0.0,1,1,0,wortinitial,0.304,oben,0.512,0.17
+aze19341202-5,neusort,39,Ersetzung,g,d,Kleinbuchstabe,3,5,0.75,8,0,1,wortintern,0.304,oben,0.512,0.17
+aze19341202-5,neusort,39,Ersetzung,.,e,Interpunktion,4,5,1.0,10,0,1,wortfinal,0.304,oben,0.512,0.17
+aze19341202-5,neusort,40,Auslassung,D,,Großbuchstabe,0,45,0.0,1,1,0,wortinitial,0.312,oben,0.512,0.17
+aze19341202-5,neusort,40,Auslassung,a,,Kleinbuchstabe,1,45,0.023,1,1,0,wortintern,0.312,oben,0.512,0.17
+aze19341202-5,neusort,40,Auslassung,f,,Kleinbuchstabe,2,45,0.045,1,0,0,wortintern,0.312,oben,0.512,0.17
+aze19341202-5,neusort,40,Auslassung,ü,,Umlaut/ß,3,45,0.068,1,0,0,wortintern,0.312,oben,0.512,0.17
+aze19341202-5,neusort,40,Auslassung,r,,Kleinbuchstabe,4,45,0.091,1,0,0,wortfinal,0.312,oben,0.512,0.17
+aze19341202-5,neusort,40,Auslassung, ,,Leerzeichen,5,45,0.114,2,0,0,Wortgrenze,0.312,oben,0.512,0.17
+aze19341202-5,neusort,40,Ersetzung,Ä,A,Umlaut/ß,37,45,0.841,9,0,0,wortinitial,0.312,oben,0.512,0.17
+aze19341202-5,neusort,41,Auslassung,v,,Kleinbuchstabe,0,47,0.0,1,1,0,wortinitial,0.32,oben,0.531,0.144
+aze19341202-5,neusort,41,Auslassung,o,,Kleinbuchstabe,1,47,0.022,1,1,0,wortintern,0.32,oben,0.531,0.144
+aze19341202-5,neusort,41,Auslassung,n,,Kleinbuchstabe,2,47,0.043,1,0,0,wortfinal,0.32,oben,0.531,0.144
+aze19341202-5,neusort,41,Auslassung, ,,Leerzeichen,3,47,0.065,1,0,0,Wortgrenze,0.32,oben,0.531,0.144
+aze19341202-5,neusort,42,Einfügung,, ,Leerzeichen,15,37,0.417,5,0,0,Einfügung,0.328,oben,0.544,0.112
+aze19341202-5,neusort,44,Auslassung,e,,Kleinbuchstabe,0,46,0.0,1,1,0,wortinitial,0.344,mitte,0.564,0.15
+aze19341202-5,neusort,44,Auslassung,i,,Kleinbuchstabe,1,46,0.022,1,1,0,wortintern,0.344,mitte,0.564,0.15
+aze19341202-5,neusort,44,Auslassung,n,,Kleinbuchstabe,2,46,0.044,1,0,0,wortintern,0.344,mitte,0.564,0.15
+aze19341202-5,neusort,44,Auslassung,!,,Interpunktion,3,46,0.067,1,0,0,wortfinal,0.344,mitte,0.564,0.15
+aze19341202-5,neusort,44,Auslassung, ,,Leerzeichen,4,46,0.089,1,0,0,Wortgrenze,0.344,mitte,0.564,0.15
+aze19341202-5,neusort,45,Auslassung,-,,Trennstrich,49,50,1.0,10,0,1,wortfinal,0.352,mitte,0.577,0.111
+aze19341202-5,neusort,46,Ersetzung,ä,a,Umlaut/ß,10,35,0.294,3,0,0,wortintern,0.36,mitte,0.588,0.111
+aze19341202-5,neusort,46,Auslassung,",",,Interpunktion,34,35,1.0,10,0,1,wortfinal,0.36,mitte,0.588,0.111
+aze19341202-5,neusort,47,Auslassung,d,,Kleinbuchstabe,0,47,0.0,1,1,0,wortinitial,0.368,mitte,0.601,0.139
+aze19341202-5,neusort,47,Auslassung,i,,Kleinbuchstabe,1,47,0.022,1,1,0,wortintern,0.368,mitte,0.601,0.139
+aze19341202-5,neusort,47,Auslassung,e,,Kleinbuchstabe,2,47,0.043,1,0,0,wortfinal,0.368,mitte,0.601,0.139
+aze19341202-5,neusort,47,Auslassung, ,,Leerzeichen,3,47,0.065,1,0,0,Wortgrenze,0.368,mitte,0.601,0.139
+aze19341202-5,neusort,51,Auslassung,-,,Trennstrich,47,48,1.0,10,0,1,wortfinal,0.4,mitte,0.644,0.112
+aze19341202-5,neusort,52,Ersetzung,ä,a,Umlaut/ß,5,49,0.104,2,0,0,wortintern,0.408,mitte,0.655,0.111
+aze19341202-5,neusort,53,Auslassung, ,,Leerzeichen,44,48,0.936,10,0,0,Wortgrenze,0.416,mitte,0.667,0.111
+aze19341202-5,neusort,53,Auslassung,b,,Kleinbuchstabe,45,48,0.957,10,0,0,wortinitial,0.416,mitte,0.667,0.111
+aze19341202-5,neusort,53,Auslassung,e,,Kleinbuchstabe,46,48,0.979,10,0,1,wortintern,0.416,mitte,0.667,0.111
+aze19341202-5,neusort,53,Auslassung,-,,Trennstrich,47,48,1.0,10,0,1,wortfinal,0.416,mitte,0.667,0.111
+aze19341202-5,neusort,55,Auslassung,-,,Trennstrich,51,52,1.0,10,0,1,wortfinal,0.432,mitte,0.227,0.482
+aze19341202-5,neusort,57,Einfügung,, ,Leerzeichen,27,43,0.643,7,0,0,Einfügung,0.448,mitte,0.253,0.482
+aze19341202-5,neusort,58,Auslassung,-,,Trennstrich,46,47,1.0,10,0,1,wortfinal,0.456,mitte,0.263,0.482
+aze19341202-5,neusort,60,Einfügung,, ,Leerzeichen,52,52,1.02,10,0,1,Einfügung,0.472,mitte,0.285,0.483
+aze19341202-5,neusort,60,Einfügung,,s,Kleinbuchstabe,52,52,1.02,10,0,1,Einfügung,0.472,mitte,0.285,0.483
+aze19341202-5,neusort,60,Einfügung,,e,Kleinbuchstabe,52,52,1.02,10,0,1,Einfügung,0.472,mitte,0.285,0.483
+aze19341202-5,neusort,60,Einfügung,,n,Kleinbuchstabe,52,52,1.02,10,0,1,Einfügung,0.472,mitte,0.285,0.483
+aze19341202-5,neusort,61,Auslassung,;,,Interpunktion,47,48,1.0,10,0,1,wortfinal,0.48,mitte,0.296,0.482
+aze19341202-5,neusort,64,Einfügung,,b,Kleinbuchstabe,0,45,0.0,1,1,0,Einfügung,0.504,mitte,0.319,0.509
+aze19341202-5,neusort,64,Einfügung,,u,Kleinbuchstabe,0,45,0.0,1,1,0,Einfügung,0.504,mitte,0.319,0.509
+aze19341202-5,neusort,64,Einfügung,,t,Kleinbuchstabe,0,45,0.0,1,1,0,Einfügung,0.504,mitte,0.319,0.509
+aze19341202-5,neusort,64,Einfügung,, ,Leerzeichen,0,45,0.0,1,1,0,Einfügung,0.504,mitte,0.319,0.509
+aze19341202-5,neusort,65,Ersetzung,ö,o,Umlaut/ß,13,46,0.289,3,0,0,wortintern,0.512,mitte,0.344,0.496
+aze19341202-5,neusort,67,Auslassung,!,,Interpunktion,42,43,1.0,10,0,1,wortfinal,0.528,mitte,0.367,0.5
+aze19341202-5,neusort,68,Auslassung,o,,Kleinbuchstabe,11,15,0.786,8,0,0,wortintern,0.536,mitte,0.386,0.482
+aze19341202-5,neusort,68,Auslassung,r,,Kleinbuchstabe,12,15,0.857,9,0,0,wortintern,0.536,mitte,0.386,0.482
+aze19341202-5,neusort,68,Auslassung,d,,Kleinbuchstabe,13,15,0.929,10,0,1,wortintern,0.536,mitte,0.386,0.482
+aze19341202-5,neusort,73,Auslassung,-,,Trennstrich,46,47,1.0,10,0,1,wortfinal,0.576,mitte,0.454,0.478
+aze19341202-5,neusort,77,Ersetzung,r,n,Kleinbuchstabe,49,50,1.0,10,0,1,wortfinal,0.608,mitte,0.498,0.478
+aze19341202-5,neusort,81,Auslassung,-,,Trennstrich,45,46,1.0,10,0,1,wortfinal,0.64,mitte,0.544,0.477
+aze19341202-5,neusort,88,Auslassung,-,,Trennstrich,47,48,1.0,10,0,1,wortfinal,0.696,unten,0.623,0.477
+aze19341202-5,neusort,89,Einfügung,, ,Leerzeichen,1,48,0.021,1,1,0,Einfügung,0.704,unten,0.634,0.482
+aze19341202-5,neusort,89,Auslassung,i,,Kleinbuchstabe,4,48,0.085,1,0,0,wortfinal,0.704,unten,0.634,0.482
+aze19341202-5,neusort,89,Ersetzung,",",.,Interpunktion,47,48,1.0,10,0,1,wortfinal,0.704,unten,0.634,0.482
+aze19341202-5,neusort,92,Ersetzung,., ,Interpunktion,45,46,1.0,10,0,1,wortfinal,0.728,unten,0.668,0.488
+aze19341202-5,neusort,95,Ersetzung,D,s,Großbuchstabe,0,41,0.0,1,1,0,wortinitial,0.752,unten,0.733,0.338
+aze19341202-5,neusort,95,Ersetzung,i,u,Kleinbuchstabe,1,41,0.025,1,1,0,wortintern,0.752,unten,0.733,0.338
+aze19341202-5,neusort,95,Einfügung,,n,Kleinbuchstabe,3,41,0.075,1,0,0,Einfügung,0.752,unten,0.733,0.338
+aze19341202-5,neusort,95,Einfügung,,.,Interpunktion,3,41,0.075,1,0,0,Einfügung,0.752,unten,0.733,0.338
+aze19341202-5,neusort,95,Auslassung,S,,Großbuchstabe,4,41,0.1,2,0,0,wortinitial,0.752,unten,0.733,0.338
+aze19341202-5,neusort,95,Auslassung,-,,Trennstrich,40,41,1.0,10,0,1,wortfinal,0.752,unten,0.733,0.338
+aze19341202-5,neusort,96,Auslassung,:,,Interpunktion,30,31,1.0,10,0,1,wortfinal,0.76,unten,0.759,0.109
+aze19341202-5,neusort,102,Auslassung,",",,Interpunktion,43,44,1.0,10,0,1,wortfinal,0.808,unten,0.834,0.122
+aze19341202-5,neusort,105,Auslassung,V,,Großbuchstabe,0,37,0.0,1,1,0,wortinitial,0.832,unten,0.867,0.135
+aze19341202-5,neusort,105,Auslassung,«,,Interpunktion,10,37,0.278,3,0,0,wortfinal,0.832,unten,0.867,0.135
+aze19341202-5,neusort,107,Auslassung,h,,Kleinbuchstabe,0,37,0.0,1,1,0,wortinitial,0.848,unten,0.89,0.13
+aze19341202-5,neusort,108,Ersetzung,s,t,Kleinbuchstabe,0,38,0.0,1,1,0,wortinitial,0.856,unten,0.901,0.136
+aze19341202-5,neusort,108,Ersetzung,c,,Kleinbuchstabe,1,38,0.027,1,1,0,wortintern,0.856,unten,0.901,0.136
+aze19341202-5,neusort,108,Auslassung, ,,Leerzeichen,34,38,0.919,10,0,0,Wortgrenze,0.856,unten,0.901,0.136
+aze19341202-5,neusort,108,Auslassung,D,,Großbuchstabe,35,38,0.946,10,0,0,wortinitial,0.856,unten,0.901,0.136
+aze19341202-5,neusort,108,Auslassung,i,,Kleinbuchstabe,36,38,0.973,10,0,1,wortintern,0.856,unten,0.901,0.136
+aze19341202-5,neusort,108,Auslassung,-,,Trennstrich,37,38,1.0,10,0,1,wortfinal,0.856,unten,0.901,0.136
+aze19341202-5,neusort,112,Auslassung,«,,Interpunktion,25,26,1.0,10,0,1,wortfinal,0.888,unten,0.758,0.492
+aze19341202-5,neusort,118,Ersetzung,Ö,O,Umlaut/ß,46,52,0.902,10,0,0,wortinitial,0.936,unten,0.823,0.477
+aze19341202-5,neusort,119,Auslassung,!,,Interpunktion,44,45,1.0,10,0,1,wortfinal,0.944,unten,0.835,0.478
+aze19341202-5,neusort,120,Ersetzung,Ü,U,Umlaut/ß,0,46,0.0,1,1,0,wortinitial,0.952,unten,0.847,0.476
+aze19341202-5,neusort,124,Einfügung,,’,Sonstiges,0,49,0.0,1,1,0,Einfügung,0.984,unten,0.89,0.476

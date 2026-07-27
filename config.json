@@ -16,7 +16,9 @@
       "source": "ABBYY Recognition Server 4.0 (2015)",
       "strip_header": "^\\[\\s*\\d{4}-\\d{2}-\\d{2}\\s.*\\]\\s*$" },
     { "name": "neu", "label": "Neues OCR (Transkribus)", "file": "{doc}_ocr_neu.txt",
-      "source": "Transkribus / READ COOP, TrHtr 2.44–2.48 (2026); genaues HTR-Modell nicht in den Dateien" }
+      "source": "Transkribus / READ COOP, TrHtr 2.44–2.48 (2026); genaues HTR-Modell nicht in den Dateien" },
+    { "name": "neusort", "label": "Neues OCR, Zeilen nachsortiert", "file": "{doc}_ocr_neusort.txt",
+      "source": "wie neu, aber Zeilen innerhalb jedes TextBlocks nach VPOS sortiert (code/resort_alto.py)" }
   ],
 
   "normalize": {
