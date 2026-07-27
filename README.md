@@ -1,163 +1,168 @@
 # transcrEval
 
 Evaluating OCR of historical newspaper pages. The project compares a **new OCR**
-run (produced with [Transkribus](https://www.transkribus.org/)) against an
-**older OCR** of the same pages, both measured against a hand-made **gold
-standard**. Source material is the Viennese *Arbeiter-Zeitung* (`aze`), 1919–1932.
+run (produced with [Transkribus](https://www.transkribus.org/)) against an **older
+OCR** of the same pages, both measured against a hand-made **gold standard**.
+Source material is the Viennese *Arbeiter-Zeitung* (`aze`), 1919–1934.
 
-**OCR provenance.** Old OCR: ABBYY Recognition Server 4.0 (2015) — the text files
-carry no software metadata; the bracket header is only an export timestamp. New
-OCR: Transkribus / READ COOP, engine `TrHtr` — recorded per page in each ALTO's
-`Processing` block, but the exact HTR model is **not** stored there. The engine
-version is not uniform: 8 pages `2.44.0`, 2 pages (17.12.1932, 02.12.1934) `2.48.0`.
-The split viewer shows the precise engine + date for each page.
+The pipeline is deliberately project-independent: everything specific to a study
+lives in `config.json`, the code in `code/` makes no assumptions about language,
+script or source. A different OCR-evaluation project is a new config plus data.
 
-## What it measures
+## The problem this solves
 
-Each OCR text is scored per page against the gold standard on four metrics:
+Comparing gold standard and OCR as one continuous text — what standard tools do —
+conflates two very different things. If a recognition engine outputs lines or
+blocks in a different reading order, every displaced line counts as entirely
+wrong, and the resulting error rate says more about layout analysis than about
+character recognition. On our material the median CER of the new OCR measured
+this way is 12.3 %; after separating the two error classes it is 1.6 %.
+
+transcrEval therefore aligns lines by **content, not position** before scoring,
+and reports misplacement separately:
 
 | Metric | Meaning |
 |---|---|
-| **CER** | Character Error Rate — reported both raw and normalized |
-| **WER** | Word Error Rate — reported both raw and normalized |
-| **RLER** | Row Localisation Error Rate — individually misplaced lines |
+| **CER** | Character Error Rate (Unicode grapheme clusters) |
+| **WER** | Word Error Rate (UAX #29 segmentation, punctuation excluded) |
+| **LER** | Line Error Rate — individually misplaced lines |
 | **loc_events** | Block relocation events — runs of consecutive lines moved together |
 
-The key idea: Transkribus sometimes swaps the reading order of lines or whole
-blocks. A two-stage line alignment matches lines by **content, not position**, so
-a reordered line is not counted as all-characters-wrong. Its displacement is
-reported separately as a localisation error instead. A **block** is defined by the
-displacement itself — a run of consecutive gold lines that moved together, in
-order — independent of any layout markup. A run of at least `MIN_BLOCK_LINES`
-(default 2, configurable via `--min-block`) counts as **one** relocation event, so
-a poem that moves as a whole is one error, not one per stanza. Shorter runs and
-isolated single-line shifts stay in the RLER.
-
-Normalization (long ſ → s, ligatures, hyphen variants ⸗/¬/=/soft hyphen) is applied
-before alignment; CER/WER are then reported both raw and normalized, so the contrast
-between transcription conventions and genuine recognition errors stays visible.
+A **block** is defined by the displacement itself: a run of consecutive gold lines
+that moved together, in order. A run of at least `min_block` lines (default 2)
+counts as one relocation event, so a poem moving as a whole is one error, not one
+per stanza. Shorter runs and isolated single-line shifts stay in the LER.
 
 CER and WER follow the definitions used by
-[dinglehopper](https://github.com/qurator-spk/dinglehopper) (OCR-D): characters are
-counted as Unicode grapheme clusters, words via UAX #29 segmentation with
-punctuation excluded. Values were cross-checked against dinglehopper itself — on a
-page without reading-order deviations they agree to 0.06 pp (CER), the remainder
-being dinglehopper counting line breaks as reference characters. The line-level
-alignment is what this project adds on top.
+[dinglehopper](https://github.com/qurator-spk/dinglehopper) (OCR-D) and were
+cross-checked against it: on a page without reading-order deviations the values
+agree to 0.06 pp, the remainder being dinglehopper counting line breaks as
+reference characters.
 
 ## Repository layout
 
 ```
 config.json      project configuration — all project-specific settings live here
 data/
-  ANNO_aze<date>-<page>/   one folder per newspaper page, containing:
-    <doc>_ocr_alt.txt        older OCR, one page cut from the issue (metadata header stripped)
-    <doc>_ocr_neu.txt        new OCR, extracted from the page's ALTO
-    <doc>.xml                the page's Transkribus ALTO v4
-    <doc>.jpg                the page scan
-    <doc>_gold_<initials>.txt  hand-made reference (present for annotated pages)
+  ANNO_aze<date>-<page>/     one folder per newspaper page, containing:
+    <doc>_ocr_alt.txt          older OCR, cut from the issue (metadata header stripped)
+    <doc>_ocr_neu.txt          new OCR, extracted from the page's ALTO in document order
+    <doc>_ocr_neusort.txt      same, but lines re-sorted by coordinates (see below)
+    <doc>.xml                  the page's Transkribus ALTO v4
+    <doc>.jpg                  the page scan
+    <doc>_gold_<initials>.txt  hand-made reference
 code/
-  config.py        loads config.json (paths, page/systems discovery, normalization, thresholds)
-  align.py         two-stage line alignment, rescue, block-run detection + diagnostics
-  metrics.py       computes all metrics for all pages, writes <results>/metrics.csv
-  build_review.py  builds <viz>/review.html, a scrollable error-review viewer
-  build_split.py   builds <viz>/review_split.html, text next to the page scan (ALTO blocks)
-  gold_audit.py    lists candidate errors *in the gold standard* (never edits)
-  error_analysis.py  character-level error typology → <results>/errors.csv
-results/         metric table (CSV)
-viz/             metrics_preview.html (chart drafts); review*.html (generated, committed)
+  config.py            loads config.json; normalization, tokenization, file discovery
+  align.py             two-stage line alignment, rescue, block-run detection
+  metrics.py           all metrics for all pages → results/metrics.csv
+  resort_alto.py       preprocessing: rebuild OCR text with coordinate-sorted lines
+  build_review.py      → viz/review.html, scrollable error review
+  build_split.py       → viz/review_split.html, text next to the page scan
+  error_analysis.py    character-level error typology → results/errors.csv
+  gold_audit.py        candidate errors *in the gold standard* (never edits)
+  export_line_anomalies.py  misplaced lines with ALTO line IDs → results/
+analysis/          R evaluation: boxplots and statistics (see analysis/README.md)
+results/           metric tables and diagnostic exports (CSV)
+viz/               generated HTML viewers
 ```
 
-`<doc>` is the document key, e.g. `aze19291229-13`. The `code/` modules are generic;
-everything specific to this study is in `config.json`. A different OCR-evaluation
-project = a new `config.json` (+ data), selected with `--config <path>`.
-
-## Configuration (`config.json`)
-
-JSON (so R via `jsonlite` can read it too; the `_about` field replaces comments).
-Paths are relative to the config file. Data is organized as one folder per page.
-
-| Key | Purpose |
-|---|---|
-| `data_dir`, `results_dir`, `viz_dir` | folders (relative to config) |
-| `page_glob` | glob for the per-page folders under `data_dir` (e.g. `ANNO_aze*`) |
-| `doc_key` | regex whose group 1 is the document key, taken from the folder name |
-| `gold.file` | filename pattern of the gold file inside a page folder (`{doc}` substituted) |
-| `systems[]` | one per OCR system: `name` (→ CSV suffix), `label` (viewer header), `file` (filename pattern, `{doc}`/`{name}` substituted), optional `source` (provenance shown in viewers) and `strip_header` regex |
-| `normalize` | `unicode` form, `collapse_whitespace`, and a `replace` table of character substitutions applied before alignment |
-| `word_tokenizer` | how the WER counts words: `punct_ignore` (default — punctuation excluded, matching dinglehopper/OCR-D), `punct_separate` (punctuation as its own token), `whitespace` (punctuation glued to the word, strictest) |
-| `display_tokenizer` | tokenization used for *highlighting* in the viewers, deliberately separate from the metric (default `punct_separate`): punctuation errors stay visible for error analysis even though they do not count towards the WER |
-| `align` | `gap`, `split_penalty`, `match_cutoff`, `rescue_cutoff`, `min_block` |
-| `labels` | optional map document key → human-readable label |
-
-Pages without a gold file are skipped. Add or remove `systems` freely — metrics and
-viewer adapt to any number of them.
+`<doc>` is the document key, e.g. `aze19291229-13`.
 
 ## Usage
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install rapidfuzz uniseg
-.venv/bin/python code/metrics.py                       # score every gold page vs. all OCR systems
-.venv/bin/python code/metrics.py --min-block 3         # require 3+ lines per relocated block
-.venv/bin/python code/metrics.py --config other.json   # run a different project
 ```
 
-One run evaluates each gold page against every configured OCR system and writes a
-single `results/metrics.csv` in wide format: one row per document, with each
-metric's per-system columns (e.g. `cer_norm_alt`, `cer_norm_neu`) side by side.
-
-For hands-on error analysis, build the side-by-side viewer (Gold plus one column
-per OCR system, deviations colour-coded, columns collapsible) and open it locally:
+Regenerate the coordinate-sorted OCR text (only needed when the ALTO files change):
 
 ```bash
-.venv/bin/python code/build_review.py           # writes viz/review.html
+.venv/bin/python code/resort_alto.py
 ```
 
-A second, split-screen viewer shows the new OCR next to the page scan, with the
-ALTO text blocks overlaid, numbered in reading order and highlighting relocated
-blocks (text line ⇄ image block are linked both ways):
+Score every gold page against every configured OCR system:
 
 ```bash
-.venv/bin/python code/build_split.py            # writes viz/review_split.html
+.venv/bin/python code/metrics.py                 # → results/metrics.csv
+.venv/bin/python code/metrics.py --min-block 3   # require 3+ lines per relocated block
+.venv/bin/python code/metrics.py --config other.json
 ```
 
-`review_split.html` references the page JPGs by relative path, so keep it in `viz/`
-alongside `data/`.
+One run writes a single `results/metrics.csv` in wide format: one row per document,
+with each metric's per-system columns (`cer_norm_alt`, `cer_norm_neu`, …) side by
+side. Pages without a gold file are skipped.
 
-To characterise *what kind* of errors a system makes (operation, character class,
-position in line / word / page, confusion pairs), run the error typology. It writes
-one row per character error to `results/errors.csv` for further analysis in R:
-
-```bash
-.venv/bin/python code/error_analysis.py               # all systems
-.venv/bin/python code/error_analysis.py --system neu  # one system only
-```
-
-To sanity-check the gold standard itself, `gold_audit.py` reports places where all
-OCR systems agree on a word but the gold differs — a strong hint that the gold is
-the outlier. It only reports, never edits:
+Build the viewers and the diagnostic exports:
 
 ```bash
-.venv/bin/python code/gold_audit.py                            # to the console
+.venv/bin/python code/build_review.py         # gold + all systems, line-synchronous
+.venv/bin/python code/build_split.py          # new OCR next to the scan, ALTO blocks overlaid
+.venv/bin/python code/error_analysis.py       # error typology
 .venv/bin/python code/gold_audit.py --md analysis/gold_candidates.md
+.venv/bin/python code/export_line_anomalies.py --system neu
+Rscript analysis/analyze.R                    # boxplots + statistics (needs ggplot2)
 ```
 
-Caveat: where both engines make the *same* mistake (classically reading long ſ as
-"f"), the gold is right and the hit is a false alarm.
+The viewers are self-contained HTML; `review_split.html` references the page JPGs
+by relative path, so keep it in `viz/` alongside `data/`.
 
-For the statistical evaluation, an R scaffold in `analysis/` reads `metrics.csv`
-and produces comparative boxplots (old vs. new OCR); see `analysis/README.md`:
+## Line re-sorting (preprocessing)
 
-```bash
-Rscript analysis/analyze.R       # needs ggplot2 (+ scales)
-```
+The order of `TextLine` elements within a `TextBlock` does not reliably follow
+their vertical position on the page. `resort_alto.py` rebuilds the OCR text with
+the block order unchanged and the lines within each block sorted by `VPOS` — no
+layout analysis of our own, just a correction against the coordinates the ALTO
+already carries. Across ten pages this affects 9.5 % of all lines and reduces
+individually misplaced lines from 113 to 9.
+
+Because it changes only the order and not a single character, the result is
+carried as a separate system (`neusort`) rather than replacing the delivered text,
+so both can be compared. Block order is untouched and still requires the alignment.
+
+## Configuration (`config.json`)
+
+JSON, so R (`jsonlite`) can read it too; the `_about` field replaces comments.
+Paths are relative to the config file. Data is organized as one folder per page.
+
+| Key | Purpose |
+|---|---|
+| `data_dir`, `results_dir`, `viz_dir` | folders |
+| `page_glob` | glob for the per-page folders under `data_dir` |
+| `doc_key` | regex whose group 1 is the document key, taken from the folder name |
+| `gold.file` | filename pattern of the gold file inside a page folder (`{doc}` substituted) |
+| `systems[]` | one per OCR system: `name` (→ CSV suffix), `label`, `file` pattern, optional `source` (provenance shown in viewers) and `strip_header` regex |
+| `normalize` | `unicode` form, `collapse_whitespace`, and a `replace` table applied before alignment |
+| `word_tokenizer` | WER convention: `punct_ignore` (default, matches dinglehopper), `punct_separate`, `whitespace` |
+| `display_tokenizer` | tokenization for *highlighting* (default `punct_separate`), deliberately separate so punctuation errors stay visible although they do not count towards the WER |
+| `align` | `gap`, `split_penalty`, `match_cutoff`, `rescue_cutoff`, `min_block` |
+| `labels` | optional map document key → human-readable label |
+
+Add or remove `systems` freely — metrics, viewers and the R analysis adapt to any
+number of them.
+
+## Transcription conventions
+
+The gold standard follows level 2 of the
+[OCR-D ground truth guidelines](https://ocr-d.de/de/gt-guidelines/trans/): historical
+spellings such as long ſ are preserved, consonantal ligatures are resolved. The
+normalization applied before scoring corresponds to level 1 (ſ → s, ligatures split,
+hyphenation marks unified to the hyphen-minus) and additionally folds the soft
+hyphen used by the older OCR. All rates are reported normalized; raw values are
+available in the CSV as `cer_raw` / `wer_raw`.
+
+## Provenance
+
+Old OCR: ABBYY Recognition Server 4.0 (2015) — the text files carry no software
+metadata; the bracket header is only an export timestamp. New OCR: Transkribus /
+READ COOP, engine `TrHtr` — recorded per page in each ALTO's `Processing` block,
+but the exact HTR model is not stored there. The engine version is not uniform:
+8 pages `2.44.0`, 2 pages `2.48.0`. The split viewer shows engine and date per page.
 
 ## Status
 
-Work in progress. Currently 6 gold pages exist, all paired with both OCR systems;
-the study targets 10 pages from several volumes. Block localisation is derived from
-the alignment and needs no markup in the gold files; blank lines, if present, are
-carried through only as an informational `gold_blocks_hint` column.
+Ten gold pages, all paired with both OCR systems. Results feed a poster submission
+for DHd 2027; applying the same procedure to the *Neue Freie Presse* is in
+preparation.
 
 ## License
 
