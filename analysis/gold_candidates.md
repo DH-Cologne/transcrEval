@@ -2,7 +2,7 @@
 
 Automatisch erzeugt mit `code/gold_audit.py` (Arbeiter-Zeitung OCR-Evaluation).
 
-Methode: Stellen, an denen **Altes OCR und Neues OCR (Transkribus) dasselbe Wort lesen, das Gold aber
+Methode: Stellen, an denen **Altes OCR und Neues OCR (Transkribus) und Neues OCR, Zeilen nachsortiert dasselbe Wort lesen, das Gold aber
 ein anderes** hat. Zwei unabhängige Engines als Konsens → das Gold ist der
 Ausreißer. Vergleich auf normalisiertem Text; Ligaturen, typografische
 Anführungszeichen und reine Satzzeichen sind weggefaltet.

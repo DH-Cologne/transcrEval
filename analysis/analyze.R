@@ -47,10 +47,14 @@ long <- do.call(rbind, lapply(metric_cols, function(col) {
 long <- long[!is.na(long$value), ]
 
 # lesbare System-Labels + feste Farben
-sys_labels <- c(alt = "altes OCR", neu = "neues OCR (Transkribus)")
+sys_labels <- c(alt = "altes OCR", neu = "neues OCR",
+                neusort = "neues OCR, nachsortiert")
 long$system_lab <- ifelse(long$system %in% names(sys_labels),
                           sys_labels[long$system], long$system)
-sys_fill <- c("altes OCR" = "#c2751a", "neues OCR (Transkribus)" = "#1367a0")
+# Reihenfolge wie in Tab. 1: alt, neu, nachsortiert
+long$system_lab <- factor(long$system_lab, levels = unname(sys_labels))
+sys_fill <- c("altes OCR" = "#c2751a", "neues OCR" = "#1367a0",
+              "neues OCR, nachsortiert" = "#1f8a5b")
 
 write.csv(long, file.path(script_dir, "metrics_long.csv"), row.names = FALSE)
 
@@ -181,35 +185,45 @@ cat("Kennwerte:   ", file.path(script_dir, "stats.csv"), "/ stats_localisation.c
 # ---- Figur 4: vier Boxplots nebeneinander (CER-Paar | WER-Paar) -----------
 # Layout nach Vorgabe: CER alt/neu, Abstand, WER alt/neu. Zwei Varianten, weil
 # CER (max 24 %) und WER (max 92 %) sehr unterschiedliche Wertebereiche haben.
+# Berichtet exakt die Werte der Zeilen "mit Zeilen-Alignment" aus Tab. 1:
+# drei Systeme je Metrik, CER-Gruppe und WER-Gruppe durch eine Lücke getrennt.
 f4 <- long[long$metric %in% c("cer_norm", "wer_norm"), ]
 f4$grp <- ifelse(f4$metric == "cer_norm", "CER (normalisiert)", "WER (normalisiert)")
-f4$xpos <- ifelse(f4$metric == "cer_norm",
-                  ifelse(f4$system == "alt", 1, 2),
-                  ifelse(f4$system == "alt", 3.5, 4.5))
 f4$key <- paste(f4$metric, f4$system)
+sys_short <- c(alt = "altes\nOCR", neu = "neues\nOCR",
+               neusort = "neues OCR\nnachsortiert")
 
-four_box <- function(df, free_scales) {
+# systems: welche Systeme nebeneinander stehen; free_scales: getrennte y-Achsen
+box_group <- function(systems, free_scales) {
+  df <- f4[f4$system %in% systems, ]
+  n <- length(systems)
+  slot <- setNames(seq_len(n), systems)
+  gap <- n + 0.8                       # Abstand zwischen CER- und WER-Gruppe
+  df$xpos <- slot[df$system] + ifelse(df$metric == "cer_norm", 0, gap)
+  brk <- c(seq_len(n), seq_len(n) + gap)
+  lab <- rep(unname(sys_short[systems]), 2)
+  mid <- c(mean(seq_len(n)), mean(seq_len(n)) + gap)
   p <- ggplot(df, aes(x = xpos, y = value, group = key, fill = system_lab)) +
-    geom_boxplot(width = 0.7, alpha = 0.65, outlier.shape = NA) +
-    geom_jitter(width = 0.13, height = 0, size = 1.7, alpha = 0.75) +
+    geom_boxplot(width = 0.75, alpha = 0.65, outlier.shape = NA) +
+    geom_jitter(width = 0.14, height = 0, size = 1.7, alpha = 0.75) +
     scale_fill_manual(values = sys_fill) +
     scale_y_continuous(labels = pct, expand = expansion(mult = c(0.02, 0.10))) +
     labs(x = NULL, y = "Fehlerrate", fill = NULL) + base_theme
   if (free_scales) {
-    p <- p + facet_wrap(~grp, scales = "free", strip.position = "bottom") +
-      scale_x_continuous(breaks = c(1, 2, 3.5, 4.5),
-                         labels = c("altes\nOCR", "neues\nOCR", "altes\nOCR", "neues\nOCR")) +
+    p + facet_wrap(~grp, scales = "free", strip.position = "bottom") +
+      scale_x_continuous(breaks = brk, labels = lab) +
       theme(strip.placement = "outside", panel.spacing = unit(1.4, "lines"))
   } else {
-    p <- p + scale_x_continuous(
-      breaks = c(1, 2, 3.5, 4.5),
-      labels = c("altes\nOCR", "neues\nOCR", "altes\nOCR", "neues\nOCR"),
-      sec.axis = sec_axis(~., breaks = c(1.5, 4.0),
+    p + scale_x_continuous(breaks = brk, labels = lab,
+      sec.axis = sec_axis(~., breaks = mid,
                           labels = c("CER (normalisiert)", "WER (normalisiert)")))
   }
-  p
 }
 
-save_fig(four_box(f4, FALSE), "04a_vier_boxplots_gemeinsame_achse", w = 7.5, h = 5)
-save_fig(four_box(f4, TRUE),  "04b_vier_boxplots_getrennte_achsen", w = 7.5, h = 5)
-cat("\nFigur 4 (zwei Varianten) geschrieben.\n")
+drei <- c("alt", "neu", "neusort")
+zwei <- c("alt", "neu")
+save_fig(box_group(drei, FALSE), "04a_drei_systeme_gemeinsame_achse", w = 7.5, h = 5)
+save_fig(box_group(drei, TRUE),  "04b_drei_systeme_getrennte_achsen", w = 7.5, h = 5)
+save_fig(box_group(zwei, FALSE), "04c_alt_neu_gemeinsame_achse",      w = 6.5, h = 5)
+save_fig(box_group(zwei, TRUE),  "04d_alt_neu_getrennte_achsen",      w = 6.5, h = 5)
+cat("\nFigur 4 in vier Varianten geschrieben (drei bzw. zwei Systeme).\n")
