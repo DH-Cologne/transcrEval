@@ -44,6 +44,7 @@ reference characters.
 ```
 config.json      project configuration — all project-specific settings live here
 data/
+  README.md                  provenance and rights of the data — read before reusing
   ANNO_aze<date>-<page>/     one folder per newspaper page, containing:
     <doc>_ocr_alt.txt          older OCR, cut from the issue (metadata header stripped)
     <doc>_ocr_neu.txt          new OCR, extracted from the page's ALTO in document order
@@ -164,6 +165,33 @@ Ten gold pages, all paired with both OCR systems. Results feed a poster submissi
 for DHd 2027; applying the same procedure to the *Neue Freie Presse* is in
 preparation.
 
+## Data, provenance and rights
+
+The repository ships the ten evaluated pages so the results can be reproduced from
+a single checkout. The files in `data/` do not share one origin, and therefore not
+one set of terms — [`data/README.md`](data/README.md) documents this per file type.
+In short:
+
+| What | Origin | Terms |
+|---|---|---|
+| `code/`, `analysis/`, `viz/`, `config.json` | this project | MIT |
+| gold standard, Transkribus ALTO and the text derived from it | this project | CC BY 4.0 |
+| page scans (`*.jpg`), older OCR (`*_ocr_alt.txt`) | provided by the ÖNB via [ANNO](https://anno.onb.ac.at/) | no rights claimed here; the ÖNB records the status as [Copyright Not Evaluated](https://rightsstatements.org/vocab/CNE/1.0/) |
+
+The gold standard and the new OCR are published here for the first time and have no
+other citable location. The ÖNB material is redistributed for convenience only;
+`data/README.md` links every page to its source at ANNO.
+
+## Citation
+
+> Hermes, Jürgen; Dick, Anna-Katharina; Dorfbauer, Sonja; Reiter, Nils; Steindl,
+> Christoph (2026): *transcrEval: Line-Aware OCR Evaluation for Historical
+> Newspapers*. Universität zu Köln. https://github.com/DH-Cologne/transcrEval
+
+Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
+
 ## License
 
-MIT — © 2026 Institut für Digital Humanities, Universität zu Köln.
+The **code** — everything outside `data/` — is MIT, © 2026 Institut für Digital
+Humanities, Universität zu Köln; see [`LICENSE`](LICENSE). The MIT licence does not
+extend to `data/`, which is covered by the terms in the table above.

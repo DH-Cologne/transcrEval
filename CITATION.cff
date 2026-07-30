@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+title: "transcrEval: Line-Aware OCR Evaluation for Historical Newspapers"
+message: "If you use this software or the data it contains, please cite it as below."
+type: software
+authors:
+  - family-names: Hermes
+    given-names: Jürgen
+    affiliation: Universität zu Köln
+    email: hermesj@uni-koeln.de
+    orcid: "https://orcid.org/0000-0002-8367-8073"
+  - family-names: Dick
+    given-names: Anna-Katharina
+    affiliation: Universität zu Köln
+    email: anna.dick@uni-koeln.de
+    orcid: "https://orcid.org/0009-0003-3357-4422"
+  - family-names: Dorfbauer
+    given-names: Sonja
+    affiliation: Österreichische Nationalbibliothek
+    email: sonja.dorfbauer@onb.ac.at
+    orcid: "https://orcid.org/0000-0001-5551-9473"
+  - family-names: Reiter
+    given-names: Nils
+    affiliation: Universität zu Köln
+    email: nils.reiter@uni-koeln.de
+    orcid: "https://orcid.org/0000-0003-3193-6170"
+  - family-names: Steindl
+    given-names: Christoph
+    affiliation: Österreichische Nationalbibliothek
+    email: christoph.steindl@onb.ac.at
+    orcid: "https://orcid.org/0000-0002-3651-8114"
+repository-code: "https://github.com/DH-Cologne/transcrEval"
+abstract: >-
+  transcrEval evaluates OCR of historical newspaper pages against a hand-made gold
+  standard. It aligns lines by content rather than position, so that displaced lines
+  and blocks are reported as reading-order errors instead of inflating the character
+  error rate, and adds a coordinate-based line re-sorting step for ALTO input. The
+  repository contains the pipeline, an HTML error-review viewer, and the evaluation
+  set of ten pages of the Viennese Arbeiter-Zeitung (1919-1934) with gold standard
+  and two OCR versions.
+keywords:
+  - OCR
+  - HTR
+  - OCR evaluation
+  - character error rate
+  - reading order
+  - historical newspapers
+  - Transkribus
+  - ALTO
+  - digital humanities
+license: MIT
+license-url: "https://github.com/DH-Cologne/transcrEval/blob/main/README.md#license"

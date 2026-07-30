@@ -1,0 +1,61 @@
+{
+  "title": "transcrEval: Line-Aware OCR Evaluation for Historical Newspapers",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Hermes, Jürgen",
+      "affiliation": "Universität zu Köln",
+      "orcid": "0000-0002-8367-8073"
+    },
+    {
+      "name": "Dick, Anna-Katharina",
+      "affiliation": "Universität zu Köln",
+      "orcid": "0009-0003-3357-4422"
+    },
+    {
+      "name": "Dorfbauer, Sonja",
+      "affiliation": "Österreichische Nationalbibliothek",
+      "orcid": "0000-0001-5551-9473"
+    },
+    {
+      "name": "Reiter, Nils",
+      "affiliation": "Universität zu Köln",
+      "orcid": "0000-0003-3193-6170"
+    },
+    {
+      "name": "Steindl, Christoph",
+      "affiliation": "Österreichische Nationalbibliothek",
+      "orcid": "0000-0002-3651-8114"
+    }
+  ],
+  "description": "<p>transcrEval evaluates OCR of historical newspaper pages against a hand-made gold standard. Comparing gold standard and OCR as one continuous text conflates recognition errors with reading-order errors: every displaced line counts as entirely wrong. transcrEval aligns lines by content rather than position, reports misplaced lines and relocated blocks as separate metrics, and adds a coordinate-based line re-sorting step for ALTO input. Metric definitions follow dinglehopper (OCR-D) and were validated against it. The pipeline is configuration-driven and reusable for other OCR evaluation projects.</p><p>The deposit also contains the evaluation set: ten pages of the Viennese <em>Arbeiter-Zeitung</em> (1919-1934) with page scan, OCR from 2015, Transkribus ALTO, and a hand-made gold standard each.</p><p><strong>Rights are not uniform across this deposit.</strong> The code is MIT-licensed. The gold standard, the Transkribus ALTO files and the text derived from them are released under CC BY 4.0. The page scans and the 2015 OCR were provided by the Austrian National Library (Österreichische Nationalbibliothek) via ANNO and are redistributed here for reproducibility only; no rights over that material are claimed here, and the ÖNB records its status as Copyright Not Evaluated. See data/README.md in the deposit for details.</p>",
+  "notes": "Rights differ by component. Code: MIT. Gold standard, Transkribus ALTO and derived text: CC BY 4.0. Page scans and 2015 OCR: provided by the Österreichische Nationalbibliothek via ANNO (https://anno.onb.ac.at/), rights status recorded by the ÖNB as Copyright Not Evaluated (http://rightsstatements.org/vocab/CNE/1.0/); no rights claimed by the depositors. See data/README.md.",
+  "keywords": [
+    "OCR",
+    "HTR",
+    "OCR evaluation",
+    "character error rate",
+    "reading order",
+    "historical newspapers",
+    "Arbeiter-Zeitung",
+    "Transkribus",
+    "ALTO",
+    "ground truth",
+    "digital humanities"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/DH-Cologne/transcrEval",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://anno.onb.ac.at/",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    }
+  ]
+}
