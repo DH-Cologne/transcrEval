@@ -1,5 +1,7 @@
 # transcrEval
 
+[![DOI](https://zenodo.org/badge/github/1306913118.svg)](https://doi.org/10.5281/zenodo.24564719)
+
 Evaluating OCR of historical newspaper pages. The project compares a **new OCR**
 run (produced with [Transkribus](https://www.transkribus.org/)) against an **older
 OCR** of the same pages, both measured against a hand-made **gold standard**.
@@ -186,9 +188,11 @@ other citable location. The ÖNB material is redistributed for convenience only;
 
 > Hermes, Jürgen; Dick, Anna-Katharina; Dorfbauer, Sonja; Reiter, Nils; Steindl,
 > Christoph (2026): *transcrEval: Line-Aware OCR Evaluation for Historical
-> Newspapers*. Universität zu Köln. https://github.com/DH-Cologne/transcrEval
+> Newspapers*. Zenodo. https://doi.org/10.5281/zenodo.24564719
 
-Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
+The DOI above always resolves to the latest version; each release also has its own
+version DOI, listed on the Zenodo record. Machine-readable metadata is in
+[`CITATION.cff`](CITATION.cff).
 
 ## License
 

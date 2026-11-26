@@ -28,6 +28,7 @@ authors:
     affiliation: Österreichische Nationalbibliothek
     email: christoph.steindl@onb.ac.at
     orcid: "https://orcid.org/0000-0002-3651-8114"
+doi: 10.5281/zenodo.24564719
 repository-code: "https://github.com/DH-Cologne/transcrEval"
 abstract: >-
   transcrEval evaluates OCR of historical newspaper pages against a hand-made gold
