@@ -1,0 +1,3204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+      xmlns:page="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15"
+      xmlns:map="http://www.w3.org/2005/xpath-functions/map"
+      xmlns:local="local"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# https://www.loc.gov/standards/alto/v4/alto.xsd">
+   <Description>
+      <MeasurementUnit>pixel</MeasurementUnit>
+      <sourceImageInformation>
+         <fileName>00000001.jpg</fileName>
+      </sourceImageInformation>
+      <Processing ID="IdOcr">
+         <processingDateTime>2026-08-17T14:07:55.881+02:00</processingDateTime>
+         <processingSoftware>
+            <softwareCreator>READ COOP</softwareCreator>
+            <softwareName>Transkribus</softwareName>
+            <softwareVersion> </softwareVersion>
+         </processingSoftware>
+      </Processing>
+   </Description>
+   <Layout>
+      <Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="5400" WIDTH="3488">
+         <TopMargin HEIGHT="0" WIDTH="3488" VPOS="0" HPOS="0"/>
+         <LeftMargin HEIGHT="5400" WIDTH="0" VPOS="0" HPOS="0"/>
+         <RightMargin HEIGHT="5400" WIDTH="0" VPOS="0" HPOS="3488"/>
+         <BottomMargin HEIGHT="0" WIDTH="3488" VPOS="5400" HPOS="0"/>
+         <PrintSpace HEIGHT="5400" WIDTH="3488" VPOS="0" HPOS="0">
+            <TextBlock ID="r_0" HEIGHT="44" WIDTH="482" VPOS="242" HPOS="252">
+               <Shape>
+                  <Polygon POINTS="252,242 734,242 734,286 252,286"/>
+               </Shape>
+               <TextLine ID="r_0_tl_1"
+                         BASELINE="252,274 292,274 337,274 382,271 426,271 471,271 516,271 561,271 605,274 650,274 695,274 734,274"
+                         HEIGHT="53"
+                         WIDTH="490"
+                         VPOS="235"
+                         HPOS="238">
+                  <String ID="string_r_0_tl_1"
+                          HEIGHT="53"
+                          WIDTH="490"
+                          VPOS="235"
+                          HPOS="238"
+                          CONTENT="Preis 30 Groschen."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_1" HEIGHT="52" WIDTH="651" VPOS="348" HPOS="163">
+               <Shape>
+                  <Polygon POINTS="163,348 814,348 814,400 163,400"/>
+               </Shape>
+               <TextLine ID="r_1_tl_1"
+                         BASELINE="163,379 191,379 235,376 280,376 325,373 370,376 414,373 459,373 504,370 549,373 594,373 638,376 683,376 728,373 773,373 814,373"
+                         HEIGHT="65"
+                         WIDTH="660"
+                         VPOS="323"
+                         HPOS="150">
+                  <String ID="string_r_1_tl_1"
+                          HEIGHT="65"
+                          WIDTH="660"
+                          VPOS="323"
+                          HPOS="150"
+                          CONTENT="Redaktion, Administration, Druckerei:"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_3" HEIGHT="130" WIDTH="616" VPOS="425" HPOS="163">
+               <Shape>
+                  <Polygon POINTS="163,425 779,425 779,555 163,555"/>
+               </Shape>
+               <TextLine ID="r_3_tl_1"
+                         BASELINE="202,471 232,471 277,471 322,468 367,468 411,468 456,465 501,465 546,465 591,468 635,465 680,462 725,465 770,465"
+                         HEIGHT="57"
+                         WIDTH="575"
+                         VPOS="428"
+                         HPOS="188">
+                  <String ID="string_r_3_tl_1"
+                          HEIGHT="57"
+                          WIDTH="575"
+                          VPOS="428"
+                          HPOS="188"
+                          CONTENT="Telephon: Redaktion : A 98-5-95"/>
+               </TextLine>
+               <TextLine ID="r_3_tl_2"
+                         BASELINE="388,501 408,504 453,501 498,501 543,501 588,501 632,501 677,498 722,498 767,498"
+                         HEIGHT="47"
+                         WIDTH="388"
+                         VPOS="473"
+                         HPOS="375">
+                  <String ID="string_r_3_tl_2"
+                          HEIGHT="47"
+                          WIDTH="388"
+                          VPOS="473"
+                          HPOS="375"
+                          CONTENT="Administration: 97-0-35"/>
+               </TextLine>
+               <TextLine ID="r_3_tl_3"
+                         BASELINE="382,534 426,534 471,534 516,534 561,534 605,534 650,534 695,531 740,534 773,534"
+                         HEIGHT="42"
+                         WIDTH="400"
+                         VPOS="508"
+                         HPOS="368">
+                  <String ID="string_r_3_tl_3"
+                          HEIGHT="42"
+                          WIDTH="400"
+                          VPOS="508"
+                          HPOS="368"
+                          CONTENT="Inserat. Abtg.: 97-4-41."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_4" HEIGHT="64" WIDTH="589" VPOS="564" HPOS="189">
+               <Shape>
+                  <Polygon POINTS="189,564 778,564 778,628 189,628"/>
+               </Shape>
+               <TextLine ID="r_4_tl_1"
+                         BASELINE="200,591 241,591 286,588 331,588 376,591 420,588 465,585 510,585 555,582 600,585 644,585 689,585 734,585 778,585"
+                         HEIGHT="82"
+                         WIDTH="588"
+                         VPOS="538"
+                         HPOS="185">
+                  <String ID="string_r_4_tl_1"
+                          HEIGHT="82"
+                          WIDTH="588"
+                          VPOS="538"
+                          HPOS="185"
+                          CONTENT="Prager Redaktion: Vinohrady. Marchall"/>
+               </TextLine>
+               <TextLine ID="r_4_tl_2"
+                         BASELINE="405,608 450,611 495,611 540,611 573,611"
+                         HEIGHT="38"
+                         WIDTH="178"
+                         VPOS="585"
+                         HPOS="390">
+                  <String ID="string_r_4_tl_2"
+                          HEIGHT="38"
+                          WIDTH="178"
+                          VPOS="585"
+                          HPOS="390"
+                          CONTENT="Fochova 71."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_6" HEIGHT="66" WIDTH="602" VPOS="623" HPOS="182">
+               <Shape>
+                  <Polygon POINTS="182,623 784,623 784,689 182,689"/>
+               </Shape>
+               <TextLine ID="r_6_tl_1"
+                         BASELINE="256,644 277,644 322,644 367,641 411,641 456,641 501,641 546,641 591,641 635,644 680,641 725,641"
+                         HEIGHT="40"
+                         WIDTH="475"
+                         VPOS="610"
+                         HPOS="243">
+                  <String ID="string_r_6_tl_1"
+                          HEIGHT="40"
+                          WIDTH="475"
+                          VPOS="610"
+                          HPOS="243"
+                          CONTENT="Administration für die Slowakei"/>
+               </TextLine>
+               <TextLine ID="r_6_tl_2"
+                         BASELINE="188,671 200,671 244,671 289,671 334,671 379,671 423,668 468,668 513,668 558,665 602,668 647,665 692,665 737,665 782,665"
+                         HEIGHT="70"
+                         WIDTH="603"
+                         VPOS="633"
+                         HPOS="175">
+                  <String ID="string_r_6_tl_2"
+                          HEIGHT="70"
+                          WIDTH="603"
+                          VPOS="633"
+                          HPOS="175"
+                          CONTENT="M. Weiss, Bratislawa, Fischertorgasse 8."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_7" HEIGHT="79" WIDTH="650" VPOS="699" HPOS="166">
+               <Shape>
+                  <Polygon POINTS="166,699 816,699 816,778 166,778"/>
+               </Shape>
+               <TextLine ID="r_7_tl_1"
+                         BASELINE="166,731 194,728 238,728 283,725 328,728 373,725 417,725 462,722 507,722 552,722 597,722 641,722 686,722 731,722 776,722 816,725"
+                         HEIGHT="65"
+                         WIDTH="660"
+                         VPOS="678"
+                         HPOS="153">
+                  <String ID="string_r_7_tl_1"
+                          HEIGHT="65"
+                          WIDTH="660"
+                          VPOS="678"
+                          HPOS="153"
+                          CONTENT="Inseraten-Annahme laut aufliegerdem"/>
+               </TextLine>
+               <TextLine ID="r_7_tl_2"
+                         BASELINE="274,761 316,761 361,758 405,758 450,758 495,758 540,758 585,755 629,755 674,755 719,758"
+                         HEIGHT="53"
+                         WIDTH="453"
+                         VPOS="730"
+                         HPOS="260">
+                  <String ID="string_r_7_tl_2"
+                          HEIGHT="53"
+                          WIDTH="453"
+                          VPOS="730"
+                          HPOS="260"
+                          CONTENT="Tarif in unseren Bureaux :"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_8" HEIGHT="118" WIDTH="656" VPOS="852" HPOS="165">
+               <Shape>
+                  <Polygon POINTS="165,852 821,852 821,970 165,970"/>
+               </Shape>
+               <TextLine ID="r_8_tl_1"
+                         BASELINE="165,886 185,886 229,886 274,886 319,886 364,883 408,883 453,883 498,883 543,880 588,877 632,877 677,880 722,880 767,877 811,880"
+                         HEIGHT="82"
+                         WIDTH="658"
+                         VPOS="813"
+                         HPOS="150">
+                  <String ID="string_r_8_tl_1"
+                          HEIGHT="82"
+                          WIDTH="658"
+                          VPOS="813"
+                          HPOS="150"
+                          CONTENT="Kleiner Anzeiger I., Schulerstrasse 1—3"/>
+               </TextLine>
+               <TextLine ID="r_8_tl_2"
+                         BASELINE="173,925 191,922 235,919 280,916 325,916 370,919 414,916 459,913 504,913 549,913 594,913 638,913 683,913 728,913 773,913 817,910"
+                         HEIGHT="55"
+                         WIDTH="650"
+                         VPOS="880"
+                         HPOS="160">
+                  <String ID="string_r_8_tl_2"
+                          HEIGHT="55"
+                          WIDTH="650"
+                          VPOS="880"
+                          HPOS="160"
+                          CONTENT="Tel. 71-3-80, und bei allen Inseraten¬"/>
+               </TextLine>
+               <TextLine ID="r_8_tl_3"
+                         BASELINE="232,952 262,952 307,949 352,949 397,949 441,949 486,949 531,946 576,946 620,946 665,946 710,946 755,946"
+                         HEIGHT="62"
+                         WIDTH="530"
+                         VPOS="913"
+                         HPOS="218">
+                  <String ID="string_r_8_tl_3"
+                          HEIGHT="62"
+                          WIDTH="530"
+                          VPOS="913"
+                          HPOS="218"
+                          CONTENT="Bureaux des In- und Auslandes."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_2" HEIGHT="90" WIDTH="442" VPOS="316" HPOS="1503">
+               <Shape>
+                  <Polygon POINTS="1503,316 1945,316 1945,406 1503,406"/>
+               </Shape>
+               <TextLine ID="r_2_tl_1"
+                         BASELINE="1776,382 1820,385 1865,382 1892,385"
+                         HEIGHT="103"
+                         WIDTH="123"
+                         VPOS="295"
+                         HPOS="1763">
+                  <String ID="string_r_2_tl_1"
+                          HEIGHT="103"
+                          WIDTH="123"
+                          VPOS="295"
+                          HPOS="1763"
+                          CONTENT="U"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_5" HEIGHT="338" WIDTH="1744" VPOS="443" HPOS="878">
+               <Shape>
+                  <Polygon POINTS="878,443 2622,443 2622,781 878,781"/>
+               </Shape>
+            </TextBlock>
+            <TextBlock ID="r_10" HEIGHT="93" WIDTH="475" VPOS="876" HPOS="1492">
+               <Shape>
+                  <Polygon POINTS="1492,876 1967,876 1967,969 1492,969"/>
+               </Shape>
+               <TextLine ID="r_10_tl_1"
+                         BASELINE="1492,946 1507,943 1552,943 1597,946 1641,940 1692,940 1737,940 1782,940 1826,940 1871,940 1916,940 1961,943 1967,941"
+                         HEIGHT="115"
+                         WIDTH="485"
+                         VPOS="858"
+                         HPOS="1478">
+                  <String ID="string_r_10_tl_1"
+                          HEIGHT="115"
+                          WIDTH="485"
+                          VPOS="858"
+                          HPOS="1478"
+                          CONTENT="Morgenblatt."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_9" HEIGHT="45" WIDTH="653" VPOS="978" HPOS="169">
+               <Shape>
+                  <Polygon POINTS="169,978 822,978 822,1023 169,1023"/>
+               </Shape>
+               <TextLine ID="r_9_tl_1"
+                         BASELINE="169,1011 200,1011 244,1008 289,1008 334,1008 379,1008 423,1005 468,1005 513,1002 558,1002 602,1002 647,1002 692,1002 737,1002 782,1002 822,1005"
+                         HEIGHT="65"
+                         WIDTH="660"
+                         VPOS="963"
+                         HPOS="155">
+                  <String ID="string_r_9_tl_1"
+                          HEIGHT="65"
+                          WIDTH="660"
+                          VPOS="963"
+                          HPOS="155"
+                          CONTENT="Bezugsbedingungen im Innern des Blattes."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_11" HEIGHT="33" WIDTH="169" VPOS="975" HPOS="998">
+               <Shape>
+                  <Polygon POINTS="998,975 1167,975 1167,1008 998,1008"/>
+               </Shape>
+               <TextLine ID="r_11_tl_1"
+                         BASELINE="1002,997 1017,997 1062,997 1107,991 1152,985"
+                         HEIGHT="90"
+                         WIDTH="171"
+                         VPOS="923"
+                         HPOS="985">
+                  <String ID="string_r_11_tl_1"
+                          HEIGHT="90"
+                          WIDTH="171"
+                          VPOS="923"
+                          HPOS="985"
+                          CONTENT="1."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_13" HEIGHT="63" WIDTH="432" VPOS="1079" HPOS="219">
+               <Shape>
+                  <Polygon POINTS="219,1079 651,1079 651,1142 219,1142"/>
+               </Shape>
+               <TextLine ID="r_13_tl_1"
+                         BASELINE="262,1119 286,1122 331,1119 376,1125 420,1125 465,1122 510,1122 555,1119 600,1119 644,1116"
+                         HEIGHT="85"
+                         WIDTH="393"
+                         VPOS="1063"
+                         HPOS="245">
+                  <String ID="string_r_13_tl_1"
+                          HEIGHT="85"
+                          WIDTH="393"
+                          VPOS="1063"
+                          HPOS="245"
+                          CONTENT="Nr. 21989"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_12" HEIGHT="82" WIDTH="1013" VPOS="1057" HPOS="1244">
+               <Shape>
+                  <Polygon POINTS="1244,1057 2257,1057 2257,1139 1244,1139"/>
+               </Shape>
+               <TextLine ID="r_12_tl_1"
+                         BASELINE="1244,1116 1271,1116 1316,1116 1361,1116 1405,1116 1450,1116 1495,1116 1540,1116 1585,1116 1629,1116 1674,1119 1719,1113 1764,1113 1808,1113 1853,1113 1898,1110 1943,1113 1988,1110 2032,1110 2077,1107 2122,1107 2167,1104 2211,1104 2256,1101"
+                         HEIGHT="95"
+                         WIDTH="1018"
+                         VPOS="1041"
+                         HPOS="1231">
+                  <String ID="string_r_12_tl_1"
+                          HEIGHT="95"
+                          WIDTH="1018"
+                          VPOS="1041"
+                          HPOS="1231"
+                          CONTENT="Wien, Dienstag, den 1. Dezember"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_14" HEIGHT="65" WIDTH="248" VPOS="1043" HPOS="2979">
+               <Shape>
+                  <Polygon POINTS="2979,1043 3227,1043 3227,1108 2979,1108"/>
+               </Shape>
+               <TextLine ID="r_14_tl_1"
+                         BASELINE="2988,1089 3032,1092 3077,1092 3122,1092 3167,1095 3211,1098 3214,1095"
+                         HEIGHT="88"
+                         WIDTH="233"
+                         VPOS="1023"
+                         HPOS="2974">
+                  <String ID="string_r_14_tl_1"
+                          HEIGHT="88"
+                          WIDTH="233"
+                          VPOS="1023"
+                          HPOS="2974"
+                          CONTENT="1925."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_15" HEIGHT="135" WIDTH="990" VPOS="1214" HPOS="180">
+               <Shape>
+                  <Polygon POINTS="180,1214 1170,1214 1170,1349 180,1349"/>
+               </Shape>
+               <TextLine ID="r_15_tl_1"
+                         BASELINE="250,1247 265,1247 310,1247 355,1247 400,1247 444,1247 489,1244 534,1244 579,1241 623,1244 668,1241 713,1241 758,1241 802,1241 847,1241 892,1241 937,1238 982,1238 1026,1238 1071,1238 1116,1238 1161,1238"
+                         HEIGHT="70"
+                         WIDTH="923"
+                         VPOS="1191"
+                         HPOS="235">
+                  <String ID="string_r_15_tl_1"
+                          HEIGHT="70"
+                          WIDTH="923"
+                          VPOS="1191"
+                          HPOS="235"
+                          CONTENT="Im redaktionellen Teil (Kleine Chronik, Lokalbericht,"/>
+               </TextLine>
+               <TextLine ID="r_15_tl_2"
+                         BASELINE="180,1295 182,1295 226,1295 271,1292 316,1292 361,1292 405,1289 450,1289 495,1289 540,1286 585,1286 629,1286 674,1286 719,1286 764,1283 808,1283 853,1283 898,1280 943,1283 988,1280 1032,1280 1077,1277 1122,1277 1167,1277"
+                         HEIGHT="63"
+                         WIDTH="998"
+                         VPOS="1243"
+                         HPOS="165">
+                  <String ID="string_r_15_tl_2"
+                          HEIGHT="63"
+                          WIDTH="998"
+                          VPOS="1243"
+                          HPOS="165"
+                          CONTENT="Theaternachrichten, Cronomist) enthallene entgellliche Mit¬"/>
+               </TextLine>
+               <TextLine ID="r_15_tl_3"
+                         BASELINE="182,1337 185,1337 229,1337 274,1337 319,1334 364,1334 408,1331 453,1331 498,1331 543,1328 588,1328 632,1328 677,1328 722,1328 767,1325 811,1325 856,1325 901,1322 946,1325 991,1325 1035,1325 1080,1322 1125,1322 1170,1322"
+                         HEIGHT="70"
+                         WIDTH="998"
+                         VPOS="1286"
+                         HPOS="168">
+                  <String ID="string_r_15_tl_3"
+                          HEIGHT="70"
+                          WIDTH="998"
+                          VPOS="1286"
+                          HPOS="168"
+                          CONTENT="teilungen sind durch ein vorgesetztes E kenntlich gemacht."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_34" HEIGHT="178" WIDTH="1114" VPOS="1206" HPOS="1692">
+               <Shape>
+                  <Polygon POINTS="1692,1206 2806,1206 2806,1384 1692,1384"/>
+               </Shape>
+               <TextLine ID="r_34_tl_1"
+                         BASELINE="1752,1331 1791,1334 1835,1334 1880,1331 1925,1334 1970,1331 2014,1322 2188,1319 2232,1319 2277,1319 2322,1319 2367,1322 2411,1319 2456,1319 2501,1319 2546,1316 2591,1319 2635,1319 2680,1316 2725,1319 2770,1319 2806,1321"
+                         HEIGHT="187"
+                         WIDTH="1063"
+                         VPOS="1186"
+                         HPOS="1738">
+                  <String ID="string_r_34_tl_1"
+                          HEIGHT="187"
+                          WIDTH="1063"
+                          VPOS="1186"
+                          HPOS="1738"
+                          CONTENT="Kein Poststreik."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_21" HEIGHT="321" WIDTH="1019" VPOS="2094" HPOS="179">
+               <Shape>
+                  <Polygon POINTS="179,2094 1198,2094 1198,2415 179,2415"/>
+               </Shape>
+               <TextLine ID="r_21_tl_1"
+                         BASELINE="179,2140 211,2143 256,2140 301,2137 346,2137 391,2137 435,2137 480,2137 525,2137 570,2134 614,2131 659,2131 704,2131 749,2131 794,2131 838,2131 883,2128 928,2128 973,2128 1017,2125 1062,2125 1107,2125 1152,2125 1197,2125 1198,2125"
+                         HEIGHT="83"
+                         WIDTH="1026"
+                         VPOS="2071"
+                         HPOS="165">
+                  <String ID="string_r_21_tl_1"
+                          HEIGHT="83"
+                          WIDTH="1026"
+                          VPOS="2071"
+                          HPOS="165"
+                          CONTENT="eine Sondernummer veröffentlichen, die den"/>
+               </TextLine>
+               <TextLine ID="r_21_tl_2"
+                         BASELINE="182,2194 202,2194 247,2191 292,2191 337,2191 382,2188 426,2188 471,2188 516,2185 561,2185 605,2185 650,2182 695,2182 740,2182 785,2182 829,2182 874,2182 919,2179 964,2179 1008,2179 1053,2176 1098,2173 1143,2173 1188,2176 1198,2177"
+                         HEIGHT="70"
+                         WIDTH="1025"
+                         VPOS="2131"
+                         HPOS="168">
+                  <String ID="string_r_21_tl_2"
+                          HEIGHT="70"
+                          WIDTH="1025"
+                          VPOS="2131"
+                          HPOS="168"
+                          CONTENT="Lesern unseres Blattes ein vollkommenes Bild"/>
+               </TextLine>
+               <TextLine ID="r_21_tl_3"
+                         BASELINE="179,2244 205,2244 250,2241 295,2241 340,2241 385,2241 429,2238 474,2238 519,2238 564,2238 608,2235 653,2235 698,2232 743,2232 788,2235 832,2232 877,2232 922,2229 967,2229 1011,2229 1056,2226 1101,2226 1146,2226 1191,2226 1198,2226"
+                         HEIGHT="75"
+                         WIDTH="1028"
+                         VPOS="2181"
+                         HPOS="163">
+                  <String ID="string_r_21_tl_3"
+                          HEIGHT="75"
+                          WIDTH="1028"
+                          VPOS="2181"
+                          HPOS="163"
+                          CONTENT="darüber geben soll, was in Oesterreich durch"/>
+               </TextLine>
+               <TextLine ID="r_21_tl_4"
+                         BASELINE="179,2295 205,2295 250,2292 295,2292 340,2289 385,2292 429,2289 474,2289 519,2286 564,2286 608,2286 653,2286 698,2286 743,2283 788,2283 832,2283 877,2283 922,2283 967,2280 1011,2280 1056,2277 1101,2277 1146,2277 1191,2274 1198,2273"
+                         HEIGHT="70"
+                         WIDTH="1026"
+                         VPOS="2239"
+                         HPOS="165">
+                  <String ID="string_r_21_tl_4"
+                          HEIGHT="70"
+                          WIDTH="1026"
+                          VPOS="2239"
+                          HPOS="165"
+                          CONTENT="die Ausnützung der natürlichen Hilfsquellen des"/>
+               </TextLine>
+               <TextLine ID="r_21_tl_5"
+                         BASELINE="179,2346 208,2346 253,2346 298,2343 343,2343 388,2340 432,2340 477,2340 522,2340 567,2340 611,2337 656,2337 701,2337 746,2337 791,2337 835,2334 880,2331 925,2331 970,2334 1014,2331 1059,2331 1104,2331 1149,2331 1194,2334 1198,2335"
+                         HEIGHT="70"
+                         WIDTH="1028"
+                         VPOS="2286"
+                         HPOS="165">
+                  <String ID="string_r_21_tl_5"
+                          HEIGHT="70"
+                          WIDTH="1028"
+                          VPOS="2286"
+                          HPOS="165"
+                          CONTENT="Landes, vornehmlich durch die Heranziehung"/>
+               </TextLine>
+               <TextLine ID="r_21_tl_6"
+                         BASELINE="179,2397 188,2397 232,2397 277,2391 322,2394 367,2394 411,2394 456,2394 501,2391 546,2394 591,2391 635,2388 680,2388 725,2388 770,2388 814,2385 859,2385"
+                         HEIGHT="95"
+                         WIDTH="690"
+                         VPOS="2336"
+                         HPOS="163">
+                  <String ID="string_r_21_tl_6"
+                          HEIGHT="95"
+                          WIDTH="690"
+                          VPOS="2336"
+                          HPOS="163"
+                          CONTENT="der Wasserkräfte, geleistet wird."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_22" HEIGHT="320" WIDTH="1024" VPOS="2400" HPOS="182">
+               <Shape>
+                  <Polygon POINTS="182,2400 1206,2400 1206,2720 182,2720"/>
+               </Shape>
+               <TextLine ID="r_22_tl_1"
+                         BASELINE="268,2441 304,2441 349,2444 394,2441 438,2444 483,2441 528,2441 573,2441 617,2438 662,2438 707,2438 752,2438 797,2435 841,2435 886,2435 931,2435 976,2435 1020,2432 1065,2435 1110,2432 1155,2432 1200,2432 1206,2433"
+                         HEIGHT="57"
+                         WIDTH="951"
+                         VPOS="2399"
+                         HPOS="255">
+                  <String ID="string_r_22_tl_1"
+                          HEIGHT="57"
+                          WIDTH="951"
+                          VPOS="2399"
+                          HPOS="255"
+                          CONTENT="Hervorragende Fachmänner werden in einer"/>
+               </TextLine>
+               <TextLine ID="r_22_tl_2"
+                         BASELINE="182,2498 205,2498 250,2495 295,2495 340,2495 385,2495 429,2495 474,2492 519,2492 564,2492 608,2492 653,2492 698,2489 743,2492 788,2486 832,2486 877,2486 922,2486 967,2483 1011,2483 1056,2483 1101,2483 1146,2483 1191,2486 1206,2485"
+                         HEIGHT="60"
+                         WIDTH="1033"
+                         VPOS="2451"
+                         HPOS="168">
+                  <String ID="string_r_22_tl_2"
+                          HEIGHT="60"
+                          WIDTH="1033"
+                          VPOS="2451"
+                          HPOS="168"
+                          CONTENT="Reihe von wichtigen Aufsätzen die Entwicklung"/>
+               </TextLine>
+               <TextLine ID="r_22_tl_3"
+                         BASELINE="182,2549 211,2549 256,2546 301,2546 346,2546 391,2543 435,2543 480,2543 525,2543 570,2540 614,2540 659,2540 704,2540 749,2540 794,2540 838,2540 883,2537 928,2534 973,2534 1017,2534 1062,2534 1107,2534 1152,2534 1197,2534 1206,2531"
+                         HEIGHT="67"
+                         WIDTH="1035"
+                         VPOS="2494"
+                         HPOS="168">
+                  <String ID="string_r_22_tl_3"
+                          HEIGHT="67"
+                          WIDTH="1035"
+                          VPOS="2494"
+                          HPOS="168"
+                          CONTENT="der Energiewirtschaft schildern. Die große Be¬"/>
+               </TextLine>
+               <TextLine ID="r_22_tl_4"
+                         BASELINE="182,2597 208,2597 253,2597 298,2597 343,2594 388,2594 432,2594 477,2594 522,2594 567,2591 611,2591 656,2591 701,2591 746,2591 791,2588 835,2588 880,2585 925,2588 970,2588 1014,2585 1059,2588 1104,2585 1149,2585 1194,2585 1206,2580"
+                         HEIGHT="73"
+                         WIDTH="1035"
+                         VPOS="2541"
+                         HPOS="168">
+                  <String ID="string_r_22_tl_4"
+                          HEIGHT="73"
+                          WIDTH="1035"
+                          VPOS="2541"
+                          HPOS="168"
+                          CONTENT="dentung der Wafferkraft für die Volkswirtschaft"/>
+               </TextLine>
+               <TextLine ID="r_22_tl_5"
+                         BASELINE="185,2647 211,2647 256,2644 301,2644 346,2644 391,2644 435,2644 480,2641 525,2641 570,2641 614,2641 659,2638 704,2641 749,2638 794,2638 838,2638 883,2635 928,2638 973,2638 1017,2635 1062,2635 1107,2635 1152,2632 1197,2635 1206,2636"
+                         HEIGHT="70"
+                         WIDTH="1031"
+                         VPOS="2594"
+                         HPOS="170">
+                  <String ID="string_r_22_tl_5"
+                          HEIGHT="70"
+                          WIDTH="1031"
+                          VPOS="2594"
+                          HPOS="170"
+                          CONTENT="aller Staaten sichert dieser Sondernummer das"/>
+               </TextLine>
+               <TextLine ID="r_22_tl_6"
+                         BASELINE="185,2698 194,2701 238,2698 283,2695 328,2698 373,2695 417,2695 462,2692 507,2692 552,2692 597,2692 641,2692 686,2692 731,2692 776,2689 820,2689 865,2689 910,2686"
+                         HEIGHT="65"
+                         WIDTH="735"
+                         VPOS="2651"
+                         HPOS="170">
+                  <String ID="string_r_22_tl_6"
+                          HEIGHT="65"
+                          WIDTH="735"
+                          VPOS="2651"
+                          HPOS="170"
+                          CONTENT="allgemeinſte und ſtärkſte Intereſſe."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_23" HEIGHT="113" WIDTH="1020" VPOS="2705" HPOS="185">
+               <Shape>
+                  <Polygon POINTS="185,2705 1205,2705 1205,2818 185,2818"/>
+               </Shape>
+               <TextLine ID="r_23_tl_1"
+                         BASELINE="277,2749 307,2746 352,2746 397,2746 441,2746 486,2746 531,2743 576,2743 620,2743 665,2743 710,2743 755,2743 800,2740 844,2740 889,2740 934,2740 979,2740 1023,2740 1068,2740 1113,2737 1158,2737 1202,2737 1205,2737"
+                         HEIGHT="85"
+                         WIDTH="935"
+                         VPOS="2679"
+                         HPOS="263">
+                  <String ID="string_r_23_tl_1"
+                          HEIGHT="85"
+                          WIDTH="935"
+                          VPOS="2679"
+                          HPOS="263"
+                          CONTENT="Die Nummer wird unter anderm folgende"/>
+               </TextLine>
+               <TextLine ID="r_23_tl_2"
+                         BASELINE="191,2800 205,2800 250,2797 295,2800 340,2797 385,2797 429,2797 474,2797 519,2797 564,2797"
+                         HEIGHT="83"
+                         WIDTH="380"
+                         VPOS="2746"
+                         HPOS="178">
+                  <String ID="string_r_23_tl_2"
+                          HEIGHT="83"
+                          WIDTH="380"
+                          VPOS="2746"
+                          HPOS="178"
+                          CONTENT="Artikel enthalten:"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_24" HEIGHT="133" WIDTH="1020" VPOS="2817" HPOS="189">
+               <Shape>
+                  <Polygon POINTS="189,2817 1209,2817 1209,2950 189,2950"/>
+               </Shape>
+               <TextLine ID="r_24_tl_1"
+                         BASELINE="268,2868 298,2862 343,2865 388,2862 432,2862 477,2862 522,2859 567,2859 611,2859 656,2856 701,2859 746,2859 791,2859 835,2856 880,2856 925,2853 970,2853 1014,2850 1059,2853 1104,2853 1149,2847 1194,2841 1209,2837"
+                         HEIGHT="83"
+                         WIDTH="951"
+                         VPOS="2801"
+                         HPOS="255">
+                  <String ID="string_r_24_tl_1"
+                          HEIGHT="83"
+                          WIDTH="951"
+                          VPOS="2801"
+                          HPOS="255"
+                          CONTENT="Finanzminiſter Dr. Jakob Ahrer:"/>
+               </TextLine>
+               <TextLine ID="r_24_tl_2"
+                         BASELINE="194,2934 229,2928 274,2925 319,2925 364,2922 408,2922 453,2922 498,2919 543,2919 588,2919 632,2916 677,2916 722,2916 767,2916 811,2916 856,2916 901,2916 946,2913 991,2913 1035,2913 1080,2913"
+                         HEIGHT="100"
+                         WIDTH="896"
+                         VPOS="2859"
+                         HPOS="180">
+                  <String ID="string_r_24_tl_2"
+                          HEIGHT="100"
+                          WIDTH="896"
+                          VPOS="2859"
+                          HPOS="180"
+                          CONTENT="„Wasserkräfte und Staatswirtschaft.“"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_25" HEIGHT="130" WIDTH="1019" VPOS="2944" HPOS="188">
+               <Shape>
+                  <Polygon POINTS="188,2944 1207,2944 1207,3074 188,3074"/>
+               </Shape>
+               <TextLine ID="r_25_tl_1"
+                         BASELINE="241,2991 262,2991 307,2991 352,2988 397,2988 441,2988 486,2988 531,2988 576,2988 620,2988 665,2985 710,2988 755,2985 800,2985 844,2982 889,2982 934,2982 979,2982 1023,2985 1068,2985 1113,2982 1158,2979 1202,2982 1207,2983"
+                         HEIGHT="83"
+                         WIDTH="975"
+                         VPOS="2929"
+                         HPOS="228">
+                  <String ID="string_r_25_tl_1"
+                          HEIGHT="83"
+                          WIDTH="975"
+                          VPOS="2929"
+                          HPOS="228"
+                          CONTENT="Handelsminister Dr. Hans Schürff: „Die"/>
+               </TextLine>
+               <TextLine ID="r_25_tl_2"
+                         BASELINE="191,3050 229,3047 274,3050 319,3050 364,3047 408,3047 453,3044 498,3047 543,3047 588,3044 632,3044 677,3044 722,3044 767,3044 811,3044 856,3041 901,3041 946,3038 991,3038 1035,3038 1080,3041 1207,3037"
+                         HEIGHT="75"
+                         WIDTH="1023"
+                         VPOS="2989"
+                         HPOS="178">
+                  <String ID="string_r_25_tl_2"
+                          HEIGHT="75"
+                          WIDTH="1023"
+                          VPOS="2989"
+                          HPOS="178"
+                          CONTENT="Waſſerwirtſchaftskräfte Oeſterreichs.“"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_26" HEIGHT="236" WIDTH="1021" VPOS="3079" HPOS="190">
+               <Shape>
+                  <Polygon POINTS="190,3079 1211,3079 1211,3315 190,3315"/>
+               </Shape>
+               <TextLine ID="r_26_tl_1"
+                         BASELINE="280,3113 304,3116 349,3119 394,3116 438,3116 483,3116 528,3113 573,3113 617,3113 662,3113 707,3110 752,3110 797,3113 841,3110 886,3110 931,3110 976,3107 1020,3107 1065,3110 1110,3107 1155,3107 1200,3104 1211,3107"
+                         HEIGHT="67"
+                         WIDTH="943"
+                         VPOS="3067"
+                         HPOS="265">
+                  <String ID="string_r_26_tl_1"
+                          HEIGHT="67"
+                          WIDTH="943"
+                          VPOS="3067"
+                          HPOS="265"
+                          CONTENT="Staatsrat Dr. v. Graßmann, Vorſitzender"/>
+               </TextLine>
+               <TextLine ID="r_26_tl_2"
+                         BASELINE="191,3179 217,3179 262,3179 307,3179 352,3179 397,3176 441,3176 486,3176 531,3176 576,3176 620,3176 665,3176 710,3173 755,3173 800,3173 844,3173 889,3170 934,3170 979,3170 1023,3170 1068,3170 1113,3170 1158,3164 1202,3161 1211,3161"
+                         HEIGHT="83"
+                         WIDTH="1028"
+                         VPOS="3114"
+                         HPOS="178">
+                  <String ID="string_r_26_tl_2"
+                          HEIGHT="83"
+                          WIDTH="1028"
+                          VPOS="3114"
+                          HPOS="178"
+                          CONTENT="der Rhein⸗Main⸗Donau⸗Kanal A.⸗G. (München): „Die"/>
+               </TextLine>
+               <TextLine ID="r_26_tl_3"
+                         BASELINE="197,3235 214,3232 259,3235 304,3235 349,3235 394,3235 438,3235 483,3232 528,3232 573,3232 617,3232 662,3232 707,3229 752,3229 797,3229 841,3229 886,3226 931,3226 976,3226 1020,3226 1065,3226"
+                         HEIGHT="90"
+                         WIDTH="875"
+                         VPOS="3179"
+                         HPOS="183">
+                  <String ID="string_r_26_tl_3"
+                          HEIGHT="90"
+                          WIDTH="875"
+                          VPOS="3179"
+                          HPOS="183"
+                          CONTENT="Großſchiffahrtsſtraße vom Rhein"/>
+               </TextLine>
+               <TextLine ID="r_26_tl_4"
+                         BASELINE="197,3298 241,3298 286,3298 331,3298 376,3301 385,3301"
+                         HEIGHT="68"
+                         WIDTH="197"
+                         VPOS="3249"
+                         HPOS="183">
+                  <String ID="string_r_26_tl_4"
+                          HEIGHT="68"
+                          WIDTH="197"
+                          VPOS="3249"
+                          HPOS="183"
+                          CONTENT="Donau.“"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_37"
+                       HEIGHT="1186"
+                       WIDTH="1034"
+                       VPOS="1563"
+                       HPOS="1231">
+               <Shape>
+                  <Polygon POINTS="1231,1563 2265,1563 2265,2749 1231,2749"/>
+               </Shape>
+               <TextLine ID="r_37_tl_1"
+                         BASELINE="1313,1600 1340,1600 1385,1602 1429,1602 1474,1600 1519,1600 1564,1600 1608,1600 1653,1600 1698,1600 1743,1600 1788,1600 1832,1597 1877,1597 1922,1594 1967,1594 2011,1594 2056,1591 2101,1594 2146,1591 2191,1591 2235,1591 2265,1597"
+                         HEIGHT="65"
+                         WIDTH="961"
+                         VPOS="1546"
+                         HPOS="1298">
+                  <String ID="string_r_37_tl_1"
+                          HEIGHT="65"
+                          WIDTH="961"
+                          VPOS="1546"
+                          HPOS="1298"
+                          CONTENT="Wir schlagen aufs Geratewohl einen der Bände auf,"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_2"
+                         BASELINE="1231,1644 1256,1644 1301,1644 1346,1644 1391,1644 1435,1644 1480,1641 1525,1644 1570,1641 1614,1641 1659,1644 1704,1641 1749,1641 1794,1641 1838,1638 1883,1635 1928,1635 1973,1638 2017,1635 2062,1635 2107,1635 2152,1632 2197,1632 2241,1629 2265,1637"
+                         HEIGHT="63"
+                         WIDTH="1041"
+                         VPOS="1598"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_2"
+                          HEIGHT="63"
+                          WIDTH="1041"
+                          VPOS="1598"
+                          HPOS="1218"
+                          CONTENT="welche die Nummern der „Neuen Freien Presse“ monatlich"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_3"
+                         BASELINE="1231,1683 1250,1686 1295,1686 1340,1683 1385,1686 1429,1683 1474,1683 1519,1683 1564,1683 1608,1683 1653,1683 1698,1683 1743,1683 1788,1683 1832,1680 1877,1680 1922,1680 1967,1680 2011,1677 2056,1677 2101,1677 2146,1677 2191,1674 2235,1674 2265,1683"
+                         HEIGHT="55"
+                         WIDTH="1041"
+                         VPOS="1641"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_3"
+                          HEIGHT="55"
+                          WIDTH="1041"
+                          VPOS="1641"
+                          HPOS="1218"
+                          CONTENT="vereinigen. Dezember 1921. Was hat damals stattgefunden?"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_4"
+                         BASELINE="1232,1728 1250,1728 1295,1728 1340,1728 1385,1728 1429,1725 1474,1725 1519,1725 1564,1725 1608,1725 1653,1725 1698,1725 1743,1722 1788,1722 1832,1722 1877,1722 1922,1722 1967,1722 2011,1719 2056,1719 2101,1719 2146,1719 2191,1716 2235,1716 2265,1725"
+                         HEIGHT="45"
+                         WIDTH="1043"
+                         VPOS="1693"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_4"
+                          HEIGHT="45"
+                          WIDTH="1043"
+                          VPOS="1693"
+                          HPOS="1218"
+                          CONTENT="Abschaltung des Telephons für vierundzwanzig Stunden."/>
+               </TextLine>
+               <TextLine ID="r_37_tl_5"
+                         BASELINE="1232,1770 1253,1767 1298,1770 1343,1770 1388,1767 1432,1767 1477,1767 1522,1767 1567,1767 1611,1767 1656,1767 1701,1767 1746,1764 1791,1764 1835,1761 1880,1764 1925,1761 1970,1764 2014,1764 2059,1761 2104,1761 2149,1758 2194,1758 2238,1758 2265,1766"
+                         HEIGHT="53"
+                         WIDTH="1041"
+                         VPOS="1723"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_5"
+                          HEIGHT="53"
+                          WIDTH="1041"
+                          VPOS="1723"
+                          HPOS="1218"
+                          CONTENT="Wir setzen unsere Untersuchung fort. Dezember 1923:"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_6"
+                         BASELINE="1235,1808 1253,1811 1298,1811 1343,1811 1388,1811 1432,1808 1477,1808 1522,1808 1567,1808 1611,1808 1656,1808 1701,1808 1746,1808 1791,1805 1835,1805 1880,1805 1925,1805 1970,1802 2014,1802 2059,1802 2104,1802 2149,1802 2194,1800 2238,1800 2265,1808"
+                         HEIGHT="50"
+                         WIDTH="1038"
+                         VPOS="1766"
+                         HPOS="1221">
+                  <String ID="string_r_37_tl_6"
+                          HEIGHT="50"
+                          WIDTH="1038"
+                          VPOS="1766"
+                          HPOS="1221"
+                          CONTENT="Streik in der Metallindustrie und Ultimatum bei der Post,"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_7"
+                         BASELINE="1231,1853 1256,1853 1301,1853 1346,1853 1391,1853 1435,1850 1480,1850 1525,1850 1570,1850 1614,1850 1659,1850 1704,1850 1749,1850 1794,1850 1838,1847 1883,1847 1928,1847 1973,1847 2017,1847 2062,1844 2107,1844 2152,1844 2197,1841 2241,1841 2265,1847"
+                         HEIGHT="58"
+                         WIDTH="1041"
+                         VPOS="1808"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_7"
+                          HEIGHT="58"
+                          WIDTH="1041"
+                          VPOS="1808"
+                          HPOS="1218"
+                          CONTENT="das in der Mitte des Monats den Streik herbeiführt. Wir"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_8"
+                         BASELINE="1235,1895 1259,1895 1304,1895 1349,1895 1394,1895 1438,1892 1483,1892 1528,1892 1573,1892 1617,1892 1662,1892 1707,1892 1752,1892 1797,1892 1841,1889 1886,1889 1931,1889 1976,1889 2020,1889 2065,1886 2110,1886 2155,1883 2200,1886 2244,1886 2265,1892"
+                         HEIGHT="60"
+                         WIDTH="1038"
+                         VPOS="1848"
+                         HPOS="1221">
+                  <String ID="string_r_37_tl_8"
+                          HEIGHT="60"
+                          WIDTH="1038"
+                          VPOS="1848"
+                          HPOS="1221"
+                          CONTENT="nehmen den Dezember des Vorjahres zur Hand und schon"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_9"
+                         BASELINE="1231,1932 1238,1934 1265,1937 1310,1937 1355,1937 1400,1934 1444,1934 1489,1934 1534,1934 1579,1934 1623,1934 1668,1934 1713,1934 1758,1931 1802,1934 1847,1931 1892,1931 1937,1931 1982,1931 2026,1931 2071,1928 2116,1928 2161,1928 2205,1925 2250,1925 2265,1929"
+                         HEIGHT="62"
+                         WIDTH="1041"
+                         VPOS="1886"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_9"
+                          HEIGHT="62"
+                          WIDTH="1041"
+                          VPOS="1886"
+                          HPOS="1218"
+                          CONTENT="am Ersten heißt es genau nach dem Gesetze der Analogie:"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_10"
+                         BASELINE="1235,1976 1256,1976 1301,1979 1346,1979 1391,1976 1435,1976 1480,1976 1525,1976 1570,1976 1614,1976 1659,1976 1704,1976 1749,1976 1794,1973 1838,1973 1883,1970 1928,1973 1973,1973 2017,1970 2062,1970 2107,1970 2152,1970 2197,1967 2241,1964 2265,1975"
+                         HEIGHT="58"
+                         WIDTH="1041"
+                         VPOS="1928"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_10"
+                          HEIGHT="58"
+                          WIDTH="1041"
+                          VPOS="1928"
+                          HPOS="1218"
+                          CONTENT="Befriſtete Forderungen der Telephon⸗ und Telegraphen⸗"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_11"
+                         BASELINE="1235,2020 1256,2020 1301,2020 1346,2020 1391,2020 1435,2017 1480,2017 1525,2020 1570,2017 1614,2017 1659,2014 1704,2017 1749,2014 1794,2014 1838,2014 1883,2014 1928,2011 1973,2014 2017,2011 2062,2011 2107,2011 2152,2008 2197,2008 2241,2008 2265,2016"
+                         HEIGHT="58"
+                         WIDTH="1038"
+                         VPOS="1973"
+                         HPOS="1221">
+                  <String ID="string_r_37_tl_11"
+                          HEIGHT="58"
+                          WIDTH="1038"
+                          VPOS="1973"
+                          HPOS="1221"
+                          CONTENT="beamten. Der Dezember ist der Monat, wo die Regierung"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_12"
+                         BASELINE="1231,2061 1238,2062 1262,2062 1307,2062 1352,2062 1397,2059 1441,2059 1486,2059 1531,2059 1576,2059 1620,2059 1665,2059 1710,2056 1755,2056 1800,2056 1844,2056 1889,2056 1934,2056 1979,2053 2023,2053 2068,2053 2113,2050 2158,2053 2202,2050 2247,2047 2265,2053"
+                         HEIGHT="58"
+                         WIDTH="1041"
+                         VPOS="2011"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_12"
+                          HEIGHT="58"
+                          WIDTH="1041"
+                          VPOS="2011"
+                          HPOS="1218"
+                          CONTENT="am schwächsten ist. Sie hat die Verpflichtung, die kargen"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_13"
+                         BASELINE="1241,2104 1262,2104 1307,2104 1352,2104 1397,2101 1441,2101 1486,2101 1531,2101 1576,2098 1620,2101 1665,2101 1710,2098 1755,2098 1800,2098 1844,2098 1889,2098 1934,2098 1979,2095 2023,2095 2068,2095 2113,2095 2158,2092 2202,2092 2247,2089 2265,2099"
+                         HEIGHT="55"
+                         WIDTH="1031"
+                         VPOS="2056"
+                         HPOS="1228">
+                  <String ID="string_r_37_tl_13"
+                          HEIGHT="55"
+                          WIDTH="1031"
+                          VPOS="2056"
+                          HPOS="1228"
+                          CONTENT="Reste des Wohlstandes zu schützen, sie hat naturgemäß den"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_14"
+                         BASELINE="1231,2138 1241,2143 1262,2140 1307,2146 1352,2143 1397,2146 1441,2143 1486,2143 1531,2143 1576,2143 1620,2143 1665,2143 1710,2140 1755,2140 1800,2140 1844,2140 1889,2140 1934,2137 1979,2137 2023,2137 2068,2137 2113,2137 2158,2134 2202,2134 2247,2131"
+                         HEIGHT="50"
+                         WIDTH="1023"
+                         VPOS="2101"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_14"
+                          HEIGHT="50"
+                          WIDTH="1023"
+                          VPOS="2101"
+                          HPOS="1218"
+                          CONTENT="Wunsch, Milliardenverluste für die Kaufleute und für die"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_15"
+                         BASELINE="1231,2182 1247,2185 1268,2185 1313,2188 1358,2185 1402,2188 1447,2185 1492,2185 1537,2185 1582,2185 1626,2182 1671,2182 1716,2182 1761,2182 1805,2182 1850,2182 1895,2179 1940,2179 1985,2182 2029,2179 2074,2176 2119,2176 2164,2176 2208,2176 2253,2173 2265,2178"
+                         HEIGHT="58"
+                         WIDTH="1041"
+                         VPOS="2136"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_15"
+                          HEIGHT="58"
+                          WIDTH="1041"
+                          VPOS="2136"
+                          HPOS="1218"
+                          CONTENT="Industrie zu meiden, sie scheut sich, eine Kraftprobe anzu¬"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_16"
+                         BASELINE="1231,2226 1241,2226 1268,2226 1313,2226 1358,2226 1402,2226 1447,2226 1492,2226 1537,2226 1582,2226 1626,2223 1671,2223 1716,2223 1761,2223 1805,2223 1850,2220 1895,2220 1940,2220 1985,2220 2029,2220 2074,2220 2119,2220 2164,2217 2208,2217 2253,2214 2265,2218"
+                         HEIGHT="45"
+                         WIDTH="1043"
+                         VPOS="2184"
+                         HPOS="1216">
+                  <String ID="string_r_37_tl_16"
+                          HEIGHT="45"
+                          WIDTH="1043"
+                          VPOS="2184"
+                          HPOS="1216"
+                          CONTENT="nehmen in einem Augenblick, da unsere Bevölkerung das"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_17"
+                         BASELINE="1231,2270 1247,2268 1268,2268 1313,2268 1358,2268 1402,2265 1447,2265 1492,2268 1537,2268 1582,2268 1626,2268 1671,2265 1716,2265 1761,2265 1805,2265 1850,2265 1895,2262 1940,2265 1985,2262 2029,2262 2074,2262 2119,2259 2164,2256 2208,2256 2253,2259 2265,2263"
+                         HEIGHT="45"
+                         WIDTH="1041"
+                         VPOS="2226"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_17"
+                          HEIGHT="45"
+                          WIDTH="1041"
+                          VPOS="2226"
+                          HPOS="1218"
+                          CONTENT="Aeußerſte verſucht, um vor Schluß des Jahres — des"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_18"
+                         BASELINE="1250,2313 1265,2313 1310,2313 1355,2310 1400,2310 1444,2310 1489,2310 1534,2310 1579,2307 1623,2307 1668,2307 1713,2307 1758,2307 1802,2307 1847,2307 1892,2304 1937,2304 1982,2304 2026,2301 2071,2301 2116,2301 2161,2301 2205,2301 2250,2298 2265,2304"
+                         HEIGHT="60"
+                         WIDTH="1023"
+                         VPOS="2264"
+                         HPOS="1236">
+                  <String ID="string_r_37_tl_18"
+                          HEIGHT="60"
+                          WIDTH="1023"
+                          VPOS="2264"
+                          HPOS="1236"
+                          CONTENT="zweiten Jahres der furchtbaren Depression — ein wenig"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_19"
+                         BASELINE="1231,2344 1247,2349 1262,2349 1307,2355 1352,2352 1397,2352 1441,2352 1486,2352 1531,2349 1576,2349 1620,2349 1665,2349 1710,2349 1755,2349 1800,2349 1844,2346 1889,2349 1934,2346 1979,2346 2023,2346 2068,2346 2113,2343 2158,2343 2202,2343 2247,2340 2265,2360"
+                         HEIGHT="55"
+                         WIDTH="1023"
+                         VPOS="2301"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_19"
+                          HEIGHT="55"
+                          WIDTH="1023"
+                          VPOS="2301"
+                          HPOS="1218"
+                          CONTENT="Erholung zu gewinnen und gleichsam die Muscheln einzu"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_20"
+                         BASELINE="1253,2394 1271,2397 1316,2397 1361,2397 1405,2394 1450,2394 1495,2394 1540,2394 1585,2394 1629,2391 1674,2394 1719,2391 1764,2391 1808,2388 1853,2388 1898,2388 1943,2388 1988,2388 2032,2388 2077,2388 2122,2385 2167,2385 2211,2385 2256,2382 2265,2378"
+                         HEIGHT="70"
+                         WIDTH="1023"
+                         VPOS="2341"
+                         HPOS="1238">
+                  <String ID="string_r_37_tl_20"
+                          HEIGHT="70"
+                          WIDTH="1023"
+                          VPOS="2341"
+                          HPOS="1238"
+                          CONTENT="sammeln, die eine kleine Flut, eine armselige Konjunktur"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_21"
+                         BASELINE="1231,2434 1250,2435 1271,2435 1316,2435 1361,2435 1405,2435 1450,2435 1495,2435 1540,2435 1585,2432 1629,2432 1674,2432 1719,2432 1764,2432 1808,2429 1853,2432 1898,2432 1943,2429 1988,2429 2032,2429 2077,2429 2122,2429 2167,2426 2211,2426 2256,2426 2265,2430"
+                         HEIGHT="55"
+                         WIDTH="1041"
+                         VPOS="2391"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_21"
+                          HEIGHT="55"
+                          WIDTH="1041"
+                          VPOS="2391"
+                          HPOS="1218"
+                          CONTENT="ans Ufer wirft. Kann man in diesem Notstande unerbittlich"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_22"
+                         BASELINE="1231,2482 1253,2480 1268,2480 1313,2480 1358,2477 1402,2477 1447,2474 1492,2477 1537,2474 1582,2474 1626,2474 1671,2474 1716,2471 1761,2474 1805,2474 1850,2474 1895,2474 1940,2471 1985,2471 2029,2471 2074,2471 2119,2468 2164,2468 2208,2468 2253,2462 2265,2468"
+                         HEIGHT="50"
+                         WIDTH="1041"
+                         VPOS="2434"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_22"
+                          HEIGHT="50"
+                          WIDTH="1041"
+                          VPOS="2434"
+                          HPOS="1218"
+                          CONTENT="sein, bringt jemand das Herz auf, geschunden und ver¬"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_23"
+                         BASELINE="1231,2525 1253,2519 1271,2519 1316,2519 1361,2522 1405,2519 1450,2516 1495,2519 1540,2516 1585,2516 1629,2516 1674,2516 1719,2513 1764,2513 1808,2513 1853,2513 1898,2513 1943,2513 1988,2513 2032,2513 2077,2510 2122,2510 2167,2510 2211,2510 2256,2507 2265,2511"
+                         HEIGHT="55"
+                         WIDTH="1041"
+                         VPOS="2474"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_23"
+                          HEIGHT="55"
+                          WIDTH="1041"
+                          VPOS="2474"
+                          HPOS="1218"
+                          CONTENT="prügelt, wie wir sind, den wilden Mann zu spielen und die"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_24"
+                         BASELINE="1231,2570 1247,2564 1274,2564 1319,2561 1364,2561 1408,2558 1453,2561 1498,2561 1543,2561 1588,2558 1632,2561 1677,2555 1722,2555 1767,2555 1811,2555 1856,2555 1901,2555 1946,2555 1991,2552 2035,2552 2080,2552 2125,2552 2170,2552 2214,2549 2259,2546 2265,2548"
+                         HEIGHT="73"
+                         WIDTH="1041"
+                         VPOS="2516"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_24"
+                          HEIGHT="73"
+                          WIDTH="1041"
+                          VPOS="2516"
+                          HPOS="1218"
+                          CONTENT="so naheliegende Frage zu stellen: die Frage nach den Macht¬"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_25"
+                         BASELINE="1250,2602 1268,2602 1313,2602 1358,2602 1402,2600 1447,2600 1492,2600 1537,2600 1582,2597 1626,2600 1671,2597 1716,2597 1761,2597 1805,2597 1850,2597 1895,2597 1940,2597 1985,2594 2029,2591 2074,2594 2119,2594 2164,2594 2208,2591 2253,2591 2265,2595"
+                         HEIGHT="55"
+                         WIDTH="1023"
+                         VPOS="2554"
+                         HPOS="1236">
+                  <String ID="string_r_37_tl_25"
+                          HEIGHT="55"
+                          WIDTH="1023"
+                          VPOS="2554"
+                          HPOS="1236"
+                          CONTENT="verhältnissen in diesem Staate, nach der Erträglichkeit"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_26"
+                         BASELINE="1231,2639 1250,2641 1271,2644 1316,2644 1361,2644 1405,2644 1450,2641 1495,2641 1540,2641 1585,2641 1629,2638 1674,2638 1719,2638 1764,2635 1808,2638 1853,2638 1898,2635 1943,2638 1988,2635 2032,2635 2077,2635 2122,2635 2167,2635 2211,2632 2256,2629 2265,2633"
+                         HEIGHT="58"
+                         WIDTH="1041"
+                         VPOS="2596"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_26"
+                          HEIGHT="58"
+                          WIDTH="1041"
+                          VPOS="2596"
+                          HPOS="1218"
+                          CONTENT="immerwährender Zugeständnisse, die Frage, wie all diese"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_27"
+                         BASELINE="1247,2683 1271,2686 1316,2686 1361,2683 1405,2683 1450,2683 1495,2683 1540,2683 1585,2683 1629,2683 1674,2680 1719,2680 1764,2680 1808,2680 1853,2680 1898,2680 1943,2677 1988,2677 2032,2677 2077,2677 2122,2677 2167,2677 2211,2674 2256,2674 2265,2678"
+                         HEIGHT="55"
+                         WIDTH="1026"
+                         VPOS="2639"
+                         HPOS="1233">
+                  <String ID="string_r_37_tl_27"
+                          HEIGHT="55"
+                          WIDTH="1026"
+                          VPOS="2639"
+                          HPOS="1233"
+                          CONTENT="Dinge in Zukunft sich gestalten sollen, mit einem Worte die"/>
+               </TextLine>
+               <TextLine ID="r_37_tl_28"
+                         BASELINE="1231,2735 1253,2734 1268,2731 1313,2728 1358,2725 1402,2728 1447,2728 1492,2725 1537,2725 1582,2725 1626,2719 1671,2722 1716,2722 1761,2722 1805,2722 1850,2722 1895,2722 1940,2722"
+                         HEIGHT="57"
+                         WIDTH="715"
+                         VPOS="2684"
+                         HPOS="1218">
+                  <String ID="string_r_37_tl_28"
+                          HEIGHT="57"
+                          WIDTH="715"
+                          VPOS="2684"
+                          HPOS="1218"
+                          CONTENT="Frage der politischen Lebensfähigkeit."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_38" HEIGHT="607" WIDTH="1028" VPOS="2746" HPOS="1244">
+               <Shape>
+                  <Polygon POINTS="1244,2746 2272,2746 2272,3353 1244,3353"/>
+               </Shape>
+               <TextLine ID="r_38_tl_1"
+                         BASELINE="1334,2782 1364,2782 1408,2782 1453,2782 1498,2782 1543,2782 1588,2782 1632,2779 1677,2779 1722,2782 1767,2779 1811,2782 1856,2779 1901,2782 1946,2779 1991,2779 2035,2779 2080,2779 2125,2779 2170,2779 2214,2776 2259,2779 2272,2779"
+                         HEIGHT="70"
+                         WIDTH="951"
+                         VPOS="2729"
+                         HPOS="1318">
+                  <String ID="string_r_38_tl_1"
+                          HEIGHT="70"
+                          WIDTH="951"
+                          VPOS="2729"
+                          HPOS="1318"
+                          CONTENT="So und nicht anders muß die Lösung beurteilt werden,"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_2"
+                         BASELINE="1244,2828 1250,2826 1274,2826 1319,2826 1364,2826 1408,2826 1453,2826 1498,2823 1543,2826 1588,2823 1632,2823 1677,2823 1722,2823 1767,2820 1811,2823 1856,2823 1901,2820 1946,2820 1991,2823 2035,2820 2080,2820 2125,2820 2170,2820 2214,2817 2259,2817 2272,2817"
+                         HEIGHT="52"
+                         WIDTH="1035"
+                         VPOS="2784"
+                         HPOS="1231">
+                  <String ID="string_r_38_tl_2"
+                          HEIGHT="52"
+                          WIDTH="1035"
+                          VPOS="2784"
+                          HPOS="1231"
+                          CONTENT="welche die Regierung billigt. Wir glauben, es wäre besser"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_3"
+                         BASELINE="1250,2868 1274,2871 1319,2868 1364,2871 1408,2868 1453,2868 1498,2868 1543,2865 1588,2865 1632,2865 1677,2868 1722,2862 1767,2865 1811,2865 1856,2865 1901,2865 1946,2862 1991,2862 2035,2862 2080,2862 2125,2862 2170,2862 2214,2862 2259,2859 2272,2859"
+                         HEIGHT="63"
+                         WIDTH="1030"
+                         VPOS="2821"
+                         HPOS="1236">
+                  <String ID="string_r_38_tl_3"
+                          HEIGHT="63"
+                          WIDTH="1030"
+                          VPOS="2821"
+                          HPOS="1236"
+                          CONTENT="gewesen, ganz aufrichtig zu sein und das Kind beim rechten"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_4"
+                         BASELINE="1247,2910 1274,2910 1319,2910 1364,2913 1408,2910 1453,2910 1498,2910 1543,2910 1588,2907 1632,2910 1677,2907 1722,2907 1767,2907 1811,2907 1856,2907 1901,2907 1946,2907 1991,2907 2035,2907 2080,2904 2125,2904 2170,2904 2214,2904 2259,2904 2272,2904"
+                         HEIGHT="63"
+                         WIDTH="1036"
+                         VPOS="2861"
+                         HPOS="1233">
+                  <String ID="string_r_38_tl_4"
+                          HEIGHT="63"
+                          WIDTH="1036"
+                          VPOS="2861"
+                          HPOS="1233"
+                          CONTENT="Namen zu nennen, ſtatt mit allen möglichen Masken und"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_5"
+                         BASELINE="1256,2949 1274,2952 1319,2952 1364,2952 1408,2952 1453,2952 1498,2949 1543,2949 1588,2949 1632,2949 1677,2949 1722,2949 1767,2949 1811,2949 1856,2949 1901,2949 1946,2949 1991,2949 2035,2946 2080,2946 2125,2946 2170,2946 2214,2946 2259,2946 2272,2945"
+                         HEIGHT="53"
+                         WIDTH="1023"
+                         VPOS="2911"
+                         HPOS="1243">
+                  <String ID="string_r_38_tl_5"
+                          HEIGHT="53"
+                          WIDTH="1023"
+                          VPOS="2911"
+                          HPOS="1243"
+                          CONTENT="Decknamen zu operieren. Die Regierung hat dafür eine"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_6"
+                         BASELINE="1244,2994 1253,2997 1274,2994 1319,2994 1364,2991 1408,2994 1453,2991 1498,2991 1543,2991 1588,2991 1632,2991 1677,2991 1722,2991 1767,2991 1811,2991 1856,2991 1901,2991 1946,2991 1991,2991 2035,2991 2080,2988 2125,2991 2170,2988 2214,2985 2259,2988 2272,2988"
+                         HEIGHT="63"
+                         WIDTH="1035"
+                         VPOS="2944"
+                         HPOS="1231">
+                  <String ID="string_r_38_tl_6"
+                          HEIGHT="63"
+                          WIDTH="1035"
+                          VPOS="2944"
+                          HPOS="1231"
+                          CONTENT="gewisse Entschuldigung, denn angefangen hat ja dieses Spiel"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_7"
+                         BASELINE="1244,3036 1250,3035 1277,3035 1322,3035 1367,3035 1411,3035 1456,3035 1501,3032 1546,3032 1591,3032 1635,3032 1680,3035 1725,3032 1770,3032 1814,3032 1859,3032 1904,3029 1949,3032 1994,3032 2038,3029 2083,3029 2128,3029 2173,3029 2217,3026 2262,3026 2272,3027"
+                         HEIGHT="48"
+                         WIDTH="1035"
+                         VPOS="2994"
+                         HPOS="1231">
+                  <String ID="string_r_38_tl_7"
+                          HEIGHT="48"
+                          WIDTH="1035"
+                          VPOS="2994"
+                          HPOS="1231"
+                          CONTENT="vor ihrer Zeit, angefangen hat es mit den sogenannten Er¬"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_8"
+                         BASELINE="1259,3077 1271,3077 1316,3077 1361,3077 1405,3077 1450,3077 1495,3074 1540,3074 1585,3074 1629,3074 1674,3074 1719,3074 1764,3074 1808,3074 1853,3074 1898,3071 1943,3071 1988,3074 2032,3071 2077,3071 2122,3071 2167,3071 2211,3071 2256,3071 2272,3071"
+                         HEIGHT="57"
+                         WIDTH="1026"
+                         VPOS="3037"
+                         HPOS="1243">
+                  <String ID="string_r_38_tl_8"
+                          HEIGHT="57"
+                          WIDTH="1026"
+                          VPOS="3037"
+                          HPOS="1243"
+                          CONTENT="folgsprämien, die vielleicht damals ernst gemeint waren,"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_9"
+                         BASELINE="1244,3118 1247,3119 1274,3122 1319,3122 1364,3119 1408,3119 1453,3116 1498,3116 1543,3113 1588,3116 1632,3116 1677,3116 1722,3116 1767,3116 1811,3116 1856,3113 1901,3113 1946,3113 1991,3113 2035,3113 2080,3113 2125,3113 2170,3113 2214,3110 2259,3110 2272,3110"
+                         HEIGHT="57"
+                         WIDTH="1035"
+                         VPOS="3072"
+                         HPOS="1231">
+                  <String ID="string_r_38_tl_9"
+                          HEIGHT="57"
+                          WIDTH="1035"
+                          VPOS="3072"
+                          HPOS="1231"
+                          CONTENT="aber niemals so durchgeführt werden konnten, wie der"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_10"
+                         BASELINE="1244,3161 1253,3161 1271,3161 1316,3161 1361,3161 1405,3161 1450,3158 1495,3161 1540,3158 1585,3158 1629,3155 1674,3158 1719,3158 1764,3158 1808,3158 1853,3155 1898,3158 1943,3155 1988,3155 2032,3155 2077,3155 2122,3155 2167,3155 2211,3155 2256,3149 2272,3150"
+                         HEIGHT="60"
+                         WIDTH="1035"
+                         VPOS="3112"
+                         HPOS="1231">
+                  <String ID="string_r_38_tl_10"
+                          HEIGHT="60"
+                          WIDTH="1035"
+                          VPOS="3112"
+                          HPOS="1231"
+                          CONTENT="Name und wie das Programm es forderte. Erſparungs⸗"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_11"
+                         BASELINE="1253,3205 1271,3205 1316,3205 1361,3202 1405,3202 1450,3200 1495,3200 1540,3197 1585,3200 1629,3200 1674,3197 1719,3200 1764,3200 1808,3197 1853,3200 1898,3197 1943,3197 1988,3197 2032,3197 2077,3197 2122,3200 2167,3197 2211,3197 2256,3194 2272,3194"
+                         HEIGHT="55"
+                         WIDTH="1028"
+                         VPOS="3159"
+                         HPOS="1238">
+                  <String ID="string_r_38_tl_11"
+                          HEIGHT="55"
+                          WIDTH="1028"
+                          VPOS="3159"
+                          HPOS="1238"
+                          CONTENT="prämie sollte es sein, in Wahrheit wurde es ein Zuschuß."/>
+               </TextLine>
+               <TextLine ID="r_38_tl_12"
+                         BASELINE="1256,3244 1280,3247 1325,3247 1370,3244 1414,3244 1462,3244 1501,3241 1546,3241 1591,3241 1635,3241 1680,3241 1725,3241 1770,3241 1814,3241 1859,3241 1904,3241 1949,3238 1994,3238 2038,3238 2083,3241 2128,3238 2173,3238 2217,3235 2262,3235 2272,3235"
+                         HEIGHT="60"
+                         WIDTH="1023"
+                         VPOS="3199"
+                         HPOS="1243">
+                  <String ID="string_r_38_tl_12"
+                          HEIGHT="60"
+                          WIDTH="1023"
+                          VPOS="3199"
+                          HPOS="1243"
+                          CONTENT="Nach dem Erfolge der Tätigkeit sollte sich das Zugeständnis"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_13"
+                         BASELINE="1253,3286 1277,3289 1322,3289 1367,3289 1411,3289 1456,3289 1501,3286 1546,3283 1591,3283 1635,3283 1680,3283 1725,3283 1770,3283 1814,3283 1859,3280 1904,3280 1949,3280 1994,3280 2038,3280 2083,3280 2128,3280 2173,3280 2217,3280 2262,3274 2272,3275"
+                         HEIGHT="55"
+                         WIDTH="1028"
+                         VPOS="3244"
+                         HPOS="1238">
+                  <String ID="string_r_38_tl_13"
+                          HEIGHT="55"
+                          WIDTH="1028"
+                          VPOS="3244"
+                          HPOS="1238"
+                          CONTENT="richten, aber gewährt wurde es ohne Rücksicht auf den Er¬"/>
+               </TextLine>
+               <TextLine ID="r_38_tl_14"
+                         BASELINE="1244,3338 1259,3334 1304,3331 1349,3331 1394,3331 1438,3328 1483,3328 1528,3328 1573,3328 1617,3325 1662,3325 1707,3325 1752,3325 1797,3325 1841,3325 1886,3325 1931,3325 1976,3325 2020,3325 2065,3322 2110,3322 2155,3325 2200,3325 2244,3325 2272,3325"
+                         HEIGHT="65"
+                         WIDTH="1035"
+                         VPOS="3282"
+                         HPOS="1231">
+                  <String ID="string_r_38_tl_14"
+                          HEIGHT="65"
+                          WIDTH="1035"
+                          VPOS="3282"
+                          HPOS="1231"
+                          CONTENT="folg. Ein Aequivalent sollte es sein für erhöhte Tätigkeit,"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_43"
+                       HEIGHT="1222"
+                       WIDTH="1032"
+                       VPOS="2120"
+                       HPOS="2296">
+               <Shape>
+                  <Polygon POINTS="2296,2120 3328,2120 3328,3342 2296,3342"/>
+               </Shape>
+               <TextLine ID="r_43_tl_1"
+                         BASELINE="2382,2149 2414,2149 2459,2149 2504,2149 2549,2146 2594,2146 2638,2146 2683,2149 2728,2149 2773,2149 2817,2146 2862,2146 2907,2146 2952,2149 2997,2146 3041,2146 3086,2146 3131,2146 3176,2146 3220,2146 3265,2146 3310,2143"
+                         HEIGHT="63"
+                         WIDTH="935"
+                         VPOS="2101"
+                         HPOS="2369">
+                  <String ID="string_r_43_tl_1"
+                          HEIGHT="63"
+                          WIDTH="935"
+                          VPOS="2101"
+                          HPOS="2369"
+                          CONTENT="Eine solche Nebengebühr wird jetzt den bisherigen"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_2"
+                         BASELINE="2296,2191 2301,2194 2322,2191 2367,2191 2411,2191 2456,2191 2501,2191 2546,2188 2591,2191 2635,2191 2680,2191 2725,2191 2770,2191 2814,2188 2859,2188 2904,2188 2949,2188 2994,2188 3038,2188 3083,2188 3128,2188 3173,2188 3217,2185 3262,2185 3307,2185"
+                         HEIGHT="55"
+                         WIDTH="1023"
+                         VPOS="2146"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_2"
+                          HEIGHT="55"
+                          WIDTH="1023"
+                          VPOS="2146"
+                          HPOS="2281"
+                          CONTENT="Nebengebühren hinzugefügt. Eine Beteiligung am Rein¬"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_3"
+                         BASELINE="2296,2229 2298,2229 2322,2235 2367,2232 2411,2235 2456,2232 2501,2229 2546,2229 2591,2229 2635,2229 2680,2229 2725,2229 2770,2232 2814,2229 2859,2229 2904,2229 2949,2229 2994,2232 3038,2229 3083,2229 3128,2229 3173,2226 3217,2226 3262,2226 3307,2226"
+                         HEIGHT="55"
+                         WIDTH="1023"
+                         VPOS="2194"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_3"
+                          HEIGHT="55"
+                          WIDTH="1023"
+                          VPOS="2194"
+                          HPOS="2281"
+                          CONTENT="gewinn, zwar geringfügig im Prozentsatz, aber doch bedenk¬"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_4"
+                         BASELINE="2296,2273 2298,2274 2325,2277 2370,2277 2414,2271 2459,2271 2504,2271 2549,2274 2594,2274 2638,2271 2683,2274 2728,2274 2773,2274 2817,2271 2862,2271 2907,2271 2952,2271 2997,2271 3041,2271 3086,2271 3131,2271 3176,2268 3220,2271 3265,2268 3310,2268"
+                         HEIGHT="55"
+                         WIDTH="1023"
+                         VPOS="2234"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_4"
+                          HEIGHT="55"
+                          WIDTH="1023"
+                          VPOS="2234"
+                          HPOS="2281"
+                          CONTENT="lich als Präjudiz. Beteiligung am Reingewinn! Will der"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_5"
+                         BASELINE="2296,2316 2304,2319 2331,2319 2376,2319 2420,2319 2465,2316 2510,2313 2555,2313 2600,2316 2644,2313 2689,2316 2734,2316 2779,2316 2823,2316 2868,2313 2913,2316 2958,2313 3002,2313 3047,2313 3092,2313 3137,2313 3182,2313 3226,2313 3271,2310 3316,2310"
+                         HEIGHT="55"
+                         WIDTH="1028"
+                         VPOS="2276"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_5"
+                          HEIGHT="55"
+                          WIDTH="1028"
+                          VPOS="2276"
+                          HPOS="2281"
+                          CONTENT="Staat als erster eines jener Systeme sich aneignen, die bisher"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_6"
+                         BASELINE="2296,2395 2307,2408 2325,2405 2370,2402 2414,2402 2459,2402 2504,2400 2549,2397 2594,2400 2638,2397 2683,2400 2728,2400 2773,2400 2817,2397 2862,2400 2907,2400 2952,2397 2997,2397 3041,2397 3086,2397 3131,2397 3176,2397 3220,2394 3265,2394 3310,2391"
+                         HEIGHT="63"
+                         WIDTH="1023"
+                         VPOS="2356"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_6"
+                          HEIGHT="63"
+                          WIDTH="1023"
+                          VPOS="2356"
+                          HPOS="2281"
+                          CONTENT="zum Teil auch von Deutschland durchgeführt worden sind?"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_7"
+                         BASELINE="2296,2363 2301,2361 2331,2361 2376,2361 2420,2358 2465,2358 2510,2355 2555,2358 2600,2358 2644,2355 2689,2358 2734,2358 2779,2358 2823,2358 2868,2358 2913,2355 2958,2358 3002,2355 3047,2355 3092,2355 3137,2355 3182,2352 3226,2355 3271,2355 3316,2349"
+                         HEIGHT="58"
+                         WIDTH="1028"
+                         VPOS="2316"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_7"
+                          HEIGHT="58"
+                          WIDTH="1028"
+                          VPOS="2316"
+                          HPOS="2281"
+                          CONTENT="nur in den höchstorganisierten Fabriken von Amerika und"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_8"
+                         BASELINE="2296,2443 2298,2444 2331,2444 2376,2444 2420,2441 2465,2441 2510,2441 2555,2441 2600,2438 2644,2441 2689,2441 2734,2441 2779,2441 2823,2438 2868,2438 2913,2438 2958,2438 3002,2438 3047,2438 3092,2438 3137,2438 3182,2435 3226,2435 3271,2435 3316,2432"
+                         HEIGHT="60"
+                         WIDTH="1028"
+                         VPOS="2394"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_8"
+                          HEIGHT="60"
+                          WIDTH="1028"
+                          VPOS="2394"
+                          HPOS="2281"
+                          CONTENT="Will er die Angestellten am Gewinn beteiligen, ohne daß sie"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_9"
+                         BASELINE="2296,2485 2298,2486 2331,2486 2376,2486 2420,2486 2465,2486 2510,2483 2555,2483 2600,2483 2644,2483 2689,2483 2734,2483 2779,2480 2823,2480 2868,2480 2913,2483 2958,2480 3002,2480 3047,2480 3092,2480 3137,2477 3182,2480 3226,2480 3271,2477 3316,2474"
+                         HEIGHT="60"
+                         WIDTH="1028"
+                         VPOS="2439"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_9"
+                          HEIGHT="60"
+                          WIDTH="1028"
+                          VPOS="2439"
+                          HPOS="2281"
+                          CONTENT="auch teilhaben am Verlust? Was ist das für eine Gewinn¬"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_10"
+                         BASELINE="2296,2524 2304,2528 2334,2528 2379,2528 2423,2528 2468,2528 2513,2528 2558,2525 2602,2525 2647,2525 2692,2522 2737,2522 2782,2522 2826,2525 2871,2522 2916,2522 2961,2522 3005,2522 3050,2522 3095,2522 3140,2522 3185,2522 3229,2519 3274,2519 3319,2519"
+                         HEIGHT="62"
+                         WIDTH="1031"
+                         VPOS="2479"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_10"
+                          HEIGHT="62"
+                          WIDTH="1031"
+                          VPOS="2479"
+                          HPOS="2281"
+                          CONTENT="beteiligung, die heute schon eine Garantie des Erfolges in"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_11"
+                         BASELINE="2296,2563 2310,2570 2331,2567 2376,2570 2420,2570 2465,2567 2510,2570 2555,2567 2600,2567 2644,2567 2689,2567 2734,2567 2779,2567 2823,2564 2868,2564 2913,2564 2958,2564 3002,2564 3047,2564 3092,2564 3137,2564 3182,2564 3226,2564 3271,2561 3316,2561"
+                         HEIGHT="53"
+                         WIDTH="1028"
+                         VPOS="2521"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_11"
+                          HEIGHT="53"
+                          WIDTH="1028"
+                          VPOS="2521"
+                          HPOS="2281"
+                          CONTENT="ſich ſchließt, ganz unabhängig von den wirklichen Reſul⸗"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_12"
+                         BASELINE="2296,2605 2304,2608 2334,2611 2379,2611 2423,2608 2468,2608 2513,2608 2558,2608 2602,2605 2647,2608 2692,2605 2737,2608 2782,2605 2826,2608 2871,2605 2916,2605 2961,2605 3005,2602 3050,2602 3095,2605 3140,2602 3185,2602 3229,2602 3274,2602 3319,2600"
+                         HEIGHT="58"
+                         WIDTH="1031"
+                         VPOS="2561"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_12"
+                          HEIGHT="58"
+                          WIDTH="1031"
+                          VPOS="2561"
+                          HPOS="2281"
+                          CONTENT="taten und vom wirklichen Erträgnis? Wäre es da nicht"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_13"
+                         BASELINE="2296,2647 2304,2650 2337,2650 2382,2650 2426,2650 2471,2650 2516,2650 2561,2647 2605,2647 2650,2650 2695,2647 2740,2647 2785,2650 2829,2647 2874,2647 2919,2647 2964,2647 3008,2647 3053,2644 3098,2647 3143,2644 3188,2644 3232,2644 3277,2644 3322,2641"
+                         HEIGHT="50"
+                         WIDTH="1036"
+                         VPOS="2611"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_13"
+                          HEIGHT="50"
+                          WIDTH="1036"
+                          VPOS="2611"
+                          HPOS="2281"
+                          CONTENT="doch auch vom Standpunkte der anderen Beamtengruppen"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_14"
+                         BASELINE="2296,2691 2304,2695 2337,2695 2382,2695 2426,2692 2471,2692 2516,2692 2561,2692 2605,2692 2650,2692 2695,2692 2740,2692 2785,2689 2829,2692 2874,2692 2919,2689 2964,2686 3008,2686 3053,2686 3098,2686 3143,2686 3188,2686 3232,2683 3277,2683 3322,2683"
+                         HEIGHT="57"
+                         WIDTH="1036"
+                         VPOS="2649"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_14"
+                          HEIGHT="57"
+                          WIDTH="1036"
+                          VPOS="2649"
+                          HPOS="2281"
+                          CONTENT="beſſer, keine neuen Hoffnungen zu erwecken, keine Signale"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_15"
+                         BASELINE="2304,2743 2334,2740 2379,2737 2423,2737 2468,2734 2513,2734 2558,2734 2602,2731 2647,2734 2692,2734 2737,2734 2782,2731 2826,2731 2871,2731 2916,2731 2961,2731 3005,2731 3050,2731 3095,2731 3140,2728 3185,2728 3229,2728 3274,2728 3319,2728"
+                         HEIGHT="55"
+                         WIDTH="1023"
+                         VPOS="2691"
+                         HPOS="2291">
+                  <String ID="string_r_43_tl_15"
+                          HEIGHT="55"
+                          WIDTH="1023"
+                          VPOS="2691"
+                          HPOS="2291"
+                          CONTENT="zu geben, die ganz neue psychologische Einstellung zur Folge"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_16"
+                         BASELINE="2296,2779 2304,2779 2334,2779 2379,2779 2423,2779 2468,2776 2513,2776 2558,2776 2602,2776 2647,2776 2692,2776 2737,2776 2782,2776 2826,2773 2871,2773 2916,2773 2961,2773 3005,2773 3050,2770 3095,2770 3140,2770 3185,2770 3229,2770 3274,2770 3319,2770"
+                         HEIGHT="63"
+                         WIDTH="1031"
+                         VPOS="2731"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_16"
+                          HEIGHT="63"
+                          WIDTH="1031"
+                          VPOS="2731"
+                          HPOS="2281"
+                          CONTENT="haben? Wie ist es, wenn, sagen wir, im nächsten Jahre der"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_17"
+                         BASELINE="2296,2815 2304,2814 2337,2817 2382,2820 2426,2820 2471,2817 2516,2817 2561,2814 2605,2814 2650,2817 2695,2817 2740,2817 2785,2817 2829,2814 2874,2814 2919,2814 2964,2814 3008,2814 3053,2811 3098,2811 3143,2811 3188,2811 3232,2811 3277,2811 3322,2805"
+                         HEIGHT="43"
+                         WIDTH="1036"
+                         VPOS="2776"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_17"
+                          HEIGHT="43"
+                          WIDTH="1036"
+                          VPOS="2776"
+                          HPOS="2281"
+                          CONTENT="Gewinn von Post, Telegraph und Telephon wirklich an¬"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_18"
+                         BASELINE="2296,2859 2316,2859 2337,2862 2382,2862 2426,2859 2471,2859 2516,2856 2561,2859 2605,2859 2650,2859 2695,2859 2740,2859 2785,2859 2829,2859 2874,2856 2919,2856 2964,2856 3008,2853 3053,2853 3098,2853 3143,2853 3188,2853 3232,2853 3277,2853 3322,2856"
+                         HEIGHT="60"
+                         WIDTH="1038"
+                         VPOS="2814"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_18"
+                          HEIGHT="60"
+                          WIDTH="1038"
+                          VPOS="2814"
+                          HPOS="2281"
+                          CONTENT="ſteigt, der Generalpoſtdirektor jedoch den Wunſch hat,"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_19"
+                         BASELINE="2296,2904 2316,2904 2337,2904 2382,2904 2426,2904 2471,2904 2516,2901 2561,2901 2605,2901 2650,2901 2695,2901 2740,2901 2785,2901 2829,2901 2874,2898 2919,2898 2964,2898 3008,2895 3053,2898 3098,2895 3143,2898 3188,2898 3232,2895 3277,2895 3322,2898"
+                         HEIGHT="65"
+                         WIDTH="1036"
+                         VPOS="2854"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_19"
+                          HEIGHT="65"
+                          WIDTH="1036"
+                          VPOS="2854"
+                          HPOS="2281"
+                          CONTENT="stärkere Aufwendungen in sachlicher Beziehung zu machen,"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_20"
+                         BASELINE="2296,2944 2310,2943 2340,2946 2385,2946 2429,2946 2474,2946 2519,2946 2564,2943 2608,2943 2653,2943 2698,2943 2743,2943 2788,2943 2832,2940 2877,2940 2922,2940 2967,2940 3011,2940 3056,2937 3101,2937 3146,2937 3191,2937 3235,2940 3280,2937 3325,2937"
+                         HEIGHT="48"
+                         WIDTH="1038"
+                         VPOS="2901"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_20"
+                          HEIGHT="48"
+                          WIDTH="1038"
+                          VPOS="2901"
+                          HPOS="2281"
+                          CONTENT="bessere Apparate zu kaufen, die Maschmerie endgültig in"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_21"
+                         BASELINE="2296,2988 2310,2988 2334,2988 2379,2988 2423,2988 2468,2988 2513,2985 2558,2985 2602,2985 2647,2985 2692,2985 2737,2985 2782,2985 2826,2982 2871,2982 2916,2982 2961,2982 3005,2982 3050,2982 3095,2982 3140,2979 3185,2979 3229,2979 3274,2979 3319,2979"
+                         HEIGHT="47"
+                         WIDTH="1031"
+                         VPOS="2944"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_21"
+                          HEIGHT="47"
+                          WIDTH="1031"
+                          VPOS="2944"
+                          HPOS="2281"
+                          CONTENT="Ordnung zu bringen, das Zustellungswesen zu reformieren,"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_22"
+                         BASELINE="2296,3028 2313,3029 2337,3029 2382,3029 2426,3029 2471,3026 2516,3026 2561,3023 2605,3026 2650,3026 2695,3023 2740,3026 2785,3023 2829,3023 2874,3023 2919,3020 2964,3023 3008,3020 3053,3020 3098,3020 3143,3017 3188,3020 3232,3020 3277,3017 3322,3017"
+                         HEIGHT="51"
+                         WIDTH="1036"
+                         VPOS="2986"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_22"
+                          HEIGHT="51"
+                          WIDTH="1036"
+                          VPOS="2986"
+                          HPOS="2281"
+                          CONTENT="und was sonst an technischen Fortschritten und Neuerungen"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_23"
+                         BASELINE="2296,3071 2310,3071 2337,3071 2382,3071 2426,3071 2471,3068 2516,3068 2561,3065 2605,3065 2650,3065 2695,3068 2740,3065 2785,3065 2829,3065 2874,3062 2919,3065 2964,3062 3008,3062 3053,3062 3098,3062 3143,3062 3188,3059 3232,3059 3277,3059 3322,3056"
+                         HEIGHT="53"
+                         WIDTH="1036"
+                         VPOS="3024"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_23"
+                          HEIGHT="53"
+                          WIDTH="1036"
+                          VPOS="3024"
+                          HPOS="2281"
+                          CONTENT="möglich ist? Wird dann nicht sofort das gewerkschaftliche"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_24"
+                         BASELINE="2296,3110 2322,3110 2334,3113 2379,3113 2423,3110 2468,3110 2513,3110 2558,3110 2602,3110 2647,3107 2692,3107 2737,3107 2782,3107 2826,3107 2871,3104 2916,3104 2961,3104 3005,3104 3050,3101 3095,3104 3140,3101 3185,3101 3229,3101 3274,3101 3319,3095"
+                         HEIGHT="53"
+                         WIDTH="1033"
+                         VPOS="3064"
+                         HPOS="2279">
+                  <String ID="string_r_43_tl_24"
+                          HEIGHT="53"
+                          WIDTH="1033"
+                          VPOS="3064"
+                          HPOS="2279"
+                          CONTENT="Quos ego ertönen, wird nicht der Partner, der stille Gesell¬"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_25"
+                         BASELINE="2296,3151 2316,3152 2328,3152 2373,3155 2417,3155 2462,3152 2507,3152 2552,3152 2597,3152 2641,3152 2686,3149 2731,3149 2776,3149 2820,3149 2865,3149 2910,3149 2955,3149 3000,3146 3044,3146 3089,3146 3134,3146 3179,3143 3223,3146 3268,3143 3313,3140"
+                         HEIGHT="63"
+                         WIDTH="1026"
+                         VPOS="3104"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_25"
+                          HEIGHT="63"
+                          WIDTH="1026"
+                          VPOS="3104"
+                          HPOS="2281"
+                          CONTENT="schafter ohne gesellschaftliche Haftung sein Veto einlegen,"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_26"
+                         BASELINE="2296,3196 2313,3197 2343,3197 2388,3194 2432,3194 2477,3197 2522,3194 2567,3194 2611,3194 2656,3194 2701,3191 2746,3191 2791,3191 2835,3191 2880,3191 2925,3188 2970,3188 3014,3188 3059,3188 3104,3185 3149,3185 3194,3185 3238,3185 3283,3182 3328,3182"
+                         HEIGHT="43"
+                         WIDTH="1043"
+                         VPOS="3159"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_26"
+                          HEIGHT="43"
+                          WIDTH="1043"
+                          VPOS="3159"
+                          HPOS="2281"
+                          CONTENT="wird nicht wenigstens der Versuch unternommen werden, den"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_27"
+                         BASELINE="2296,3235 2316,3235 2334,3238 2379,3238 2423,3238 2468,3235 2513,3235 2558,3235 2602,3235 2647,3235 2692,3232 2737,3232 2782,3232 2826,3232 2871,3232 2916,3232 2961,3232 3005,3229 3050,3229 3095,3229 3140,3229 3185,3229 3229,3229 3274,3226 3319,3220"
+                         HEIGHT="62"
+                         WIDTH="1031"
+                         VPOS="3192"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_27"
+                          HEIGHT="62"
+                          WIDTH="1031"
+                          VPOS="3192"
+                          HPOS="2281"
+                          CONTENT="Mehrgewinn in erster Linie personellen Zwecken zuzu¬"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_28"
+                         BASELINE="2296,3276 2322,3277 2334,3280 2379,3280 2423,3277 2468,3277 2513,3277 2558,3277 2602,3277 2647,3277 2692,3277 2737,3274 2782,3274 2826,3274 2871,3274 2916,3274 2961,3274 3005,3274 3050,3274 3095,3274 3140,3271 3185,3271 3229,3268 3274,3268 3319,3268"
+                         HEIGHT="53"
+                         WIDTH="1033"
+                         VPOS="3234"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_28"
+                          HEIGHT="53"
+                          WIDTH="1033"
+                          VPOS="3234"
+                          HPOS="2281"
+                          CONTENT="führen? Was soll vermieden werden dadurch, daß man nicht"/>
+               </TextLine>
+               <TextLine ID="r_43_tl_29"
+                         BASELINE="2296,3324 2307,3322 2334,3322 2379,3322 2423,3322 2468,3322 2513,3322 2558,3322 2602,3319 2647,3319 2692,3319 2737,3319 2782,3316 2826,3316 2871,3316 2916,3316 2961,3316 3005,3316 3050,3316 3095,3316 3140,3313 3185,3313 3229,3313 3274,3313 3319,3310"
+                         HEIGHT="55"
+                         WIDTH="1031"
+                         VPOS="3279"
+                         HPOS="2281">
+                  <String ID="string_r_43_tl_29"
+                          HEIGHT="55"
+                          WIDTH="1031"
+                          VPOS="3279"
+                          HPOS="2281"
+                          CONTENT="von Gehaltszulage spricht und von Erhöhung. Es wäre"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_16" HEIGHT="182" WIDTH="828" VPOS="1405" HPOS="254">
+               <Shape>
+                  <Polygon POINTS="254,1405 1082,1405 1082,1587 254,1587"/>
+               </Shape>
+               <TextLine ID="r_16_tl_1"
+                         BASELINE="254,1480 256,1480 301,1477 346,1477 391,1474 435,1474 480,1471 525,1468 570,1471 614,1471 659,1471 704,1468 725,1465 764,1471 808,1468 853,1471 898,1468 943,1468 988,1465 1032,1462 1077,1459"
+                         HEIGHT="128"
+                         WIDTH="833"
+                         VPOS="1388"
+                         HPOS="240">
+                  <String ID="string_r_16_tl_1"
+                          HEIGHT="128"
+                          WIDTH="833"
+                          VPOS="1388"
+                          HPOS="240"
+                          CONTENT="Oesterreichs Energie¬"/>
+               </TextLine>
+               <TextLine ID="r_16_tl_2"
+                         BASELINE="483,1567 519,1564 564,1564 608,1564 653,1564 698,1564 743,1564 788,1561 832,1564 877,1564"
+                         HEIGHT="113"
+                         WIDTH="400"
+                         VPOS="1488"
+                         HPOS="470">
+                  <String ID="string_r_16_tl_2"
+                          HEIGHT="113"
+                          WIDTH="400"
+                          VPOS="1488"
+                          HPOS="470"
+                          CONTENT="wirtschaft."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_17" HEIGHT="158" WIDTH="1013" VPOS="1615" HPOS="174">
+               <Shape>
+                  <Polygon POINTS="174,1615 1187,1615 1187,1773 174,1773"/>
+               </Shape>
+               <TextLine ID="r_17_tl_1"
+                         BASELINE="200,1674 241,1674 286,1674 331,1674 376,1671 420,1671 465,1671 510,1671 555,1671 600,1671 644,1668 689,1668 734,1668 779,1665 823,1665 868,1668 913,1668 958,1668 1002,1665 1047,1665 1092,1662 1137,1662 1182,1662 1187,1660"
+                         HEIGHT="110"
+                         WIDTH="998"
+                         VPOS="1596"
+                         HPOS="185">
+                  <String ID="string_r_17_tl_1"
+                          HEIGHT="110"
+                          WIDTH="998"
+                          VPOS="1596"
+                          HPOS="185"
+                          CONTENT="Eine Spezialnummer der „Neuen"/>
+               </TextLine>
+               <TextLine ID="r_17_tl_2"
+                         BASELINE="465,1746 501,1746 546,1746 591,1746 635,1746 680,1740 725,1743 770,1740 814,1740 859,1740 904,1743"
+                         HEIGHT="95"
+                         WIDTH="450"
+                         VPOS="1681"
+                         HPOS="450">
+                  <String ID="string_r_17_tl_2"
+                          HEIGHT="95"
+                          WIDTH="450"
+                          VPOS="1681"
+                          HPOS="450"
+                          CONTENT="Freien Presse“"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_18" HEIGHT="65" WIDTH="939" VPOS="1795" HPOS="213">
+               <Shape>
+                  <Polygon POINTS="213,1795 1152,1795 1152,1860 213,1860"/>
+               </Shape>
+               <TextLine ID="r_18_tl_1"
+                         BASELINE="220,1841 253,1838 298,1838 343,1841 388,1838 432,1838 477,1835 522,1838 567,1835 611,1835 656,1835 701,1835 746,1832 791,1835 835,1832 880,1832 925,1832 970,1829 1014,1829 1059,1829 1104,1829 1149,1829 1152,1830"
+                         HEIGHT="95"
+                         WIDTH="941"
+                         VPOS="1763"
+                         HPOS="205">
+                  <String ID="string_r_18_tl_1"
+                          HEIGHT="95"
+                          WIDTH="941"
+                          VPOS="1763"
+                          HPOS="205"
+                          CONTENT="Erſcheinungstag: Samstag 5. Dezember."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_19" HEIGHT="114" WIDTH="1021" VPOS="1887" HPOS="172">
+               <Shape>
+                  <Polygon POINTS="172,1887 1193,1887 1193,2001 172,2001"/>
+               </Shape>
+               <TextLine ID="r_19_tl_1"
+                         BASELINE="256,1919 301,1928 346,1928 391,1928 435,1928 480,1925 525,1925 570,1925 614,1922 659,1919 704,1919 749,1919 794,1916 838,1919 883,1916 928,1916 973,1916 1017,1916 1062,1916 1107,1916 1152,1916 1182,1922 1193,1924"
+                         HEIGHT="73"
+                         WIDTH="943"
+                         VPOS="1868"
+                         HPOS="243">
+                  <String ID="string_r_19_tl_1"
+                          HEIGHT="73"
+                          WIDTH="943"
+                          VPOS="1868"
+                          HPOS="243"
+                          CONTENT="Die „Neue Freie Presse“ wird am Samstag"/>
+               </TextLine>
+               <TextLine ID="r_19_tl_2"
+                         BASELINE="172,1982 173,1982 217,1982 262,1979 307,1979 352,1982 397,1982 441,1979 486,1976 531,1976 576,1976 620,1973 665,1973 710,1973 755,1970 800,1970 844,1970 889,1970"
+                         HEIGHT="86"
+                         WIDTH="728"
+                         VPOS="1923"
+                         HPOS="155">
+                  <String ID="string_r_19_tl_2"
+                          HEIGHT="86"
+                          WIDTH="728"
+                          VPOS="1923"
+                          HPOS="155"
+                          CONTENT="den 5. Dezember unter dem Titel"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_20" HEIGHT="81" WIDTH="930" VPOS="2006" HPOS="223">
+               <Shape>
+                  <Polygon POINTS="223,2006 1153,2006 1153,2087 223,2087"/>
+               </Shape>
+               <TextLine ID="r_20_tl_1"
+                         BASELINE="223,2068 259,2062 304,2065 349,2062 394,2062 438,2059 483,2059 528,2059 573,2056 617,2053 662,2056 707,2056 752,2056 797,2056 841,2053 886,2053 931,2053 976,2053 1020,2053 1065,2053 1110,2053 1153,2050"
+                         HEIGHT="103"
+                         WIDTH="936"
+                         VPOS="1991"
+                         HPOS="210">
+                  <String ID="string_r_20_tl_1"
+                          HEIGHT="103"
+                          WIDTH="936"
+                          VPOS="1991"
+                          HPOS="210"
+                          CONTENT="Oeſterreichs Euergiewirtſchaft"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_36" HEIGHT="46" WIDTH="317" VPOS="1506" HPOS="1885">
+               <Shape>
+                  <Polygon POINTS="1885,1506 2202,1506 2202,1552 1885,1552"/>
+               </Shape>
+               <TextLine ID="r_36_tl_1"
+                         BASELINE="1885,1525 1928,1534 1973,1534 2017,1534 2062,1531 2107,1531 2152,1531 2197,1531 2202,1531"
+                         HEIGHT="70"
+                         WIDTH="325"
+                         VPOS="1481"
+                         HPOS="1871">
+                  <String ID="string_r_36_tl_1"
+                          HEIGHT="70"
+                          WIDTH="325"
+                          VPOS="1481"
+                          HPOS="1871"
+                          CONTENT="Wien, 1. Dezember."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_44" HEIGHT="644" WIDTH="1029" VPOS="1485" HPOS="2283">
+               <Shape>
+                  <Polygon POINTS="2283,1485 3312,1485 3312,2129 2283,2129"/>
+               </Shape>
+               <TextLine ID="r_44_tl_1"
+                         BASELINE="2283,1521 2295,1519 2313,1519 2358,1522 2402,1522 2447,1522 2492,1522 2537,1522 2582,1522 2626,1519 2671,1522 2716,1519 2761,1519 2805,1519 2850,1519 2895,1519 2940,1519 2985,1519 3029,1516 3074,1516 3119,1516 3164,1516 3208,1516 3253,1516 3298,1516"
+                         HEIGHT="65"
+                         WIDTH="1023"
+                         VPOS="1473"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_1"
+                          HEIGHT="65"
+                          WIDTH="1023"
+                          VPOS="1473"
+                          HPOS="2269"
+                          CONTENT="für gesteigerten Nutzen des Volksganzen, in Wirklichkeit,"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_2"
+                         BASELINE="2295,1564 2316,1564 2361,1564 2405,1564 2450,1564 2495,1564 2540,1564 2585,1564 2629,1564 2674,1564 2719,1561 2764,1561 2808,1561 2853,1561 2898,1561 2943,1561 2988,1561 3032,1558 3077,1561 3122,1561 3167,1558 3211,1561 3256,1558 3301,1558"
+                         HEIGHT="58"
+                         WIDTH="1013"
+                         VPOS="1518"
+                         HPOS="2281">
+                  <String ID="string_r_44_tl_2"
+                          HEIGHT="58"
+                          WIDTH="1013"
+                          VPOS="1518"
+                          HPOS="2281"
+                          CONTENT="je nun, in Wirklichkeit war es das, was ja überhaupt der"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_3"
+                         BASELINE="2283,1602 2286,1602 2319,1605 2364,1605 2408,1605 2453,1605 2498,1602 2543,1602 2588,1602 2632,1602 2677,1605 2722,1602 2767,1602 2811,1602 2856,1602 2901,1602 2946,1602 2991,1600 3035,1600 3080,1600 3125,1600 3170,1600 3214,1600 3259,1597 3304,1597"
+                         HEIGHT="50"
+                         WIDTH="1028"
+                         VPOS="1566"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_3"
+                          HEIGHT="50"
+                          WIDTH="1028"
+                          VPOS="1566"
+                          HPOS="2269"
+                          CONTENT="Grundfehler bei der Besoldung der Postler ist, nämlich eine"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_4"
+                         BASELINE="2283,1642 2289,1644 2322,1647 2367,1644 2411,1647 2456,1647 2501,1647 2546,1647 2591,1647 2635,1644 2680,1647 2725,1647 2770,1644 2814,1644 2859,1644 2904,1644 2949,1644 2994,1644 3038,1641 3083,1641 3128,1641 3173,1641 3217,1641 3262,1641 3307,1638"
+                         HEIGHT="57"
+                         WIDTH="1035"
+                         VPOS="1601"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_4"
+                          HEIGHT="57"
+                          WIDTH="1035"
+                          VPOS="1601"
+                          HPOS="2269"
+                          CONTENT="neue Nebengebühr. Niemand vermag in das Chaos Einblick"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_5"
+                         BASELINE="2283,1688 2286,1689 2319,1689 2364,1689 2408,1689 2453,1689 2498,1686 2543,1686 2588,1686 2632,1686 2677,1686 2722,1686 2767,1689 2811,1686 2856,1686 2901,1686 2946,1686 2991,1683 3035,1686 3080,1683 3125,1683 3170,1683 3214,1683 3259,1683 3304,1680"
+                         HEIGHT="55"
+                         WIDTH="1030"
+                         VPOS="1653"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_5"
+                          HEIGHT="55"
+                          WIDTH="1030"
+                          VPOS="1653"
+                          HPOS="2269"
+                          CONTENT="zu nehmen, in das Drahtgewirre dieser Zuwendungen."/>
+               </TextLine>
+               <TextLine ID="r_44_tl_6"
+                         BASELINE="2283,1730 2286,1731 2316,1731 2361,1731 2405,1731 2450,1728 2495,1728 2540,1728 2585,1728 2629,1728 2674,1728 2719,1728 2764,1728 2808,1728 2853,1728 2898,1725 2943,1725 2988,1725 3032,1725 3077,1725 3122,1725 3167,1725 3211,1725 3256,1722 3301,1722"
+                         HEIGHT="55"
+                         WIDTH="1025"
+                         VPOS="1688"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_6"
+                          HEIGHT="55"
+                          WIDTH="1025"
+                          VPOS="1688"
+                          HPOS="2269"
+                          CONTENT="Niemand weiß auswendig, welche Prozentsätze gelten und"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_7"
+                         BASELINE="2283,1772 2286,1773 2325,1773 2370,1773 2414,1773 2459,1773 2504,1773 2549,1773 2594,1773 2638,1773 2683,1770 2728,1770 2773,1770 2817,1770 2862,1767 2907,1767 2952,1770 2997,1770 3041,1767 3086,1767 3131,1767 3176,1767 3220,1764 3265,1764 3310,1761"
+                         HEIGHT="63"
+                         WIDTH="1035"
+                         VPOS="1723"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_7"
+                          HEIGHT="63"
+                          WIDTH="1035"
+                          VPOS="1723"
+                          HPOS="2269"
+                          CONTENT="welche Motivierungen in dieser oder jener Kategorie zum Vor¬"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_8"
+                         BASELINE="2283,1814 2292,1817 2325,1817 2370,1814 2414,1814 2459,1814 2504,1814 2549,1814 2594,1814 2638,1811 2683,1811 2728,1811 2773,1811 2817,1811 2862,1811 2907,1811 2952,1811 2997,1808 3041,1808 3086,1808 3131,1808 3176,1808 3220,1808 3265,1805 3310,1802"
+                         HEIGHT="63"
+                         WIDTH="1035"
+                         VPOS="1768"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_8"
+                          HEIGHT="63"
+                          WIDTH="1035"
+                          VPOS="1768"
+                          HPOS="2269"
+                          CONTENT="schein kommen. Oft ist es bloß ein Schlagwort für die Aus¬"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_9"
+                         BASELINE="2283,1852 2298,1856 2325,1859 2370,1859 2414,1856 2459,1859 2504,1856 2549,1856 2594,1856 2638,1856 2683,1853 2728,1853 2773,1853 2817,1853 2862,1856 2907,1853 2952,1853 2997,1850 3041,1850 3086,1850 3131,1850 3176,1850 3220,1850 3265,1850 3310,1847"
+                         HEIGHT="60"
+                         WIDTH="1035"
+                         VPOS="1816"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_9"
+                          HEIGHT="60"
+                          WIDTH="1035"
+                          VPOS="1816"
+                          HPOS="2269"
+                          CONTENT="gleichung, irgendein Trost dafür, daß andere Aehnliches er¬"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_10"
+                         BASELINE="2283,1898 2292,1901 2325,1901 2370,1901 2414,1898 2459,1898 2504,1901 2549,1898 2594,1898 2638,1898 2683,1898 2728,1898 2773,1895 2817,1895 2862,1895 2907,1895 2952,1895 2997,1895 3041,1895 3086,1892 3131,1892 3176,1892 3220,1892 3265,1892 3310,1895"
+                         HEIGHT="53"
+                         WIDTH="1035"
+                         VPOS="1858"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_10"
+                          HEIGHT="53"
+                          WIDTH="1035"
+                          VPOS="1858"
+                          HPOS="2269"
+                          CONTENT="halten, eine Umschreibung des berühmten Begriffes der"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_11"
+                         BASELINE="2283,1934 2292,1937 2322,1943 2367,1943 2411,1943 2456,1943 2501,1943 2546,1943 2591,1940 2635,1943 2680,1940 2725,1940 2770,1940 2814,1940 2859,1940 2904,1940 2949,1937 2994,1937 3038,1937 3083,1937 3128,1934 3173,1934 3217,1934 3262,1931 3307,1931"
+                         HEIGHT="60"
+                         WIDTH="1035"
+                         VPOS="1893"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_11"
+                          HEIGHT="60"
+                          WIDTH="1035"
+                          VPOS="1893"
+                          HPOS="2269"
+                          CONTENT="Spannung, der genau so geheiligt ist wie alle anderen Be¬"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_12"
+                         BASELINE="2283,1983 2292,1988 2325,1985 2370,1988 2414,1985 2459,1985 2504,1985 2549,1982 2594,1982 2638,1982 2683,1982 2728,1982 2773,1982 2817,1982 2862,1982 2907,1982 2952,1979 2997,1976 3041,1982 3086,1979 3131,1976 3176,1979 3220,1976 3265,1973 3310,1973"
+                         HEIGHT="52"
+                         WIDTH="1035"
+                         VPOS="1941"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_12"
+                          HEIGHT="52"
+                          WIDTH="1035"
+                          VPOS="1941"
+                          HPOS="2269"
+                          CONTENT="griffe, die der wahren Verfassung dieses Staates das Ge¬"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_13"
+                         BASELINE="2283,2021 2298,2026 2325,2026 2370,2026 2414,2023 2459,2026 2504,2026 2549,2023 2594,2023 2638,2023 2683,2023 2728,2023 2773,2023 2817,2023 2862,2023 2907,2023 2952,2020 2997,2020 3041,2020 3086,2020 3131,2020 3176,2020 3220,2017 3265,2017 3310,2017"
+                         HEIGHT="71"
+                         WIDTH="1038"
+                         VPOS="1973"
+                         HPOS="2266">
+                  <String ID="string_r_44_tl_13"
+                          HEIGHT="71"
+                          WIDTH="1038"
+                          VPOS="1973"
+                          HPOS="2266"
+                          CONTENT="präge geben. Eines Staates, für welchen das häßliche Wort"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_14"
+                         BASELINE="2283,2060 2298,2065 2316,2065 2361,2065 2405,2065 2450,2065 2495,2065 2540,2065 2585,2065 2629,2065 2674,2062 2719,2065 2764,2065 2808,2062 2853,2062 2898,2062 2943,2062 2988,2065 3032,2065 3077,2062 3122,2062 3167,2059 3211,2059 3256,2062 3301,2056"
+                         HEIGHT="75"
+                         WIDTH="1025"
+                         VPOS="2026"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_14"
+                          HEIGHT="75"
+                          WIDTH="1025"
+                          VPOS="2026"
+                          HPOS="2269"
+                          CONTENT="vergewerkschaftlicht geprägt werden müßte, im Gegensat"/>
+               </TextLine>
+               <TextLine ID="r_44_tl_15"
+                         BASELINE="2283,2110 2292,2116 2307,2113 2352,2110 2397,2110 2441,2107 2486,2110 2531,2107 2576,2107 2620,2107 2665,2107 2710,2107 2755,2107 2800,2104 2844,2104 2889,2107 2934,2104 2979,2107 3023,2107 3068,2104 3113,2104 3158,2101"
+                         HEIGHT="75"
+                         WIDTH="885"
+                         VPOS="2061"
+                         HPOS="2269">
+                  <String ID="string_r_44_tl_15"
+                          HEIGHT="75"
+                          WIDTH="885"
+                          VPOS="2061"
+                          HPOS="2269"
+                          CONTENT="zu dem sozialistischen Begriff der Vergesellschaftung"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_27" HEIGHT="181" WIDTH="1017" VPOS="3324" HPOS="197">
+               <Shape>
+                  <Polygon POINTS="197,3324 1214,3324 1214,3505 197,3505"/>
+               </Shape>
+               <TextLine ID="r_27_tl_1"
+                         BASELINE="283,3364 310,3367 355,3367 400,3364 444,3361 489,3361 534,3361 579,3361 623,3361 668,3361 713,3361 758,3361 802,3361 847,3361 892,3358 937,3358 982,3358 1026,3355 1071,3358 1116,3355 1161,3355 1205,3349 1214,3347"
+                         HEIGHT="110"
+                         WIDTH="938"
+                         VPOS="3269"
+                         HPOS="270">
+                  <String ID="string_r_27_tl_1"
+                          HEIGHT="110"
+                          WIDTH="938"
+                          VPOS="3269"
+                          HPOS="270"
+                          CONTENT="Dr. Josef Maschat, Generaldirektor der öster¬"/>
+               </TextLine>
+               <TextLine ID="r_27_tl_2"
+                         BASELINE="197,3429 214,3426 259,3426 304,3426 349,3426 394,3423 438,3423 483,3423 528,3423 573,3423 617,3423 662,3423 707,3420 752,3420 797,3417 841,3414 886,3417 931,3414 976,3417 1020,3417 1065,3414 1110,3414 1155,3414 1200,3414"
+                         HEIGHT="75"
+                         WIDTH="1010"
+                         VPOS="3367"
+                         HPOS="183">
+                  <String ID="string_r_27_tl_2"
+                          HEIGHT="75"
+                          WIDTH="1010"
+                          VPOS="3367"
+                          HPOS="183"
+                          CONTENT="reichiſchen Bundesbahnen: „Die Elektrifizierung"/>
+               </TextLine>
+               <TextLine ID="r_27_tl_3"
+                         BASELINE="197,3486 208,3486 253,3486 298,3483 343,3486 388,3483 432,3483 477,3483 522,3480 567,3480 611,3480 656,3480 701,3477 746,3480 791,3477 835,3474 880,3474 925,3474 970,3474 1014,3471 1059,3474"
+                         HEIGHT="68"
+                         WIDTH="873"
+                         VPOS="3434"
+                         HPOS="183">
+                  <String ID="string_r_27_tl_3"
+                          HEIGHT="68"
+                          WIDTH="873"
+                          VPOS="3434"
+                          HPOS="183"
+                          CONTENT="der österreichischen Bundesbahnen."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_39" HEIGHT="178" WIDTH="1019" VPOS="3401" HPOS="1255">
+               <Shape>
+                  <Polygon POINTS="1255,3401 2274,3401 2274,3579 1255,3579"/>
+               </Shape>
+               <TextLine ID="r_39_tl_1"
+                         BASELINE="1337,3432 1370,3435 1414,3438 1459,3435 1504,3435 1549,3432 1594,3432 1638,3432 1683,3432 1728,3432 1773,3432 1817,3432 1862,3432 1907,3432 1952,3429 1997,3429 2041,3429 2086,3429 2131,3429 2176,3429 2220,3429 2265,3426 2274,3438"
+                         HEIGHT="75"
+                         WIDTH="936"
+                         VPOS="3379"
+                         HPOS="1323">
+                  <String ID="string_r_39_tl_1"
+                          HEIGHT="75"
+                          WIDTH="936"
+                          VPOS="3379"
+                          HPOS="1323"
+                          CONTENT="Dr. Karl Karlik, Direktor der Landeshypo¬"/>
+               </TextLine>
+               <TextLine ID="r_39_tl_2"
+                         BASELINE="1255,3501 1280,3498 1325,3498 1370,3498 1414,3495 1459,3495 1504,3495 1549,3492 1594,3492 1638,3492 1683,3492 1728,3492 1773,3492 1817,3492 1862,3492 1907,3492 1952,3489 1997,3489 2041,3489 2086,3489 2131,3489 2176,3486 2220,3486 2265,3483"
+                         HEIGHT="70"
+                         WIDTH="1020"
+                         VPOS="3444"
+                         HPOS="1241">
+                  <String ID="string_r_39_tl_2"
+                          HEIGHT="70"
+                          WIDTH="1020"
+                          VPOS="3444"
+                          HPOS="1241"
+                          CONTENT="thekenauftalt für Niederösterreich: „Die öſterreichi⸗"/>
+               </TextLine>
+               <TextLine ID="r_39_tl_3"
+                         BASELINE="1255,3557 1265,3561 1310,3558 1355,3558 1400,3555 1444,3555 1489,3552 1534,3552 1579,3552 1623,3552 1668,3552 1713,3549 1758,3549 1802,3549 1847,3549 1892,3549 1937,3549 1982,3546 2026,3546 2071,3543"
+                         HEIGHT="75"
+                         WIDTH="823"
+                         VPOS="3504"
+                         HPOS="1241">
+                  <String ID="string_r_39_tl_3"
+                          HEIGHT="75"
+                          WIDTH="823"
+                          VPOS="3504"
+                          HPOS="1241"
+                          CONTENT="schen Landeshypothekenanstalten."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_47" HEIGHT="172" WIDTH="1017" VPOS="3392" HPOS="2311">
+               <Shape>
+                  <Polygon POINTS="2311,3392 3328,3392 3328,3564 2311,3564"/>
+               </Shape>
+               <TextLine ID="r_47_tl_1"
+                         BASELINE="2388,3435 2432,3438 2477,3438 2522,3438 2567,3438 2611,3438 2656,3438 2701,3438 2746,3435 2791,3435 2835,3435 2880,3432 2925,3432 2970,3432 3014,3432 3059,3429 3104,3429 3149,3426 3194,3426 3238,3426 3283,3423 3328,3423"
+                         HEIGHT="73"
+                         WIDTH="950"
+                         VPOS="3379"
+                         HPOS="2374">
+                  <String ID="string_r_47_tl_1"
+                          HEIGHT="73"
+                          WIDTH="950"
+                          VPOS="3379"
+                          HPOS="2374"
+                          CONTENT="Die 30. Forlſetzung des Romans „Das ſchwim⸗"/>
+               </TextLine>
+               <TextLine ID="r_47_tl_2"
+                         BASELINE="2311,3490 2316,3498 2331,3498 2376,3498 2420,3495 2465,3495 2510,3495 2555,3495 2600,3495 2644,3492 2689,3492 2734,3492 2779,3492 2823,3492 2868,3492 2913,3492 2958,3489 3002,3489 3047,3489 3092,3489 3137,3486 3182,3486 3226,3486 3271,3486 3316,3483"
+                         HEIGHT="72"
+                         WIDTH="1015"
+                         VPOS="3437"
+                         HPOS="2294">
+                  <String ID="string_r_47_tl_2"
+                          HEIGHT="72"
+                          WIDTH="1015"
+                          VPOS="3437"
+                          HPOS="2294"
+                          CONTENT="mende Wrack“ von Rudolf Jeremias Kreut"/>
+               </TextLine>
+               <TextLine ID="r_47_tl_3"
+                         BASELINE="2313,3546 2358,3549 2402,3546 2447,3546 2492,3546 2537,3543 2582,3543 2626,3543 2671,3540 2716,3540 2761,3540"
+                         HEIGHT="50"
+                         WIDTH="455"
+                         VPOS="3504"
+                         HPOS="2299">
+                  <String ID="string_r_47_tl_3"
+                          HEIGHT="50"
+                          WIDTH="455"
+                          VPOS="3504"
+                          HPOS="2299"
+                          CONTENT="befindet sich auf Seite 15."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_28" HEIGHT="188" WIDTH="1018" VPOS="3506" HPOS="198">
+               <Shape>
+                  <Polygon POINTS="198,3506 1216,3506 1216,3694 198,3694"/>
+               </Shape>
+               <TextLine ID="r_28_tl_1"
+                         BASELINE="283,3549 310,3552 355,3549 400,3549 444,3549 489,3549 534,3549 579,3549 623,3549 668,3546 713,3546 758,3546 802,3546 847,3543 892,3543 937,3543 982,3543 1026,3540 1071,3540 1116,3540 1161,3537 1205,3543 1216,3546"
+                         HEIGHT="97"
+                         WIDTH="941"
+                         VPOS="3492"
+                         HPOS="270">
+                  <String ID="string_r_28_tl_1"
+                          HEIGHT="97"
+                          WIDTH="941"
+                          VPOS="3492"
+                          HPOS="270"
+                          CONTENT="Sektionschef Ingenieur Paul Dittes:"/>
+               </TextLine>
+               <TextLine ID="r_28_tl_2"
+                         BASELINE="200,3620 220,3617 265,3614 310,3614 355,3611 400,3611 444,3608 489,3608 534,3608 579,3608 623,3608 668,3605 713,3605 758,3605 802,3602 847,3602 892,3602 937,3602 982,3602 1026,3602 1071,3602 1116,3602 1161,3602 1205,3602"
+                         HEIGHT="83"
+                         WIDTH="1013"
+                         VPOS="3549"
+                         HPOS="185">
+                  <String ID="string_r_28_tl_2"
+                          HEIGHT="83"
+                          WIDTH="1013"
+                          VPOS="3549"
+                          HPOS="185"
+                          CONTENT="„Die Fortführung der Elektrifizierung"/>
+               </TextLine>
+               <TextLine ID="r_28_tl_3"
+                         BASELINE="198,3674 223,3674 268,3671 313,3671 358,3671 402,3668 447,3668 492,3668 537,3668 582,3668 626,3668 671,3665 716,3665 761,3665 805,3662 850,3662 895,3662 940,3662 985,3662 1029,3659 1074,3650"
+                         HEIGHT="67"
+                         WIDTH="886"
+                         VPOS="3617"
+                         HPOS="185">
+                  <String ID="string_r_28_tl_3"
+                          HEIGHT="67"
+                          WIDTH="886"
+                          VPOS="3617"
+                          HPOS="185"
+                          CONTENT="der österreichischen Bundesbahnen.“"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_29" HEIGHT="133" WIDTH="1022" VPOS="3693" HPOS="199">
+               <Shape>
+                  <Polygon POINTS="199,3693 1221,3693 1221,3826 199,3826"/>
+               </Shape>
+               <TextLine ID="r_29_tl_1"
+                         BASELINE="274,3740 316,3740 361,3740 405,3740 450,3740 495,3737 540,3737 585,3734 629,3734 674,3734 719,3734 764,3731 808,3731 853,3731 898,3728 943,3731 988,3728 1032,3728 1077,3728 1122,3728 1167,3728 1211,3728 1221,3730"
+                         HEIGHT="83"
+                         WIDTH="956"
+                         VPOS="3674"
+                         HPOS="260">
+                  <String ID="string_r_29_tl_1"
+                          HEIGHT="83"
+                          WIDTH="956"
+                          VPOS="3674"
+                          HPOS="260"
+                          CONTENT="Oberbaurat Ingenieur M. Gerbel:"/>
+               </TextLine>
+               <TextLine ID="r_29_tl_2"
+                         BASELINE="200,3811 211,3808 256,3802 301,3802 346,3800 391,3800 435,3797 480,3797 525,3797 570,3797 614,3797 659,3797 704,3794 749,3794 794,3794 838,3791 883,3791 928,3791 973,3791 1017,3788 1062,3791 1107,3788 1152,3788 1197,3791 1221,3795"
+                         HEIGHT="92"
+                         WIDTH="1033"
+                         VPOS="3737"
+                         HPOS="185">
+                  <String ID="string_r_29_tl_2"
+                          HEIGHT="92"
+                          WIDTH="1033"
+                          VPOS="3737"
+                          HPOS="185"
+                          CONTENT="„Unausgenützte Quellen billiger Kraft.“"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_40" HEIGHT="245" WIDTH="1015" VPOS="3582" HPOS="1258">
+               <Shape>
+                  <Polygon POINTS="1258,3582 2273,3582 2273,3827 1258,3827"/>
+               </Shape>
+               <TextLine ID="r_40_tl_1"
+                         BASELINE="1346,3623 1373,3623 1417,3620 1462,3620 1507,3623 1552,3620 1597,3620 1641,3617 1686,3617 1731,3617 1776,3617 1820,3617 1865,3617 1910,3614 1955,3614 2000,3617 2044,3614 2089,3614 2134,3617 2179,3614 2223,3614 2268,3614"
+                         HEIGHT="70"
+                         WIDTH="928"
+                         VPOS="3564"
+                         HPOS="1333">
+                  <String ID="string_r_40_tl_1"
+                          HEIGHT="70"
+                          WIDTH="928"
+                          VPOS="3564"
+                          HPOS="1333"
+                          CONTENT="Dr.=Ing. Hammerschmidt, Direktor der"/>
+               </TextLine>
+               <TextLine ID="r_40_tl_2"
+                         BASELINE="1258,3686 1283,3686 1328,3686 1373,3683 1417,3683 1462,3683 1507,3683 1552,3680 1597,3677 1641,3677 1686,3677 1731,3677 1776,3677 1820,3677 1865,3677 1910,3677 1955,3674 2000,3677 2044,3677 2089,3677 2134,3677 2179,3677 2223,3674 2268,3674"
+                         HEIGHT="80"
+                         WIDTH="1018"
+                         VPOS="3622"
+                         HPOS="1243">
+                  <String ID="string_r_40_tl_2"
+                          HEIGHT="80"
+                          WIDTH="1018"
+                          VPOS="3622"
+                          HPOS="1243"
+                          CONTENT="Württembergischen Elektrizitäts=A.G., Stuttgart: „Die"/>
+               </TextLine>
+               <TextLine ID="r_40_tl_3"
+                         BASELINE="1258,3741 1265,3743 1280,3740 1325,3743 1370,3743 1414,3743 1459,3740 1504,3740 1549,3740 1594,3737 1638,3737 1683,3734 1728,3737 1773,3737 1817,3734 1862,3737 1907,3737 1952,3737 1997,3734 2041,3737 2086,3737 2131,3734 2176,3737 2220,3737 2265,3734"
+                         HEIGHT="75"
+                         WIDTH="1016"
+                         VPOS="3684"
+                         HPOS="1243">
+                  <String ID="string_r_40_tl_3"
+                          HEIGHT="75"
+                          WIDTH="1016"
+                          VPOS="3684"
+                          HPOS="1243"
+                          CONTENT="Elektrizitätsverſorgung der Stadt Salz⸗"/>
+               </TextLine>
+               <TextLine ID="r_40_tl_4"
+                         BASELINE="1258,3801 1265,3802 1268,3802 1313,3802 1358,3802 1402,3802 1447,3802 1492,3800 1537,3800 1582,3800 1626,3797 1671,3797 1716,3797 1761,3797 1805,3797 1850,3797 1895,3797 1942,3796"
+                         HEIGHT="70"
+                         WIDTH="693"
+                         VPOS="3754"
+                         HPOS="1243">
+                  <String ID="string_r_40_tl_4"
+                          HEIGHT="70"
+                          WIDTH="693"
+                          VPOS="3754"
+                          HPOS="1243"
+                          CONTENT="burg und ihrer Umgebung."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_48" HEIGHT="82" WIDTH="334" VPOS="3638" HPOS="2654">
+               <Shape>
+                  <Polygon POINTS="2654,3638 2988,3638 2988,3720 2654,3720"/>
+               </Shape>
+               <TextLine ID="r_48_tl_1"
+                         BASELINE="2654,3704 2677,3701 2722,3701 2767,3701 2811,3698 2856,3698 2901,3698 2946,3698 2988,3701"
+                         HEIGHT="103"
+                         WIDTH="340"
+                         VPOS="3624"
+                         HPOS="2641">
+                  <String ID="string_r_48_tl_1"
+                          HEIGHT="103"
+                          WIDTH="340"
+                          VPOS="3624"
+                          HPOS="2641"
+                          CONTENT="Feuilleton."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_49" HEIGHT="36" WIDTH="231" VPOS="3591" HPOS="3047">
+               <Shape>
+                  <Polygon POINTS="3047,3591 3278,3591 3278,3627 3047,3627"/>
+               </Shape>
+               <TextLine ID="r_49_tl_1"
+                         BASELINE="3047,3612 3089,3614 3134,3614 3179,3614 3223,3614 3268,3614 3278,3614"
+                         HEIGHT="58"
+                         WIDTH="238"
+                         VPOS="3574"
+                         HPOS="3034">
+                  <String ID="string_r_49_tl_1"
+                          HEIGHT="58"
+                          WIDTH="238"
+                          VPOS="3574"
+                          HPOS="3034"
+                          CONTENT="Nachdruck verboten."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_50" HEIGHT="71" WIDTH="944" VPOS="3762" HPOS="2347">
+               <Shape>
+                  <Polygon POINTS="2347,3762 3291,3762 3291,3833 2347,3833"/>
+               </Shape>
+               <TextLine ID="r_50_tl_1"
+                         BASELINE="2347,3805 2349,3805 2394,3805 2438,3800 2483,3802 2528,3802 2573,3802 2617,3800 2662,3800 2707,3800 2752,3800 2797,3800 2841,3800 2886,3800 2931,3800 2976,3800 3020,3797 3065,3800 3110,3797 3155,3797 3200,3797 3244,3794 3289,3794"
+                         HEIGHT="82"
+                         WIDTH="948"
+                         VPOS="3742"
+                         HPOS="2334">
+                  <String ID="string_r_50_tl_1"
+                          HEIGHT="82"
+                          WIDTH="948"
+                          VPOS="3742"
+                          HPOS="2334"
+                          CONTENT="Das 90jährige Geburtstagskind in Aulestad."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_30" HEIGHT="182" WIDTH="1021" VPOS="3828" HPOS="203">
+               <Shape>
+                  <Polygon POINTS="203,3828 1224,3828 1224,4010 203,4010"/>
+               </Shape>
+               <TextLine ID="r_30_tl_1"
+                         BASELINE="268,3868 274,3868 319,3868 364,3865 408,3865 453,3865 498,3865 543,3865 588,3865 632,3865 677,3862 722,3862 767,3862 811,3862 856,3862 901,3859 946,3859 991,3859 1035,3856 1080,3856 1125,3856 1170,3856 1214,3856 1224,3868"
+                         HEIGHT="70"
+                         WIDTH="953"
+                         VPOS="3804"
+                         HPOS="255">
+                  <String ID="string_r_30_tl_1"
+                          HEIGHT="70"
+                          WIDTH="953"
+                          VPOS="3804"
+                          HPOS="255"
+                          CONTENT="Dr. techn. F. Magyar, Professor an der"/>
+               </TextLine>
+               <TextLine ID="r_30_tl_2"
+                         BASELINE="203,3925 223,3928 268,3928 313,3925 358,3925 402,3928 447,3928 492,3928 537,3925 582,3925 626,3925 671,3925 716,3922 761,3922 805,3922 850,3922 895,3919 940,3919 985,3916 1029,3916 1074,3916 1119,3916 1164,3916 1208,3916"
+                         HEIGHT="75"
+                         WIDTH="1011"
+                         VPOS="3867"
+                         HPOS="190">
+                  <String ID="string_r_30_tl_2"
+                          HEIGHT="75"
+                          WIDTH="1011"
+                          VPOS="3867"
+                          HPOS="190"
+                          CONTENT="Wiener Technischen Hochschule: „Die Stellung"/>
+               </TextLine>
+               <TextLine ID="r_30_tl_3"
+                         BASELINE="203,3993 214,3991 259,3988 304,3988 349,3988 394,3985 438,3985 483,3985 528,3985 573,3982 617,3982 662,3982 707,3982 752,3982 797,3979 841,3979 886,3979 931,3976 976,3976 1020,3976 1065,3976 1110,3976 1155,3976 1200,3976 1224,3976"
+                         HEIGHT="71"
+                         WIDTH="1031"
+                         VPOS="3934"
+                         HPOS="190">
+                  <String ID="string_r_30_tl_3"
+                          HEIGHT="71"
+                          WIDTH="1031"
+                          VPOS="3934"
+                          HPOS="190"
+                          CONTENT="Oesterreichs im modernen Turbinenbau.“"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_41" HEIGHT="229" WIDTH="1016" VPOS="3824" HPOS="1262">
+               <Shape>
+                  <Polygon POINTS="1262,3824 2278,3824 2278,4053 1262,4053"/>
+               </Shape>
+               <TextLine ID="r_41_tl_1"
+                         BASELINE="1262,3915 1262,3916 1283,3916 1328,3919 1373,3916 1417,3916 1462,3916 1507,3916 1552,3916 1597,3916 1641,3913 1686,3913 1731,3913 1776,3910 1820,3910 1865,3913 1910,3910 1955,3910 2000,3910 2044,3910 2089,3910 2134,3910 2179,3907 2223,3907 2268,3904"
+                         HEIGHT="73"
+                         WIDTH="1013"
+                         VPOS="3869"
+                         HPOS="1248">
+                  <String ID="string_r_41_tl_1"
+                          HEIGHT="73"
+                          WIDTH="1013"
+                          VPOS="3869"
+                          HPOS="1248"
+                          CONTENT="Prokurist der Salzburger Aktiengesellschaft für Eleh"/>
+               </TextLine>
+               <TextLine ID="r_41_tl_2"
+                         BASELINE="1337,3871 1364,3871 1408,3868 1453,3868 1498,3868 1543,3868 1588,3865 1632,3865 1677,3865 1722,3865 1767,3865 1811,3865 1856,3862 1901,3862 1946,3859 1991,3856 2035,3859 2080,3862 2125,3862 2170,3862 2214,3862 2259,3862"
+                         HEIGHT="62"
+                         WIDTH="931"
+                         VPOS="3817"
+                         HPOS="1323">
+                  <String ID="string_r_41_tl_2"
+                          HEIGHT="62"
+                          WIDTH="931"
+                          VPOS="3817"
+                          HPOS="1323"
+                          CONTENT="Oberbaurat Ingenieur Alfred Stoetzer"/>
+               </TextLine>
+               <TextLine ID="r_41_tl_3"
+                         BASELINE="1262,3976 1286,3976 1331,3976 1376,3973 1420,3973 1465,3973 1510,3970 1555,3970 1600,3973 1644,3970 1689,3967 1734,3964 1779,3967 1823,3964 1868,3964 1913,3964 1958,3964 2002,3964 2047,3964 2092,3964 2137,3964 2182,3964 2226,3961 2271,3958"
+                         HEIGHT="78"
+                         WIDTH="1018"
+                         VPOS="3914"
+                         HPOS="1248">
+                  <String ID="string_r_41_tl_3"
+                          HEIGHT="78"
+                          WIDTH="1018"
+                          VPOS="3914"
+                          HPOS="1248"
+                          CONTENT="trizitätswirtſchaft: „Der Ausbau der Waſſer⸗"/>
+               </TextLine>
+               <TextLine ID="r_41_tl_4"
+                         BASELINE="1262,4036 1265,4035 1298,4032 1343,4032 1388,4029 1432,4032 1477,4029 1522,4032 1567,4029 1611,4026 1656,4026 1701,4026 1746,4026"
+                         HEIGHT="73"
+                         WIDTH="495"
+                         VPOS="3982"
+                         HPOS="1246">
+                  <String ID="string_r_41_tl_4"
+                          HEIGHT="73"
+                          WIDTH="495"
+                          VPOS="3982"
+                          HPOS="1246"
+                          CONTENT="kräfte in Salzburg."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_51" HEIGHT="48" WIDTH="477" VPOS="3826" HPOS="2588">
+               <Shape>
+                  <Polygon POINTS="2588,3826 3065,3826 3065,3874 2588,3874"/>
+               </Shape>
+               <TextLine ID="r_51_tl_1"
+                         BASELINE="2594,3859 2611,3856 2656,3856 2701,3856 2746,3856 2791,3856 2835,3853 2880,3853 2925,3853 2970,3853 3014,3853 3059,3853"
+                         HEIGHT="65"
+                         WIDTH="475"
+                         VPOS="3814"
+                         HPOS="2579">
+                  <String ID="string_r_51_tl_1"
+                          HEIGHT="65"
+                          WIDTH="475"
+                          VPOS="3814"
+                          HPOS="2579"
+                          CONTENT="(Karoline Björnson.)"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_52" HEIGHT="47" WIDTH="378" VPOS="3889" HPOS="2637">
+               <Shape>
+                  <Polygon POINTS="2637,3889 3015,3889 3015,3936 2637,3936"/>
+               </Shape>
+               <TextLine ID="r_52_tl_1"
+                         BASELINE="2637,3916 2656,3916 2701,3919 2746,3916 2791,3916 2835,3916 2880,3916 2925,3916 2970,3916 3014,3913"
+                         HEIGHT="65"
+                         WIDTH="385"
+                         VPOS="3867"
+                         HPOS="2624">
+                  <String ID="string_r_52_tl_1"
+                          HEIGHT="65"
+                          WIDTH="385"
+                          VPOS="3867"
+                          HPOS="2624"
+                          CONTENT="Von Karin Michaelis."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_53" HEIGHT="186" WIDTH="1017" VPOS="3943" HPOS="2317">
+               <Shape>
+                  <Polygon POINTS="2317,3943 3334,3943 3334,4129 2317,4129"/>
+               </Shape>
+               <TextLine ID="r_53_tl_1"
+                         BASELINE="2400,3985 2441,3985 2486,3985 2531,3985 2576,3982 2620,3982 2665,3982 2710,3982 2755,3982 2800,3982 2844,3982 2889,3979 2934,3979 2979,3979 3023,3979 3068,3976 3113,3976 3158,3976 3202,3976 3247,3973 3292,3973 3334,3973"
+                         HEIGHT="65"
+                         WIDTH="941"
+                         VPOS="3929"
+                         HPOS="2386">
+                  <String ID="string_r_53_tl_1"
+                          HEIGHT="65"
+                          WIDTH="941"
+                          VPOS="3929"
+                          HPOS="2386"
+                          CONTENT="Karoline Björnſon liegt, an hochaufgeſtapelte Kiſſen"/>
+               </TextLine>
+               <TextLine ID="r_53_tl_2"
+                         BASELINE="2317,4032 2343,4032 2388,4029 2432,4029 2477,4029 2522,4026 2567,4029 2611,4026 2656,4026 2701,4026 2746,4023 2791,4026 2835,4023 2880,4023 2925,4023 2970,4023 3014,4020 3059,4020 3104,4017 3149,4020 3194,4017 3238,4017 3283,4014 3328,4011"
+                         HEIGHT="61"
+                         WIDTH="1021"
+                         VPOS="3984"
+                         HPOS="2301">
+                  <String ID="string_r_53_tl_2"
+                          HEIGHT="61"
+                          WIDTH="1021"
+                          VPOS="3984"
+                          HPOS="2301"
+                          CONTENT="gelehnt, im Bett. Sie ist nicht krank, nur ein bißchen morgen¬"/>
+               </TextLine>
+               <TextLine ID="r_53_tl_3"
+                         BASELINE="2317,4068 2349,4071 2394,4071 2438,4068 2483,4068 2528,4068 2573,4068 2617,4068 2662,4065 2707,4065 2752,4065 2797,4065 2841,4068 2886,4068 2931,4065 2976,4065 3020,4065 3065,4062 3110,4062 3155,4062 3200,4059 3244,4059 3289,4059 3334,4056"
+                         HEIGHT="55"
+                         WIDTH="1023"
+                         VPOS="4025"
+                         HPOS="2304">
+                  <String ID="string_r_53_tl_3"
+                          HEIGHT="55"
+                          WIDTH="1023"
+                          VPOS="4025"
+                          HPOS="2304"
+                          CONTENT="müde. Wir haben die Tür geschlossen, niemand kann"/>
+               </TextLine>
+               <TextLine ID="r_53_tl_4"
+                         BASELINE="2317,4113 2331,4113 2376,4113 2420,4113 2465,4110 2510,4110 2555,4110 2600,4110 2644,4110 2689,4107 2734,4107"
+                         HEIGHT="47"
+                         WIDTH="427"
+                         VPOS="4080"
+                         HPOS="2304">
+                  <String ID="string_r_53_tl_4"
+                          HEIGHT="47"
+                          WIDTH="427"
+                          VPOS="4080"
+                          HPOS="2304"
+                          CONTENT="kommen und uns stören"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_31" HEIGHT="193" WIDTH="1023" VPOS="4006" HPOS="204">
+               <Shape>
+                  <Polygon POINTS="204,4006 1227,4006 1227,4199 204,4199"/>
+               </Shape>
+               <TextLine ID="r_31_tl_1"
+                         BASELINE="286,4056 316,4056 361,4053 405,4053 450,4053 495,4050 540,4050 585,4050 629,4050 674,4050 719,4047 764,4047 808,4047 853,4047 898,4044 943,4044 988,4044 1032,4041 1077,4044 1122,4044 1167,4041 1211,4038 1227,4037"
+                         HEIGHT="73"
+                         WIDTH="951"
+                         VPOS="3994"
+                         HPOS="270">
+                  <String ID="string_r_31_tl_1"
+                          HEIGHT="73"
+                          WIDTH="951"
+                          VPOS="3994"
+                          HPOS="270"
+                          CONTENT="Oberbaurat Ingenieur E. Stelzer:"/>
+               </TextLine>
+               <TextLine ID="r_31_tl_2"
+                         BASELINE="204,4122 232,4119 277,4116 322,4113 367,4110 411,4113 456,4110 501,4110 546,4110 591,4110 635,4110 680,4107 725,4107 770,4107 814,4107 859,4104 904,4101 949,4104 994,4104 1038,4104 1083,4104 1128,4104 1173,4101 1217,4098"
+                         HEIGHT="90"
+                         WIDTH="1023"
+                         VPOS="4055"
+                         HPOS="190">
+                  <String ID="string_r_31_tl_2"
+                          HEIGHT="90"
+                          WIDTH="1023"
+                          VPOS="4055"
+                          HPOS="190"
+                          CONTENT="„Aus der Geschichte der Wasserkraft⸗"/>
+               </TextLine>
+               <TextLine ID="r_31_tl_3"
+                         BASELINE="205,4179 250,4176 295,4173 340,4176 385,4176 402,4179"
+                         HEIGHT="77"
+                         WIDTH="205"
+                         VPOS="4120"
+                         HPOS="190">
+                  <String ID="string_r_31_tl_3"
+                          HEIGHT="77"
+                          WIDTH="205"
+                          VPOS="4120"
+                          HPOS="190"
+                          CONTENT="nutzung."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_42" HEIGHT="194" WIDTH="1011" VPOS="4094" HPOS="1265">
+               <Shape>
+                  <Polygon POINTS="1265,4094 2276,4094 2276,4288 1265,4288"/>
+               </Shape>
+               <TextLine ID="r_42_tl_1"
+                         BASELINE="1274,4170 1295,4170 1340,4167 1385,4167 1429,4167 1474,4164 1519,4164 1564,4161 1608,4161 1653,4161 1698,4158 1725,4158 1734,4158 1779,4161 1823,4158 1868,4158 1913,4152 1958,4152 2002,4158 2047,4158 2092,4158 2137,4161 2182,4161 2226,4155 2271,4155 2276,4151"
+                         HEIGHT="107"
+                         WIDTH="1010"
+                         VPOS="4085"
+                         HPOS="1261">
+                  <String ID="string_r_42_tl_1"
+                          HEIGHT="107"
+                          WIDTH="1010"
+                          VPOS="4085"
+                          HPOS="1261"
+                          CONTENT="Chronik⸗ (Sport⸗) Beilage"/>
+               </TextLine>
+               <TextLine ID="r_42_tl_2"
+                         BASELINE="1265,4257 1271,4262 1274,4262 1319,4262 1364,4265 1408,4265 1453,4262 1498,4259 1543,4256 1588,4253 1632,4256 1677,4256 1722,4253 1767,4256 1811,4256 1856,4253 1901,4253 1946,4250 1991,4250 2035,4250 2080,4250 2125,4247 2170,4247 2214,4247 2276,4241"
+                         HEIGHT="105"
+                         WIDTH="1020"
+                         VPOS="4180"
+                         HPOS="1251">
+                  <String ID="string_r_42_tl_2"
+                          HEIGHT="105"
+                          WIDTH="1020"
+                          VPOS="4180"
+                          HPOS="1251"
+                          CONTENT="der „Neuen Freien Presse“."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_54" HEIGHT="138" WIDTH="1015" VPOS="4115" HPOS="2320">
+               <Shape>
+                  <Polygon POINTS="2320,4115 3335,4115 3335,4253 2320,4253"/>
+               </Shape>
+               <TextLine ID="r_54_tl_1"
+                         BASELINE="2405,4158 2438,4155 2483,4152 2528,4149 2573,4149 2614,4152 2620,4152 2665,4149 2710,4149 2755,4149 2800,4149 2844,4149 2889,4149 2934,4146 2979,4149 3023,4146 3068,4146 3113,4143 3158,4143 3202,4143 3247,4143 3292,4143 3335,4143"
+                         HEIGHT="95"
+                         WIDTH="938"
+                         VPOS="4077"
+                         HPOS="2391">
+                  <String ID="string_r_54_tl_1"
+                          HEIGHT="95"
+                          WIDTH="938"
+                          VPOS="4077"
+                          HPOS="2391"
+                          CONTENT="„Erzähle!“ sag' ich wie ein Kind, das Märchen hören"/>
+               </TextLine>
+               <TextLine ID="r_54_tl_2"
+                         BASELINE="2322,4194 2355,4197 2400,4200 2444,4197 2489,4194 2534,4197 2579,4194 2623,4194 2668,4194 2713,4194 2758,4194 2802,4194 2847,4194 2892,4194 2937,4191 2982,4191 3026,4191 3071,4188 3116,4188 3161,4188 3205,4185 3250,4185 3295,4185 3335,4185"
+                         HEIGHT="87"
+                         WIDTH="1023"
+                         VPOS="4155"
+                         HPOS="2309">
+                  <String ID="string_r_54_tl_2"
+                          HEIGHT="87"
+                          WIDTH="1023"
+                          VPOS="4155"
+                          HPOS="2309"
+                          CONTENT="will, „erzähle von damals, da du jung warst und Björnson"/>
+               </TextLine>
+               <TextLine ID="r_54_tl_3"
+                         BASELINE="2320,4236 2325,4235 2370,4238 2414,4238 2459,4235 2504,4235 2549,4235 2585,4238"
+                         HEIGHT="67"
+                         WIDTH="273"
+                         VPOS="4195"
+                         HPOS="2306">
+                  <String ID="string_r_54_tl_3"
+                          HEIGHT="67"
+                          WIDTH="273"
+                          VPOS="4195"
+                          HPOS="2306"
+                          CONTENT="kennen lerntest!"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_32" HEIGHT="192" WIDTH="1018" VPOS="4193" HPOS="208">
+               <Shape>
+                  <Polygon POINTS="208,4193 1226,4193 1226,4385 208,4385"/>
+               </Shape>
+               <TextLine ID="r_32_tl_1"
+                         BASELINE="295,4241 322,4241 367,4241 411,4241 456,4241 501,4238 546,4238 591,4238 635,4238 680,4235 725,4235 770,4235 814,4232 859,4232 904,4232 949,4232 994,4232 1038,4232 1083,4235 1128,4232 1173,4229 1217,4223 1226,4229"
+                         HEIGHT="70"
+                         WIDTH="943"
+                         VPOS="4185"
+                         HPOS="280">
+                  <String ID="string_r_32_tl_1"
+                          HEIGHT="70"
+                          WIDTH="943"
+                          VPOS="4185"
+                          HPOS="280"
+                          CONTENT="Dozent Ingenieur Karl Naehr: „Aus¬"/>
+               </TextLine>
+               <TextLine ID="r_32_tl_2"
+                         BASELINE="211,4301 229,4304 274,4304 319,4301 364,4301 408,4301 453,4301 498,4301 543,4298 588,4298 632,4298 677,4295 722,4298 767,4295 811,4295 856,4295 901,4292 946,4292 991,4292 1035,4292 1080,4292 1125,4289 1170,4289 1214,4289"
+                         HEIGHT="75"
+                         WIDTH="1010"
+                         VPOS="4242"
+                         HPOS="198">
+                  <String ID="string_r_32_tl_2"
+                          HEIGHT="75"
+                          WIDTH="1010"
+                          VPOS="4242"
+                          HPOS="198"
+                          CONTENT="landkapital zur Finanzierung unserer"/>
+               </TextLine>
+               <TextLine ID="r_32_tl_3"
+                         BASELINE="217,4361 253,4361 298,4361 343,4361 388,4361 432,4361 477,4361 522,4361 567,4358 611,4358 656,4358"
+                         HEIGHT="78"
+                         WIDTH="447"
+                         VPOS="4312"
+                         HPOS="203">
+                  <String ID="string_r_32_tl_3"
+                          HEIGHT="78"
+                          WIDTH="447"
+                          VPOS="4312"
+                          HPOS="203"
+                          CONTENT="Energiewirtſchaft.“"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_45" HEIGHT="128" WIDTH="1021" VPOS="4289" HPOS="1267">
+               <Shape>
+                  <Polygon POINTS="1267,4289 2288,4289 2288,4417 1267,4417"/>
+               </Shape>
+               <TextLine ID="r_45_tl_1"
+                         BASELINE="1349,4343 1385,4337 1429,4337 1474,4334 1519,4334 1564,4331 1608,4334 1653,4331 1698,4331 1743,4328 1788,4331 1832,4331 1877,4328 1922,4328 1967,4328 2011,4328 2056,4331 2101,4328 2146,4328 2191,4325 2235,4328 2280,4325 2288,4326"
+                         HEIGHT="80"
+                         WIDTH="948"
+                         VPOS="4277"
+                         HPOS="1336">
+                  <String ID="string_r_45_tl_1"
+                          HEIGHT="80"
+                          WIDTH="948"
+                          VPOS="4277"
+                          HPOS="1336"
+                          CONTENT="„Beiträge zur Amateurfrage.“ Von"/>
+               </TextLine>
+               <TextLine ID="r_45_tl_2"
+                         BASELINE="1267,4400 1268,4400 1283,4397 1328,4397 1373,4397 1417,4397 1462,4394 1507,4394 1552,4394 1597,4394 1641,4394 1686,4394 1731,4391 1776,4391 1820,4391 1865,4391 1910,4391 1955,4391 2000,4391 2044,4388 2089,4391"
+                         HEIGHT="65"
+                         WIDTH="833"
+                         VPOS="4347"
+                         HPOS="1251">
+                  <String ID="string_r_45_tl_2"
+                          HEIGHT="65"
+                          WIDTH="833"
+                          VPOS="4347"
+                          HPOS="1251"
+                          CONTENT="Roman Frisch (Paris). Seite 10 und 11."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_55" HEIGHT="181" WIDTH="1019" VPOS="4248" HPOS="2319">
+               <Shape>
+                  <Polygon POINTS="2319,4248 3338,4248 3338,4429 2319,4429"/>
+               </Shape>
+               <TextLine ID="r_55_tl_1"
+                         BASELINE="2402,4289 2435,4289 2480,4289 2525,4289 2570,4289 2614,4286 2659,4286 2704,4286 2749,4286 2794,4286 2838,4286 2883,4286 2928,4286 2973,4286 3017,4286 3062,4283 3107,4286 3152,4283 3197,4283 3241,4280 3286,4280 3331,4277"
+                         HEIGHT="90"
+                         WIDTH="938"
+                         VPOS="4212"
+                         HPOS="2389">
+                  <String ID="string_r_55_tl_1"
+                          HEIGHT="90"
+                          WIDTH="938"
+                          VPOS="4212"
+                          HPOS="2389"
+                          CONTENT="Karoline lächelt. Es ist nicht schwer, sie zum Erzählen"/>
+               </TextLine>
+               <TextLine ID="r_55_tl_2"
+                         BASELINE="2319,4333 2325,4334 2364,4331 2408,4331 2453,4331 2498,4331 2543,4331 2588,4331 2632,4328 2677,4328 2722,4328 2767,4328 2811,4328 2856,4328 2901,4328 2946,4325 2991,4325 3035,4325 3080,4325 3125,4325 3170,4325 3214,4322"
+                         HEIGHT="48"
+                         WIDTH="901"
+                         VPOS="4292"
+                         HPOS="2306">
+                  <String ID="string_r_55_tl_2"
+                          HEIGHT="48"
+                          WIDTH="901"
+                          VPOS="4292"
+                          HPOS="2306"
+                          CONTENT="zu bringen. Wie gern plaudert sie über vergangene"/>
+               </TextLine>
+               <TextLine ID="r_55_tl_3"
+                         BASELINE="2322,4370 2346,4373 2391,4373 2435,4373 2480,4373 2525,4373 2570,4373 2614,4370 2659,4373 2704,4373 2749,4373 2794,4373 2838,4373 2883,4373 2928,4373 2973,4370 3017,4370 3062,4370 3107,4370 3152,4367 3197,4367"
+                         HEIGHT="57"
+                         WIDTH="885"
+                         VPOS="4330"
+                         HPOS="2309">
+                  <String ID="string_r_55_tl_3"
+                          HEIGHT="57"
+                          WIDTH="885"
+                          VPOS="4330"
+                          HPOS="2309"
+                          CONTENT="Es sind wirklich schon sechzig oder siebzig Jahre"/>
+               </TextLine>
+               <TextLine ID="r_55_tl_4"
+                         BASELINE="2322,4411 2367,4414 2411,4414 2456,4411 2501,4411 2546,4411 2564,4411"
+                         HEIGHT="70"
+                         WIDTH="250"
+                         VPOS="4377"
+                         HPOS="2309">
+                  <String ID="string_r_55_tl_4"
+                          HEIGHT="70"
+                          WIDTH="250"
+                          VPOS="4377"
+                          HPOS="2309"
+                          CONTENT="dahingegangen."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_33" HEIGHT="243" WIDTH="1019" VPOS="4388" HPOS="210">
+               <Shape>
+                  <Polygon POINTS="210,4388 1229,4388 1229,4631 210,4631"/>
+               </Shape>
+               <TextLine ID="r_33_tl_1"
+                         BASELINE="292,4429 331,4429 376,4429 420,4429 465,4429 510,4426 555,4426 600,4426 644,4426 689,4426 734,4423 779,4423 823,4423 868,4420 913,4420 958,4420 1002,4420 1047,4417 1092,4420 1137,4417 1182,4417 1226,4417 1229,4416"
+                         HEIGHT="85"
+                         WIDTH="948"
+                         VPOS="4360"
+                         HPOS="278">
+                  <String ID="string_r_33_tl_1"
+                          HEIGHT="85"
+                          WIDTH="948"
+                          VPOS="4360"
+                          HPOS="278"
+                          CONTENT="Dr. Paul Schwarz, Generalsehrelär der Ersten"/>
+               </TextLine>
+               <TextLine ID="r_33_tl_2"
+                         BASELINE="210,4486 241,4492 286,4492 331,4489 376,4489 420,4489 465,4489 510,4489 555,4489 600,4486 644,4486 689,4489 734,4483 779,4483 823,4483 868,4480 913,4480 958,4480 1002,4480 1047,4477 1092,4477 1137,4474 1182,4477 1226,4474"
+                         HEIGHT="78"
+                         WIDTH="1028"
+                         VPOS="4432"
+                         HPOS="195">
+                  <String ID="string_r_33_tl_2"
+                          HEIGHT="78"
+                          WIDTH="1028"
+                          VPOS="4432"
+                          HPOS="195"
+                          CONTENT="Oesterreichischen Sparkasser „Die Befriedigung des"/>
+               </TextLine>
+               <TextLine ID="r_33_tl_3"
+                         BASELINE="210,4549 235,4549 280,4549 325,4549 370,4549 414,4549 459,4549 504,4549 549,4546 594,4546 638,4546 683,4543 728,4543 773,4543 817,4540 862,4540 907,4540 952,4537 997,4540 1041,4540 1086,4540 1131,4537 1176,4537 1220,4531 1229,4531"
+                         HEIGHT="88"
+                         WIDTH="1028"
+                         VPOS="4487"
+                         HPOS="195">
+                  <String ID="string_r_33_tl_3"
+                          HEIGHT="88"
+                          WIDTH="1028"
+                          VPOS="4487"
+                          HPOS="195"
+                          CONTENT="Kreditbedarfes durch Pfandbriefemissions¬"/>
+               </TextLine>
+               <TextLine ID="r_33_tl_4"
+                         BASELINE="211,4608 256,4608 301,4611 346,4608 391,4608 435,4608 480,4608 525,4605 570,4608 614,4605 659,4605 704,4602 749,4602 794,4602 838,4600"
+                         HEIGHT="88"
+                         WIDTH="638"
+                         VPOS="4547"
+                         HPOS="195">
+                  <String ID="string_r_33_tl_4"
+                          HEIGHT="88"
+                          WIDTH="638"
+                          VPOS="4547"
+                          HPOS="195"
+                          CONTENT="institute und Sparkassen."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_46" HEIGHT="184" WIDTH="1013" VPOS="4425" HPOS="1271">
+               <Shape>
+                  <Polygon POINTS="1271,4425 2284,4425 2284,4609 1271,4609"/>
+               </Shape>
+               <TextLine ID="r_46_tl_1"
+                         BASELINE="1352,4477 1388,4474 1432,4471 1477,4468 1522,4468 1567,4468 1611,4465 1656,4465 1701,4465 1746,4465 1791,4465 1835,4462 1880,4465 1925,4465 1970,4465 2014,4465 2059,4462 2104,4462 2149,4465 2194,4462 2238,4462 2283,4459 2284,4460"
+                         HEIGHT="80"
+                         WIDTH="941"
+                         VPOS="4410"
+                         HPOS="1338">
+                  <String ID="string_r_46_tl_1"
+                          HEIGHT="80"
+                          WIDTH="941"
+                          VPOS="4410"
+                          HPOS="1338"
+                          CONTENT="„Das Wasserrettungswesen in Oester¬"/>
+               </TextLine>
+               <TextLine ID="r_46_tl_2"
+                         BASELINE="1271,4534 1271,4534 1292,4531 1337,4531 1382,4531 1426,4531 1471,4528 1516,4528 1561,4528 1605,4528 1650,4525 1695,4525 1740,4525 1785,4525 1829,4525 1874,4525 1919,4528 1964,4525 2008,4525 2053,4525 2098,4522 2143,4525 2188,4525 2232,4525 2277,4519 2284,4522"
+                         HEIGHT="78"
+                         WIDTH="1023"
+                         VPOS="4472"
+                         HPOS="1258">
+                  <String ID="string_r_46_tl_2"
+                          HEIGHT="78"
+                          WIDTH="1023"
+                          VPOS="4472"
+                          HPOS="1258"
+                          CONTENT="reich.“ Von Medizinalrat Dr. Emil Berg⸗"/>
+               </TextLine>
+               <TextLine ID="r_46_tl_3"
+                         BASELINE="1271,4594 1289,4594 1334,4594 1379,4594 1423,4591 1468,4591 1513,4591 1558,4588 1602,4588"
+                         HEIGHT="72"
+                         WIDTH="338"
+                         VPOS="4535"
+                         HPOS="1258">
+                  <String ID="string_r_46_tl_3"
+                          HEIGHT="72"
+                          WIDTH="338"
+                          VPOS="4535"
+                          HPOS="1258"
+                          CONTENT="mann. Seite 11."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_56" HEIGHT="186" WIDTH="1021" VPOS="4419" HPOS="2321">
+               <Shape>
+                  <Polygon POINTS="2321,4419 3342,4419 3342,4605 2321,4605"/>
+               </Shape>
+               <TextLine ID="r_56_tl_1"
+                         BASELINE="2405,4456 2411,4459 2456,4456 2501,4456 2546,4456 2591,4453 2614,4450 2650,4453 2695,4450 2740,4450 2785,4450 2829,4450 2874,4450 2919,4456 2964,4453 3008,4450 3053,4450 3098,4447 3143,4447 3188,4447 3217,4447 3262,4447 3307,4447 3334,4447"
+                         HEIGHT="70"
+                         WIDTH="936"
+                         VPOS="4392"
+                         HPOS="2391">
+                  <String ID="string_r_56_tl_1"
+                          HEIGHT="70"
+                          WIDTH="936"
+                          VPOS="4392"
+                          HPOS="2391"
+                          CONTENT="„Ja, siehst du,&#34; beginnt sie, „es war in Bergen"/>
+               </TextLine>
+               <TextLine ID="r_56_tl_2"
+                         BASELINE="2321,4492 2328,4498 2367,4498 2411,4498 2456,4498 2501,4498 2546,4495 2591,4495 2605,4492 2620,4495 2665,4495 2710,4495 2755,4495 2800,4495 2844,4495 2889,4495 2934,4492 2979,4492 3023,4492 3068,4492 3113,4489 3158,4489 3202,4492 3247,4492 3292,4489 3337,4489"
+                         HEIGHT="62"
+                         WIDTH="1026"
+                         VPOS="4445"
+                         HPOS="2306">
+                  <String ID="string_r_56_tl_2"
+                          HEIGHT="62"
+                          WIDTH="1026"
+                          VPOS="4445"
+                          HPOS="2306"
+                          CONTENT="in Ole Bulls Theater. Dort ging alles drunter und"/>
+               </TextLine>
+               <TextLine ID="r_56_tl_3"
+                         BASELINE="2321,4539 2322,4540 2355,4543 2400,4540 2444,4540 2489,4540 2534,4537 2579,4540 2623,4540 2668,4540 2713,4537 2758,4537 2802,4537 2847,4537 2892,4537 2937,4537 2982,4534 3026,4534 3071,4534 3116,4534 3161,4534 3205,4534 3250,4534 3295,4531 3340,4534"
+                         HEIGHT="48"
+                         WIDTH="1028"
+                         VPOS="4497"
+                         HPOS="2306">
+                  <String ID="string_r_56_tl_3"
+                          HEIGHT="48"
+                          WIDTH="1028"
+                          VPOS="4497"
+                          HPOS="2306"
+                          CONTENT="drüber, und die Hälfte der Schauspieler war ausgerissen."/>
+               </TextLine>
+               <TextLine ID="r_56_tl_4"
+                         BASELINE="2321,4588 2361,4588 2405,4585 2450,4585 2495,4585 2540,4585 2585,4585 2629,4585 2674,4582 2719,4582 2764,4582 2808,4582 2853,4582 2898,4585 2943,4582 2988,4582 3032,4582 3077,4579 3122,4579 3167,4579 3211,4579 3256,4579 3301,4579 3342,4579"
+                         HEIGHT="67"
+                         WIDTH="1031"
+                         VPOS="4540"
+                         HPOS="2306">
+                  <String ID="string_r_56_tl_4"
+                          HEIGHT="67"
+                          WIDTH="1031"
+                          VPOS="4540"
+                          HPOS="2306"
+                          CONTENT="Ich bekam Lust, unter Björnson zu spielen, der eben die"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_35" HEIGHT="101" WIDTH="2033" VPOS="1386" HPOS="1241">
+               <Shape>
+                  <Polygon POINTS="1241,1386 3274,1386 3274,1487 1241,1487"/>
+               </Shape>
+               <TextLine ID="r_35_tl_1"
+                         BASELINE="1274,1456 1283,1456 1328,1456 1373,1456 1417,1456 1462,1453 1507,1453 1552,1453 1597,1456 1641,1453 1686,1450 1731,1453 1776,1450 1820,1444 1865,1450 1910,1450 1955,1447 2000,1450 2044,1447 2089,1447 2134,1447 2179,1444 2223,1444 2259,1441 2289,1441 2334,1444 2379,1441 2423,1438 2468,1438 2513,1438 2558,1435 2602,1435 2647,1438 2692,1438 2737,1438 2782,1435 2826,1435 2871,1438 2916,1438 2961,1432 3005,1432 3050,1435 3095,1435 3140,1435 3185,1432 3229,1432 3274,1432"
+                         HEIGHT="100"
+                         WIDTH="2006"
+                         VPOS="1386"
+                         HPOS="1261">
+                  <String ID="string_r_35_tl_1"
+                          HEIGHT="100"
+                          WIDTH="2006"
+                          VPOS="1386"
+                          HPOS="1261"
+                          CONTENT="Zurückziehung des Ultimatums. Gewinnbeteiligung der Beamten."/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_57" HEIGHT="89" WIDTH="562" VPOS="4706" HPOS="307">
+               <Shape>
+                  <Polygon POINTS="307,4706 869,4706 869,4795 307,4795"/>
+               </Shape>
+               <TextLine ID="r_57_tl_1"
+                         BASELINE="307,4741 328,4743 373,4740 417,4740 462,4737 507,4737 552,4734 597,4734 641,4734 686,4734 731,4731 776,4728"
+                         HEIGHT="98"
+                         WIDTH="480"
+                         VPOS="4672"
+                         HPOS="293">
+                  <String ID="string_r_57_tl_1"
+                          HEIGHT="98"
+                          WIDTH="480"
+                          VPOS="4672"
+                          HPOS="293"
+                          CONTENT="Das Sonnenbad und"/>
+               </TextLine>
+               <TextLine ID="r_57_tl_2"
+                         BASELINE="456,4779 465,4782 510,4782 555,4779 600,4779 644,4779 689,4776 734,4776 779,4773 823,4773 868,4773"
+                         HEIGHT="58"
+                         WIDTH="422"
+                         VPOS="4732"
+                         HPOS="443">
+                  <String ID="string_r_57_tl_2"
+                          HEIGHT="58"
+                          WIDTH="422"
+                          VPOS="4732"
+                          HPOS="443"
+                          CONTENT="Sportzentrum der"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_58" HEIGHT="72" WIDTH="572" VPOS="4794" HPOS="303">
+               <Shape>
+                  <Polygon POINTS="303,4794 875,4794 875,4866 303,4866"/>
+               </Shape>
+               <TextLine ID="r_58_tl_1"
+                         BASELINE="337,4841 346,4841 391,4844 435,4847 480,4847 525,4844 570,4847 614,4844 659,4844 704,4841 749,4844 794,4844 838,4844 875,4839"
+                         HEIGHT="98"
+                         WIDTH="547"
+                         VPOS="4782"
+                         HPOS="323">
+                  <String ID="string_r_58_tl_1"
+                          HEIGHT="98"
+                          WIDTH="547"
+                          VPOS="4782"
+                          HPOS="323"
+                          CONTENT="WESTSCHWEIZ"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_60" HEIGHT="174" WIDTH="1244" VPOS="4661" HPOS="1159">
+               <Shape>
+                  <Polygon POINTS="1159,4661 2403,4661 2403,4835 1159,4835"/>
+               </Shape>
+               <TextLine ID="r_60_tl_1"
+                         BASELINE="1337,4800 1382,4802 1426,4800 1471,4802 1495,4802"
+                         HEIGHT="92"
+                         WIDTH="165"
+                         VPOS="4730"
+                         HPOS="1323">
+                  <String ID="string_r_60_tl_1"
+                          HEIGHT="92"
+                          WIDTH="165"
+                          VPOS="4730"
+                          HPOS="1323"
+                          CONTENT="LLY"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_63" HEIGHT="100" WIDTH="568" VPOS="4670" HPOS="2680">
+               <Shape>
+                  <Polygon POINTS="2680,4670 3248,4670 3248,4770 2680,4770"/>
+               </Shape>
+               <TextLine ID="r_63_tl_1"
+                         BASELINE="2689,4704 2734,4704 2779,4704 2823,4701 2868,4704 2913,4704 2958,4704 3002,4701 3047,4704 3092,4704 3137,4704 3182,4704 3226,4704 3235,4704"
+                         HEIGHT="70"
+                         WIDTH="553"
+                         VPOS="4645"
+                         HPOS="2676">
+                  <String ID="string_r_63_tl_1"
+                          HEIGHT="70"
+                          WIDTH="553"
+                          VPOS="4645"
+                          HPOS="2676"
+                          CONTENT="8 bis 9 Stunden Sonnenschein"/>
+               </TextLine>
+               <TextLine ID="r_63_tl_2"
+                         BASELINE="2686,4749 2731,4749 2776,4749 2820,4746 2865,4746 2910,4746 2955,4746 3000,4746 3044,4746 3089,4746 3134,4749 3179,4749 3223,4749 3244,4749"
+                         HEIGHT="58"
+                         WIDTH="566"
+                         VPOS="4712"
+                         HPOS="2671">
+                  <String ID="string_r_63_tl_2"
+                          HEIGHT="58"
+                          WIDTH="566"
+                          VPOS="4712"
+                          HPOS="2671"
+                          CONTENT="Günstigste Schneeverhältnisse"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_64" HEIGHT="62" WIDTH="561" VPOS="4770" HPOS="2684">
+               <Shape>
+                  <Polygon POINTS="2684,4770 3245,4770 3245,4832 2684,4832"/>
+               </Shape>
+               <TextLine ID="r_64_tl_1"
+                         BASELINE="2684,4817 2722,4817 2767,4814 2811,4814 2856,4811 2901,4811 2946,4811 2991,4814 3035,4814 3080,4814 3125,4814 3170,4814 3214,4814 3235,4817"
+                         HEIGHT="90"
+                         WIDTH="561"
+                         VPOS="4760"
+                         HPOS="2671">
+                  <String ID="string_r_64_tl_1"
+                          HEIGHT="90"
+                          WIDTH="561"
+                          VPOS="4760"
+                          HPOS="2671"
+                          CONTENT="Januar Februar"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_59" HEIGHT="168" WIDTH="224" VPOS="4901" HPOS="643">
+               <Shape>
+                  <Polygon POINTS="643,4901 867,4901 867,5069 643,5069"/>
+               </Shape>
+            </TextBlock>
+            <TextBlock ID="r_62" HEIGHT="52" WIDTH="510" VPOS="4887" HPOS="913">
+               <Shape>
+                  <Polygon POINTS="913,4887 1423,4887 1423,4939 913,4939"/>
+               </Shape>
+               <TextLine ID="r_62_tl_1"
+                         BASELINE="913,4922 958,4922 1002,4925 1047,4925 1092,4925 1137,4925 1182,4922 1226,4922 1271,4922 1316,4919 1361,4919 1405,4922 1417,4922"
+                         HEIGHT="80"
+                         WIDTH="513"
+                         VPOS="4865"
+                         HPOS="900">
+                  <String ID="string_r_62_tl_1"
+                          HEIGHT="80"
+                          WIDTH="513"
+                          VPOS="4865"
+                          HPOS="900"
+                          CONTENT="läufst Schlittschuhe"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_65" HEIGHT="52" WIDTH="807" VPOS="5007" HPOS="1626">
+               <Shape>
+                  <Polygon POINTS="1626,5007 2433,5007 2433,5059 1626,5059"/>
+               </Shape>
+               <TextLine ID="r_65_tl_1"
+                         BASELINE="1629,5044 1650,5044 1695,5044 1740,5044 1785,5044 1829,5044 1874,5044 1919,5044 1964,5044 2008,5041 2053,5041 2098,5041 2143,5038 2188,5038 2232,5035 2277,5035 2322,5035 2367,5035 2411,5038 2433,5038"
+                         HEIGHT="98"
+                         WIDTH="810"
+                         VPOS="4957"
+                         HPOS="1616">
+                  <String ID="string_r_65_tl_1"
+                          HEIGHT="98"
+                          WIDTH="810"
+                          VPOS="4957"
+                          HPOS="1616"
+                          CONTENT="und tanzest und flirtest in der"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_66" HEIGHT="43" WIDTH="184" VPOS="4936" HPOS="2745">
+               <Shape>
+                  <Polygon POINTS="2745,4936 2929,4936 2929,4979 2745,4979"/>
+               </Shape>
+               <TextLine ID="r_66_tl_1"
+                         BASELINE="2749,4964 2794,4961 2838,4961 2883,4961 2928,4961"
+                         HEIGHT="50"
+                         WIDTH="185"
+                         VPOS="4922"
+                         HPOS="2736">
+                  <String ID="string_r_66_tl_1"
+                          HEIGHT="50"
+                          WIDTH="185"
+                          VPOS="4922"
+                          HPOS="2736"
+                          CONTENT="mitten im"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_67" HEIGHT="66" WIDTH="268" VPOS="4980" HPOS="2850">
+               <Shape>
+                  <Polygon POINTS="2850,4980 3118,4980 3118,5046 2850,5046"/>
+               </Shape>
+               <TextLine ID="r_67_tl_1"
+                         BASELINE="2856,5029 2901,5032 2946,5029 2991,5029 3035,5026 3080,5029 3095,5029"
+                         HEIGHT="90"
+                         WIDTH="248"
+                         VPOS="4970"
+                         HPOS="2841">
+                  <String ID="string_r_67_tl_1"
+                          HEIGHT="90"
+                          WIDTH="248"
+                          VPOS="4970"
+                          HPOS="2841"
+                          CONTENT="Eismee"/>
+               </TextLine>
+            </TextBlock>
+            <TextBlock ID="r_61" HEIGHT="59" WIDTH="406" VPOS="4824" HPOS="1576">
+               <Shape>
+                  <Polygon POINTS="1576,4824 1982,4824 1982,4883 1576,4883"/>
+               </Shape>
+               <TextLine ID="r_61_tl_1"
+                         BASELINE="1579,4865 1585,4865 1629,4865 1674,4865 1719,4865 1764,4868 1808,4862 1853,4865 1898,4862 1943,4862 1982,4860"
+                         HEIGHT="88"
+                         WIDTH="412"
+                         VPOS="4792"
+                         HPOS="1566">
+                  <String ID="string_r_61_tl_1"
+                          HEIGHT="88"
+                          WIDTH="412"
+                          VPOS="4792"
+                          HPOS="1566"
+                          CONTENT="Villars, Rhônetal"/>
+               </TextLine>
+            </TextBlock>
+            <Illustration ID="r_68" HEIGHT="788" WIDTH="588" VPOS="183" HPOS="2690"/>
+         </PrintSpace>
+      </Page>
+   </Layout>
+</alto>
